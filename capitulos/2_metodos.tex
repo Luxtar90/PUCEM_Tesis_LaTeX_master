@@ -73,7 +73,7 @@ Las guías de entrevista se estructuraron por temática (experiencia actual, nec
 En pruebas de usabilidad se definieron tareas representativas (realizar un pedido, consultar estado de entrega, crear producto en el panel admin) con escenarios controlados y tiempos registrados; se identificaron errores, puntos de fricción y necesidades de mejora.
 
 \subsection{Piloto y SUS}
-Previo a la aplicación, se realizó una verificación pilota de comprensión de ítems para detectar ambigüedades y ajustar redacción.
+Previo a la aplicación, se realizó una verificación piloto de comprensión de ítems para detectar ambigüedades y ajustar redacción.
 
 En el caso del SUS, se siguió el procedimiento estándar de puntuación y normalización, interpretando resultados en rangos de aceptabilidad.
 
@@ -196,7 +196,7 @@ NestJS se integra con Passport.js para la autenticación; se definió una estrat
 
 Además, se emplearon Guards, Interceptors y Middleware en puntos específicos: un middleware global de registro para depurar peticiones, guards para control de acceso (AuthGuard [jwt] y un guard de roles) e interceptores para formatear respuestas y medir rendimiento.
 
-Se planifica incorporar un interceptor global que mida el tiempo de ejecución y el conteo de accesos.
+Se prevé incorporar un interceptor global que mida el tiempo de ejecución y el conteo de accesos.
 \begin{figure}[htbp]
 \centering
 \resizebox{0.85\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
@@ -210,13 +210,13 @@ Se consideran medidas adicionales de endurecimiento para producción, como cabec
 
 En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación Node independiente.
 
-Se ha contemplado el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción.
+Se contempló el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción.
 
-De hecho, NestJS sugiere buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la app.
+NestJS recomienda buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la aplicación.
 
-Hemos configurado la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén hardcodeadas, sino definidas externamente.
+Se configuró la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén codificados de forma rígida, sino definidos externamente.
 
-La decisión fue desplegar el backend en un servidor cloud de Hetzner, aprovechando su relación costo/rendimiento.
+Se decidió desplegar el backend en un servidor en la nube de Hetzner, aprovechando su relación costo/rendimiento.
 
 Hetzner ofrece VPS escalables a precios muy competitivos y con facturación por horas \parencite{hetzner_cloud}, lo que nos permite alojar nuestra API Node + base de datos de forma eficiente.
 
@@ -305,37 +305,14 @@ A partir de ahí, los Guards de NestJS determinan si se permite o deniega el acc
 \begin{itemize}
   \item Primero, usamos un guard genérico \texttt{JwtAuthGuard} (que extiende de \texttt{AuthGuard('jwt')} de Nest) para verificar la autenticación. Este guard está aplicado a todas las rutas que requieren un usuario logueado.
   \item Si el token es inválido o expiró, el guard rechaza la petición automáticamente con código 401 Unauthorized.
-  \item Hemos personalizado este guard para lanzar un mensaje de error en español ("No autorizado. Por favor, inicie sesión") en caso de fallo, usando un código similar al siguiente:
+  \item Personalización mínima: extender \texttt{AuthGuard('jwt')} y, en \texttt{handleRequest}, si existe error o no hay usuario, lanzar \texttt{UnauthorizedException} con el mensaje en español: “No autorizado. Por favor, inicie sesión”. En caso contrario, retornar el usuario.
 \end{itemize}
-\begin{lstlisting}[language=TypeScript]
-@Injectable()
-export class JwtAuthGuard extends AuthGuard('jwt') {
-  handleRequest(err, user, info) {
-    if (err || !user) {
-      throw err || new UnauthorizedException('No autorizado. Por favor, inicie sesion');
-    }
-    return user;
-  }
-}
-\end{lstlisting}
 Este guard utiliza internamente la estrategia JWT definida (la cual, en nuestro AuthService, valida el token y puede que re-fresque algunos datos del usuario si es necesario). Al implementar handleRequest, nos aseguramos de capturar los casos en que Passport no encuentre usuario (token inválido) para siempre lanzar nuestra excepción personalizada \parencite{creapolis_nestjs_2025,dragosb_lo_mejor_nestjs}. De esta manera, ningún endpoint sensible será ejecutado sin un JWT válido.
 En segundo lugar, para la autorización por roles (RBAC) se implementó un guard adicional, por ejemplo RolesGuard, combinado con un decorador personalizado @Roles(...) que se añade a controladores o métodos indicando los roles permitidos. Al ejecutarse, RolesGuard lee los metadatos requeridos y los compara con el rol de \texttt{req.user} (poblado por JwtAuthGuard). Si el usuario no cumple, se lanza un Forbidden (403). Este patrón recomendado por NestJS — definir un guard genérico y roles por ruta con metadatos — mejora legibilidad y reduce errores \parencite{stackoverflow_roleguards}. Por ejemplo:
- 	\begin{lstlisting}[language=TypeScript]
-@UseGuards(JwtAuthGuard, RolesGuard)
-@Roles('ADMIN')
-@Post('/product')
-createProduct(...) { ... }
- 	\end{lstlisting}
- 	Esto aseguraría que solo un admin autenticado pueda acceder a la ruta de crear producto. Similarmente, podríamos etiquetar rutas de repartidor (por ejemplo, aceptar pedido) con @Roles('DELIVERY'), etc. El RolesGuard simplemente hace:
- 	\begin{lstlisting}[language=TypeScript]
-canActivate(context: ExecutionContext): boolean {
-  const requiredRoles = this.reflector.get<Role[]>('roles', context.getHandler());
-  if (!requiredRoles) return true;
-  const user = context.switchToHttp().getRequest().user;
-  return requiredRoles.some(role => user.role === role);
-}
- 	\end{lstlisting}
- 	(Esto es un ejemplo simplificado). Así, añadimos una capa de control de acceso declarativo: los permisos de cada endpoint están explícitos en el código vía decoradores, lo que mejora la legibilidad y reduce errores de permiso.
+Declaración mínima por ruta: \texttt{@UseGuards(JwtAuthGuard, RolesGuard)} junto con \texttt{@Roles('ADMIN')} en endpoints administrativos asegura acceso exclusivo a administradores autenticados. De forma análoga, rutas de repartidor se etiquetan con \texttt{@Roles('DELIVERY')}.
+
+Lógica esencial de \texttt{RolesGuard}: obtener metadatos \texttt{'roles'} con \texttt{Reflector}; si no existen, permitir acceso; si existen, comparar \texttt{user.role} contra los roles requeridos y permitir solo en coincidencia; si no, responder con 403. Este enfoque mantiene permisos declarativos y reduce errores de autorización.
+Así, añadimos una capa de control de acceso declarativo: los permisos de cada endpoint están explícitos vía decoradores, lo que mejora la legibilidad y reduce errores de permiso.
 En términos de seguridad de datos, las contraseñas se almacenan con hashing \texttt{bcrypt} y \textit{salt} aleatorio. Al registrar un usuario, la contraseña se encripta; al validar credenciales en login se usa \texttt{bcrypt.compare()} contra el hash guardado, ya sea mediante un hook \texttt{@BeforeInsert} en la entidad de TypeORM o desde el servicio de autenticación.
 
 Los tokens JWT se firman con una clave segura definida en variables de entorno (\texttt{JWT\_SECRET}), usando algoritmo \texttt{HS256}. La expiración se configura (p. ej., 1–7 días) mediante \texttt{signOptions.expiresIn} en \texttt{JwtModule} \parencite{raguilera_jwt_nestjs}, equilibrando seguridad y usabilidad.

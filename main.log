@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  23 JAN 2026 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  23 JAN 2026 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,7 +963,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 198.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 202.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (main.aux
@@ -974,26 +974,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Info: Redefining \. on input line 202.
+LaTeX Info: Redefining \% on input line 202.
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\spanish-apa.lbx
@@ -1016,8 +1016,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 198.
-Package biblatex Info: Reference segment=0 on input line 198.
+Package biblatex Info: Reference section=0 on input line 202.
+Package biblatex Info: Reference segment=0 on input line 202.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1072,16 +1072,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 198.
-Package microtype Info: Applying patch `item' on input line 198.
-Package microtype Info: Applying patch `toc' on input line 198.
-Package microtype Info: Applying patch `eqnum' on input line 198.
+LaTeX Info: Redefining \microtypecontext on input line 202.
+Package microtype Info: Applying patch `item' on input line 202.
+Package microtype Info: Applying patch `toc' on input line 202.
+Package microtype Info: Applying patch `eqnum' on input line 202.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 198.
+Package microtype Warning: Unable to apply patch `footnote' on input line 202.
 
-Package microtype Info: Applying patch `verbatim' on input line 198.
-LaTeX Info: Redefining \microtypesetup on input line 198.
+Package microtype Info: Applying patch `verbatim' on input line 202.
+LaTeX Info: Redefining \microtypesetup on input line 202.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1091,35 +1091,99 @@ Package microtype Info: Using default expansion set `alltext-nott'.
 Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Adjustment of character kerning enabled.
+Package microtype Info: Using default kerning set `alltext'.
 (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring ON on input line 198.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 202.
+
+Package hyperref Info: Link coloring ON on input line 202.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count511
-Package hyperref Info: Option `pageanchor' set `false' on input line 207.
- (preliminares/1_portada.tex
+Package hyperref Info: Option `pageanchor' set `false' on input line 211.
+(preliminares/1_portada.tex
 <imagenes/PUCEM_LOGO.png, id=6, 355.82938pt x 75.78313pt>
 File: imagenes/PUCEM_LOGO.png Graphic file (type png)
 <use imagenes/PUCEM_LOGO.png>
 Package pdftex.def Info: imagenes/PUCEM_LOGO.png  used on input line 9.
 (pdftex.def)             Requested size: 399.29494pt x 85.04301pt.
- [1
 
-{C:/Users/luxta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./imagenes/PUCEM_LOGO.png>]) (preliminares/2_certificaion_tutor.tex [1]) (preliminares/3_acta_aprobacion_tribunal.tex
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/15' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 17.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/13' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 18.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/15' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 30.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/11' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 46.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/11' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 46.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/13.2' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 65.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/13.2' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 65.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/13' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+[1
+
+{C:/Users/luxta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./imagenes/PUCEM_LOGO.png>]) (preliminares/2_certificaion_tutor.tex
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 6.
+
+[1]) (preliminares/3_acta_aprobacion_tribunal.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 24.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/7' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 24.
- (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+(C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 24.
@@ -1140,12 +1204,49 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
- [1]) (preliminares/4_declaracion_originalidad.tex [1]) (preliminares/5_declaracion_derechos_autor.tex [1]) (preliminares/6_dedicatoria.tex [1]) (preliminares/7_agradecimientos.tex [1]) (preliminares/8_resumen_abstract.tex [1] [2])
-Package hyperref Info: Option `pageanchor' set `true' on input line 217.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/7' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/7' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 24.
+
+[1]) (preliminares/4_declaracion_originalidad.tex [1]) (preliminares/5_declaracion_derechos_autor.tex [1]) (preliminares/6_dedicatoria.tex [1]) (preliminares/7_agradecimientos.tex [1]) (preliminares/8_resumen_abstract.tex
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/it/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 12.
+
+[1] [2])
+Package hyperref Info: Option `pageanchor' set `true' on input line 221.
  (main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1181,64 +1282,79 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 Cap\'{\i }tulo 1.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/it/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 4.
+
 [8
 
 ] [9]) (capitulos/2_metodos.tex [10]
 Cap\'{\i }tulo 2.
 [11
 
-] [12] [13] [14] [15] [16] (imagenes/frontend_prototipo.tikz) [17] (imagenes/web_panel_prototipo.tikz) [18] [19] [20] (imagenes/backend_arquitectura.tikz) [21] [22] (imagenes/despliegue_arquitectura.tikz) [23] (imagenes/diagrama_bd.tikz) [24]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [25] [26] [27] (imagenes/auth_rbac.tikz) [28] [29]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 312.
- [30]
-Underfull \hbox (badness 1735) in paragraph at lines 341--342
+] [12] [13] [14] [15] [16] (imagenes/frontend_prototipo.tikz) [17] (imagenes/web_panel_prototipo.tikz) [18] [19] [20] (imagenes/backend_arquitectura.tikz) [21] [22] (imagenes/despliegue_arquitectura.tikz) [23] (imagenes/diagrama_bd.tikz
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 18.
+
+) [24]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/cmtt/m/n/12' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 267.
+
+[25] [26] [27] (imagenes/auth_rbac.tikz) [28] [29] [30]
+Underfull \hbox (badness 1735) in paragraph at lines 318--319
 []\T1/ptm/m/n/12 (+20) Los to-kens JWT se fir-man con una cla-ve se-gu-ra de-fi-ni-da en va-ria-bles de en-torno
  []
 
-[31] [32] [33]
-Overfull \hbox (28.38431pt too wide) in paragraph at lines 366--367
+[31] [32]
+Overfull \hbox (28.38431pt too wide) in paragraph at lines 343--344
 []\T1/ptm/m/n/12 (-20) El ad-mi-nis-tra-dor ges-tio-na re-par-ti-do-res pen-dien-tes con \T1/cmtt/m/n/12 GET /users?role=DELIVERY&pending=true
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 366--367
+Underfull \hbox (badness 2376) in paragraph at lines 343--344
 \T1/ptm/m/n/12 (+20) y los aprue-ba con \T1/cmtt/m/n/12 PATCH /users/id/approve\T1/ptm/m/n/12 (+20) , ade-más de ad-mi-nis-trar ca-tá-lo-go (\T1/cmtt/m/n/12 POST
  []
 
-(imagenes/secuencia_pedido.tikz) [34] [35] [36] [37] [38]) (capitulos/3_resultados.tex [39] [40]
+(imagenes/secuencia_pedido.tikz) [33] [34] [35] [36] [37] [38]) (capitulos/3_resultados.tex [39]
 Cap\'{\i }tulo 3.
-[41
+[40
 
 ]
-<imagenes/cronograma.png, id=436, 633.86812pt x 429.10312pt>
+<imagenes/cronograma.png, id=420, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
 Package pdftex.def Info: imagenes/cronograma.png  used on input line 57.
 (pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
-) (capitulos/4_discucion.tex [42] [43 <./imagenes/cronograma.png>] [44]
+) (capitulos/4_discucion.tex [41] [42 <./imagenes/cronograma.png>] [43]
 Cap\'{\i }tulo 4.
-[45
+[44
 
-] [46]) (capitulos/5_conclusiones.tex [47]
+] [45]) (capitulos/5_conclusiones.tex [46] [47]
 Cap\'{\i }tulo 5.
 ) [48
 
-] [49] [50
+] [49]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 262.
+
+[50
 
 ] (apendices.tex [51]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=495, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=483, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-<imagenes/diagramaflujo.png, id=496, 6504.3pt x 12464.5675pt>
+<imagenes/diagramaflujo.png, id=484, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
 Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 42.
@@ -1260,17 +1376,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39790 strings out of 467871
- 746262 string characters out of 5418376
- 1698007 words of memory out of 5000000
- 67591 multiletter control sequences out of 15000+600000
- 691165 words of font info for 262 fonts, out of 8000000 for 9000
+ 39454 strings out of 467871
+ 744031 string characters out of 5418376
+ 1676329 words of memory out of 5000000
+ 67269 multiletter control sequences out of 15000+600000
+ 689441 words of font info for 263 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,94p,1513b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\luxta\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\luxta\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\luxta\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (63 pages, 1471555 bytes).
+ <C:\Users\luxta\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (63 pages, 1451713 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 178 named destinations out of 1000 (max. 500000)
- 75305 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 72289 words of extra memory for PDF output out of 74296 (max. 10000000)
 
