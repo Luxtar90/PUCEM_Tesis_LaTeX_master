@@ -1,27 +1,66 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}Introducción}{6}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Método}{8}{chapter.2}%
-\contentsline {section}{Diseño de la investigación}{8}{chapter.2}%
-\contentsline {section}{Población y muestra}{10}{chapter.2}%
-\contentsline {section}{Técnicas e instrumentos de recolección de datos}{10}{chapter.2}%
-\contentsline {section}{Procedimiento}{11}{chapter.2}%
-\contentsline {subsection}{Diseño y Desarrollo de una Plataforma de Pedidos y Entregas Multinegocio}{12}{chapter.2}%
-\contentsline {subsubsection}{Diseño y desarrollo del frontend (React Native + Expo)}{12}{chapter.2}%
-\contentsline {subsubsection}{Diseño y desarrollo del panel web (Next.js + Tailwind CSS)}{13}{figure.caption.5}%
-\contentsline {subsubsection}{Diseño y desarrollo del backend (NestJS, capas, módulos)}{15}{figure.caption.6}%
-\contentsline {subsubsection}{Diseño de la base de datos (modelo relacional, multinegocio)}{19}{figure.caption.8}%
-\contentsline {subsubsection}{Roles, permisos y seguridad (JWT, RBAC)}{23}{figure.caption.9}%
-\contentsline {subsubsection}{Flujo funcional (proceso de pedido de punta a punta)}{29}{lstnumber.-3.7}%
-\contentsline {subsubsection}{Estado actual del desarrollo}{32}{figure.caption.11}%
-\contentsline {subsubsection}{Resumen del procedimiento}{33}{figure.caption.11}%
-\contentsline {subsubsection}{Características pendientes y futuras}{33}{figure.caption.11}%
-\contentsline {section}{Análisis de datos}{35}{figure.caption.11}%
-\contentsline {section}{Consideraciones éticas}{35}{figure.caption.11}%
-\contentsline {chapter}{\numberline {3}Resultados Esperados}{37}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Costo Estimado y Financiamiento}{38}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Cronograma de Actividades}{39}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Resultados}{40}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Discusión}{41}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{44}{chapter.8}%
-\contentsline {chapter}{Referencias bibliográficas}{46}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{47}{appendix.Alph1}%
+\contentsline {chapter}{Certificación del Tutor}{1}{section*.1}%
+\contentsline {chapter}{Acta de aprobación del Tribunal}{1}{section*.2}%
+\contentsline {chapter}{Declaración de Originalidad}{1}{section*.3}%
+\contentsline {chapter}{Declaración de Derecho del Autor}{1}{section*.4}%
+\contentsline {chapter}{Dedicatoria}{1}{section*.5}%
+\contentsline {chapter}{Agradecimientos}{1}{section*.6}%
+\contentsline {chapter}{Resumen}{1}{section*.7}%
+\contentsline {chapter}{Abstract}{1}{section*.7}%
+\contentsline {chapter}{Lista de Apéndices}{7}{chapter*.12}%
+\contentsline {chapter}{\numberline {1}Introducción}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contexto y Relevancia}{8}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Gastronomía como motor cultural y económico}{8}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Estructura empresarial en Portoviejo}{8}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Problemática y Desafíos}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Baja adopción de tecnologías digitales}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Factores agravantes}{9}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Brecha y Necesidades}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Propuesta de Solución}{10}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Método}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Operacionalización de variables y criterios}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Diseño de la investigación}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Enfoque y alcance}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Triangulación y validez}{12}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Proceso ágil y sprints}{13}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Definiciones operativas y criterios}{13}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Población y muestra}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Población}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Muestra}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Criterios de inclusión y exclusión}{14}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Técnicas e instrumentos de recolección de datos}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Técnicas aplicadas}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Instrumentos}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Diseño de instrumentos}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Encuestas}{15}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Entrevistas}{15}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Pruebas de usabilidad}{15}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Piloto y SUS}{15}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Gestión y organización de datos}{16}{subsection.2.4.8}%
+\contentsline {section}{\numberline {2.5}Procedimiento}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Diseño y Desarrollo de una Plataforma de Pedidos y Entregas Multinegocio}{16}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}Diseño y desarrollo del frontend (React Native + Expo)}{16}{subsubsection.2.5.1.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.2}Diseño y desarrollo del panel web (Next.js + Tailwind CSS)}{18}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.3}Diseño y desarrollo del backend (NestJS, capas, módulos)}{19}{subsubsection.2.5.1.3}%
+\contentsline {subsubsection}{\numberline {2.5.1.4}Diseño de la base de datos (modelo relacional, multinegocio)}{24}{subsubsection.2.5.1.4}%
+\contentsline {subsubsection}{\numberline {2.5.1.5}Roles, permisos y seguridad (JWT, RBAC)}{27}{subsubsection.2.5.1.5}%
+\contentsline {subsubsection}{\numberline {2.5.1.6}Flujo funcional (proceso de pedido de punta a punta)}{32}{subsubsection.2.5.1.6}%
+\contentsline {subsubsection}{\numberline {2.5.1.7}Estado actual del desarrollo}{35}{subsubsection.2.5.1.7}%
+\contentsline {subsubsection}{\numberline {2.5.1.8}Resumen del procedimiento}{37}{subsubsection.2.5.1.8}%
+\contentsline {subsubsection}{\numberline {2.5.1.9}Características pendientes y futuras}{37}{subsubsection.2.5.1.9}%
+\contentsline {section}{\numberline {2.6}Análisis de datos}{38}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Consideraciones éticas}{39}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Resultados}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Resultados Esperados}{41}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Costo Estimado y Financiamiento}{42}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Cronograma de Actividades}{42}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Presentación de Resultados}{44}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Discusión}{45}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Principales}{48}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Importancia de la transformación digital}{48}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Viabilidad de la plataforma SaaS}{48}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Recomendaciones y Trabajo Futuro}{49}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Alianzas y participación de actores}{49}{subsection.5.2.1}%
+\contentsline {chapter}{Referencias bibliográficas}{51}{chapter*.23}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{52}{appendix.Alph1}%

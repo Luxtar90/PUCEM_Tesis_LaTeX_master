@@ -39,7 +39,7 @@
 \fastcompilefalse
 
 % Idioma y codificación
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-noshorthands]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -95,7 +95,8 @@
 \usepackage{longtable}
 % Tipografía y cortes de línea mejorados
 \iffastcompile\else
-\usepackage{microtype}
+\usepackage[protrusion=true,expansion=true,tracking=false,spacing=false,kerning=true]{microtype}
+\microtypecontext{protrusion=basictext}
 \fi
 
 % Hipervínculos y formato de referencias
@@ -187,6 +188,9 @@
 \setlength{\parskip}{0.5em}
 \emergencystretch=6em
 
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
 % Si se desea personalizar la lista de contenido, descomentar:
 % \usepackage{tocloft}
 
@@ -201,6 +205,7 @@
 \counterwithout{table}{chapter}
 
 % Portada y preliminares (estos archivos deben estar presentes)
+\hypersetup{pageanchor=false}
 \input{preliminares/1_portada}
 \input{preliminares/2_certificaion_tutor}
 \input{preliminares/3_acta_aprobacion_tribunal}
@@ -209,6 +214,8 @@
 \input{preliminares/6_dedicatoria}
 \input{preliminares/7_agradecimientos}
 \input{preliminares/8_resumen_abstract}
+\clearpage
+\hypersetup{pageanchor=true}
 
 % Índices automáticos
 \iffastcompile
@@ -223,7 +230,9 @@
 \fi
 
 \iffastcompile\else
+\phantomsection
 \chapter*{Lista de Apéndices}
+\addcontentsline{toc}{chapter}{Lista de Apéndices}
 \begin{itemize}
     \item Ingresar Manualmente índice de Apéndice
 \end{itemize}
