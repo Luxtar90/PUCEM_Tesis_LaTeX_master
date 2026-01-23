@@ -1,0 +1,61 @@
+% -------------------------------------------------------------
+% Archivo de estilo LaTeX para formatos de títulos PUCEM
+% Autor de la plantilla:
+% Ing. José Naranjo, M.Eng.
+% Máster en Ingeniería en Seguridad de la Información
+% Ingeniero en Electrónica y Redes de Información
+% Docente de la Carrera de Software - PUCEM
+% Fecha: 2025
+% Descripción:
+%    Este archivo define formatos de títulos sin numeración,
+%    espaciado APA 7ma edición, uso de fuente Times New Roman,
+%    y estilos personalizados para capítulos, secciones y niveles
+%    inferiores. Es de libre uso para estudiantes y docentes.
+% -------------------------------------------------------------
+
+% Archivo de estilo para títulos PUCEM sin numeración y con formato específico
+
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+
+% Fuente Times New Roman (APTO PARA APA)
+\usepackage{mathptmx}
+
+
+% ---------------------------------------------------
+% FORMATO DE TÍTULOS APA / PUCEM
+% ---------------------------------------------------
+
+\titleformat{\chapter}[block]
+  {\normalfont\bfseries\centering\fontsize{12pt}{14pt}\selectfont\singlespacing}
+  {}{0pt}{}
+\titlespacing*{\chapter}{0pt}{24pt}{24pt}
+
+\titleformat{\section}[block]
+  {\normalfont\bfseries\fontsize{12pt}{14pt}\selectfont\singlespacing}
+  {}{0pt}{}
+\titlespacing*{\section}{0pt}{18pt}{12pt}
+
+\titleformat{\subsection}[block]
+  {\normalfont\itshape\bfseries\fontsize{12pt}{14pt}\selectfont\singlespacing}
+  {}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+\titleformat{\subsubsection}[block]
+  {\normalfont\bfseries\fontsize{12pt}{14pt}\selectfont\singlespacing}
+  {}{0pt}{}
+\titlespacing*{\subsubsection}{36pt}{12pt}{6pt}
+
+\titleformat{\paragraph}[block]
+  {\normalfont\itshape\bfseries\fontsize{12pt}{14pt}\selectfont\singlespacing}
+  {}{0pt}{}
+\titlespacing*{\paragraph}{36pt}{6pt}{6pt}
+
+% Quitar numeración APA
+\setcounter{secnumdepth}{0}
+
+% Doble espaciado general
+\AtBeginDocument{\doublespacing}
+
+\endinput

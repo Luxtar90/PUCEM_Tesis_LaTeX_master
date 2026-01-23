@@ -1,0 +1,25 @@
+\begingroup\shorthandoff{< >}
+\begin{tikzpicture}[scale=0.9, every node/.style={align=center, transform shape}]
+\tikzset{
+  client/.style={draw, rounded corners, fill=gray!15, minimum width=3.6cm, minimum height=0.9cm},
+  comp/.style={draw, rounded corners, fill=blue!10, minimum width=3.6cm, minimum height=0.9cm},
+  api/.style={draw, rounded corners, fill=green!15, minimum width=3.6cm, minimum height=0.9cm},
+  db/.style={draw, rounded corners, fill=orange!20, minimum width=3.6cm, minimum height=0.9cm}
+}
+% clientes (izquierda)
+\node[client] (clientm) at (-5,1) {Cliente App};
+\node[client] (adminw) at (-5,-1) {Admin Web};
+% componentes (centro y derecha)
+\node[comp] (proxy) at (0,0) {Proxy inverso (Nginx)};
+\node[api]  (api)   at (5,0) {API (NestJS)};
+\node[db]   (db)    at (10,0) {DB (PostgreSQL)};
+% flechas
+\draw[-latex] (clientm) -- (proxy) node[midway, above] {HTTPS};
+\draw[-latex] (adminw)  -- (proxy) node[midway, below] {HTTPS};
+\draw[-latex] (proxy)   -- (api)   node[midway, above] {TLS};
+\draw[-latex] (api)     -- (db)    node[midway, above] {TCP};
+% contenedor de infraestructura
+\node[draw, dashed, rounded corners, inner sep=10pt, fit={(proxy) (api) (db)}] (infra) {};
+\node at (5,-2) {Hetzner cloud (VPS)};
+\end{tikzpicture}
+\endgroup

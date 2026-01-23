@@ -1,0 +1,46 @@
+\begingroup\shorthandoff{< >}
+\begin{tikzpicture}[every node/.style={align=center, transform shape}, node distance=1.2cm and 1.4cm]
+\tikzset{
+  mod/.style={draw, rounded corners, fill=blue!10, minimum width=4.0cm, minimum height=1.6cm},
+  client/.style={draw, rounded corners, fill=gray!15, minimum width=3.6cm, minimum height=0.9cm},
+  concern/.style={draw, rounded corners, fill=purple!20, minimum width=3.6cm, minimum height=0.9cm},
+  dbnode/.style={draw, rounded corners, fill=orange!20, minimum width=6.4cm, minimum height=1.5cm}
+}
+\node[font=\bfseries] (title) {Arquitectura Backend (NestJS)};
+
+\node[client, below=0.9cm of title] (mobile) {App móvil};
+\node[client, right=8.6cm of mobile] (adminweb) {Panel web};
+
+\node[mod, below=1.1cm of mobile] (auth) {Auth\\Controller\\Service\\Repo};
+\node[mod, right=of auth] (users) {Users\\Controller\\Service\\Repo};
+\node[mod, right=of users] (products) {Products\\Controller\\Service\\Repo};
+\node[mod, below=1.0cm of users] (orders) {Orders\\Controller\\Service\\Repo};
+\node[mod, right=of orders] (delivery) {Delivery\\Controller\\Service\\Repo};
+
+\node[dbnode, below=1.2cm of orders] (db) {DB (PostgreSQL)};
+
+\node[draw, dashed, rounded corners, inner sep=8pt, fit={(auth) (users) (products) (orders) (delivery)}] (api) {};
+
+\node[concern, left=1.6cm of api.west] (jwt) {JWT strategy};
+\node[concern, below=0.7cm of jwt] (config) {Config};
+\node[concern, below=0.7cm of config] (validation) {Validation pipe};
+\node[concern, right=1.6cm of api.east] (guards) {Guards};
+\node[concern, below=0.7cm of guards] (interceptors) {Interceptors};
+\node[concern, below=0.7cm of interceptors] (middleware) {Middleware};
+
+\draw[-latex] (mobile.south) -- (auth.north);
+\draw[-latex] (adminweb.south) -- (products.north);
+\draw[-latex] (adminweb.south) -- (users.north);
+\draw[-latex] (auth.south) -- (db.north);
+\draw[-latex] (users.south) -- (db.north);
+\draw[-latex] (products.south) -- (db.north);
+\draw[-latex] (orders.south) -- (db.north);
+\draw[-latex] (delivery.south) -- (db.north);
+\draw[-latex, dashed] (jwt.east) -- (api.west);
+\draw[-latex, dashed] (config.east) -- (api.west);
+\draw[-latex, dashed] (validation.east) -- (api.west);
+\draw[-latex, dashed] (guards.west) -- (api.east);
+\draw[-latex, dashed] (interceptors.west) -- (api.east);
+\draw[-latex, dashed] (middleware.west) -- (api.east);
+\end{tikzpicture}
+\endgroup

@@ -1,0 +1,256 @@
+% -----------------------------------------------------------------------------
+% Plantilla de Tesis - Pontificia Universidad Católica del Ecuador Sede Manabí 
+% Carrera de Software
+% https://pucem.edu.ec
+%
+% Autor de la plantilla:
+% Ing. José Naranjo, M.Eng.
+% Máster en Ingeniería en Seguridad de la Información
+% Ingeniero en Electrónica y Redes de Información
+%
+% Descripción:
+% Esta plantilla en LaTeX ha sido desarrollada para facilitar la redacción de tesis,
+% trabajos de grado y documentos académicos bajo los lineamientos de la 
+% PUCEM - Carrera de Software.
+% 
+% Importante: 
+% Esta plantilla NO es un recurso oficial de la PUCEM, pero está basada fielmente 
+% en la estructura y recomendaciones del siguiente documento institucional: 
+% “2023-1 Normativa de UIC 2022 V2”.
+%   
+% Objetivo:
+% Ofrecer a la comunidad una alternativa moderna y flexible para la elaboración 
+% de documentos académicos en LaTeX, respetando normas de formato 
+% (APA 7ma edición, márgenes, idioma, listas, bibliografía, etc.).
+%
+% Instrucciones:
+% - Modifique únicamente lo necesario para su proyecto.
+% - NO elimine paquetes ni comandos críticos a menos que comprenda su función.
+% - Los archivos de contenido (portada, capítulos, apéndices, etc.) deben existir.
+% - Revise los comentarios críticos marcados a lo largo del código.
+% -----------------------------------------------------------------------------
+
+\documentclass[12pt,letterpaper,oneside]{report}
+
+% -------------------------- CONFIGURACIÓN GENERAL ----------------------------
+
+% Modo de compilación rápida
+\newif\iffastcompile
+\fastcompilefalse
+
+% Idioma y codificación
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Bibliografía APA 7ma edición
+\iffastcompile
+  \newcommand{\addbibresource}[1]{}
+  \newcommand{\printbibliography}[1][]{}
+  \makeatletter
+  \DeclareRobustCommand{\parencite}{\@ifnextchar[{\parencite@opt}{\parencite@noopt}}
+  \newcommand{\parencite@opt}[1]{\@ifnextchar[{\parencite@opt@two{#1}}{\parencite@print}}
+  \newcommand{\parencite@opt@two}[2]{\parencite@print}
+  \newcommand{\parencite@noopt}[1]{\parencite@print}
+  \newcommand{\parencite@print}[1]{\textup{[Cita]}}
+  \DeclareRobustCommand{\textcite}{\@ifnextchar[{\textcite@opt}{\textcite@noopt}}
+  \newcommand{\textcite@opt}[1]{\@ifnextchar[{\textcite@opt@two{#1}}{\textcite@print}}
+  \newcommand{\textcite@opt@two}[2]{\textcite@print}
+  \newcommand{\textcite@noopt}[1]{\textcite@print}
+  \newcommand{\textcite@print}[1]{\textup{Autor}}
+  \makeatother
+\else
+  \usepackage[style=apa,backend=biber,sortcites=true,sorting=nyt,hyperref=true]{biblatex}
+  \DeclareLanguageMapping{spanish}{spanish-apa}
+  \addbibresource{referencias.bib}
+\fi
+\iffastcompile\nofiles\fi
+
+\iffastcompile\else
+\setlength{\bibhang}{1.27cm}
+\setlength{\bibitemsep}{1.2\baselineskip}
+\fi
+
+% Márgenes y papel carta (2.54 cm estándar)
+\usepackage{geometry}
+\geometry{
+  paper=letterpaper,
+  left=2.54cm,
+  right=2.54cm,
+  top=2.54cm,
+  bottom=2.54cm
+}
+
+% Paquetes de matemáticas y símbolos
+\usepackage{amsmath,amssymb}
+
+% Gráficos y tablas
+\iffastcompile
+  \usepackage{graphicx}
+\else
+  \usepackage{graphicx}
+\fi
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+% Tipografía y cortes de línea mejorados
+\iffastcompile\else
+\usepackage{microtype}
+\fi
+
+% Hipervínculos y formato de referencias
+\iffastcompile
+\usepackage[draft]{hyperref}
+\else
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=black, pdfborder={0 0 0}]{hyperref}
+\usepackage{bookmark}
+\fi
+% URLs con cortes automáticos seguros
+\usepackage{xurl}
+
+% Formato de captions para tablas y figuras
+\usepackage{caption}
+\captionsetup[table]{labelfont=bf}
+\captionsetup[figure]{labelfont=bf}
+\captionsetup[figure]{labelformat=default,labelsep=period,name=Figura}
+
+% Listas y apéndices
+\usepackage{enumitem}
+\usepackage{appendix}
+
+% Encabezados y pie de página
+\usepackage{fancyhdr}
+
+% Citas con biblatex (requerido para APA 7ma)
+\usepackage{csquotes}
+% Código fuente con saltos de línea
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{codebg}{RGB}{248,248,248}
+\definecolor{codeborder}{RGB}{220,220,220}
+\definecolor{codekeyword}{RGB}{0,92,160}
+\definecolor{codestring}{RGB}{163,21,21}
+\definecolor{codecomment}{RGB}{106,153,85}
+\definecolor{codenumbers}{RGB}{128,128,128}
+\lstdefinestyle{codebox}{
+  backgroundcolor=\color{codebg},
+  frame=single,
+  rulecolor=\color{codeborder},
+  framerule=0.5pt,
+  framesep=6pt,
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\color{codenumbers}\ttfamily\scriptsize,
+  numbersep=10pt,
+  xleftmargin=4mm,
+  xrightmargin=4mm,
+  breaklines=true,
+  breakatwhitespace=true,
+  showstringspaces=false,
+  columns=fullflexible,
+  keepspaces=true,
+  tabsize=2,
+  keywordstyle=\color{codekeyword}\bfseries,
+  commentstyle=\color{codecomment}\itshape,
+  stringstyle=\color{codestring},
+  aboveskip=1em,
+  belowskip=1em
+}
+\lstset{style=codebox}
+\lstdefinelanguage{TypeScript}%
+  {morekeywords={abstract,as,asserts,async,await,break,case,catch,class,const,continue,debugger,declare,default,delete,do,else,enum,export,extends,false,finally,for,from,function,get,if,implements,import,in,instanceof,interface,let,new,null,of,package,private,protected,public,readonly,return,set,static,super,switch,this,throw,true,try,type,typeof,var,void,while,with,yield},%
+   sensitive=true,%
+   morecomment=[l]//,%
+   morecomment=[s]{/*}{*/},%
+   morestring=[b]',%
+   morestring=[b]"%
+  }
+
+% Diagramas
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc}
+
+% Cambiar nombre de Tabla de Contenido y listas (ajustar según idioma)
+\addto\captionsspanish{
+  \renewcommand{\contentsname}{Tabla de Contenido}
+  \renewcommand{\listfigurename}{Lista de Figuras}
+  \renewcommand{\listtablename}{Lista de Tablas}
+  \renewcommand{\figurename}{Figura}
+  \renewcommand{\tablename}{Tabla}
+}
+
+% Archivo de estilo personalizado con títulos (CRÍTICO: NO quitar)
+\usepackage{PUCEM}
+
+% Configuración de sangría y espacio entre párrafos
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.5em}
+\emergencystretch=6em
+
+% Si se desea personalizar la lista de contenido, descomentar:
+% \usepackage{tocloft}
+
+% -------------------------- INICIO DEL DOCUMENTO ----------------------------
+
+\begin{document}
+
+% Numeración de tablas y figuras continua a lo largo del documento (CRÍTICO para formatos de tesis)
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+% Portada y preliminares (estos archivos deben estar presentes)
+\input{preliminares/1_portada}
+\input{preliminares/2_certificaion_tutor}
+\input{preliminares/3_acta_aprobacion_tribunal}
+\input{preliminares/4_declaracion_originalidad}
+\input{preliminares/5_declaracion_derechos_autor}
+\input{preliminares/6_dedicatoria}
+\input{preliminares/7_agradecimientos}
+\input{preliminares/8_resumen_abstract}
+
+% Índices automáticos
+\iffastcompile
+% omitidos en compilación rápida
+\else
+  \tableofcontents
+  \newpage
+  \listoffigures
+  \newpage
+  \listoftables
+  \newpage
+\fi
+
+\iffastcompile\else
+\chapter*{Lista de Apéndices}
+\begin{itemize}
+    \item Ingresar Manualmente índice de Apéndice
+\end{itemize}
+\fi
+
+\iffastcompile
+\input{capitulos/1_introduccion}
+\input{capitulos/2_metodos}
+\input{capitulos/3_resultados}
+\input{capitulos/4_discucion}
+\input{capitulos/5_conclusiones}
+\else
+\input{capitulos/1_introduccion}
+\input{capitulos/2_metodos}
+\input{capitulos/3_resultados}
+\input{capitulos/4_discucion}
+\input{capitulos/5_conclusiones}
+\fi
+
+
+% --------------------- BIBLIOGRAFÍA APA 7ma EDICIÓN -------------------------
+%\nocite{*} %Para incluir bibliografía no citada en el cuerpo
+\iffastcompile\else
+  \printbibliography[title={Referencias Bibliográficas}]
+  \addcontentsline{toc}{chapter}{Referencias bibliográficas}
+\fi
+
+\input{apendices}
+
+\end{document}

@@ -1,0 +1,414 @@
+\chapter{Método} 
+
+Este capítulo presenta el enfoque metodológico de la investigación, describiendo el diseño, la población y muestra, las técnicas e instrumentos de recolección de datos, el procedimiento seguido y las consideraciones éticas, con el objetivo de asegurar claridad, validez y replicabilidad.
+
+Asimismo, se detallan los criterios de operacionalización utilizados para medir constructos clave como digitalización, eficiencia operativa y usabilidad.
+
+La digitalización se entiende como el grado de incorporación de herramientas tecnológicas en procesos administrativos y operativos; la eficiencia operativa se mide por indicadores de tiempo, errores y costos en tareas de gestión; la usabilidad se evalúa mediante métricas estandarizadas y tareas controladas.
+
+La estructura del capítulo sigue una lógica progresiva: primero se define el diseño metodológico general; luego se caracteriza el universo de estudio y la muestra; a continuación se explican las técnicas e instrumentos de recolección; se describe el procedimiento técnico de desarrollo e implementación de la plataforma; finalmente se presentan el análisis de datos y las consideraciones éticas que sustentan la integridad del estudio.
+
+
+\section{Diseño de la investigación}
+
+
+La investigación se desarrolló bajo un enfoque mixto que integra métodos cuantitativos y cualitativos para obtener una comprensión integral del problema. El componente cuantitativo permitió recolectar y analizar datos estructurados sobre digitalización, eficiencia operativa y usabilidad del sistema; el componente cualitativo profundizó en percepciones, necesidades y experiencias de los usuarios.
+
+El estudio es de carácter aplicado, orientado al diseño de una solución tecnológica concreta para las PYMES gastronómicas de Portoviejo. Se adoptó un diseño no experimental, de tipo observacional, en el que las variables no fueron manipuladas deliberadamente y los fenómenos se analizaron en su contexto natural.
+
+El alcance es descriptivo y exploratorio: describe la situación actual de los procesos operativos y del nivel de digitalización de las PYMES, y explora un problema poco estudiado en el contexto local. Para el desarrollo de la plataforma SaaS se siguió un enfoque iterativo basado en Scrum, que facilitó la mejora progresiva del sistema mediante retroalimentación continua de usuarios.
+
+La decisión de combinar enfoques cuantitativo y cualitativo obedece a la necesidad de captar tanto el rendimiento del sistema (medible y comparable) como las percepciones y expectativas de los actores involucrados.
+
+La triangulación de fuentes y técnicas reduce sesgos y fortalece la validez interna: los resultados de encuestas y métricas se contrastan con hallazgos de entrevistas y observaciones para obtener conclusiones integrales.
+
+La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad, y ajustar funcionalidades a partir de la retroalimentación.
+
+Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
+
+Se establecieron definiciones operativas para las variables de interés y criterios de éxito del prototipo: reducción de tiempos en tareas administrativas críticas; disminución de errores en registro de pedidos e inventario; mejora en la satisfacción percibida por usuarios medida con escalas estandarizadas. Adicionalmente, se documentaron supuestos y limitaciones del estudio (por ejemplo, el tamaño muestral reducido y el carácter no probabilístico de la muestra), y se aplicaron estrategias de mitigación como la diversidad de técnicas de recolección y la validación cruzada de hallazgos.
+
+\section{Población y muestra}
+
+La población estuvo conformada por Pequeñas y Medianas Empresas del sector gastronómico de la ciudad de Portoviejo, caracterizadas por operar con recursos limitados y por distintos niveles de adopción tecnológica en sus procesos administrativos y operativos.
+
+La muestra se integró por dos PYMES seleccionadas mediante muestreo no probabilístico por conveniencia.
+
+Los criterios de inclusión fueron: disponibilidad de los propietarios, representatividad de sus procesos y disposición a evaluar una solución para la gestión de pedidos, inventarios y atención al cliente.
+
+Esta selección aportó información relevante y contextualizada para el diseño y validación del prototipo.
+
+Para la caracterización de la muestra se recogieron datos básicos del negocio (tamaño, número de empleados, volumen de pedidos, herramientas tecnológicas utilizadas) que permitieron contextualizar los hallazgos.
+
+Se definieron criterios de exclusión (por ejemplo, empresas sin operaciones regulares durante el periodo de estudio o con procesos imposibles de observar) y se especificó el procedimiento de acercamiento y consentimiento informado.
+
+Aunque el tamaño de la muestra es acotado, se priorizó la profundidad del análisis y la pertinencia de los casos seleccionados para validar el prototipo en escenarios reales.
+
+\section{Técnicas e instrumentos de recolección de datos}
+
+Se emplearon técnicas complementarias para recabar información cuantitativa y cualitativa: encuestas estructuradas, entrevistas semiestructuradas, pruebas de usabilidad y observación directa de los procesos internos de las PYMES participantes.
+
+Los instrumentos incluyeron formularios digitales (Google Forms) para encuestas, guías de entrevista revisadas y aprobadas por el tutor, y herramientas de registro y cronometraje durante las pruebas de usabilidad. Se aplicaron métricas estándar de usabilidad, como el System Usability Scale (SUS), junto con indicadores de eficiencia y eficacia para evaluar el desempeño del prototipo.
+
+El diseño de instrumentos siguió buenas prácticas de claridad y neutralidad en la formulación de ítems.
+
+Las encuestas incluyeron preguntas cerradas (escala Likert) y abiertas para capturar tanto opiniones cuantificables como comentarios cualitativos.
+
+Las guías de entrevista se estructuraron por temática (experiencia actual, necesidades, percepción del prototipo) y se aplicaron en sesiones semiestructuradas.
+
+En pruebas de usabilidad se definieron tareas representativas (realizar un pedido, consultar estado de entrega, crear producto en el panel admin) con escenarios controlados y tiempos registrados; se identificaron errores, puntos de fricción y necesidades de mejora.
+
+Previo a la aplicación, se realizó una verificación pilota de comprensión de ítems para detectar ambigüedades y ajustar redacción.
+
+En el caso del SUS, se siguió el procedimiento estándar de puntuación y normalización, interpretando resultados en rangos de aceptabilidad.
+
+Los datos fueron centralizados y organizados para facilitar su análisis, asegurando consistencia entre las diferentes fuentes.
+
+\section{Procedimiento}
+
+Esta sección describe, en orden, el diseño y desarrollo del frontend móvil, del panel web administrativo, del backend con NestJS y del modelo de base de datos relacional. Cada subsección inicia con su objetivo y alcances para facilitar la lectura y ubicar el rol que cumple dentro de la plataforma.
+
+ \subsection{Diseño y Desarrollo de una Plataforma de Pedidos y Entregas Multinegocio}
+ 
+ \subsubsection{Diseño y desarrollo del frontend (React Native + Expo)}
+Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes y repartidores, con navegación predecible, validaciones tempranas y comunicación robusta con la API.
+
+El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código. React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de vida de la app al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero \parencite{campusmvp_expo}.
+
+Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sensores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas \parencite{campusmvp_expo}.
+
+La aplicación ofrece flujos diferenciados para dos roles: Cliente y Repartidor, además de pantallas de inicio de sesión y registro. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros.
+
+Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
+
+\begin{figure}[htbp]
+\centering
+\input{imagenes/frontend_prototipo.tikz}
+\caption{Diagrama de prototipo del frontend móvil}
+\label{fig:frontend-prototipo}
+\end{figure}
+
+
+
+
+La arquitectura del frontend móvil privilegia la simplicidad y la previsibilidad del estado. Se emplea estado local y patrones de elevación de estado donde corresponde, con manejo de formularios controlados y validación básica en cliente (tipos de entrada, obligatoriedad, formatos).
+
+La comunicación con la API se realiza mediante solicitudes HTTP que envían y reciben JSON; se contemplan casos de error (credenciales inválidas, falta de conectividad, respuestas 4xx/5xx) con mensajes claros al usuario y estrategias de reintento cuando es pertinente.
+
+La interfaz se diseñó con principios de consistencia visual y accesibilidad, cuidando contrastes, tamaños de toque y retroalimentación tras acciones.
+
+Para el diseño visual se empleó Tamagui, biblioteca de UI y sistema de estilos compatible con React Native y React web, que provee componentes y temas para construir interfaces coherentes y responsivas \parencite{tamagui_github}.
+
+En el proyecto se estilizaron botones, tarjetas y formularios con componentes Tamagui, logrando consistencia y mantenibilidad. Su enfoque multiplataforma facilita la reutilización futura de componentes en una versión web, así como la personalización temática por negocio.
+
+ \subsubsection{Diseño y desarrollo del panel web (Next.js + Tailwind CSS)}
+Objetivo del panel web: proveer herramientas administrativas para gestionar catálogo, pedidos y repartidores, con formularios validados, vistas responsivas y flujos CRUD claros.
+
+Se desarrolló además un panel web administrativo con React y Next.js. Aunque el panel es interno, se aprovechó el renderizado del lado del servidor (SSR) en vistas específicas de dashboard cuando resultó conveniente.
+
+El estilado se realizó con Tailwind CSS, framework utility-first que permite componer diseños rápidos y consistentes mediante clases utilitarias \parencite{tailwind_es}. Su configuración admite alta personalización, útil para adaptar paletas o temas por cliente.
+% Figura de captura del panel administrativo eliminada a solicitud
+
+\begin{figure}[htbp]
+\centering
+\resizebox{0.9\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
+\caption{Diagrama de prototipo del panel web administrativo}
+\label{fig:web-prototipo}
+\end{figure}
+
+En el panel se aplicaron formularios validados con reglas de negocio simples (campos requeridos, formatos, rangos) y se implementaron flujos habituales de CRUD con confirmaciones y mensajes de éxito/error.
+
+La estructura de navegación organiza secciones por dominio (productos, categorías, pedidos, repartidores) y proporciona filtros básicos (por estado, fecha) para facilitar la gestión. Se cuidó la responsividad para operar en distintos tamaños de pantalla, y se diseñaron tablas y listas con paginación prevista para escenarios de datos voluminosos.
+
+El panel permite crear y editar productos, gestionar categorías y aprobar o rechazar repartidores que solicitan unirse. Los formularios incorporan validaciones de campos; las vistas de lista presentan pedidos en curso y solicitudes pendientes.
+
+Cuando un repartidor se registra desde la app móvil, su cuenta queda "pendiente" hasta la revisión administrativa, tras la cual puede ser habilitada o rechazada, garantizando control de calidad.
+
+Ambos frontends consumen el mismo backend mediante API REST y JSON. La separación de responsabilidades mantiene el frontend enfocado en la experiencia y presentación, mientras la lógica de negocio y la persistencia residen en el backend.
+
+En materia de rendimiento y experiencia, se optimizaron listas y vistas frecuentes y se cuidó la retroalimentación visual en operaciones que pueden tardar (carga de catálogo, envío de pedidos).
+
+Se delinearon buenas prácticas para el manejo de imágenes (compresión, tamaños adecuados) y para el control de estados vacíos y errores de red, mejorando la robustez de la interfaz en condiciones reales.
+
+ \subsubsection{Diseño y desarrollo del backend (NestJS, capas, módulos)}
+Objetivo del backend: exponer servicios estables y seguros, aplicar reglas de negocio y coordinar persistencia con una arquitectura modular mantenible.
+
+El backend se implementó con NestJS, framework de Node.js de arquitectura modular que promueve buenas prácticas mediante el uso de TypeScript, decoradores e inyección de dependencias.
+
+Frente a Express puro, NestJS aporta una estructura clara basada en módulos, controladores y servicios, facilitando la escalabilidad y el mantenimiento del código por dominios de negocio (Usuarios, Productos, Pedidos, Autenticación, entre otros).
+
+Cada módulo agrupa tres componentes fundamentales: un controlador que define endpoints y atiende solicitudes HTTP; un servicio que concentra la lógica de negocio; y una capa de datos o repositorio que interactúa con la base de datos, ya sea mediante un ORM o consultas específicas \parencite{dragosb_lo_mejor_nestjs}.
+
+Siguiendo este patrón, el módulo de Autenticación expone rutas para login y registro en su controlador; el servicio valida credenciales y emite tokens JWT; y se apoya en el módulo de Usuarios para verificar identidad.
+De modo análogo, el módulo de Productos ofrece rutas para listar y crear productos (acción reservada al administrador), mientras su servicio aplica reglas de negocio y sus entidades mapean a tablas mediante el ORM.
+
+La capa de control incluye manejo de errores y respuestas consistentes; se emplean filtros de excepciones para capturar y formatear fallos (validación, autorización, acceso a datos) en códigos HTTP adecuados.
+
+Los servicios encapsulan reglas de negocio con claridad, evitando dependencias con detalles de transporte HTTP.
+
+La configuración de la aplicación se centraliza con lectura de variables de entorno, diferenciando perfiles de ejecución (desarrollo, pruebas, producción) y resguardando credenciales.
+
+El uso integral de TypeScript habilita detección temprana de errores y mejor navegación del código.
+
+Se definieron DTOs para tipar y validar datos de entrada y salida; la integración con class-validator y class-transformer, junto con pipes de validación global, permite rechazar automáticamente solicitudes mal formadas y entregar al controlador datos ya validados.
+
+La inyección de dependencias mantiene el código desacoplado y testeable.
+
+Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y Nest provee instancias adecuadas.
+
+Por ejemplo, OrdersService puede inyectar el servicio de notificaciones o el repositorio de pedidos sin instanciarlos manualmente, siguiendo el principio de inversión de dependencias.
+
+Las responsabilidades se mantienen unidireccionales: el controlador recibe la petición y delega; el servicio ejecuta reglas de negocio y coordina repositorios; y la capa de datos interactúa exclusivamente con la base \parencite{q2bstudio_nestjs_modulos,dragosb_lo_mejor_nestjs}.
+
+Esta separación, alineada con Clean Architecture y DDD, evita mezclas de responsabilidades y facilita el reemplazo de componentes sin afectar capas superiores.
+
+Esta arquitectura favorece la mantenibilidad y la escalabilidad.
+
+Cambios en la forma de acceder a datos (p. ej., migrar de TypeORM a otro ORM o a microservicios) impactan principalmente en la capa de datos.
+
+Asimismo, simplifica las pruebas unitarias al permitir testear servicios o controladores en aislamiento mediante simulaciones.
+
+La persistencia se maneja con TypeORM, integrado mediante @nestjs/typeorm.
+
+Las entidades TypeScript decoradas representan tablas; los repositorios y el QueryBuilder facilitan operaciones sin escribir SQL manual.
+
+TypeORM soporta múltiples motores (PostgreSQL, MySQL, etc.) y ofrece migraciones de esquema; aunque inicialmente se usó sincronización automática, se prevé incorporar migraciones controladas.
+
+La organización por módulos comprende, entre otros: Users (usuarios y roles, integrado con Auth), Products y Categories (gestión de catálogo), Orders (creación, asignación y estados de pedidos), Delivery (operativas de repartidores, según el diseño), y Auth (autenticación JWT y guardias de acceso).
+
+NestJS se integra con Passport.js para la autenticación; se definió una estrategia JWT personalizada (detallada en la sección de seguridad).
+
+Además, se emplearon Guards, Interceptors y Middleware en puntos específicos: un middleware global de registro para depurar peticiones, guards para control de acceso (AuthGuard [jwt] y un guard de roles) e interceptores para formatear respuestas y medir rendimiento.
+
+Se planifica incorporar un interceptor global que mida el tiempo de ejecución y el conteo de accesos.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.85\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
+\caption{Arquitectura modular del backend (NestJS)}
+\label{fig:backend-arquitectura}
+\end{figure}
+
+En validación de datos, se activó un pipe global para que los DTOs sean transformados y verificados antes de llegar a los controladores, lo que robusteció la API ante entradas malformadas.
+
+Se consideran medidas adicionales de endurecimiento para producción, como cabeceras de seguridad, CORS configurado por origen y limitación de tasa de peticiones.
+
+En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación Node independiente.
+
+Se ha contemplado el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción.
+
+De hecho, NestJS sugiere buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la app.
+
+Hemos configurado la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén hardcodeadas, sino definidas externamente.
+
+La decisión fue desplegar el backend en un servidor cloud de Hetzner, aprovechando su relación costo/rendimiento.
+
+Hetzner ofrece VPS escalables a precios muy competitivos y con facturación por horas \parencite{hetzner_cloud}, lo que nos permite alojar nuestra API Node + base de datos de forma eficiente.
+
+La infraestructura prevista es tener la API corriendo (posiblemente en un contenedor Docker) escuchando peticiones HTTPS, y la base de datos SQL (PostgreSQL) corriendo ya sea en el mismo servidor o en un servicio administrado, según las necesidades de escala.
+
+Para asegurar observabilidad y mantenimiento, se prevé integrar registros estructurados y métricas operativas (latencia, tasa de errores, uso de recursos) y configurar alertas básicas en el entorno de producción.
+
+Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.9\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
+\caption{Arquitectura de despliegue y componentes}
+\label{fig:despliegue-arquitectura}
+\end{figure}
+En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de "convención sobre configuración", nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto.
+
+Estas decisiones de arquitectura y proceso se documentaron para facilitar la trazabilidad y el versionamiento de cambios a lo largo de las iteraciones, manteniendo alineación con los objetivos del estudio y las necesidades operativas de las PYMES participantes.
+
+ \subsubsection{Diseño de la base de datos (modelo relacional, multinegocio)}
+Objetivo del modelo de datos: garantizar integridad referencial, consultas eficientes y soporte a multinegocio con segregación lógica por empresa.
+Para esta plataforma se optó por un modelo de base de datos relacional, adecuado para representar las entidades y relaciones propias del dominio (usuarios, productos, pedidos, etc.) garantizando consistencia y permitiendo consultas complejas (p. ej., obtener todos los pedidos de un cliente filtrados por fecha, o los productos más vendidos por categoría).
+
+En particular, usamos un motor SQL (como PostgreSQL) con un esquema relacional tradicional. La decisión de usar un RDBMS sobre una base NoSQL estuvo motivada por la necesidad de integridad referencial (por ejemplo, asegurar que un pedido refiere a un usuario existente, o que un producto pertenece a una categoría válida) y la facilidad para realizar uniones (JOINs) entre tablas para extraer informes o datos combinados, algo muy útil de cara a las futuras métricas y reportes.
+Modelo Entidad‑Relación principal: A grandes rasgos, se definen las siguientes entidades (tablas) en el esquema de datos.
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
+\caption{Diagrama entidad‑relación (ER) del esquema de datos}
+\label{fig:er-diagrama}
+\end{figure}
+
+Usuario: Representa a los usuarios de la plataforma. Incluye id (clave primaria), nombre, email, contraseña encriptada, rol (cliente, repartidor, administrador) y, en el caso de repartidores, un estado de aprobación. El rol se usa para aplicar lógicas diferenciadas; el JWT del usuario incorpora su rol para decisiones de autorización.
+
+Producto: Ítem disponible para pedido con campos como id, nombre, descripción, precio e imagen. Cada producto se asocia a una categoría y, en arquitectura multinegocio, al negocio propietario.
+
+Categoría: Agrupa productos. Contiene id y nombre, pudiendo admitir jerarquías. En enfoque multinegocio, las categorías se vinculan al negocio correspondiente para evitar conflictos y permitir catálogos por empresa.
+
+Pedido: Registra cada orden realizada por un cliente con id, fecha/hora, estado (pendiente, asignado, en camino, entregado, cancelado, etc.), referencia al cliente y, cuando aplica, al repartidor asignado. El detalle del pedido se modela con una tabla de items (OrderItem) que normaliza la relación muchos a muchos con Producto.
+
+Negocio: Representa cada empresa dentro de la plataforma (tenant). Incluye id, nombre, branding (logo, colores), contacto y configuraciones. Otras entidades se relacionan con Negocio para segmentar datos por empresa.
+
+Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
+
+Entidades de soporte: según el alcance, pueden añadirse Pago, Direcciones o Notificaciones.
+
+Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de categorías por negocio). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
+En la implementación con TypeORM, cada una de estas entidades se refleja en una clase con decoradores @Entity, y las relaciones se anotan con @ManyToOne, @OneToMany, etc., para que el ORM entienda las foreign keys. Por ejemplo, la entidad Pedido tendría @ManyToOne(() => User, user => user.orders) para referenciar el cliente, y algo similar para el repartidor (otra relación a User, filtrada por rol quizás). También un @ManyToOne(() => Business, ...) si soportamos multi-negocio en pedidos.
+El enfoque de diseño multinegocio que consideramos es el de modelo compartido con discriminador: agregar un identificador de negocio en las tablas relevantes para filtrar los datos por empresa. Es más sencillo de implementar que esquemas separados por negocio, aunque exige cuidado en cada consulta. Al incluir \texttt{businessId} en Productos, Categorías y Pedidos, todas las consultas deben filtrar por el negocio correspondiente para evitar mezclar datos de distintas empresas \parencite{scalzotto_multitenancy_nestjs}. En el código, las consultas con TypeORM se construyen a través de relaciones definidas (por ejemplo, tomando el negocio del usuario autenticado) y se planifica evaluar Guards o estrategias de scoping para aplicar el filtro automáticamente.
+Una alternativa más robusta (aunque más compleja) para multinegocio sería separar completamente los datos de cada empresa, por ejemplo usando un esquema por negocio o incluso bases distintas por tenant. NestJS/TypeORM soportan multi‑tenancy mediante múltiples conexiones o esquemas, pero dado el alcance inicial se optó por un único esquema con campo discriminador, manteniendo la posibilidad de migrar a otro enfoque si se requiere mayor aislamiento. Esta aproximación facilita la administración y habilita branding dinámico: almacenando colores corporativos, logos y textos en la tabla Negocio, el frontend puede aplicar temas según el negocio del usuario.
+
+Se evaluó el riesgo de filtrado incorrecto en consultas multinegocio y se definieron prácticas de scoping en servicios para minimizar errores (aplicar siempre el \texttt{businessId} del contexto autenticado). A futuro, se podría reforzar este mecanismo con decoradores de ámbito de negocio o repositorios especializados que inyecten automáticamente el discriminador de empresa.
+En cuanto a la integridad referencial se han definido claves foráneas para asegurar la consistencia: por ejemplo, si se elimina o desactiva un negocio, podríamos optar por también desactivar cascada sus productos y categorías asociados (o prevenir la eliminación si tiene pedidos activos, dependiendo de reglas de negocio). Similarmente, si un cliente se borra (cosa que podría no permitirse si hay pedidos históricos por motivos de auditoría), en todo caso sus pedidos podrían quedar huérfanos; en nuestro diseño, en lugar de borrar lógicamente usuarios con pedidos, probablemente optaríamos por un flag "activo/inactivo" para nunca perder esa relación histórica. Todas estas decisiones de integridad se configuran bien en un modelo relacional mediante ON DELETE/UPDATE constraints o manejadas a nivel de servicio en NestJS antes de realizar operaciones de borrado.
+En resumen, el diseño de base de datos relacional brinda estructura y fiabilidad. El modelo multinegocio mediante identificador de empresa en cada entidad principal equilibra simplicidad y extensibilidad: aunque la app actual opera con un único negocio, se sientan las bases para diferenciar datos por cliente empresarial en el futuro. Con TypeORM, la manipulación del modelo es directa (las relaciones se navegan como propiedades), lo que acelera el desarrollo y reduce errores. Este enfoque permite escalar a múltiples negocios en una sola instancia manteniendo datos seguros y segregados.
+
+Finalmente, se prevé definir estrategias de respaldo y recuperación ante desastres acordes al tamaño del despliegue, así como mecanismos de migración segura para cambios de esquema futuros (migraciones versionadas, ventanas de mantenimiento y validación posterior a la actualización).
+
+\subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
+La plataforma implementa un esquema de roles y permisos (RBAC) para garantizar que cada usuario solo realice las acciones que le corresponden \parencite{logto_rbac_docs}. RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
+
+Administrador (ADMIN): Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma. En entornos multinegocio podría existir un administrador por empresa.
+
+Cliente (CLIENTE): Usuario de la app móvil que realiza pedidos. Puede registrarse o iniciar sesión, ver y buscar productos, crear pedidos, consultar su estado y editar su perfil.
+
+Repartidor (DELIVERY): Usuario de la app móvil que toma y entrega pedidos. Puede ver pedidos pendientes, aceptar/declinar encargos, marcar entregas y revisar su historial. Requiere aprobación administrativa antes de operar.
+Estos roles se asignan en la base de datos, ya sea mediante un campo role en la tabla de usuarios o mediante una relación muchos a muchos Usuario-Rol (si quisiéramos soportar múltiples roles por usuario). En este proyecto, dado que los roles son bien diferenciados, optamos por un campo simple enumerado ('ADMIN' | 'CLIENTE' | 'DELIVERY') en la entidad Usuario para la simplicidad.
+
+La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.9\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
+\caption{Flujo de autenticación y autorización}
+\label{fig:auth-rbac}
+\end{figure}
+Para la autenticación y autorización, utilizamos JWT (JSON Web Tokens) como mecanismo de autenticación stateless. JWT es un estándar abierto (RFC 7519) ampliamente utilizado para transmitir información de forma segura en forma de token JSON firmado. De hecho, la autenticación con tokens JWT se ha convertido en un estándar de facto para proteger los endpoints sensibles de aplicaciones web y APIs \parencite{raguilera_jwt_nestjs}. En nuestro sistema, implementamos JWT mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+
+El flujo es el siguiente:
+\begin{enumerate}[label=\arabic*.]
+  \item Un usuario se registra (para nuevos clientes/repartidores) o inicia sesión proporcionando sus credenciales (email/usuario y contraseña).
+  \item El servidor NestJS valida esas credenciales contra la base de datos (la contraseña almacenada está encriptada con bcrypt; durante el login se compara el hash). Si son correctas, el servidor genera un token JWT firmado con nuestra clave secreta y se lo devuelve al cliente.
+  \item Este token incluye en su payload datos básicos del usuario, típicamente su identificador único de usuario y su rol. No incluimos información sensible en el JWT ya que viaja en claro (solo firmado, no cifrado) \parencite{raguilera_jwt_nestjs}; únicamente identificadores y claims necesarios para autorización.
+  \item El cliente (app móvil o panel web) almacena este token, generalmente en memoria o almacenamiento local seguro (en el caso de la app, Expo SecureStore u AsyncStorage; en el caso web, cookies HttpOnly o localStorage con cuidado). En cada petición subsecuente a la API que requiera autenticación, el cliente envía el token en la cabecera Authorization: Bearer.
+  \item El backend, gracias a Passport JWT, intercepta esas peticiones protegidas: la estrategia JWT extrae el token de la cabecera y lo verifica (comprueba firma y validez). Si es válido, decodifica el payload y adjunta esa info del usuario en el objeto Request (por ej., req.user).
+\end{enumerate}
+
+A partir de ahí, los Guards de NestJS determinan si se permite o deniega el acceso:
+\begin{itemize}
+  \item Primero, usamos un guard genérico \texttt{JwtAuthGuard} (que extiende de \texttt{AuthGuard('jwt')} de Nest) para verificar la autenticación. Este guard está aplicado a todas las rutas que requieren un usuario logueado.
+  \item Si el token es inválido o expiró, el guard rechaza la petición automáticamente con código 401 Unauthorized.
+  \item Hemos personalizado este guard para lanzar un mensaje de error en español ("No autorizado. Por favor, inicie sesión") en caso de fallo, usando un código similar al siguiente:
+\end{itemize}
+\begin{lstlisting}[language=TypeScript]
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {
+  handleRequest(err, user, info) {
+    if (err || !user) {
+      throw err || new UnauthorizedException('No autorizado. Por favor, inicie sesion');
+    }
+    return user;
+  }
+}
+\end{lstlisting}
+Este guard utiliza internamente la estrategia JWT definida (la cual, en nuestro AuthService, valida el token y puede que re-fresque algunos datos del usuario si es necesario). Al implementar handleRequest, nos aseguramos de capturar los casos en que Passport no encuentre usuario (token inválido) para siempre lanzar nuestra excepción personalizada \parencite{creapolis_nestjs_2025,dragosb_lo_mejor_nestjs}. De esta manera, ningún endpoint sensible será ejecutado sin un JWT válido.
+En segundo lugar, para la autorización por roles (RBAC) se implementó un guard adicional, por ejemplo RolesGuard, combinado con un decorador personalizado @Roles(...) que se añade a controladores o métodos indicando los roles permitidos. Al ejecutarse, RolesGuard lee los metadatos requeridos y los compara con el rol de \texttt{req.user} (poblado por JwtAuthGuard). Si el usuario no cumple, se lanza un Forbidden (403). Este patrón recomendado por NestJS — definir un guard genérico y roles por ruta con metadatos — mejora legibilidad y reduce errores \parencite{stackoverflow_roleguards}. Por ejemplo:
+ 	\begin{lstlisting}[language=TypeScript]
+@UseGuards(JwtAuthGuard, RolesGuard)
+@Roles('ADMIN')
+@Post('/product')
+createProduct(...) { ... }
+ 	\end{lstlisting}
+ 	Esto aseguraría que solo un admin autenticado pueda acceder a la ruta de crear producto. Similarmente, podríamos etiquetar rutas de repartidor (por ejemplo, aceptar pedido) con @Roles('DELIVERY'), etc. El RolesGuard simplemente hace:
+ 	\begin{lstlisting}[language=TypeScript]
+canActivate(context: ExecutionContext): boolean {
+  const requiredRoles = this.reflector.get<Role[]>('roles', context.getHandler());
+  if (!requiredRoles) return true;
+  const user = context.switchToHttp().getRequest().user;
+  return requiredRoles.some(role => user.role === role);
+}
+ 	\end{lstlisting}
+ 	(Esto es un ejemplo simplificado). Así, añadimos una capa de control de acceso declarativo: los permisos de cada endpoint están explícitos en el código vía decoradores, lo que mejora la legibilidad y reduce errores de permiso.
+En términos de seguridad de datos, las contraseñas se almacenan con hashing \texttt{bcrypt} y \textit{salt} aleatorio. Al registrar un usuario, la contraseña se encripta; al validar credenciales en login se usa \texttt{bcrypt.compare()} contra el hash guardado, ya sea mediante un hook \texttt{@BeforeInsert} en la entidad de TypeORM o desde el servicio de autenticación.
+
+Los tokens JWT se firman con una clave segura definida en variables de entorno (\texttt{JWT\_SECRET}), usando algoritmo \texttt{HS256}. La expiración se configura (p. ej., 1–7 días) mediante \texttt{signOptions.expiresIn} en \texttt{JwtModule} \parencite{raguilera_jwt_nestjs}, equilibrando seguridad y usabilidad.
+
+El transporte entre frontend y backend se realiza sobre \texttt{HTTPS} para proteger tokens y datos personales.
+
+Las validaciones de negocio verifican contexto y roles en operaciones sensibles; por ejemplo, al marcar entregado, el servicio comprueba \texttt{order.assignedTo == user.id} antes de aceptar el cambio (\texttt{markAsDelivered(orderId, user)}).
+Cabe destacar que gran parte de esta infraestructura de seguridad se apalanca en las facilidades de NestJS. La documentación y guías técnicas disponibles describen la integración de JWT y Passport, las cuales seguimos adaptando a nuestras necesidades específicas (como mensajes en español, y la estructura de usuarios/roles propia) \parencite{creapolis_nestjs_2025,dragosb_lo_mejor_nestjs}. Este enfoque modular nos permite extender la seguridad fácilmente: si se quisiera integrar OAuth2 o autenticación con terceros en el futuro, se añadiría otra estrategia Passport sin reescribir todo el auth. O, si se quisiera implementar permisos más granulares (por ejemplo, nivel de recurso), NestJS Guards e interceptors podrían manejarlo.
+En resumen, JWT y RBAC son la columna vertebral de la seguridad de nuestra plataforma. JWT brinda una forma stateless de autenticar peticiones – eliminando la necesidad de mantener sesiones en el servidor – y RBAC garantiza que cada endpoint sólo pueda ser usado por los roles adecuados. Este modelo nos da confianza en que, por ejemplo, ningún cliente podrá acceder a los servicios de administración aunque intente manipular la app, y ningún repartidor podrá leer o modificar datos que no le conciernen (como listado de usuarios, o pedidos que no le fueron asignados). La combinación de estas medidas crea una capa de seguridad profunda, desde el almacenamiento cifrado de contraseñas, la autenticación robusta en cada request, hasta la autorización fina por rol y validaciones de negocio adicionales.
+
+\subsubsection{Flujo funcional (proceso de pedido de punta a punta)}
+A continuación se describe el flujo funcional de la plataforma, integrando frontend móvil, frontend web, backend, base de datos y roles según el diagrama de secuencia elaborado. El caso típico inicia con el registro del usuario desde la app móvil, donde puede optar por Cliente o aspirante a Repartidor y enviar sus datos mediante \texttt{POST /auth/register}. El backend valida la petición en el controlador de autenticación, crea el usuario en la base de datos y encripta la contraseña; si el registro es de repartidor, se marca como pendiente de aprobación.
+
+Tras el registro, el usuario realiza inicio de sesión con \texttt{POST /auth/login}. Si las credenciales son válidas, el servicio de autenticación genera un JWT firmado con \texttt{userId} y \texttt{role} \parencite{raguilera_jwt_nestjs}, que la app almacena y adjunta en futuras peticiones (\texttt{Authorization: Bearer ...}). En caso de error, se retorna un 401 con mensaje apropiado. Una vez autenticado, el acceso y las vistas dependen del rol.
+
+Como Cliente, la app muestra el catálogo de productos y consulta \texttt{GET /products}. El backend, protegido con JwtAuthGuard, obtiene los productos del servicio, filtrando por negocio si corresponde en contextos multinegocio. El cliente puede buscar por categorías y gestionar un carrito local.
+
+Como Repartidor, si la cuenta está pendiente de aprobación se rechaza el acceso con un mensaje de revisión; una vez aprobado, el repartidor inicia sesión y accede a la lista de pedidos disponibles mediante \texttt{GET /orders/available}, protegida con JwtAuthGuard y RolesGuard('DELIVERY'). El backend devuelve los pedidos en estado pendiente, posiblemente filtrados por negocio.
+
+El Cliente crea un pedido con \texttt{POST /orders} enviando items, cantidades, dirección y notas, autenticado con JWT. El controlador de pedidos pasa por JwtAuthGuard (y, de ser necesario, RolesGuard('CLIENTE')), y el servicio valida productos, calcula totales y persiste la entidad Pedido con estado inicial "Pendiente" y su detalle. La respuesta confirma el pedido y su estado.
+
+La disponibilidad del pedido para repartidores puede propagarse por consulta periódica (polling) o, idealmente, por notificaciones en tiempo real (WebSockets o Expo Notifications). En esta fase se asume refresco manual o polling; el pedido aparece en la lista de disponibles.
+
+Cuando un repartidor acepta un pedido (\texttt{POST /orders/{id}/assign}), el backend verifica que aún no esté asignado y actualiza el estado a "En camino" (o "Asignado"), registrando el usuario asignado. La app de repartidor mueve el pedido a sus entregas activas y el cliente puede ser notificado del cambio de estado.
+
+La entrega se marca con \texttt{POST /orders/{id}/deliver} (o un PATCH equivalente). El backend valida que el pedido esté asignado al repartidor autenticado y en estado correcto, y actualiza a "Entregado" con la hora efectiva. Se pueden calcular métricas como tiempo de entrega en futuras iteraciones. El cliente recibe confirmación y el administrador visualiza los estados desde su panel.
+
+El administrador gestiona repartidores pendientes con \texttt{GET /users?role=DELIVERY\&pending=true} y los aprueba con \texttt{PATCH /users/{id}/approve}, además de administrar catálogo (\texttt{POST /products}, \texttt{POST /categories}, \texttt{PUT /products/{id}}) y revisar pedidos (\texttt{GET /orders}), con posibilidad de intervenir sobre estados (por ejemplo, cancelar con \texttt{PATCH /orders/{id}/cancel}). También puede listar usuarios por rol (\texttt{GET /users?role=CLIENTE}). Con el pedido entregado, el ciclo se cierra: el cliente recibe su producto, el repartidor completa su tarea y el administrador mantiene registro íntegro en la base de datos.
+
+En escenarios de error, el sistema informa de forma clara y recuperable: si fallan credenciales en login, se muestra un mensaje específico; si un pedido ya fue asignado cuando otro repartidor intenta tomarlo, el backend devuelve un error de conflicto y la app actualiza la vista; si la conexión se interrumpe, se sugiere reintentar o se conserva el estado local hasta restablecer comunicación. El diseño contempla fallos previsibles y asegura que no se pierdan datos críticos.
+
+Para mejorar la experiencia, se considera integrar actualizaciones en tiempo real de estado de pedidos en ambas apps y visualizaciones más ricas en el panel admin (por ejemplo, mapas de entregas y colas de pedidos). Aunque actualmente el refresco es manual o por consulta periódica, la arquitectura permite incorporar canales de eventos sin modificar la lógica principal.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.9\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
+\caption{Diagrama de secuencia del proceso de pedido}
+\label{fig:secuencia-pedido}
+\end{figure}
+Entre las mejoras previstas se contempla incorporar calificaciones o reseñas para que el cliente evalúe la entrega o el producto, lo que añadiría una entidad de reseña vinculando usuario, pedido y puntuación/comentario. Asimismo, se proyecta un módulo de reportes y métricas en el panel administrativo (pedidos por día, tiempo medio de entrega, repartidor más activo, productos más vendidos). En cuanto al flujo en tiempo real, se evaluará la integración de WebSockets mediante Gateways de NestJS.
+Un flujo mejorado sería:
+Un flujo mejorado podría incluir eventos de tiempo real como \texttt{nuevo\_pedido}, que llega a repartidores conectados para actualizar listas en vivo, y \texttt{pedido\_actualizado}, que notifica al cliente para reflejar cambios de estado inmediatamente.
+El diagrama de secuencia ilustraba estos intercambios entre Cliente App, Backend/API, Base de Datos, App de Repartidor y Admin Web, mostrando cómo la información fluye en cada paso. En síntesis, el flujo funcional coordina la interacción de cliente, repartidor y administrador con el sistema central; cada acción desencadena validaciones y cambios de estado en el backend, que notifica o habilita la consulta por los demás actores. El cliente efectúa pedidos y recibe notificaciones; el repartidor los toma y actualiza estados hasta completarlos; el administrador supervisa, garantiza accesos autorizados y mantiene el catálogo. Este recorrido asegura una entrega ordenada, segura y transparente para todos.
+
+\subsubsection{Estado actual del desarrollo}
+El proyecto se encuentra en una etapa avanzada, con la mayor parte de las funcionalidades centrales operativas y algunas mejoras planificadas para fases posteriores. La aplicación móvil (React Native + Expo) funciona para roles de Cliente y Repartidor; se ha probado el flujo de registro, login y realización de pedidos, así como la visualización y aceptación por parte del repartidor. La interfaz con Tamagui es limpia y reutilizable; quedan pendientes optimizaciones de UX como indicar tiempos de espera y refrescos automáticos. Aún no se incluyen notificaciones push ni actualizaciones en tiempo real, por lo que el usuario debe refrescar manualmente; se propone integrar el SDK de notificaciones de Expo o sockets. El rendimiento en dispositivos físicos ha sido bueno y se seguirán optimizando listas (por ejemplo, \texttt{FlatList}).
+
+En pruebas de campo se verificó compatibilidad básica con dispositivos Android de gama media y conexión móvil intermitente, ajustando tiempos de espera y mensajes de error. Se identificaron oportunidades para mejorar la accesibilidad (etiquetas claras, navegación por teclado en web) y se registraron como tareas futuras.
+
+El panel web (Next.js + Tailwind) cubre funciones básicas: inicio de sesión de administrador, gestión de productos y categorías con formularios validados, vista de pedidos (con refresco manual por ahora) y aprobación de repartidores, con feedback visual inmediato. La interfaz es responsiva y se probó en tamaños comunes. Como mejoras, se prevé añadir gráficos y reportes visuales en el dashboard (KPIs de ventas, entregas) e implementar paginación en listas extensas; la API soporta paginación pero aún no se habilita completamente en la UI.
+
+El backend (NestJS) es estable y cubre los casos de uso esperados. Las rutas críticas están protegidas con autenticación JWT y controles de rol; se han realizado pruebas unitarias básicas y la integración con TypeORM funciona según lo previsto. Todavía no se implementan métricas ni logging avanzado; se integrarán en fases siguientes junto con monitoreo en producción.
+
+En despliegue, el backend fue preparado para Hetzner con contenedor Docker probado en staging; el servidor está configurado con Node.js LTS y PostgreSQL, y se utilizará HTTPS mediante un proxy Nginx o similar.
+
+Respecto a la funcionalidad multinegocio, aunque la base de datos y la arquitectura prevén esta capacidad, la aplicación opera actualmente en modo single‑tenant. Implementarla por completo implicará tareas en panel web y app para gestión de empresas y branding, lo cual añade complejidad de UI y navegación; por ello, se ha pospuesto. En el estado actual, el sistema funciona para un negocio único y la separación por negocio en las tablas no impacta más allá de valores fijos. En el código ya se identificaron lugares donde será necesario filtrar por \texttt{businessId}, facilitando el refactor futuro a multi‑tenant.
+
+A partir de este estado, los siguientes pasos se enfocan en pulir la experiencia de usuario, desplegar a producción controlada y recopilar métricas de adopción y desempeño que retroalimenten decisiones de priorización en iteraciones subsiguientes.
+
+\subsubsection{Resumen del procedimiento}
+El procedimiento integra cuatro componentes principales organizados para una lectura técnica clara: el frontend móvil (React Native + Expo) enfocado en experiencia y validaciones tempranas; el panel web (Next.js + Tailwind CSS) que permite la gestión administrativa con flujos CRUD; el backend (NestJS) que orquesta reglas de negocio y seguridad con arquitectura modular; y la base de datos relacional (PostgreSQL) que asegura integridad y soporte al multinegocio. Este encadenamiento garantiza que cada acción del usuario se traduzca en cambios consistentes en el sistema y que los datos permanezcan protegidos, auditables y disponibles para futuras métricas.
+
+\subsubsection{Características pendientes y futuras}
+Se implementará un módulo de métricas y reportes en el panel para compilar indicadores como pedidos diarios, volumen de ventas y tiempos promedio de entrega, presentados en gráficos. Para ello se agregarán endpoints de estadísticas (por ejemplo, \texttt{GET /reports/summary}) y se evaluará usar librerías gráficas en el frontend; la base relacional permite agregaciones SQL y, de ser necesario, se contemplará mantener contadores en memoria o Redis.
+
+Se integrarán notificaciones en tiempo real para clientes y repartidores (nuevo pedido, pedido asignado, pedido entregado), mediante Expo Push Notifications en la app móvil y, potencialmente, WebSockets (Socket.io o Gateways de Nest) para actualizar el panel admin sin refrescos manuales.
+
+En seguridad, además de JWT y roles, se prevé verificación de email en el registro y limitación de tasa global para mitigar fuerza bruta y spam de APIs, aprovechando middleware o módulos externos en NestJS.
+
+En calidad, se ampliará la suite de pruebas automatizadas con tests de integración de flujo completo y pruebas end‑to‑end en la app para minimizar regresiones durante el desarrollo activo.
+
+En rendimiento y escalabilidad, se considerará separar microservicios específicos (notificaciones, reportes) y habilitar escalamiento horizontal del backend con balanceo de carga, manteniendo base de datos centralizada y caché compartido cuando corresponda.
+
+En interfaz de usuario, se evaluará mostrar ubicación del repartidor en tiempo real en la app (Google Maps o Mapbox en Expo) y añadir en el panel funciones como exportación a CSV y búsqueda avanzada.
+Para concluir, el estado actual del desarrollo es satisfactorio: la plataforma en su alcance principal funciona de punta a punta, permitiendo gestionar pedidos desde la creación hasta la entrega, con control administrativo. Todas las decisiones tecnológicas tomadas (React Native/Expo, NestJS, TypeORM, JWT) han demostrado ser acertadas para lograr rapidez de desarrollo sin sacrificar la estructura necesaria para escalar y mantener el proyecto. Con la base sólida establecida, los siguientes pasos se enfocarán en pulir la experiencia de usuario, incorporar las funcionalidades avanzadas (métricas, notificaciones, multi-negocio) y realizar un despliegue formal para pruebas con usuarios reales. Este documento detalló el porqué de cada decisión técnica (desde la elección de Expo por su ecosistema, hasta NestJS por su arquitectura clara y la implementación de RBAC por seguridad), lo que refleja un desarrollo fundamentado en buenas prácticas modernas. Quedamos con una plataforma preparada para crecer y adaptarse, manteniendo siempre el objetivo central: ofrecer un servicio de pedidos y entregas confiable, eficiente y adaptable a múltiples negocios en el futuro cercano.
+
+ 
+
+\section{Análisis de datos}
+
+Los datos cuantitativos recolectados mediante encuestas y métricas de usabilidad se analizaron con estadística descriptiva (frecuencias, porcentajes y promedios) y, cuando resultó pertinente, medidas de dispersión para comprender variabilidad. En el caso del SUS, se aplicó su metodología de puntuación y normalización para interpretar niveles de aceptabilidad de la interfaz. Se elaboraron tablas y visualizaciones básicas que facilitaron la comparación entre escenarios y la detección de tendencias.
+
+La información cualitativa obtenida a través de entrevistas y observación directa se abordó mediante codificación abierta y categorización temática, agrupando hallazgos en dimensiones como facilidad de aprendizaje, claridad de flujos, fallos frecuentes y necesidades percibidas. Este análisis permitió identificar patrones y relaciones relevantes, así como sugerencias concretas de mejora trasladadas al backlog de desarrollo.
+
+Se realizó una evaluación comparativa de indicadores operativos y de usabilidad antes y después de la implementación del prototipo para estimar el impacto de la plataforma en las PYMES participantes. Entre los indicadores analizados se incluyeron la reducción de tiempos en procesos de pedidos, la disminución de errores de registro y la mejora en la satisfacción del usuario. Se documentaron los supuestos, el periodo de medición y las condiciones de prueba para asegurar que las comparaciones fueran válidas y reproducibles.
+
+\section{Consideraciones éticas}
+
+Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
+
+Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos). La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES.
+
+Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible. Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.

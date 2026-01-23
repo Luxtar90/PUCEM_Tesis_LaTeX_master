@@ -1,0 +1,42 @@
+\begin{tikzpicture}[every node/.style={align=center, transform shape}]
+\tikzset{
+  mod/.style={draw, rounded corners, fill=blue!10, minimum width=5.0cm, minimum height=0.9cm},
+  substep/.style={draw, rounded corners, fill=purple!15, minimum width=5.0cm, minimum height=0.9cm}
+}
+\node[mod, fill=green!15] (login) at (0,0) {Login Admin};
+\node[mod, fill=green!15] (dashboard) at (0,-1.6) {Dashboard};
+\node[mod] (productos) at (-7.5,-3.0) {Productos (CRUD)};
+\node[mod] (pedidos) at (-2.5,-3.0) {Pedidos (listar y estados)};
+\node[mod] (categorias) at (2.5,-3.0) {Categorías (CRUD)};
+\node[mod] (config) at (7.5,-3.0) {Configuración};
+
+\draw[-latex] (login) -- (dashboard);
+\draw[-latex] (dashboard) -- (productos);
+\draw[-latex] (dashboard) -- (pedidos);
+\draw[-latex] (dashboard) -- (categorias);
+\draw[-latex] (dashboard) -- (config);
+
+\node[substep] (prod_form) at (-7.5,-4.6) {Formulario producto};
+\node[substep] (prod_valid) at (-7.5,-5.8) {Validación};
+\node[substep] (prod_save)  at (-7.5,-7.0) {Guardar y actualizar};
+\draw[-latex] (productos) -- (prod_form);
+\draw[-latex] (prod_form) -- (prod_valid);
+\draw[-latex] (prod_valid) -- (prod_save);
+
+\node[substep] (cat_form) at (2.5,-4.6) {Formulario categoría};
+\node[substep] (cat_valid) at (2.5,-5.8) {Validación};
+\node[substep] (cat_save)  at (2.5,-7.0) {Guardar y actualizar};
+\draw[-latex] (categorias) -- (cat_form);
+\draw[-latex] (cat_form) -- (cat_valid);
+\draw[-latex] (cat_valid) -- (cat_save);
+
+\node[mod] (repartidores) at (-2.5,-4.6) {Repartidores};
+\node[substep] (rep_list)   at (-2.5,-5.8) {Lista pendientes};
+\node[substep] (rep_action) at (-2.5,-7.0) {Aprobar y rechazar};
+\draw[-latex] (repartidores) -- (rep_list);
+\draw[-latex] (repartidores) -- (rep_list);
+\draw[-latex] (rep_list) -- (rep_action);
+\draw[-latex] (pedidos) -- (repartidores);
+\draw[dashed, rounded corners] (-10.5,1.0) rectangle (10.5,-8.0);
+\node at (0,1.2) {Panel Web Admin};
+\end{tikzpicture}
