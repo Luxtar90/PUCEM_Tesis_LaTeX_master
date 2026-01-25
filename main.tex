@@ -227,6 +227,7 @@
 \else
   % Sin numeración en índices
   \pagenumbering{gobble}
+  \addtocontents{toc}{\protect\renewcommand{\protect\numberline}[1]{}}
   \tableofcontents
   \listoffigures
   \listoftables

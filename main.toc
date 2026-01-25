@@ -7,6 +7,7 @@
 \contentsline {chapter}{Agradecimientos}{}{section*.6}%
 \contentsline {chapter}{Resumen}{}{section*.7}%
 \contentsline {chapter}{Abstract}{}{section*.7}%
+\renewcommand {\numberline }[1]{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Contexto del sector gastronómico en Portoviejo}{2}{subsection.1.1.1}%
