@@ -209,6 +209,7 @@
 
 % Portada y preliminares (estos archivos deben estar presentes)
 \hypersetup{pageanchor=false}
+\pagenumbering{gobble}
 \input{preliminares/1_portada}
 \input{preliminares/2_certificaion_tutor}
 \input{preliminares/3_acta_aprobacion_tribunal}
@@ -224,22 +225,20 @@
 \iffastcompile
 % omitidos en compilación rápida
 \else
+  % Sin numeración en índices
+  \pagenumbering{gobble}
   \tableofcontents
-  \newpage
   \listoffigures
-  \newpage
   \listoftables
-  \newpage
 \fi
 
-\iffastcompile\else
-\phantomsection
-\chapter*{Lista de Apéndices}
-\addcontentsline{toc}{chapter}{Lista de Apéndices}
-\begin{itemize}
-    \item Ingresar Manualmente índice de Apéndice
-\end{itemize}
-\fi
+% Cambiar a numeración arábiga comenzando en página 1 en Introducción
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Resetear contador de capítulos para que la numeración comience en la Introducción
+\setcounter{chapter}{0}
 
 \iffastcompile
 \input{capitulos/1_introduccion}

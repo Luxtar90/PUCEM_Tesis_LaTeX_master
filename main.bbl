@@ -86,37 +86,6 @@
       \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
       \endverb
     \endentry
-    \entry{Castells2010}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
-           family={Castells},
-           familyi={C\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley-Blackwell}%
-      }
-      \strng{namehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{fullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{fullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{bibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorbibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authornamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorfullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorfullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{The rise of the network society}
-      \field{year}{2010}
-    \endentry
     \entry{creapolis_nestjs_2025}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=44c3e2aa75010dca4fe33d9c4ae07777}{%
@@ -482,37 +451,6 @@
       \verb{url}
       \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
       \endverb
-    \endentry
-    \entry{Castells2010}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
-           family={Castells},
-           familyi={C\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley-Blackwell}%
-      }
-      \strng{namehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{fullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{fullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{bibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorbibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authornamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorfullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \strng{authorfullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{The rise of the network society}
-      \field{year}{2010}
     \endentry
     \entry{creapolis_nestjs_2025}{online}{}{}
       \name{author}{1}{}{%
