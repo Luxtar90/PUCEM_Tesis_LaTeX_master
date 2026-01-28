@@ -34,7 +34,7 @@ Frente a estas problemáticas, una solución SaaS (Software como Servicio) adapt
 
 Por lo tanto, desarrollar una plataforma SaaS que responda a las necesidades operativas, técnicas y económicas de las PYMES gastronómicas de Portoviejo constituye una estrategia viable y alineada con las metas institucionales nacionales de digitalización y con las aspiraciones locales de modernización, competitividad y crecimiento sostenible del sector.
 
-\section{Definición del Problema}
+\section{Definición del problema}
 
 En el sector gastronómico de la ciudad de Portoviejo, las Pequeñas y Medianas Empresas (PYMES) desempeñan un rol fundamental en la economía local, aportando significativamente a la generación de empleo, al dinamismo comercial y a la identidad gastronómica de la región. A pesar de su importancia, este sector enfrenta un proceso de digitalización lento e incompleto, caracterizado por la utilización de métodos tradicionales en la gestión operativa, administrativa y comercial. En un entorno donde la tecnología se ha convertido en un componente esencial para la competitividad y la sostenibilidad, muchas de estas empresas continúan utilizando procesos manuales para administrar pedidos, inventarios y servicios de delivery, dificultando su adaptación a las nuevas exigencias del mercado digital.
 
@@ -57,7 +57,7 @@ Si el problema no se soluciona, las PYMES gastronómicas de Portoviejo continuar
 
 Resolver este problema es fundamental porque permitirá impulsar la transformación digital del sector gastronómico local, mejorar la competitividad de las PYMES y promover la adopción de tecnologías accesibles e inteligentes. El desarrollo de una plataforma SaaS integrada contribuirá a optimizar los procesos operativos, reducir costos, mejorar la toma de decisiones mediante analítica de datos y elevar la calidad del servicio al cliente mediante sistemas automatizados. Además, esta solución se alinea con los objetivos nacionales de digitalización y con la visión de Portoviejo como una ciudad innovadora y creativa. Abordar esta problemática beneficia no solo a los negocios, sino también al ecosistema económico local al fomentar la modernización, sostenibilidad y crecimiento del sector gastronómico.
 
-\section{Preguntas de Investigación}
+\section{Preguntas de investigación}
 
 \subsection{Pregunta general}
 
@@ -77,18 +77,35 @@ Resolver este problema es fundamental porque permitirá impulsar la transformaci
 
 \subsection{Objetivo general}
 
-Desarrollar y validar una plataforma SaaS integral orientada a la digitalización de las PYMES gastronómicas de Portoviejo, mediante la implementación de módulos de delivery, gestión de inventarios e inteligencia artificial, con el fin de mejorar sus procesos operativos, administrativos y de atención al cliente.
+Desarrollar y validar una plataforma SaaS que integre módulos de gestión operativa e inteligencia artificial, para optimizar los procesos de pedidos, inventarios, delivery y atención al cliente de las PYMES gastronómicas de Portoviejo.
 
 \subsection{Objetivos específicos}
 
 \begin{enumerate}
-    \item Analizar el nivel actual de digitalización y las necesidades operativas de las PYMES gastronómicas de Portoviejo para identificar sus requerimientos tecnológicos prioritarios.
-    \item Diseñar y desarrollar una aplicación multiplataforma con integración de geolocalización, métodos de pago digitales y paneles de administración adaptados al perfil del usuario.
-    \item Implementar un módulo de gestión de repartidores que permita optimizar rutas, tiempos de entrega y control operativo del servicio de delivery.
-    \item Desarrollar un panel administrativo con analítica avanzada que facilite la toma de decisiones mediante indicadores clave de desempeño.
-    \item Integrar un chatbot basado en inteligencia artificial (RAG) que proporcione atención automatizada, respuestas inmediatas y soporte al cliente.
-    \item Validar la usabilidad, experiencia de usuario (UX) y funcionalidad del prototipo mediante pruebas con usuarios reales o simulados.
+    \item Realizar un diagnóstico del nivel de digitalización y un levantamiento detallado de requisitos funcionales y no funcionales con las PYMES objetivo.
+    
+    \item Diseñar la arquitectura técnica, de software y de despliegue de la plataforma, definiendo su estructura modular y los protocolos de seguridad e integración.
+    
+    \item Construir la plataforma mediante el desarrollo e integración simultánea de sus componentes modulares principales.
+    
+    \item Implementar los módulos de gestión de pedidos (con geolocalización en tiempo real), control de inventarios, administración de repartidores y optimización de rutas, y el dashboard analítico con KPIs.
+    
+    \item Integrar un chatbot basado en el modelo RAG dentro de la plataforma, para automatizar la atención al cliente y el soporte operativo.
+    
+    \item Evaluar la plataforma integral mediante pruebas de usabilidad (SUS), rendimiento, funcionalidad y aceptación con usuarios reales en un entorno piloto, cuantificando su impacto en la eficiencia operativa.
 \end{enumerate}
+
+\section{Alcance}
+
+El presente proyecto se enmarca en el diseño, desarrollo y validación de una plataforma SaaS integral dirigida a la digitalización de las Pequeñas y Medianas Empresas (PYMES) del sector gastronómico de Portoviejo. Con el fin de establecer límites claros y garantizar una ejecución realista, se define el alcance del proyecto en dos dimensiones: los elementos que serán desarrollados e implementados, y aquellos que quedan excluidos de esta fase.
+
+El proyecto abarca la creación completa de una solución tecnológica operativa, desde su concepción hasta su validación en un entorno controlado. En primer lugar, se realizará un análisis de requisitos basado en un diagnóstico del nivel de digitalización actual de las PYMES objetivo, mediante técnicas como encuestas y entrevistas, para derivar especificaciones funcionales y no funcionales. El diseño resultante contempla una arquitectura de software modular, compuesta por un backend desarrollado con NestJS que expone una API RESTful, una aplicación móvil multiplataforma construida con React Native para clientes y repartidores, y un panel administrativo web implementado con Next.js. La persistencia de datos se gestionará mediante una base de datos relacional PostgreSQL.
+
+La plataforma integrará módulos funcionales centrales para la gestión operativa: un sistema de pedidos con registro de geolocalización de direcciones, un módulo de control de inventarios básico, un panel de administración de repartidores con procesos de aprobación y asignación manual de pedidos, y un dashboard analítico que presente indicadores clave de desempeño (KPIs) derivados de los datos transaccionales. Como componente innovador, se desarrollará e integrará un chatbot basado en el modelo de Generación Aumentada por Recuperación (RAG) para automatizar respuestas a consultas frecuentes de clientes.
+
+La validación de la solución se llevará a cabo mediante un piloto controlado en al menos dos PYMES gastronómicas, donde se evaluará la usabilidad del sistema a través de la escala SUS (System Usability Scale), se verificará la funcionalidad de los flujos críticos y se medirá el impacto en métricas operativas como el tiempo de registro de pedidos y la tasa de errores. El despliegue para esta validación se realizará en infraestructura en la nube, utilizando un servidor VPS para el backend y la base de datos, Vercel para el panel web, y se distribuirá la aplicación móvil como archivo APK para dispositivos Android.
+
+Para garantizar la viabilidad y el enfoque del proyecto, se excluyen funcionalidades avanzadas y consideraciones de escala industrial. Esto incluye: el desarrollo de una arquitectura multi-tenant; la integración con pasarelas de pago; la optimización automática de rutas y el live-tracking de repartidores; las notificaciones en tiempo real (WebSockets/push); y módulos complementarios como marketing, reseñas o gestión de proveedores. Tampoco se contempla el desarrollo de una aplicación nativa para iOS, el despliegue de infraestructura de alta disponibilidad, una validación a escala sectorial, o un plan de soporte y mantenimiento post-implementación.
 
 \section{Metodología de la Investigación}
 

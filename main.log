@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  28 JAN 2026 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  28 JAN 2026 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,18 +1258,13 @@ LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...rline {2.5}Procedimiento}{16}{section.2.5}
+l.43 ...Native + Expo)}{18}{subsubsection.2.5.2.1}
                                                   % [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 ...{\numberline {3}Resultados}{47}{chapter.3}
-                                                  % [3]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.84 ...erencias bibliogr√°ficas}{58}{chapter*.27}
-                                                  % [4])
+l.64 ...stimado y financiamiento}{48}{section.3.2}
+                                                  % [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1278,7 +1273,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.234   \listoffigures
-                       [5] (main.lof
+                       [4] (main.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1291,7 +1286,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.235   \listoftables
-                      [6
+                      [5
 
 ] (main.lot
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1306,7 +1301,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.239 \cleardoublepage
-                       [7
+                       [6
 
 ] (capitulos/1_introduccion.tex
 Cap\'{\i }tulo 1.
@@ -1319,44 +1314,44 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/b/it/12' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 11.
 
-[2] [3] [4] [5] [6] [7] [8] [9]) (capitulos/2_metodos.tex [10]
+[2] [3] [4] [5] [6] [7] [8] [9] [10]) (capitulos/2_metodos.tex [11]
 Cap\'{\i }tulo 2.
-[11
+[12
 
-] [12] [13] [14] [15] [16] [17] [18] (imagenes/frontend_prototipo.tikz) [19] (imagenes/web_panel_prototipo.tikz) [20] [21] [22] [23] (imagenes/backend_arquitectura.tikz) [24] (imagenes/despliegue_arquitectura.tikz) [25] (imagenes/diagrama_bd.tikz
+] [13] [14] [15] [16] [17] (imagenes/frontend_prototipo.tikz) [18] [19] (imagenes/web_panel_prototipo.tikz) [20] [21] [22] (imagenes/backend_arquitectura.tikz) [23] [24] (imagenes/despliegue_arquitectura.tikz) [25] (imagenes/diagrama_bd.tikz
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/8' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 18.
 
-) [26] [27]
+) [26]
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/cmtt/m/n/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 285.
+(microtype)                protrusion for this font on input line 266.
 
-[28] [29] (imagenes/auth_rbac.tikz) [30] [31] [32]
-Underfull \hbox (badness 1735) in paragraph at lines 336--337
+[27] [28] [29] (imagenes/auth_rbac.tikz) [30] [31] [32]
+Underfull \hbox (badness 1735) in paragraph at lines 317--318
 []\T1/ptm/m/n/12 (+20) Los to-kens JWT se fir-man con una cla-ve se-gu-ra de-fi-ni-da en va-ria-bles de en-torno
  []
 
 [33] [34]
-Overfull \hbox (28.38431pt too wide) in paragraph at lines 361--362
+Overfull \hbox (28.38431pt too wide) in paragraph at lines 342--343
 []\T1/ptm/m/n/12 (-20) El ad-mi-nis-tra-dor ges-tio-na re-par-ti-do-res pen-dien-tes con \T1/cmtt/m/n/12 GET /users?role=DELIVERY&pending=true
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 361--362
+Underfull \hbox (badness 2376) in paragraph at lines 342--343
 \T1/ptm/m/n/12 (+20) y los aprue-ba con \T1/cmtt/m/n/12 PATCH /users/id/approve\T1/ptm/m/n/12 (+20) , ade-m·s de ad-mi-nis-trar ca-t·-lo-go (\T1/cmtt/m/n/12 POST
  []
 
-[35] (imagenes/secuencia_pedido.tikz) [36] [37] [38] [39] [40] [41]
-Overfull \hbox (75.27992pt too wide) in paragraph at lines 431--442
+(imagenes/secuencia_pedido.tikz) [35] [36] [37] [38] [39] [40]
+Overfull \hbox (75.27992pt too wide) in paragraph at lines 412--423
  [][] 
  []
 
-[42] [43]
-Overfull \hbox (19.19331pt too wide) in paragraph at lines 528--536
+[41] [42] [43]
+Overfull \hbox (19.19331pt too wide) in paragraph at lines 509--517
  [][] 
  []
 
@@ -1365,7 +1360,7 @@ Cap\'{\i }tulo 3.
 [47
 
 ]
-<imagenes/cronograma.png, id=549, 633.86812pt x 429.10312pt>
+<imagenes/cronograma.png, id=540, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
 Package pdftex.def Info: imagenes/cronograma.png  used on input line 57.
@@ -1383,12 +1378,12 @@ Cap\'{\i }tulo 5.
 ] (apendices.tex [58]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=613, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=604, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-<imagenes/diagramaflujo.png, id=614, 6504.3pt x 12464.5675pt>
+<imagenes/diagramaflujo.png, id=605, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
 Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 42.
@@ -1410,17 +1405,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39510 strings out of 467870
- 748341 string characters out of 5414483
+ 39504 strings out of 467870
+ 748270 string characters out of 5414483
  1678259 words of memory out of 5000000
- 67272 multiletter control sequences out of 15000+600000
+ 67269 multiletter control sequences out of 15000+600000
  686459 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,94p,1322b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\PC-LAB-AUL-24\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/PC-LAB-AUL-24/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/PC-LAB-AUL-24/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/PC-LAB-AUL-24/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/PC-LAB-AUL-24/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (77 pages, 1500841 bytes).
+Output written on main.pdf (76 pages, 1498531 bytes).
 PDF statistics:
- 1017 PDF objects out of 1200 (max. 8388607)
- 224 named destinations out of 1000 (max. 500000)
- 68281 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 998 PDF objects out of 1000 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
+ 68257 words of extra memory for PDF output out of 74296 (max. 10000000)
 
