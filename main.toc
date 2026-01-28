@@ -1,12 +1,4 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{Certificación del Tutor}{}{section*.1}%
-\contentsline {chapter}{Acta de aprobación del Tribunal}{}{section*.2}%
-\contentsline {chapter}{Declaración de Originalidad}{}{section*.3}%
-\contentsline {chapter}{Declaración de Derecho del Autor}{}{section*.4}%
-\contentsline {chapter}{Dedicatoria}{}{section*.5}%
-\contentsline {chapter}{Agradecimientos}{}{section*.6}%
-\contentsline {chapter}{Resumen}{}{section*.7}%
-\contentsline {chapter}{Abstract}{}{section*.7}%
 \renewcommand {\numberline }[1]{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}%
