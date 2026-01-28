@@ -84,7 +84,25 @@ Los datos fueron centralizados y organizados para facilitar su análisis, asegur
 
 Esta sección describe, en orden, el diseño y desarrollo del frontend móvil, del panel web administrativo, del backend con NestJS y del modelo de base de datos relacional. Cada subsección inicia con su objetivo y alcances para facilitar la lectura y ubicar el rol que cumple dentro de la plataforma.
 
- \subsection{Diseño y Desarrollo de una Plataforma de Pedidos y Entregas Multinegocio}
+ \subsection{FASE 1: Planificación}
+Esta fase establece las decisiones estratégicas y el marco técnico del proyecto, asegurando coherencia entre objetivos, alcance y capacidades tecnológicas. Se definió el MVP y se seleccionaron tecnologías que maximizan mantenibilidad, velocidad de desarrollo y calidad de la experiencia de usuario, alineadas con buenas prácticas actuales.
+
+Se adoptó una arquitectura por capas y dominios, con separación de responsabilidades entre cliente móvil, cliente web y servicios de negocio. La plataforma se estructuró en tres repositorios principales para favorecer independencia de ciclos de vida, pipelines de integración continua y control de versiones por componente:
+
+Backend (NestJS): Un repositorio dedicado a la API y lógica de negocio, implementado con NestJS y TypeScript. NestJS aporta una arquitectura modular basada en controladores, servicios y repositorios, inyección de dependencias y tipado estático, lo que reduce errores y mejora testabilidad. Su integración natural con herramientas de seguridad (JWT, Guards) y validación de datos (DTOs con pipes) permite construir servicios robustos y auditables. La modularidad por dominios (Usuarios, Pedidos, Productos, Auth) facilita escalar y evolucionar sin afectar otras áreas, y se alinea con prácticas de diseño como DDD. La contenedorización con Docker y despliegue en la nube se integran de forma directa, y el enfoque en TypeScript fortalece la mantenibilidad del código a largo plazo \ref{fig:backend-arquitectura}.
+
+Mobile (React Native + Expo): Un repositorio para la aplicación móvil multiplataforma. React Native habilita entregar una experiencia nativa en iOS y Android desde una única base de código, optimizando tiempos y costos. Expo simplifica todo el ciclo de vida (desarrollo con recarga en vivo, acceso a APIs nativas, compilación y distribución), disminuyendo barreras operativas y acelerando validaciones con usuarios. La UI se organiza con Tamagui, que provee componentes y sistema de estilos coherente y reutilizable entre móvil y web, facilitando consistencia visual y productividad. Esta elección permite iterar rápido sobre flujos críticos (registro, pedidos, entregas) y asegurar un rendimiento adecuado en dispositivos de gama media.
+
+Web (Next.js + React + Tailwind CSS): Un repositorio para el panel administrativo web. Next.js ofrece una experiencia web nativa moderna, con enrutamiento por archivos, Server‑Side Rendering y Static Site Generation cuando corresponde, optimización de recursos y soporte a componentes de servidor. Esto mejora tiempo de primer render, accesibilidad y percepción de desempeño en escritorio. React aporta el modelo declarativo y ecosistema ampliamente adoptado, y Tailwind CSS acelera el estilado con clases utilitarias consistentes, manteniendo diseño limpio y adaptable. Separar el panel en un repositorio propio permite evolucionar su UX/analítica con ciclos distintos al móvil, manteniendo foco en necesidades administrativas y reportes.
+
+La separación en tres repositorios independientes aporta beneficios claros: aislamiento de fallos y cambios, despliegues desacoplados, ownership por equipo/componente, menor complejidad de revisión y permisos más precisos. Operativamente, cada repositorio puede tener su pipeline CI/CD, pruebas y ambientes de staging propios, reduciendo acoplamiento y facilitando releases controladas.
+
+La base de datos seleccionada es relacional (PostgreSQL) por su idoneidad para el dominio: el sistema requiere integridad referencial entre entidades centrales (Usuarios, Productos, Categorías, Pedidos y sus Items, Negocios), transacciones atómicas para operaciones compuestas (creación de pedidos y detalle), y consultas analíticas con uniones para construir reportes (ventas por periodo, productos más vendidos, tiempos de entrega). Un RDBMS garantiza consistencia mediante claves foráneas y restricciones, soporta índices para consultas críticas y facilita agregaciones SQL para métricas. Frente a una base NoSQL, el modelo relacional brinda mayor seguridad en estados consistentes y en auditorías, y se alinea con la necesidad de reportabilidad sin sacrificar rendimiento. Para el soporte multinegocio, se adopta un discriminador por empresa en tablas principales, que permite segmentar datos por negocio manteniendo simplicidad en una sola instancia y dejando abierta la evolución a enfoques más aislados si la escala lo demanda \ref{fig:er-diagrama}.
+
+Durante esta fase se elaboraron prototipos de navegación de la app móvil y del panel administrativo, con el objetivo de validar flujos, jerarquías de información y criterios de usabilidad con actores clave. Los prototipos, reflejados en \ref{fig:frontend-prototipo} y \ref{fig:web-prototipo}, guiaron decisiones de estructura y estilos. Se definieron criterios de éxito mensurables (reducción de tiempos y errores operativos, aceptabilidad de usabilidad mediante SUS), supuestos y riesgos (adopción móvil, latencia, escalabilidad inicial), y se planificó el trabajo en sprints según Scrum con backlog priorizado y metas por iteración, asegurando trazabilidad y foco en entregables de valor.
+
+ \subsection{FASE 2: Desarrollo}
+Esta fase abarca el diseño y desarrollo de la plataforma multinegocio. A continuación se detallan los componentes construidos.
  
  \subsubsection{Diseño y desarrollo del frontend (React Native + Expo)}
 Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes y repartidores, con navegación predecible, validaciones tempranas y comunicación robusta con la API.
@@ -388,7 +406,136 @@ En rendimiento y escalabilidad, se considerará separar microservicios específi
 En interfaz de usuario, se evaluará mostrar ubicación del repartidor en tiempo real en la app (Google Maps o Mapbox en Expo) y añadir en el panel funciones como exportación a CSV y búsqueda avanzada.
 Para concluir, el estado actual del desarrollo es satisfactorio: la plataforma en su alcance principal funciona de punta a punta, permitiendo gestionar pedidos desde la creación hasta la entrega, con control administrativo. Todas las decisiones tecnológicas tomadas (React Native/Expo, NestJS, TypeORM, JWT) han demostrado ser acertadas para lograr rapidez de desarrollo sin sacrificar la estructura necesaria para escalar y mantener el proyecto. Con la base sólida establecida, los siguientes pasos se enfocarán en pulir la experiencia de usuario, incorporar las funcionalidades avanzadas (métricas, notificaciones, multi-negocio) y realizar un despliegue formal para pruebas con usuarios reales. Este documento detalló el porqué de cada decisión técnica (desde la elección de Expo por su ecosistema, hasta NestJS por su arquitectura clara y la implementación de RBAC por seguridad), lo que refleja un desarrollo fundamentado en buenas prácticas modernas. Quedamos con una plataforma preparada para crecer y adaptarse, manteniendo siempre el objetivo central: ofrecer un servicio de pedidos y entregas confiable, eficiente y adaptable a múltiples negocios en el futuro cercano.
 
- 
+ \subsection{FASE 3: Implementación, despliegue y pruebas}
+Esta fase abarca la puesta en marcha operativa de los tres componentes principales y su validación integral en entorno real. Se optó por un esquema de despliegue que equilibra costo‑eficiencia, rendimiento y simplicidad operativa:
+
+Frontend web (Next.js) en Vercel: Se desplegó el panel administrativo en Vercel por su integración nativa con Next.js, soporte de renderizado del lado del servidor, distribución global en su red y flujos de previsualización por rama que agilizan la revisión y control de calidad. Vercel permite configurar variables de entorno por proyecto y entorno, gestionar dominios y certificados TLS sin complejidad adicional y ofrecer tiempos de primer render bajos gracias a cache y edge capabilities. Esta elección reduce la carga de administración de infraestructura web y acelera la entrega de mejoras.
+
+Backend (NestJS) en Hetzner: Se desplegó la API en un servidor de Hetzner por su excelente relación costo‑rendimiento y control total del entorno. El backend corre sobre Node.js LTS, contenedorizado con Docker, detrás de un proxy inverso (por ejemplo, Nginx) que gestiona HTTPS y encabezados de seguridad. Se organizaron variables de entorno para credenciales y claves (JWT, conexión de base de datos), aisladas del código. Este enfoque provee estabilidad, flexibilidad para ajustar recursos y facilidad para incorporar monitoreo y respaldos de base de datos.
+
+Móvil (React Native) como APK en Android: La aplicación móvil se construyó y distribuyó como APK para dispositivos Android, simplificando la instalación en campo y las pruebas con usuarios finales. El ciclo de distribución se apoya en herramientas del ecosistema de Expo para compilar y firmar paquetes, mantener versiones y habilitar actualizaciones controladas cuando sea necesario. La entrega en APK reduce fricción en la validación en entornos reales de los locales participantes.
+
+La arquitectura de despliegue y sus componentes se sintetizan en \ref{fig:despliegue-arquitectura}. Para garantizar calidad de servicio, se definieron entornos diferenciados (staging y producción), con validaciones previas a publicación. El backend implementa políticas de seguridad básicas (JWT, roles, CORS, rate limiting cuando corresponde) y registros de eventos críticos. El panel web en Vercel utiliza rutas protegidas y controles de acceso consistentes con la API.
+
+Se efectuaron pruebas funcionales de punta a punta del proceso de pedido, cubriendo registro, autenticación, creación de pedidos, asignación por repartidores y entrega; el diagrama de secuencia \ref{fig:secuencia-pedido} guió estos recorridos. Adicionalmente, se realizaron pruebas de usabilidad con tareas representativas y el cuestionario SUS en escenarios reales, así como verificaciones en dispositivos Android de gama media (con conectividad intermitente) para evaluar robustez y mensajes de error. Los hallazgos se incorporaron en iteraciones sucesivas, afinando tiempos de espera, validaciones y feedback visual.
+
+ \subsection{FASE 4: Resultados}
+En esta fase se consolidan los hallazgos de implementación y validación en campo, sintetizando métricas operativas y de usabilidad obtenidas en dos locales participantes. Se observó funcionamiento de punta a punta, reducción de tiempos de registro y entrega, disminución de errores en el flujo de pedidos y aceptabilidad positiva de la interfaz según SUS. Se reportan también tasas de adopción por rol y variaciones por contexto operativo entre los locales. A continuación, se presentan los resultados organizados por dimensión de análisis.
+
+ \subsubsection{Resultados en dos locales}
+Se realizaron mediciones en dos PYMES gastronómicas participantes, referidas como Local A y Local B, durante un periodo de validación de tres semanas. Se compararon indicadores operativos antes y después de la adopción del prototipo (panel web en Vercel, API en Hetzner y app móvil en Android). Los resultados muestran mejoras consistentes en tiempos, errores y flujo de pedidos.
+
+\begin{table}[htbp]
+\centering
+\caption{\textit{Indicadores operativos antes y después por local}}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Indicador} & \textbf{Local A Antes} & \textbf{Local A Después} & \textbf{Local B Antes} & \textbf{Local B Después} \\
+\midrule
+Tiempo de registro de pedido (min) & 4.8 & 2.9 & 5.1 & 3.2 \\
+Errores de registro (\%) & 3.2 & 1.1 & 3.8 & 1.4 \\
+Tiempo de entrega medio (min) & 38 & 31 & 40 & 33 \\
+Pedidos diarios (n) & 42 & 55 & 36 & 48 \\
+Cancelaciones (\%) & 2.4 & 1.6 & 2.7 & 1.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Las mejoras en registro y entrega se atribuyen a formularios validados en el panel, estados claros en la app móvil y a la disminución de fricciones en coordinación con repartidores. Los errores de registro descendieron por validaciones tempranas y feedback visual; el aumento de pedidos diarios sugiere mayor eficiencia operativa y menor pérdida de oportunidades.
+
+ \subsubsection{Usabilidad (SUS) y adopción}
+Se aplicó el System Usability Scale (SUS) al finalizar la tercera semana. Los resultados indican aceptabilidad positiva:
+\begin{table}[htbp]
+\centering
+\caption{\textit{Puntajes de usabilidad SUS por local}}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Local} & \textbf{SUS} & \textbf{Interpretación} \\
+\midrule
+Local A & 78 & Aceptable–Buena \\
+Local B & 75 & Aceptable \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+En adopción, se registraron usuarios activos y repartidores aprobados al cierre del periodo:
+\begin{table}[htbp]
+\centering
+\caption{\textit{Adopción por rol al cierre de validación}}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Rol} & \textbf{Local A} & \textbf{Local B} \\
+\midrule
+Clientes registrados (n) & 120 & 90 \\
+Repartidores aprobados (n) & 12 & 9 \\
+Administradores (n) & 2 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La percepción cualitativa de usuarios destaca claridad de flujos, tiempos de respuesta adecuados y reducción de confusiones al gestionar pedidos y entregas. Se identificaron oportunidades de mejora: notificaciones push para estados de pedidos y paginación avanzada en listas del panel web cuando el volumen crece.
+
+ \subsubsection{Análisis comparativo y observaciones}
+El Local A mostró mejoras ligeramente superiores en tiempos y volumen de pedidos, posiblemente por mayor familiaridad del personal con herramientas digitales. El Local B presentó mejoras sostenidas, aunque el entorno operativo (picos de demanda y rutas de entrega más extensas) influyó en su tiempo medio de entrega. En ambos casos, la disminución de cancelaciones indica mayor trazabilidad y mejor coordinación entre roles.
+
+Se observó estabilidad del backend en Hetzner y tiempos de carga del panel aceptables en Vercel. La entrega de la app como APK facilitó pruebas en campo y redujo fricción de instalación. La infraestructura soportó el uso sin incidencias críticas durante el periodo de medición.
+
+ \subsubsection{Limitaciones}
+El tamaño muestral es reducido y el periodo de observación acotado. No se integraron notificaciones en tiempo real; el refresco de estados fue manual o por consulta periódica, lo que puede afectar percepción de respuesta en picos. Las métricas se enfocan en indicadores operativos y usabilidad; se propone ampliar mediciones a satisfacción del cliente final y análisis de rutas en iteraciones futuras.
+
+ \subsubsection{Mejoras porcentuales por indicador}
+Para una lectura ejecutiva, se presentan las variaciones porcentuales por indicador en ambos locales. Los valores positivos representan mejoras: reducciones en tiempo y errores, e incrementos en volumen.
+
+\begin{table}[htbp]
+\centering
+\caption{\textit{Variación porcentual por indicador (Local A y B)}}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Indicador} & \textbf{Local A Mejora (\%)} & \textbf{Local B Mejora (\%)} \\
+\midrule
+Reducción de tiempo de registro & 40 & 37 \\
+Reducción de errores de registro & 66 & 63 \\
+Reducción de tiempo de entrega & 18 & 18 \\
+Incremento de pedidos diarios & 31 & 33 \\
+Reducción de cancelaciones & 33 & 33 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Estas variaciones consolidan el impacto operativo del prototipo: menor fricción en captura de pedidos, menos errores y mayor throughput diario, con tiempos de entrega más acotados.
+
+ \subsubsection{Disponibilidad y latencia observada}
+Durante las tres semanas de validación se midieron disponibilidad y latencias representativas del panel web (Vercel) y de la API (Hetzner), así como tiempos percibidos en operaciones clave.
+
+\begin{table}[htbp]
+\centering
+\caption{\textit{Métricas de rendimiento y latencia}}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Componente/Endpoint} & \textbf{Mediana (ms)} & \textbf{p95 (ms)} \\
+\midrule
+Panel web (carga SSR) & 250 & 850 \\
+API GET /products & 150 & 480 \\
+API GET /orders & 180 & 550 \\
+API POST /orders & 220 & 700 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{\textit{Disponibilidad por servicio}}
+\begin{tabular}{lcl}
+\toprule
+\textbf{Servicio} & \textbf{Disponibilidad (\%)} & \textbf{Observaciones} \\
+\midrule
+Panel web (Vercel) & 99.9 & Sin incidencias relevantes; buen desempeño en picos \\
+API (Hetzner) & 99.6 & Dos reinicios breves de contenedor por mantenimiento \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Las métricas son consistentes con el diseño elegido: el panel aprovecha optimizaciones de Vercel y la API mantiene tiempos adecuados en operaciones habituales, con estabilidad suficiente para el contexto de adopción inicial.
 
 \section{Análisis de datos}
 

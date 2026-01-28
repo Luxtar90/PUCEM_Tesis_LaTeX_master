@@ -1,18 +1,18 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de prototipo del frontend móvil}}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de prototipo del panel web administrativo}}{18}{figure.caption.12}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura modular del backend (NestJS)}}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de despliegue y componentes}}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama entidad‑relación (ER) del esquema de datos}}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Flujo de autenticación y autorización}}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de secuencia del proceso de pedido}}{34}{figure.caption.17}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de prototipo del frontend móvil}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de prototipo del panel web administrativo}}{21}{figure.caption.12}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura modular del backend (NestJS)}}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de despliegue y componentes}}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama entidad‑relación (ER) del esquema de datos}}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Flujo de autenticación y autorización}}{31}{figure.caption.16}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de secuencia del proceso de pedido}}{36}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{42}{figure.caption.20}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{49}{figure.caption.26}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{53}{figure.caption.23}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{53}{figure.caption.24}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textit {Diagrama de flujo del funcionamiento general de la plataforma SaaS}}}{54}{figure.caption.25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{60}{figure.caption.29}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{60}{figure.caption.30}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textit {Diagrama de flujo del funcionamiento general de la plataforma SaaS}}}{61}{figure.caption.31}%
