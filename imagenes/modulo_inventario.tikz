@@ -1,0 +1,16 @@
+\begin{tikzpicture}[every node/.style={align=center, transform shape}, node distance=1.6cm and 2.6cm]
+\tikzset{
+  actor/.style={draw, rounded corners, fill=cyan!15, minimum width=4.6cm, minimum height=1.1cm},
+  service/.style={draw, rounded corners, fill=green!15, minimum width=4.8cm, minimum height=1.1cm},
+  dbs/.style={draw, rounded corners, fill=orange!20, minimum width=4.6cm, minimum height=1.1cm},
+  proc/.style={draw, rounded corners, fill=purple!15, minimum width=5.2cm, minimum height=1.1cm}
+}
+\node[actor] (admin) {Panel web\\Administrativo};
+\node[service, right=of admin] (backend) {Backend/API\\Inventario};
+\node[dbs, right=of backend] (db) {Base de datos\\Productos y stock};
+\node[proc, below=1.2cm of backend] (rules) {Validación de stock\\y prevención de agotados};
+\draw[-latex] (admin) -- (backend) node[midway, above, text width=3.4cm, align=center, yshift=2pt] {Actualización de stock};
+\draw[-latex] (backend) -- (db) node[midway, above, text width=3.0cm, align=center, yshift=2pt] {Persistencia};
+\draw[-latex] (backend) -- (rules);
+\draw[-latex] (rules) -- (backend);
+\end{tikzpicture}

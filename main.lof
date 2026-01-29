@@ -1,21 +1,24 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces \textit {Diagrama de flujo del funcionamiento general de la plataforma SaaS}}}{11}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Ciclo iterativo de la Investigación Basada en Diseño}}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura de la aplicación móvil}}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura del panel web}}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama entidad-relación (ER) del esquema de datos planificado}}{27}{figure.caption.16}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{29}{figure.caption.17}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Arquitectura del despliegue de la plataforma}}{29}{figure.caption.18}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Flujo principal del frontend móvil para cliente y repartidor}}{31}{figure.caption.19}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Flujo principal del panel web administrativo}}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Ciclo iterativo de la Investigación Basada en Diseño}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{22}{figure.caption.13}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{23}{figure.caption.14}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura del panel web}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama entidad-relación (ER) del esquema de datos planificado}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{30}{figure.caption.18}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Arquitectura del despliegue de la plataforma}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Flujo principal del frontend móvil para cliente y repartidor}}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Flujo principal del panel web administrativo}}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Flujo general del proceso de pedido}}{40}{figure.caption.22}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama del módulo de inventario}}{40}{figure.caption.23}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama del módulo de repartidores}}{40}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{42}{figure.caption.22}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{47}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{50}{figure.caption.24}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{50}{figure.caption.25}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \textit {Diagrama de flujo del funcionamiento general de la plataforma SaaS}}}{51}{figure.caption.26}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{55}{figure.caption.29}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{55}{figure.caption.30}%

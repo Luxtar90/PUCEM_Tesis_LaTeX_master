@@ -1,13 +1,13 @@
 \chapter{Método}
 
-\subsection{Enfoque y tipo}
-La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad. 
-El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico.
-
 \section{Diseño de la Investigación}
 El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser es una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real.
 No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones. Sin embargo, todas comparten un núcleo cíclico y iterativo de construcción y evaluación.
 Nosotros presentamos el siguiente esquema integrando los modelos clave de Hevner et al. (2004) y Peffers et al. (2007).
+\subsection{Enfoque y tipo}
+La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad. 
+El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico.
+
 
 \begin{figure}[htbp]
 \centering
@@ -28,7 +28,7 @@ Nosotros presentamos el siguiente esquema integrando los modelos clave de Hevner
 \end{itemize}
 
 \paragraph{Proceso ágil y sprints}
-La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
+La implementación ágil se estructuró en iteracionei cortas (steraci)ocon objetivossdefini co:rlevantar raquisitos sínimos vi bles, co(struir prototipos funcionslep,irnatizarspruebas )  usobinidad ybajujtar funcionalidades atiartir de la votroalim defción.iCada sprint concluyó con una rnvisióiddondo:se covsoliaaron mejoras y se defnniaronrtareio sa a el sigumeíne cicloos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
 
 \textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla xx de la sección Técnicas e instrumentos de recolección de datos.
 
@@ -244,7 +244,7 @@ Estos roles se asignan en la base de datos, ya sea mediante un campo role en la 
 
 La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
-Para la autenticación y autorización, utilizamos JWT (JSON Web Tokens) como mecanismo de autenticación stateless. JWT es un estándar abierto (RFC 7519) ampliamente utilizado para transmitir información de forma segura en forma de token JSON firmado. De hecho, la autenticación con tokens JWT se ha convertido en un estándar de facto para proteger los endpoints sensibles de aplicaciones web y APIs (Aguilera, s.f.). En nuestro sistema, implementamos JWT mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+Para la autenticación y autorización, utilizamos JWT (JSON Web Tokens) como mecanismo de autenticación stateless. JWT es un estándar abierto (RFC 7519) ampliamente utilizado para transmitir información de forma segura en forma de token JSON firmado. De hecho, la autenticación con tokens JWT se ha convertido en un estándar de facto para proteger los endpoints sensibles de aplicaciones web y APIs (Aguilera,. xm XX implementamos JWT mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
 
 El flujo de autenticación y autorización se muestra en el siguiente diagrama, y el detalle del mismo se encuentra en el Anexo XX.
 
@@ -268,7 +268,7 @@ Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de d
 Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de "convención sobre configuración", nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto.
 
 \subsubsection{Desarrollo de la Plataforma SaaS}
-Esta etapa, que engloba los Objetivos Específicos 3, 4 y 5, se centró en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas (Anexo 5). El desarrollo fue modular y paralelo:
+Estauxoe5tivos Específicos 3, 4 y 5, se centró en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas (Anexo 5). El desarrollo fue modular y paralelo:
 Configuración inicial: Se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
 \subsubsection{Desarrollo del frontend  móvil (React Native + Expo)}
 Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes y repartidores, con navegación predecible, validaciones tempranas y comunicación robusta con la API. El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código.
@@ -334,11 +334,13 @@ reales.
 \subsubsection{Desarrollo del backend (NestJS, capas, módulos)}
 Objetivo del backend: exponer servicios estables y seguros, aplicar reglas de negocio y coordinar
 persistencia con una arquitectura modular mantenible.
+
 El backend se implementó con NestJS, framework de Node.js de arquitectura modular que
 promueve buenas prácticas mediante el uso de TypeScript, decoradores e inyección de dependencias.
 Frente a Express puro, NestJS aporta una estructura clara basada en módulos, controladores
 y servicios, facilitando la escalabilidad y el mantenimiento del código por dominios de negocio
 (Usuarios, Productos, Pedidos, Autenticación, entre otros).
+
 Cada módulo agrupa tres componentes fundamentales: un controlador que define endpoints y
 atiende solicitudes HTTP; un servicio que concentra la lógica de negocio; y una capa de datos o
 repositorio que interactúa con la base de datos, ya sea mediante un ORM o consultas específicas
@@ -348,6 +350,7 @@ controlador; el servicio valida credenciales y emite tokens JWT; y se apoya en e
 para verificar identidad. De modo análogo, el módulo de Productos ofrece rutas para listar y crear
 productos (acción reservada al administrador), mientras su servicio aplica reglas de negocio y sus
 entidades mapean a tablas mediante el ORM.
+
 La capa de control incluye manejo de errores y respuestas consistentes; se emplean filtros de
 excepciones para capturar y formatear fallos (validación, autorización, acceso a datos) en códigos
 HTTP adecuados.
@@ -358,18 +361,21 @@ perfiles de ejecución (desarrollo, pruebas, producción) y resguardando credenc
 El uso integral de TypeScript habilita detección temprana de errores y mejor navegación del
 22
 código.
+
 Se definieron DTOs para tipar y validar datos de entrada y salida; la integración con classvalidator y class-transformer, junto con pipes de validación global, permite rechazar automáticamente solicitudes mal formadas y entregar al controlador datos ya validados.
 La inyección de dependencias mantiene el código desacoplado y testeable.
 Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y
 Nest provee instancias adecuadas.
 Por ejemplo, OrdersService puede inyectar el servicio de notificaciones o el repositorio de
 pedidos sin instanciarlos manualmente, siguiendo el principio de inversión de dependencias.
+
 Las responsabilidades se mantienen unidireccionales: el controlador recibe la petición y delega; el servicio ejecuta reglas de negocio y coordina repositorios; y la capa de datos interactúa
 exclusivamente con la base (Dragos, s.f.; Q2B Studio, s.f.).
 Esta separación, alineada con Clean Architecture y DDD, evita mezclas de responsabilidades y
 facilita el reemplazo de componentes sin afectar capas superiores.
 Esta arquitectura favorece la mantenibilidad y la escalabilidad.
 Cambios en la forma de acceder a datos (p. ej., migrar de TypeORM a otro ORM o a microservicios) impactan principalmente en la capa de datos.
+
 Asimismo, simplifica las pruebas unitarias al permitir testear servicios o controladores en
 aislamiento mediante simulaciones.
 La persistencia se maneja con TypeORM, integrado mediante @nestjs/typeorm.
@@ -379,16 +385,19 @@ TypeORM soporta múltiples motores (PostgreSQL, MySQL, etc.) y ofrece migracione
 esquema; aunque inicialmente se usó sincronización automática, se prevé incorporar migraciones
 23
 controladas.
+
 La organización por módulos comprende, entre otros: Users (usuarios y roles, integrado con
 Auth), Products y Categories (gestión de catálogo), Orders (creación, asignación y estados de
 pedidos), Delivery (operativas de repartidores, según el diseño), y Auth (autenticación JWT y
 guardias de acceso).
 NestJS se integra con Passport.js para la autenticación; se definió una estrategia JWT personalizada (detallada en la sección de seguridad).
+
 Además, se emplearon Guards, Interceptors y Middleware en puntos específicos: un middleware
 global de registro para depurar peticiones, guards para control de acceso (AuthGuard [jwt] y un
 guard de roles) e interceptores para formatear respuestas y medir rendimiento.
 Se prevé incorporar un interceptor global que mida el tiempo de ejecución y el conteo de
 accesos.
+
 En validación de datos, se activó un pipe global para que los DTOs sean transformados y
 verificados antes de llegar a los controladores, lo que robusteció la API ante entradas malformadas.
 Se consideran medidas adicionales de endurecimiento para producción, como cabeceras de
@@ -405,44 +414,57 @@ datos sensibles como la URL de la base de datos, credenciales o claves JWT no es
 de forma rígida, sino definidos externamente.
 
 
+
 (debe ser anexo de la base de datos )
 Usuario: Representa a los usuarios de la plataforma. Incluye id (clave primaria), nombre, email,
 contraseña encriptada, rol (cliente, repartidor, administrador) y, en el caso de repartidores, un estado
 de aprobación. El rol se usa para aplicar lógicas diferenciadas; el JWT del usuario incorpora su rol
 para decisiones de autorización.
+
 Producto: Ítem disponible para pedido con campos como id, nombre, descripción, precio e
 imagen. Cada producto se asocia a una categoría y, en arquitectura multinegocio, al negocio
 propietario.
+
 Categoría: Agrupa productos. Contiene id y nombre, pudiendo admitir jerarquías. En enfoque
 multinegocio, las categorías se vinculan al negocio correspondiente para evitar conflictos y permitir
 catálogos por empresa.
+
 Pedido: Registra cada orden realizada por un cliente con id, fecha/hora, estado (pendiente,
 asignado, en camino, entregado, cancelado, etc.), referencia al cliente y, cuando aplica, al repartidor
 asignado. El detalle del pedido se modela con una tabla de items (OrderItem) que normaliza la
 relación muchos a muchos con Producto.
+
 Negocio: Representa cada empresa dentro de la plataforma (tenant). Incluye id, nombre, bran27
 ding (logo, colores), contacto y configuraciones. Otras entidades se relacionan con Negocio para
 segmentar datos por empresa.
+
 Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen
 una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
+
 Entidades de soporte: según el alcance, pueden añadirse Pago, Direcciones o Notificaciones.
+
 Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo,
 estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de
 unicidad en claves naturales donde corresponde (emails de usuarios, nombres de categorías por
 negocio). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio
 pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus
 items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
+
 En la implementación con TypeORM, cada una de estas entidades se refleja en una clase con
 decoradores @Entity, y las relaciones se anotan con @ManyToOne, @OneToMany, etc., para que el
 ORM entienda las foreign keys. Por ejemplo, la entidad Pedido tendría @ManyToOne(() => User,
 user => user.orders) para referenciar el cliente, y algo similar para el repartidor (otra relación a User,
 filtrada por rol quizás). También un @ManyToOne(() => Business, ...) si soportamos multi-negocio
-en pedidos. El enfoque de diseño multinegocio que consideramos es el de modelo compartido con
+en pedidos.
+
+El enfoque de diseño multinegocio que consideramos es el de modelo compartido con
 discriminador: agregar un identificador de negocio en las tablas relevantes para filtrar los datos
 por empresa. Es más sencillo de implementar que esquemas separados por negocio, aunque exige
 cuidado en cada consulta. Al incluir businessId en Productos, Categorías y Pedidos, todas las
 consultas deben filtrar por el negocio correspondiente para evitar mezclar datos de distintas empresas
-(Scalzotto, s.f.). En el código, las consultas con TypeORM se construyen a través de relaciones
+(Scalzotto, s.f.).
+
+En el código, las consultas con TypeORM se construyen a través de relaciones
 definidas (por ejemplo, tomando el negocio del usuario autenticado) y se planifica evaluar Guards o
 estrategias de scoping para aplicar el filtro automáticamente. Una alternativa más robusta (aunque
 más compleja) para multinegocio sería separar completamente los datos de cada empresa, por
@@ -453,6 +475,7 @@ se optó por un único esquema con campo discriminador, manteniendo la posibilid
 a otro enfoque si se requiere mayor aislamiento. Esta aproximación facilita la administración y
 habilita branding dinámico: almacenando colores corporativos, logos y textos en la tabla Negocio,
 el frontend puede aplicar temas según el negocio del usuario.
+
 Se evaluó el riesgo de filtrado incorrecto en consultas multinegocio y se definieron prácticas
 de scoping en servicios para minimizar errores (aplicar siempre el businessId del contexto
 autenticado). A futuro, se podría reforzar este mecanismo con decoradores de ámbito de negocio o
@@ -472,7 +495,89 @@ opera con un único negocio, se sientan las bases para diferenciar datos por cli
 el futuro. Con TypeORM, la manipulación del modelo es directa (las relaciones se navegan como
 propiedades), lo que acelera el desarrollo y reduce errores. Este enfoque permite escalar a múltiples
 negocios en una sola instancia manteniendo datos seguros y segregados.
+
 Finalmente, se prevé definir estrategias de respaldo y recuperación ante desastres acordes al
 tamaño del despliegue, así como mecanismos de migración segura para cambios de esquema futuros
 (migraciones versionadas, ventanas de mantenimiento y validación posterior a la actualización).
+
+Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas:
+
+Módulo de Pedidos:
+El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización.
+Se puede evidenciar en la figuara 7, y el detalle se encuentra en el anexoxxx.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
+\caption{Flujo general del proceso de pedido}
+\label{fig:secuencia-pedido}
+\end{figure}
+
+Módulo de Inventario: Lógica para descontar stock y prevenir ventas de productos agotados.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
+\caption{Diagrama del módulo de inventario}
+\label{fig:modulo-inventario}
+\end{figure}
+
+Módulo de Repartidores: Proceso de registro, aprobación administrativa y asignación manual de pedidos.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
+\caption{Diagrama del módulo de repartidores}
+\label{fig:modulo-repartidores}
+\end{figure}
+
+Dashboard Analítico: Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
+
+Chatbot RAG: Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma para su posterior despliegue como API.
+
+Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
+
+\subsubsection{Implementación y Validación Piloto}
+Esta etapa tuvo como propósito evaluar el sistema integral en condiciones reales. Su desarrollo comprendió los siguientes pasos:
+\begin{enumerate}
+\item Despliegue en entorno de nube:
+En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación Node independiente. Se contempló el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción. NestJS recomienda buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la aplicación. Se configuró la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén codificados de forma rígida, sino definidos externamente. Se decidió desplegar el backend en un servidor en la nube de Hetzner, aprovechando su relación costo/rendimiento. Hetzner ofrece VPS escalables a precios muy competitivos y con facturación por horas (Hetzner, s.f.), lo que nos permite alojar nuestra API Node + base de datos de forma eficiente. La infraestructura prevista es tener la API corriendo (posiblemente en un contenedor Docker) escuchando peticiones HTTPS, y la base de datos SQL (PostgreSQL) corriendo ya sea en el mismo servidor o en un servicio administrado, según las necesidades de escala. Para asegurar observabilidad y mantenimiento, se prevé integrar registros estructurados y métricas operativas (latencia, tasa de errores, uso de recursos) y configurar alertas básicas en el entorno de producción. Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto. Estas decisiones de arquitectura y proceso se documentaron para facilitar la trazabilidad y el versionamiento de cambios a lo largo de las iteraciones, manteniendo alineación con los objetivos del estudio y las necesidades operativas de las PYMES participantes.
+\item Capacitación inicial:
+Se realizó una sesión de capacitación de 2 horas por local con el personal administrativo y los repartidores, cubriendo el uso básico de la aplicación móvil y el panel web.
+\item Período de validación:
+Se estableció un período operativo de tres semanas. La primera semana se destinó al levantamiento de la línea base (pretest) mediante observación directa de los procesos tradicionales. Las dos semanas siguientes se dedicaron al uso continuo de la plataforma SaaS para registrar su desempeño en condiciones reales.
+\end{enumerate}
+
+\begin{table}[htbp]
+\centering
+\caption{Tareas evaluadas en pruebas de usabilidad}
+\label{tab:tareas-usabilidad}
+\begin{tabular}{|c|l|l|l|}
+\hline
+N.º & Tarea & Rol & Criterio de éxito \\
+\hline
+1 & Crear un nuevo pedido & Cliente & Completar en < 3 min \\
+2 & Consultar estado de pedido & Cliente & Localizar en < 30 seg \\
+3 & Agregar producto al catálogo & Administrador & Completar sin errores \\
+4 & Asignar pedido a repartidor & Administrador & Completar en < 1 min \\
+5 & Marcar pedido como entregado & Repartidor & Completar sin ayuda \\
+6 & Realizar consulta al chatbot & Cliente & Obtener respuesta pertinente \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item Recolección de datos de validación:
+En la tercera semana se recogieron los datos post-implementación. Se aplicó el cuestionario SUS a los usuarios finales (administrador, cajero, 2 repartidores por local) y se utilizó la ficha de observación para medir nuevamente los indicadores operativos (tiempos, errores, volúmenes) ahora con el sistema en funcionamiento.
+\item Monitoreo técnico:
+Se supervisó la disponibilidad del backend y el panel web, y se recopilaron los registros automáticos de la plataforma para validar las métricas de volumen y cancelaciones.
+\end{enumerate}
+
+\subsubsection{Consideraciones éticas}
+Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
+Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos).
+La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES. Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible.
+Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
+
 
