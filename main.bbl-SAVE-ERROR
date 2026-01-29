@@ -112,7 +112,6 @@
       \field{urlmonth}{1}
       \field{urlyear}{2026}
       \field{year}{2025}
-      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
@@ -218,38 +217,6 @@
       \endverb
       \verb{url}
       \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
       \endverb
     \endentry
     \entry{scalzotto_multitenancy_nestjs}{online}{}{}
@@ -478,7 +445,6 @@
       \field{urlmonth}{1}
       \field{urlyear}{2026}
       \field{year}{2025}
-      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
@@ -584,38 +550,6 @@
       \endverb
       \verb{url}
       \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
       \endverb
     \endentry
     \entry{scalzotto_multitenancy_nestjs}{online}{}{}

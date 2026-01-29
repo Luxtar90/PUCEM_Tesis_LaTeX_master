@@ -1,106 +1,173 @@
 \chapter{Método}
 
-\section{Diseño de la Investigación}
-
 \subsection{Enfoque y tipo}
+La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad. 
+El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico.
 
-La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad.
+\section{Diseño de la Investigación}
+El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser es una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real.
+No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones. Sin embargo, todas comparten un núcleo cíclico y iterativo de construcción y evaluación.
+Nosotros presentamos el siguiente esquema integrando los modelos clave de Hevner et al. (2004) y Peffers et al. (2007).
 
-El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico. Se consideran los siguientes aspectos: investigación aplicada; diseño no experimental; estudio descriptivo y exploratorio; y desarrollo iterativo bajo metodología Scrum.
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
+\caption{Ciclo iterativo de la Investigación Basada en Diseño}
+\label{fig:ibd-ciclo}
+\end{figure}
 
-El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de \textcite{hevner2004,peffers2007}.
+\textbf{Fase 1.} El objetivo de esta fase fue comprender y definir claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
+
+\textbf{Fase 2.} Una vez comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
+
+\textbf{Fase 3 y Fase 4.} Forman el ciclo central de construcción-evaluación de la plataforma. Incluye desde la selección de las herramientas tecnológicas, la arquitectura y el desarrollo de la solución. Se trabaja en ciclos cortos.
+\begin{itemize}
+  \item Se diseña y desarrolla un incremento (un prototipo, una versión, un módulo).
+  \item Inmediatamente se demuestra y prueba (en un entorno piloto, con usuarios, en simulación).
+  \item Los resultados de esa demostración alimentan directamente el rediseño y desarrollo de la siguiente iteración.
+\end{itemize}
+
+\paragraph{Proceso ágil y sprints}
+La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
+
+\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla xx de la sección Técnicas e instrumentos de recolección de datos.
+
+\textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
 
 \subsection{Población y Muestra}
 
 \subsubsection{Población}
-La población estuvo conformada por Pequeñas y Medianas Empresas del sector gastronómico de la ciudad de Portoviejo, caracterizadas por operar con recursos limitados y por distintos niveles de adopción tecnológica en sus procesos administrativos y operativos.
+La población objetivo estuvo constituida por la totalidad de las Pequeñas y Medianas Empresas (PYMES) del sector gastronómico formalmente establecidas en la ciudad de Portoviejo, provincia de Manabí, Ecuador.
+\subsubsection{Muestra y criterios de selección}
+Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestra final estuvo conformada por dos PYMES gastronómicas. Los criterios de inclusión fueron:
+\begin{enumerate}[label=\arabic*)]
+  \item Ser una PYME ubicada en Portoviejo.
+  \item Contar con servicio de consumo en el local y delivery.
+  \item Manifestar interés en mejorar procesos mediante digitalización.
+  \item Disponer de conectividad básica a internet.
+  \item Otorgar consentimiento para participar en todas las fases del estudio.
+\end{enumerate}
+Se excluyeron establecimientos con operación irregular o que ya utilizaban sistemas de gestión integral.
 
-\subsubsection{Muestra}
-La muestra se integró por dos PYMES seleccionadas mediante muestreo no probabilístico por conveniencia.
+\subsubsection{Operacionalización de variables}
+\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su intervención consistió en su implementación y uso por parte de las PYMES piloto durante el período de validación.
 
-\subsubsection{Criterios de inclusión y exclusión}
-Los criterios de inclusión fueron: disponibilidad de los propietarios, representatividad de sus procesos y disposición a evaluar una solución para la gestión de pedidos, inventarios y atención al cliente.
+\textbf{Variables dependientes: Indicadores operativos.} Son las métricas de desempeño que se buscó impactar con la implementación de la plataforma:
+\begin{enumerate}[label=\arabic*)]
+  \item \textbf{Eficiencia en el registro de pedidos:} medida a través del tiempo promedio (minutos) para registrar un pedido y la tasa de errores de registro (porcentaje de pedidos con información incorrecta o incompleta).
+  \item \textbf{Eficacia del servicio de delivery:} medida mediante el tiempo promedio de entrega (minutos) desde la confirmación del pedido hasta su entrega.
+  \item \textbf{Productividad operativa:} medida a través del volumen diario de pedidos procesados.
+  \item \textbf{Calidad del servicio:} inferida a través de la tasa de cancelaciones de pedidos (porcentaje).
+  \item \textbf{Usabilidad del sistema:} medida a través del puntaje en la System Usability Scale (SUS), que evalúa la facilidad de uso percibida.
+\end{enumerate}
 
-Esta selección aportó información relevante y contextualizada para el diseño y validación del prototipo.
-
-Para la caracterización de la muestra se recogieron datos básicos del negocio (tamaño, número de empleados, volumen de pedidos, herramientas tecnológicas utilizadas) que permitieron contextualizar los hallazgos.
-
-Se definieron criterios de exclusión (por ejemplo, empresas sin operaciones regulares durante el periodo de estudio o con procesos imposibles de observar) y se especificó el procedimiento de acercamiento y consentimiento informado.
-
-Aunque el tamaño de la muestra es acotado, se priorizó la profundidad del análisis y la pertinencia de los casos seleccionados para validar el prototipo en escenarios reales.
-
-\subsection{Consideraciones éticas}
-
-Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
-
-Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos). La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES.
-
-Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible. Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
-
-\subsection{Metodología}
-
+\begin{longtable}{p{3.3cm}p{5.0cm}p{4.2cm}p{3.0cm}}
+\caption{\textit{Operacionalización de variables e indicadores de medición}} \\
+\toprule
+\textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
+\midrule
+\endhead
+Eficiencia en el registro de pedidos & Grado de optimización en la captura y procesamiento inicial de un pedido. & Ficha de observación estructurada (registro de tiempos y errores). & Reducción $\geq$ 25\% en el tiempo promedio de registro y en la tasa de errores. \\
+Eficacia del servicio de delivery & Capacidad del sistema para gestionar y completar entregas dentro de un tiempo esperado. & Ficha de observación estructurada (registro de tiempos de entrega). & Reducción $\geq$ 15\% en el tiempo promedio de entrega. \\
+Productividad operativa & Volumen de pedidos que el negocio puede procesar de manera efectiva en un día. & Registros administrativos generados por la plataforma (conteo de pedidos diarios). & Incremento $\geq$ 10\% en el número promedio de pedidos diarios procesados. \\
+Calidad del servicio & Estabilidad y confiabilidad en la ejecución del servicio, minimizando fallas. & Registros administrativos de la plataforma (conteo de pedidos cancelados). & Reducción $\geq$ 20\% en la tasa de cancelaciones de pedidos. \\
+Usabilidad del sistema & Grado de facilidad, eficiencia y satisfacción con que los usuarios pueden emplear la plataforma. & Cuestionario estandarizado System Usability Scale (SUS). & Puntaje promedio $\geq$ 68 (umbral de aceptabilidad en la escala SUS). \\
+\bottomrule
+\end{longtable}
+Nota: Los umbrales de éxito para los indicadores operativos (reducción o incremento porcentual) se establecieron con base en expectativas realistas de mejora para un piloto de corto plazo, considerando la magnitud del cambio que justificaría la adopción de la herramienta. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
 \subsubsection{Técnicas e instrumentos de recolección de datos}
 
-\paragraph{Técnicas aplicadas}
-Se emplearon técnicas complementarias para recabar información cuantitativa y cualitativa: encuestas estructuradas, entrevistas semiestructuradas, pruebas de usabilidad y observación directa de los procesos internos de las PYMES participantes.
+En la siguiente tabla se muestran las técnicas e instrumentos utilizados, definiendo el momento de la aplicación y el público objetivo.
 
-\paragraph{Instrumentos}
-Los instrumentos incluyeron formularios digitales (Google Forms) para encuestas, guías de entrevista revisadas y aprobadas por el tutor, y herramientas de registro y cronometraje durante las pruebas de usabilidad. Se aplicaron métricas estándar de usabilidad, como el System Usability Scale (SUS), junto con indicadores de eficiencia y eficacia para evaluar el desempeño del prototipo.
+\begin{longtable}{p{2.1cm}p{2.4cm}p{2.9cm}p{3.1cm}p{2.3cm}p{2.3cm}}
+\caption{\textit{Técnicas e instrumentos de recolección de datos}} \\
+\toprule
+\textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
+\midrule
+\endhead
+Entrevista & Guía de entrevista semiestructurada & Profundizar en los procesos operativos, necesidades específicas y expectativas para el levantamiento de requisitos. & Preguntas abiertas organizadas por áreas (pedidos, inventario, delivery). Grabada y transcrita. & Fase 1: Diagnóstico (línea base). & Propietarios de las PYMES. \\
+Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma implementada. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Validación (post-intervención). & Usuarios finales de la plataforma (administradores, cajeros, repartidores). \\
+Observación estructurada & Ficha de observación de indicadores operativos & Registrar datos cuantitativos objetivos sobre tiempos, errores y volúmenes de los procesos clave. & Diseñada para registrar: tiempos (min), conteo de errores, volumen de pedidos y cancelaciones. & En dos momentos: pre-intervención (línea base) y post-intervención (semana 3). & Procesos operativos de las PYMES piloto (Local A y B). \\
+Revisión documental & Checklist de despliegue y registros administrativos & Verificar la correcta implementación técnica y recopilar datos productivos generados por el sistema. & Lista de verificación para servicios en la nube. Explotación de logs y reportes generados por la propia plataforma. & Fase 6: Validación (post-intervención). & Plataforma SaaS desplegada y sus registros automatizados. \\
+\bottomrule
+\end{longtable}
 
-\paragraph{Diseño de instrumentos}
-El diseño de instrumentos siguió buenas prácticas de claridad y neutralidad en la formulación de ítems.
 
-\paragraph{Encuestas}
-Las encuestas incluyeron preguntas cerradas (escala Likert) y abiertas para capturar tanto opiniones cuantificables como comentarios cualitativos.
 
-\paragraph{Entrevistas}
-Las guías de entrevista se estructuraron por temática (experiencia actual, necesidades, percepción del prototipo) y se aplicaron en sesiones semiestructuradas.
+\subsubsection{Procedimiento}
+La aplicación de la metodología Investigación Basada en Diseño (IBD) se detalla en el Diseño de la investigación. En esta sección se profundiza en las Fases 3, 4 y 5 al ser el núcleo del trabajo.
 
-\paragraph{Pruebas de usabilidad}
-En pruebas de usabilidad se definieron tareas representativas (realizar un pedido, consultar estado de entrega, crear producto en el panel admin) con escenarios controlados y tiempos registrados; se identificaron errores, puntos de fricción y necesidades de mejora.
+Para una mejor comprensión metodológica, se detallan siguiendo la estructura:
+\begin{enumerate}[label=\arabic*)]
+  \item Diseño arquitectónico.
+  \item Desarrollo.
+  \item Implementación y validación.
+\end{enumerate}
+Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno operativo real.
 
-\paragraph{Piloto y SUS}
-Previo a la aplicación, se realizó una verificación piloto de comprensión de ítems para detectar ambigüedades y ajustar redacción.
+\paragraph{Diseño de la arquitectura del sistema}
+\textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). Las decisiones clave se resumen en la Tabla 2.
 
-En el caso del SUS, se siguió el procedimiento estándar de puntuación y normalización, interpretando resultados en rangos de aceptabilidad.
+\begin{longtable}{p{2.6cm}p{3.1cm}p{3.2cm}p{4.6cm}}
+\caption{\textit{Selección tecnológica para la arquitectura de la plataforma SaaS}} \\
+\toprule
+\textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
+\midrule
+\endhead
+Backend (API y lógica) & NestJS (Node.js/TypeScript) & Express.js (Node.js), Django (Python), Spring Boot (Java) & Arquitectura modular por defecto, tipado estático (TypeScript) para reducir errores, inyección de dependencias integrada y ecosistema robusto para APIs escalables. \\
+Base de datos & PostgreSQL & MySQL, MongoDB (NoSQL) & Modelo relacional adecuado para la integridad de datos transaccionales (pedidos, inventario). Balance entre rendimiento, características avanzadas y costo cero (open-source). \\
+Aplicación móvil & React Native + Expo & Flutter (Dart), desarrollo nativo (Kotlin/Swift) & Multiplataforma real (iOS/Android desde un solo código), Expo para agilizar ciclo de desarrollo (builds, testing) y acceso a APIs nativas sin complejidad. \\
+Panel web admin & Next.js (React) + Tailwind CSS & React (Create React App), Vue.js, Angular & Renderizado híbrido (SSR/CSR) de Next.js para mejor SEO y performance de carga; Tailwind CSS para estilizado ágil y consistente. \\
+Autenticación & JWT (JSON Web Tokens) + bcrypt & Sesiones en servidor, OAuth 2.0 (third-party) & Stateless y escalable para APIs REST. Simplicidad de implementación y seguridad suficiente para el alcance del piloto. \\
+Contenedorización & Docker & -- & Estandarización del entorno de desarrollo y despliegue, garantizando consistencia entre equipos y facilitando el deployment en la nube. \\
+Despliegue backend/DB & VPS (Hetzner) & AWS/Azure (cloud), Railway, Render & Costo-eficiencia y control total del servidor para un piloto, con rendimiento predecible y facturación simple. \\
+Despliegue panel web & Vercel & Netlify, GitHub Pages & Integración nativa con Next.js, despliegue automático por Git, CDN global y SSL gratuito, minimizando tareas de DevOps. \\
+\bottomrule
+\end{longtable}
 
-\paragraph{Gestión y organización de datos}
-Los datos fueron centralizados y organizados para facilitar su análisis, asegurando consistencia entre las diferentes fuentes.
+\subsubsection{Arquitectura de la Plataforma}
 
-\subsubsection{Análisis de datos}
+Una vez establecidas las herramientas tecnológicas, se definió y estructuró una arquitectura por capas:
 
-Los datos cuantitativos recolectados mediante encuestas y métricas de usabilidad se analizaron con estadística descriptiva (frecuencias, porcentajes y promedios) y, cuando resultó pertinente, medidas de dispersión para comprender variabilidad. En el caso del SUS, se aplicó su metodología de puntuación y normalización para interpretar niveles de aceptabilidad de la interfaz. Se elaboraron tablas y visualizaciones básicas que facilitaron la comparación entre escenarios y la detección de tendencias.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.9\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
+\caption{Arquitectura por capas de la plataforma SaaS}
+\label{fig:arquitectura-capas}
+\end{figure}
+Los componentes principales de la plataforma son:
+\begin{itemize}
+  \item Aplicación móvil para clientes y repartidores.
+  \item Aplicación web para el panel de administración.
+  \item Servicios backends con sus respectivas APIs.
+\end{itemize}
+Para tener un mejor detalle de cada componente, se presenta a continuación la arquitectura de la aplicación móvil, la arquitectura de la aplicación web y el diagrama de la base de datos.
 
-La información cualitativa obtenida a través de entrevistas y observación directa se abordó mediante codificación abierta y categorización temática, agrupando hallazgos en dimensiones como facilidad de aprendizaje, claridad de flujos, fallos frecuentes y necesidades percibidas. Este análisis permitió identificar patrones y relaciones relevantes, así como sugerencias concretas de mejora trasladadas al backlog de desarrollo.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.85\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
+\caption{Arquitectura de la aplicación móvil}
+\label{fig:movil-arquitectura}
+\end{figure}
 
-Se realizó una evaluación comparativa de indicadores operativos y de usabilidad antes y después de la implementación del prototipo para estimar el impacto de la plataforma en las PYMES participantes. Entre los indicadores analizados se incluyeron la reducción de tiempos en procesos de pedidos, la disminución de errores de registro y la mejora en la satisfacción del usuario. Se documentaron los supuestos, el periodo de medición y las condiciones de prueba para asegurar que las comparaciones fueran válidas y reproducibles.
-
-\section{Procedimiento}
-
-Esta sección describe, en orden, el diseño y desarrollo del frontend móvil, del panel web administrativo, del backend con NestJS y del modelo de base de datos relacional. Cada parte inicia con su objetivo y alcances para facilitar la lectura y ubicar el rol que cumple dentro de la plataforma.
-
-\subsection{FASE 1: Planificación}
-Esta fase establece las decisiones estratégicas y el marco técnico del proyecto, asegurando coherencia entre objetivos, alcance y capacidades tecnológicas. Se definió el MVP y se seleccionaron tecnologías que maximizan mantenibilidad, velocidad de desarrollo y calidad de la experiencia de usuario, alineadas con buenas prácticas actuales.
-
-\subsubsection{Arquitectura y repositorios}
-Se adoptó una arquitectura por capas y dominios, con separación de responsabilidades entre cliente móvil, cliente web y servicios de negocio. La plataforma se estructuró en tres repositorios principales para favorecer independencia de ciclos de vida, pipelines de integración continua y control de versiones por componente:
-
-Backend (NestJS): Un repositorio dedicado a la API y lógica de negocio, implementado con NestJS y TypeScript. NestJS aporta una arquitectura modular basada en controladores, servicios y repositorios, inyección de dependencias y tipado estático, lo que reduce errores y mejora testabilidad. Su integración natural con herramientas de seguridad (JWT, Guards) y validación de datos (DTOs con pipes) permite construir servicios robustos y auditables. La modularidad por dominios (Usuarios, Pedidos, Productos, Auth) facilita escalar y evolucionar sin afectar otras áreas, y se alinea con prácticas de diseño como DDD. La contenedorización con Docker y despliegue en la nube se integran de forma directa, y el enfoque en TypeScript fortalece la mantenibilidad del código a largo plazo \ref{fig:backend-arquitectura}.
-
-Mobile (React Native + Expo): Un repositorio para la aplicación móvil multiplataforma. React Native habilita entregar una experiencia nativa en iOS y Android desde una única base de código, optimizando tiempos y costos. Expo simplifica todo el ciclo de vida (desarrollo con recarga en vivo, acceso a APIs nativas, compilación y distribución), disminuyendo barreras operativas y acelerando validaciones con usuarios. La UI se organiza con Tamagui, que provee componentes y sistema de estilos coherente y reutilizable entre móvil y web, facilitando consistencia visual y productividad. Esta elección permite iterar rápido sobre flujos críticos (registro, pedidos, entregas) y asegurar un rendimiento adecuado en dispositivos de gama media.
-
-Web (Next.js + React + Tailwind CSS): Un repositorio para el panel administrativo web. Next.js ofrece una experiencia web nativa moderna, con enrutamiento por archivos, Server‑Side Rendering y Static Site Generation cuando corresponde, optimización de recursos y soporte a componentes de servidor. Esto mejora tiempo de primer render, accesibilidad y percepción de desempeño en escritorio. React aporta el modelo declarativo y ecosistema ampliamente adoptado, y Tailwind CSS acelera el estilado con clases utilitarias consistentes, manteniendo diseño limpio y adaptable. Separar el panel en un repositorio propio permite evolucionar su UX/analítica con ciclos distintos al móvil, manteniendo foco en necesidades administrativas y reportes.
-
-La separación en tres repositorios independientes aporta beneficios claros: aislamiento de fallos y cambios, despliegues desacoplados, ownership por equipo/componente, menor complejidad de revisión y permisos más precisos. Operativamente, cada repositorio puede tener su pipeline CI/CD, pruebas y ambientes de staging propios, reduciendo acoplamiento y facilitando releases controladas.
-
-\subsubsection{Base de datos}
-La base de datos seleccionada es relacional (PostgreSQL) por su idoneidad para el dominio: el sistema requiere integridad referencial entre entidades centrales (Usuarios, Productos, Categorías, Pedidos y sus Items, Negocios), transacciones atómicas para operaciones compuestas (creación de pedidos y detalle), y consultas analíticas con uniones para construir reportes (ventas por periodo, productos más vendidos, tiempos de entrega). Un RDBMS garantiza consistencia mediante claves foráneas y restricciones, soporta índices para consultas críticas y facilita agregaciones SQL para métricas. Frente a una base NoSQL, el modelo relacional brinda mayor seguridad en estados consistentes y en auditorías, y se alinea con la necesidad de reportabilidad sin sacrificar rendimiento. Para el soporte multinegocio, se adopta un discriminador por empresa en tablas principales, que permite segmentar datos por negocio manteniendo simplicidad en una sola instancia y dejando abierta la evolución a enfoques más aislados si la escala lo demanda \ref{fig:er-diagrama}.
-
-\subsubsection{Prototipos y criterios de éxito}
-Durante esta fase se elaboraron prototipos de navegación de la app móvil y del panel administrativo, con el objetivo de validar flujos, jerarquías de información y criterios de usabilidad con actores clave. Se definieron criterios de éxito mensurables (reducción de tiempos y errores operativos, aceptabilidad de usabilidad mediante SUS), supuestos y riesgos (adopción móvil, latencia, escalabilidad inicial), y se planificó el trabajo en sprints según Scrum con backlog priorizado y metas por iteración, asegurando trazabilidad y foco en entregables de valor.
-
-\subsubsection{Diseños de la solución}
-Se definió la arquitectura del backend, el prototipo de navegación de la app móvil y el prototipo del panel web administrativo, que guiaron la implementación en la fase de desarrollo. La Figura \ref{fig:backend-arquitectura} presenta la arquitectura modular planificada para la API; las Figuras \ref{fig:frontend-prototipo} y \ref{fig:web-prototipo} muestran los diseños de pantallas y flujos para la aplicación móvil y el panel web respectivamente.
+\begin{figure}[htbp]
+\centering
+\resizebox{0.85\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
+\caption{Arquitectura del panel web}
+\label{fig:web-arquitectura}
+\end{figure}
 
 \begin{figure}[htbp]
 \centering

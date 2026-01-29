@@ -15,76 +15,63 @@
 \contentsline {subsection}{\numberline {1.4.2}Objetivos específicos}{8}{subsection.1.4.2}%
 \contentsline {section}{\numberline {1.5}Alcance}{9}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Método}{11}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Enfoque y tipo}{11}{subsection.2.0.1}%
 \contentsline {section}{\numberline {2.1}Diseño de la Investigación}{11}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Enfoque y tipo}{11}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Población y Muestra}{12}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Población}{12}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}Muestra}{12}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Criterios de inclusión y exclusión}{12}{subsubsection.2.1.2.3}%
-\contentsline {subsection}{\numberline {2.1.3}Consideraciones éticas}{13}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Metodología}{14}{subsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.4.1}Técnicas e instrumentos de recolección de datos}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Técnicas aplicadas}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Instrumentos}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Diseño de instrumentos}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Encuestas}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Entrevistas}{14}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Pruebas de usabilidad}{15}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Piloto y SUS}{15}{subsubsection.2.1.4.1}%
-\contentsline {paragraph}{Gestión y organización de datos}{15}{subsubsection.2.1.4.1}%
-\contentsline {subsubsection}{\numberline {2.1.4.2}Análisis de datos}{15}{subsubsection.2.1.4.2}%
-\contentsline {section}{\numberline {2.2}Procedimiento}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}FASE 1: Planificación}{16}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Arquitectura y repositorios}{16}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Base de datos}{18}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Prototipos y criterios de éxito}{18}{subsubsection.2.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.2.1.4}Diseños de la solución}{19}{subsubsection.2.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.2.1.5}Modelo de datos (diseño entidad-relación)}{20}{subsubsection.2.2.1.5}%
-\contentsline {subsection}{\numberline {2.2.2}FASE 2: Desarrollo}{20}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Implementación del frontend móvil (React Native + Expo)}{21}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Implementación del panel web (Next.js + Tailwind CSS)}{22}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Implementación del backend (NestJS, módulos)}{23}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Implementación del modelo de datos}{23}{subsubsection.2.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.2.5}Roles, permisos y seguridad (JWT, RBAC)}{24}{subsubsection.2.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.2.6}Flujo funcional (proceso de pedido de punta a punta)}{28}{subsubsection.2.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.2.7}Estado actual del desarrollo}{31}{subsubsection.2.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.2.8}Resumen del procedimiento}{33}{subsubsection.2.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.2.9}Características pendientes y futuras}{33}{subsubsection.2.2.2.9}%
-\contentsline {subsection}{\numberline {2.2.3}FASE 3: Despliegue y Pruebas}{34}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Despliegue de componentes}{34}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}Pruebas funcionales y usabilidad}{35}{subsubsection.2.2.3.2}%
-\contentsline {subsection}{\numberline {2.2.4}FASE 4: Resultados del software}{36}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Resultados en dos locales}{36}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}Usabilidad (SUS) y adopción}{37}{subsubsection.2.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}Análisis comparativo y observaciones}{37}{subsubsection.2.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.2.4.4}Limitaciones}{38}{subsubsection.2.2.4.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.5}Mejoras porcentuales por indicador}{38}{subsubsection.2.2.4.5}%
-\contentsline {subsubsection}{\numberline {2.2.4.6}Disponibilidad y latencia observada}{39}{subsubsection.2.2.4.6}%
-\contentsline {chapter}{\numberline {3}Resultados}{40}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{40}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Resultados del diseño y desarrollo de la plataforma}{40}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Módulo móvil (aplicación cliente)}{41}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Panel administrativo web}{41}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Backend y modelo de datos}{41}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Resultados de la validación de usabilidad y adopción}{41}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Usabilidad del sistema}{41}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Adopción e impacto operativo}{41}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Costo estimado y financiamiento}{42}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Cronograma de actividades}{42}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Discusión}{44}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Digitalización actual}{44}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Diseño y desarrollo multiplataforma}{44}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Gestión de repartidores y delivery}{45}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Panel administrativo y analítica}{45}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Chatbot con inteligencia artificial (RAG)}{45}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Usabilidad y aceptación del sistema}{46}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Síntesis}{46}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones principales}{48}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Importancia de la transformación digital}{48}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Viabilidad de la plataforma SaaS}{48}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Recomendaciones y Trabajo Futuro}{49}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Alianzas y participación de actores}{49}{subsection.5.2.1}%
-\contentsline {chapter}{Referencias bibliográficas}{51}{chapter*.25}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{52}{appendix.Alph1}%
+\contentsline {paragraph}{Proceso ágil y sprints}{13}{figure.caption.11}%
+\contentsline {subsection}{\numberline {2.1.1}Población y Muestra}{14}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Población}{14}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Muestra y criterios de selección}{14}{subsubsection.2.1.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}Operacionalización de variables}{14}{subsubsection.2.1.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.1.4}Técnicas e instrumentos de recolección de datos}{16}{subsubsection.2.1.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.1.5}Procedimiento}{18}{subsubsection.2.1.1.5}%
+\contentsline {paragraph}{Diseño de la arquitectura del sistema}{18}{Item.28}%
+\contentsline {subsubsection}{\numberline {2.1.1.6}Arquitectura de la Plataforma}{21}{subsubsection.2.1.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.1.7}Modelo de datos (diseño entidad-relación)}{22}{subsubsection.2.1.1.7}%
+\contentsline {subsection}{\numberline {2.1.2}FASE 2: Desarrollo}{25}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Implementación del frontend móvil (React Native + Expo)}{25}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Implementación del panel web (Next.js + Tailwind CSS)}{26}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Implementación del backend (NestJS, módulos)}{27}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}Implementación del modelo de datos}{28}{subsubsection.2.1.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}Roles, permisos y seguridad (JWT, RBAC)}{28}{subsubsection.2.1.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.2.6}Flujo funcional (proceso de pedido de punta a punta)}{33}{subsubsection.2.1.2.6}%
+\contentsline {subsubsection}{\numberline {2.1.2.7}Estado actual del desarrollo}{35}{subsubsection.2.1.2.7}%
+\contentsline {subsubsection}{\numberline {2.1.2.8}Resumen del procedimiento}{37}{subsubsection.2.1.2.8}%
+\contentsline {subsubsection}{\numberline {2.1.2.9}Características pendientes y futuras}{37}{subsubsection.2.1.2.9}%
+\contentsline {subsection}{\numberline {2.1.3}FASE 3: Despliegue y Pruebas}{39}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Despliegue de componentes}{39}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Pruebas funcionales y usabilidad}{40}{subsubsection.2.1.3.2}%
+\contentsline {subsection}{\numberline {2.1.4}FASE 4: Resultados del software}{40}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}Resultados en dos locales}{40}{subsubsection.2.1.4.1}%
+\contentsline {subsubsection}{\numberline {2.1.4.2}Usabilidad (SUS) y adopción}{41}{subsubsection.2.1.4.2}%
+\contentsline {subsubsection}{\numberline {2.1.4.3}Análisis comparativo y observaciones}{42}{subsubsection.2.1.4.3}%
+\contentsline {subsubsection}{\numberline {2.1.4.4}Limitaciones}{42}{subsubsection.2.1.4.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.5}Mejoras porcentuales por indicador}{42}{subsubsection.2.1.4.5}%
+\contentsline {subsubsection}{\numberline {2.1.4.6}Disponibilidad y latencia observada}{43}{subsubsection.2.1.4.6}%
+\contentsline {chapter}{\numberline {3}Resultados}{44}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{44}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Resultados del diseño y desarrollo de la plataforma}{44}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Módulo móvil (aplicación cliente)}{45}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Panel administrativo web}{45}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Backend y modelo de datos}{45}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Resultados de la validación de usabilidad y adopción}{45}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Usabilidad del sistema}{45}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Adopción e impacto operativo}{45}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Costo estimado y financiamiento}{46}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Cronograma de actividades}{46}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Discusión}{48}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Digitalización actual}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diseño y desarrollo multiplataforma}{48}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gestión de repartidores y delivery}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Panel administrativo y analítica}{49}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Chatbot con inteligencia artificial (RAG)}{49}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Usabilidad y aceptación del sistema}{50}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Síntesis}{50}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones principales}{52}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Importancia de la transformación digital}{52}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Viabilidad de la plataforma SaaS}{52}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Recomendaciones y Trabajo Futuro}{53}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Alianzas y participación de actores}{53}{subsection.5.2.1}%
+\contentsline {chapter}{Referencias bibliográficas}{55}{chapter*.29}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{56}{appendix.Alph1}%

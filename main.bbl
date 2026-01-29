@@ -112,7 +112,6 @@
       \field{urlmonth}{1}
       \field{urlyear}{2026}
       \field{year}{2025}
-      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
@@ -188,59 +187,6 @@
       \verb https://www.hetzner.com/cloud-made-in-germany
       \endverb
     \endentry
-    \entry{hevner2004}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
-           family={Hevner},
-           familyi={H\bibinitperiod},
-           given={Alan\bibnamedelima R.},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
-           family={March},
-           familyi={M\bibinitperiod},
-           given={Sal\bibnamedelima T.},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
-           family={Ram},
-           familyi={R\bibinitperiod},
-           given={Sudha},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{MIS Quarterly}
-      \field{number}{1}
-      \field{title}{Design science in information systems research}
-      \field{volume}{28}
-      \field{year}{2004}
-      \field{pages}{75\bibrangedash 105}
-      \range{pages}{31}
-      \verb{doi}
-      \verb 10.2307/25148625
-      \endverb
-    \endentry
     \entry{logto_rbac_docs}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
@@ -271,59 +217,6 @@
       \endverb
       \verb{url}
       \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{peffers2007}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
-           family={Peffers},
-           familyi={P\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
-           family={Tuunanen},
-           familyi={T\bibinitperiod},
-           given={Tuure},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
-           family={Rothenberger},
-           familyi={R\bibinitperiod},
-           given={Marcus\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Samir},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Management Information Systems}
-      \field{number}{3}
-      \field{title}{A design science research methodology for information systems research}
-      \field{volume}{24}
-      \field{year}{2007}
-      \field{pages}{45\bibrangedash 77}
-      \range{pages}{33}
-      \verb{doi}
-      \verb 10.2753/MIS0742-1222240302
       \endverb
     \endentry
     \entry{scalzotto_multitenancy_nestjs}{online}{}{}
@@ -552,7 +445,6 @@
       \field{urlmonth}{1}
       \field{urlyear}{2026}
       \field{year}{2025}
-      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
@@ -628,59 +520,6 @@
       \verb https://www.hetzner.com/cloud-made-in-germany
       \endverb
     \endentry
-    \entry{hevner2004}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
-           family={Hevner},
-           familyi={H\bibinitperiod},
-           given={Alan\bibnamedelima R.},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
-           family={March},
-           familyi={M\bibinitperiod},
-           given={Sal\bibnamedelima T.},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
-           family={Ram},
-           familyi={R\bibinitperiod},
-           given={Sudha},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{MIS Quarterly}
-      \field{number}{1}
-      \field{title}{Design science in information systems research}
-      \field{volume}{28}
-      \field{year}{2004}
-      \field{pages}{75\bibrangedash 105}
-      \range{pages}{31}
-      \verb{doi}
-      \verb 10.2307/25148625
-      \endverb
-    \endentry
     \entry{logto_rbac_docs}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
@@ -711,59 +550,6 @@
       \endverb
       \verb{url}
       \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{peffers2007}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
-           family={Peffers},
-           familyi={P\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
-           family={Tuunanen},
-           familyi={T\bibinitperiod},
-           given={Tuure},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
-           family={Rothenberger},
-           familyi={R\bibinitperiod},
-           given={Marcus\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Samir},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Management Information Systems}
-      \field{number}{3}
-      \field{title}{A design science research methodology for information systems research}
-      \field{volume}{24}
-      \field{year}{2007}
-      \field{pages}{45\bibrangedash 77}
-      \range{pages}{33}
-      \verb{doi}
-      \verb 10.2753/MIS0742-1222240302
       \endverb
     \endentry
     \entry{scalzotto_multitenancy_nestjs}{online}{}{}

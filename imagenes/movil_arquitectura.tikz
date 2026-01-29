@@ -1,0 +1,17 @@
+\begin{tikzpicture}[every node/.style={align=center, transform shape}, node distance=1.0cm]
+\tikzset{
+  layer/.style={draw, rounded corners, minimum width=9.0cm, minimum height=1.1cm},
+  ui/.style={layer, fill=blue!12, draw=blue!60},
+  nav/.style={layer, fill=cyan!12, draw=cyan!60},
+  services/.style={layer, fill=purple!12, draw=purple!60},
+  data/.style={layer, fill=orange!15, draw=orange!60}
+}
+\node[font=\bfseries] (title) {Arquitectura de la aplicación móvil};
+\node[ui, below=0.9cm of title] (ui) {Capa de presentación\\React Native + Tamagui};
+\node[nav, below=0.8cm of ui] (nav) {Navegación y estado\\React Navigation + estado local};
+\node[services, below=0.8cm of nav] (services) {Servicios de aplicación\\Auth, Pedidos, Catálogo};
+\node[data, below=0.8cm of services] (data) {Integración de datos\\API REST + almacenamiento local};
+\draw[-latex] (ui.south) -- (nav.north);
+\draw[-latex] (nav.south) -- (services.north);
+\draw[-latex] (services.south) -- (data.north);
+\end{tikzpicture}
