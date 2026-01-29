@@ -29,7 +29,7 @@ Se definieron criterios de exclusión (por ejemplo, empresas sin operaciones reg
 
 Aunque el tamaño de la muestra es acotado, se priorizó la profundidad del análisis y la pertinencia de los casos seleccionados para validar el prototipo en escenarios reales.
 
-\subsubsection{Consideraciones éticas}
+\subsection{Consideraciones éticas}
 
 Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
 
@@ -283,7 +283,7 @@ En rendimiento y escalabilidad, se considerará separar microservicios específi
 En interfaz de usuario, se evaluará mostrar ubicación del repartidor en tiempo real en la app (Google Maps o Mapbox en Expo) y añadir en el panel funciones como exportación a CSV y búsqueda avanzada.
 Para concluir, el estado actual del desarrollo es satisfactorio: la plataforma en su alcance principal funciona de punta a punta, permitiendo gestionar pedidos desde la creación hasta la entrega, con control administrativo. Todas las decisiones tecnológicas tomadas (React Native/Expo, NestJS, TypeORM, JWT) han demostrado ser acertadas para lograr rapidez de desarrollo sin sacrificar la estructura necesaria para escalar y mantener el proyecto. Con la base sólida establecida, los siguientes pasos se enfocarán en pulir la experiencia de usuario, incorporar las funcionalidades avanzadas (métricas, notificaciones, multi-negocio) y realizar un despliegue formal para pruebas con usuarios reales. Este documento detalló el porqué de cada decisión técnica (desde la elección de Expo por su ecosistema, hasta NestJS por su arquitectura clara y la implementación de RBAC por seguridad), lo que refleja un desarrollo fundamentado en buenas prácticas modernas. Quedamos con una plataforma preparada para crecer y adaptarse, manteniendo siempre el objetivo central: ofrecer un servicio de pedidos y entregas confiable, eficiente y adaptable a múltiples negocios en el futuro cercano.
 
-\subsection{FASE 3: Implementación, despliegue y pruebas}
+\subsection{FASE 3: Despliegue y Pruebas}
 Esta fase abarca la puesta en marcha operativa de los tres componentes principales y su validación integral en entorno real. Se optó por un esquema de despliegue que equilibra costo‑eficiencia, rendimiento y simplicidad operativa.
 
 \subsubsection{Despliegue de componentes}
@@ -298,8 +298,8 @@ La arquitectura de despliegue y sus componentes se sintetizan en \ref{fig:despli
 \subsubsection{Pruebas funcionales y usabilidad}
 Se efectuaron pruebas funcionales de punta a punta del proceso de pedido, cubriendo registro, autenticación, creación de pedidos, asignación por repartidores y entrega; el diagrama de secuencia \ref{fig:secuencia-pedido} guió estos recorridos. Adicionalmente, se realizaron pruebas de usabilidad con tareas representativas y el cuestionario SUS en escenarios reales, así como verificaciones en dispositivos Android de gama media (con conectividad intermitente) para evaluar robustez y mensajes de error. Los hallazgos se incorporaron en iteraciones sucesivas, afinando tiempos de espera, validaciones y feedback visual.
 
-\subsection{FASE 4: Resultados}
-En esta fase se consolidan los hallazgos de implementación y validación en campo, sintetizando métricas operativas y de usabilidad obtenidas en dos locales participantes. Se observó funcionamiento de punta a punta, reducción de tiempos de registro y entrega, disminución de errores en el flujo de pedidos y aceptabilidad positiva de la interfaz según SUS. Se reportan también tasas de adopción por rol y variaciones por contexto operativo entre los locales. A continuación, se presentan los resultados organizados por dimensión de análisis.
+\subsection{FASE 4: Resultados del software}
+En esta fase se consolidan los resultados exclusivamente del software: funcionamiento del sistema, pruebas técnicas (unitarias, funcionales, de usabilidad), métricas de rendimiento del software y validación técnica en entorno real. A continuación se presentan los resultados del software organizados por dimensión de análisis. Los resultados de la investigación relativos al tema de la tesis (impacto en la digitalización de las PYMES gastronómicas, adopción de la plataforma, etc.) se presentan en el capítulo Resultados.
 
 \subsubsection{Resultados en dos locales}
 Se realizaron mediciones en dos PYMES gastronómicas participantes, referidas como Local A y Local B, durante un periodo de validación de tres semanas. Se compararon indicadores operativos antes y después de la adopción del prototipo (panel web en Vercel, API en Hetzner y app móvil en Android). Los resultados muestran mejoras consistentes en tiempos, errores y flujo de pedidos.
