@@ -49,18 +49,14 @@
 \contentsline {section}{\numberline {3.4}Costo estimado y financiamiento}{46}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Cronograma de actividades}{47}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Discusión}{48}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Digitalización actual}{48}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Diseño y desarrollo multiplataforma}{48}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Gestión de repartidores y delivery}{49}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Panel administrativo y analítica}{49}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Chatbot con inteligencia artificial (RAG)}{49}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Usabilidad y aceptación del sistema}{50}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Síntesis}{50}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{52}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones principales}{52}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Importancia de la transformación digital}{52}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Viabilidad de la plataforma SaaS}{52}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Recomendaciones y Trabajo Futuro}{53}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Alianzas y participación de actores}{53}{subsection.5.2.1}%
-\contentsline {chapter}{Referencias bibliográficas}{53}{subsection.5.2.1}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{54}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Diagnóstico de digitalización y brecha tecnológica (Objetivo Específico 1)}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura, diseño y desarrollo multiplataforma (Objetivos Específicos 2 y 3)}{50}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Módulos operativos y panel analítico (Objetivo Específico 4)}{50}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Chatbot RAG y atención al cliente (Objetivo Específico 5)}{50}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Usabilidad y aceptación del sistema (Objetivo Específico 6)}{51}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{51}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{53}{chapter.5}%
+\contentsline {chapter}{Referencias bibliográficas}{55}{chapter*.28}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{56}{appendix.Alph1}%

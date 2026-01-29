@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.24)  29 JAN 2026 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.24)  29 JAN 2026 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,11 +1280,11 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-] [10] [11])
+] [10])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [12] (main.lof
+ [11] (main.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1292,7 +1292,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [13
+ [12
 
 ] (main.lot
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1302,7 +1302,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [14
+ [13
 
 ] (capitulos/1_introduccion.tex
 Cap\'{\i }tulo 1.
@@ -1316,7 +1316,7 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                protrusion for this font on input line 11.
 
 [2] [3] [4] [5] [6] [7] [8] [9]
-<imagenes/diagramaflujo.png, id=298, 6504.3pt x 12464.5675pt>
+<imagenes/diagramaflujo.png, id=287, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
 Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 119.
@@ -1836,7 +1836,7 @@ Cap\'{\i }tulo 3.
 [45
 
 ] [46]
-<imagenes/cronograma.png, id=475, 633.86812pt x 429.10312pt>
+<imagenes/cronograma.png, id=463, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
 Package pdftex.def Info: imagenes/cronograma.png  used on input line 58.
@@ -1845,26 +1845,30 @@ Package pdftex.def Info: imagenes/cronograma.png  used on input line 58.
 Cap\'{\i }tulo 4.
 [48
 
-] [49]) (capitulos/5_conclusiones.tex [50] [51]
+] [49] [50] [51]) (capitulos/5_conclusiones.tex [52]
 Cap\'{\i }tulo 5.
-) [52
+[53
+
+]) [54]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 266.
+
+(apendices.tex [55
 
 ]
-
-LaTeX Warning: Empty bibliography on input line 266.
-
-(apendices.tex [53]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=506, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=512, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-) [54
+) [56
 
 
-] [55 <./imagenes/reddiagrama.png>] (main.aux
+] [57 <./imagenes/reddiagrama.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1878,17 +1882,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39548 strings out of 467871
- 737438 string characters out of 5428443
- 1681034 words of memory out of 5000000
- 67334 multiletter control sequences out of 15000+600000
- 693544 words of font info for 249 fonts, out of 8000000 for 9000
+ 39802 strings out of 467871
+ 743067 string characters out of 5428443
+ 1681303 words of memory out of 5000000
+ 67584 multiletter control sequences out of 15000+600000
+ 695978 words of font info for 251 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,94p,2659b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (70 pages, 1440639 bytes).
+Output written on main.pdf (71 pages, 1447776 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 77849 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 191 named destinations out of 1000 (max. 500000)
+ 81913 words of extra memory for PDF output out of 89155 (max. 10000000)
 
