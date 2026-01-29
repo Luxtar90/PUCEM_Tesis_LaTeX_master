@@ -1,5 +1,4 @@
 \babel@toc {spanish}{}\relax 
-\renewcommand {\numberline }[1]{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Contexto del sector gastronómico en Portoviejo}{2}{subsection.1.1.1}%
@@ -49,7 +48,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2.5}Roles, permisos y seguridad (JWT, RBAC)}{24}{subsubsection.2.2.2.5}%
 \contentsline {subsubsection}{\numberline {2.2.2.6}Flujo funcional (proceso de pedido de punta a punta)}{28}{subsubsection.2.2.2.6}%
 \contentsline {subsubsection}{\numberline {2.2.2.7}Estado actual del desarrollo}{31}{subsubsection.2.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.2.8}Resumen del procedimiento}{32}{subsubsection.2.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.2.8}Resumen del procedimiento}{33}{subsubsection.2.2.2.8}%
 \contentsline {subsubsection}{\numberline {2.2.2.9}Características pendientes y futuras}{33}{subsubsection.2.2.2.9}%
 \contentsline {subsection}{\numberline {2.2.3}FASE 3: Despliegue y Pruebas}{34}{subsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.3.1}Despliegue de componentes}{34}{subsubsection.2.2.3.1}%
@@ -60,7 +59,7 @@
 \contentsline {subsubsection}{\numberline {2.2.4.3}Análisis comparativo y observaciones}{37}{subsubsection.2.2.4.3}%
 \contentsline {subsubsection}{\numberline {2.2.4.4}Limitaciones}{38}{subsubsection.2.2.4.4}%
 \contentsline {subsubsection}{\numberline {2.2.4.5}Mejoras porcentuales por indicador}{38}{subsubsection.2.2.4.5}%
-\contentsline {subsubsection}{\numberline {2.2.4.6}Disponibilidad y latencia observada}{38}{subsubsection.2.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.2.4.6}Disponibilidad y latencia observada}{39}{subsubsection.2.2.4.6}%
 \contentsline {chapter}{\numberline {3}Resultados}{40}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducción}{40}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{40}{section.3.2}%

@@ -209,7 +209,8 @@
 
 % Portada y preliminares (estos archivos deben estar presentes)
 \hypersetup{pageanchor=false}
-\pagenumbering{gobble}
+\pagenumbering{roman}
+\setcounter{page}{1}
 \setcounter{tocdepth}{-1}
 \input{preliminares/1_portada}
 \input{preliminares/2_certificaion_tutor}
@@ -228,9 +229,10 @@
 % omitidos en compilación rápida
 \else
   % Sin numeración en índices
-  \pagenumbering{gobble}
-  \addtocontents{toc}{\protect\renewcommand{\protect\numberline}[1]{}}
+  \begingroup
+  \renewcommand{\numberline}[1]{}
   \tableofcontents
+  \endgroup
   \listoffigures
   \listoftables
 \fi
