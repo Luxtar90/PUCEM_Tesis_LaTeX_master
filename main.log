@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  29 JAN 2026 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  29 JAN 2026 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1812,67 +1812,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
  []
 
 ignored error: Infinite glue shrinkage found in box being split [19]
-ignored error: Infinite glue shrinkage found in box being split [20] (imagenes/arquitectura_capas.tikz) [21] (imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) (imagenes/backend_arquitectura.tikz) (imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [22] [23] [24] (imagenes/diagrama_bd.tikz) [25] [26]
+ignored error: Infinite glue shrinkage found in box being split [20] (imagenes/arquitectura_capas.tikz) [21] (imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) (imagenes/backend_arquitectura.tikz) [22] [23] [24
 
-LaTeX Warning: Reference `fig:despliegue-arquitectura' on page 27 undefined on input line 233.
-
-[27]
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T1/cmtt/m/n/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 236.
-
-[28] (imagenes/auth_rbac.tikz) [29] [30] [31] [32] [33] (imagenes/secuencia_pedido.tikz) [34] [35] [36] [37] [38]
-
-LaTeX Warning: Reference `fig:despliegue-arquitectura' on page 39 undefined on input line 363.
-
-[39]
-Overfull \hbox (75.27992pt too wide) in paragraph at lines 377--388
- [][] 
- []
-
-[40] [41] [42]
-Overfull \hbox (19.19331pt too wide) in paragraph at lines 474--482
- [][] 
- []
-
-) (capitulos/3_resultados.tex [43]
+] [25] [26] (imagenes/diagrama_bd.tikz) [27] [28] (imagenes/auth_rbac.tikz) (imagenes/despliegue_arquitectura.tikz) [29] [30] (imagenes/frontend_prototipo.tikz) [31] [32] (imagenes/web_panel_prototipo.tikz) [33] [34] [35] [36] [37]) (capitulos/3_resultados.tex [38]
 Cap\'{\i }tulo 3.
-[44
+[39
 
-] [45]
-<imagenes/cronograma.png, id=527, 633.86812pt x 429.10312pt>
+] [40]
+<imagenes/cronograma.png, id=429, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
 Package pdftex.def Info: imagenes/cronograma.png  used on input line 74.
 (pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
-) (capitulos/4_discucion.tex [46] [47 <./imagenes/cronograma.png>]
+) (capitulos/4_discucion.tex [41] [42 <./imagenes/cronograma.png>]
 Cap\'{\i }tulo 4.
-[48
+[43
 
-] [49]) (capitulos/5_conclusiones.tex [50] [51]
+] [44]) (capitulos/5_conclusiones.tex [45] [46]
 Cap\'{\i }tulo 5.
-) [52
+) [47
 
-] [53] [54
+]
 
-] (apendices.tex [55]
+LaTeX Warning: Empty bibliography on input line 266.
+
+(apendices.tex [48]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=583, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=464, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-<imagenes/diagramaflujo.png, id=584, 6504.3pt x 12464.5675pt>
+<imagenes/diagramaflujo.png, id=465, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
 Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 42.
 (pdftex.def)             Requested size: 271.44191pt x 520.17989pt.
-) [56
+) [49
 
 
-] [57 <./imagenes/reddiagrama.png>] [58 <./imagenes/diagramaflujo.png>] (main.aux
+] [50 <./imagenes/reddiagrama.png>] [51 <./imagenes/diagramaflujo.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1881,26 +1861,22 @@ LaTeX Info: Redefining \% on input line 9.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39783 strings out of 467871
- 749944 string characters out of 5418376
- 1682656 words of memory out of 5000000
- 67549 multiletter control sequences out of 15000+600000
- 694162 words of font info for 253 fonts, out of 8000000 for 9000
+ 39409 strings out of 467871
+ 741544 string characters out of 5418376
+ 1674758 words of memory out of 5000000
+ 67228 multiletter control sequences out of 15000+600000
+ 693174 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,18n,94p,1314b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\luigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (73 pages, 1486251 bytes).
+ 84i,18n,94p,1325b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (66 pages, 1422590 bytes).
 PDF statistics:
- 964 PDF objects out of 1000 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
- 76401 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 174 named destinations out of 1000 (max. 500000)
+ 75777 words of extra memory for PDF output out of 89155 (max. 10000000)
 
