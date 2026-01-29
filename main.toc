@@ -17,36 +17,37 @@
 \contentsline {chapter}{\numberline {2}Método}{12}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Diseño de la Investigación}{12}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Enfoque y tipo}{12}{subsection.2.1.1}%
-\contentsline {paragraph}{Proceso ágil y sprints}{14}{figure.caption.12}%
-\contentsline {subsection}{\numberline {2.1.2}Población y Muestra}{15}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Población}{15}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}Muestra y criterios de selección}{15}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Operacionalización de variables}{15}{subsubsection.2.1.2.3}%
-\contentsline {subsubsection}{\numberline {2.1.2.4}Técnicas e instrumentos de recolección de datos}{17}{subsubsection.2.1.2.4}%
-\contentsline {subsubsection}{\numberline {2.1.2.5}Procedimiento}{19}{subsubsection.2.1.2.5}%
-\contentsline {paragraph}{Diseño de la arquitectura del sistema}{19}{Item.28}%
-\contentsline {subsubsection}{\numberline {2.1.2.6}Arquitectura de la Plataforma}{22}{subsubsection.2.1.2.6}%
-\contentsline {subsubsection}{\numberline {2.1.2.7}Arquitectura de la base de datos}{25}{subsubsection.2.1.2.7}%
-\contentsline {subsubsection}{\numberline {2.1.2.8}Roles, permisos y seguridad (JWT, RBAC) }{28}{subsubsection.2.1.2.8}%
-\contentsline {subsubsection}{\numberline {2.1.2.9}Arquitectura del despliegue}{30}{subsubsection.2.1.2.9}%
-\contentsline {subsubsection}{\numberline {2.1.2.10}Desarrollo de la Plataforma SaaS}{31}{subsubsection.2.1.2.10}%
-\contentsline {subsubsection}{\numberline {2.1.2.11}Desarrollo del frontend móvil (React Native + Expo)}{31}{subsubsection.2.1.2.11}%
-\contentsline {subsubsection}{\numberline {2.1.2.12}Desarrollo del frontend panel web (Next.js + Tailwind CSS)}{33}{subsubsection.2.1.2.12}%
-\contentsline {subsubsection}{\numberline {2.1.2.13}Desarrollo del backend (NestJS, capas, módulos)}{34}{subsubsection.2.1.2.13}%
-\contentsline {subsubsection}{\numberline {2.1.2.14}Implementación y Validación Piloto}{41}{subsubsection.2.1.2.14}%
-\contentsline {subsubsection}{\numberline {2.1.2.15}Consideraciones éticas}{43}{subsubsection.2.1.2.15}%
-\contentsline {chapter}{\numberline {3}Resultados}{44}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{44}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{44}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Resultados del diseño y desarrollo de la plataforma}{44}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Módulo móvil (aplicación cliente)}{45}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Panel administrativo web}{45}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Backend y modelo de datos}{45}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Resultados de la validación de usabilidad y adopción}{45}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Usabilidad del sistema}{45}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Adopción e impacto operativo}{45}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Costo estimado y financiamiento}{46}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Cronograma de actividades}{46}{section.3.6}%
+\contentsline {subsection}{\numberline {2.1.2}Población y Muestra}{12}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Población}{12}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Muestra y criterios de selección}{13}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Operacionalización de variables}{13}{subsubsection.2.1.2.3}%
+\contentsline {subsection}{\numberline {2.1.3}Metodología}{15}{subsection.2.1.3}%
+\contentsline {paragraph}{Proceso ágil y sprints}{17}{figure.caption.12}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Técnicas e instrumentos de recolección de datos}{17}{subsubsection.2.1.3.1}%
+\contentsline {subsection}{\numberline {2.1.4}Consideraciones éticas}{19}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Procedimiento}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ETAPA 1: Planificación}{20}{subsection.2.2.1}%
+\contentsline {paragraph}{Diseño de la arquitectura del sistema}{20}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Arquitectura de la Plataforma}{23}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Arquitectura de la base de datos}{26}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Roles, permisos y seguridad (JWT, RBAC)}{29}{subsubsection.2.2.1.3}%
+\contentsline {subsection}{\numberline {2.2.2}ETAPA 2: Desarrollo}{31}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Desarrollo de la Plataforma SaaS}{31}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Desarrollo del frontend móvil (React Native + Expo)}{32}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Desarrollo del frontend panel web (Next.js + Tailwind CSS)}{33}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Desarrollo del backend (NestJS, capas, módulos)}{34}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{41}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{41}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Implementación y validación piloto}{42}{subsubsection.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}ETAPA 4: Resultados del software}{44}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Resultados}{45}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{45}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{45}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{46}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Adopción e impacto operativo}{46}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Costo estimado y financiamiento}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Cronograma de actividades}{47}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Discusión}{48}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Digitalización actual}{48}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Diseño y desarrollo multiplataforma}{48}{section.4.2}%

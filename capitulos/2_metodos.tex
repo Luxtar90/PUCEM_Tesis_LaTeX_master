@@ -1,38 +1,12 @@
 \chapter{Método}
 
 \section{Diseño de la Investigación}
-El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser es una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real.
-No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones. Sin embargo, todas comparten un núcleo cíclico y iterativo de construcción y evaluación.
-Nosotros presentamos el siguiente esquema integrando los modelos clave de Hevner et al. (2004) y Peffers et al. (2007).
+
 \subsection{Enfoque y tipo}
-La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad. 
+
+La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad.
+
 El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico.
-
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
-\caption{Ciclo iterativo de la Investigación Basada en Diseño}
-\label{fig:ibd-ciclo}
-\end{figure}
-
-\textbf{Fase 1.} El objetivo de esta fase fue comprender y definir claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
-
-\textbf{Fase 2.} Una vez comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
-
-\textbf{Fase 3 y Fase 4.} Forman el ciclo central de construcción-evaluación de la plataforma. Incluye desde la selección de las herramientas tecnológicas, la arquitectura y el desarrollo de la solución. Se trabaja en ciclos cortos.
-\begin{itemize}
-  \item Se diseña y desarrolla un incremento (un prototipo, una versión, un módulo).
-  \item Inmediatamente se demuestra y prueba (en un entorno piloto, con usuarios, en simulación).
-  \item Los resultados de esa demostración alimentan directamente el rediseño y desarrollo de la siguiente iteración.
-\end{itemize}
-
-\paragraph{Proceso ágil y sprints}
-La implementación ágil se estructuró en iteracionei cortas (steraci)ocon objetivossdefini co:rlevantar raquisitos sínimos vi bles, co(struir prototipos funcionslep,irnatizarspruebas )  usobinidad ybajujtar funcionalidades atiartir de la votroalim defción.iCada sprint concluyó con una rnvisióiddondo:se covsoliaaron mejoras y se defnniaronrtareio sa a el sigumeíne cicloos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
-
-\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla xx de la sección Técnicas e instrumentos de recolección de datos.
-
-\textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
 
 \subsection{Población y Muestra}
 
@@ -79,6 +53,36 @@ Usabilidad del sistema & Grado de facilidad, eficiencia y satisfacción con que 
 \bottomrule
 \end{longtable}
 Nota: Los umbrales de éxito para los indicadores operativos (reducción o incremento porcentual) se establecieron con base en expectativas realistas de mejora para un piloto de corto plazo, considerando la magnitud del cambio que justificaría la adopción de la herramienta. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
+
+\subsection{Metodología}
+
+El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de Hevner et al. (2004) y Peffers et al. (2007).
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
+\caption{Ciclo iterativo de la Investigación Basada en Diseño}
+\label{fig:ibd-ciclo}
+\end{figure}
+
+\textbf{Fase 1.} El objetivo de esta fase fue comprender y definir claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
+
+\textbf{Fase 2.} Una vez comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
+
+\textbf{Fase 3 y Fase 4.} Forman el ciclo central de construcción-evaluación de la plataforma. Incluye desde la selección de las herramientas tecnológicas, la arquitectura y el desarrollo de la solución. Se trabaja en ciclos cortos.
+\begin{itemize}
+  \item Se diseña y desarrolla un incremento (un prototipo, una versión, un módulo).
+  \item Inmediatamente se demuestra y prueba (en un entorno piloto, con usuarios, en simulación).
+  \item Los resultados de esa demostración alimentan directamente el rediseño y desarrollo de la siguiente iteración.
+\end{itemize}
+
+\paragraph{Proceso ágil y sprints}
+La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
+
+\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla xx de la sección Técnicas e instrumentos de recolección de datos.
+
+\textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
+
 \subsubsection{Técnicas e instrumentos de recolección de datos}
 
 En la siguiente tabla se muestran las técnicas e instrumentos utilizados, definiendo el momento de la aplicación y el público objetivo.
@@ -100,10 +104,15 @@ Revisión documental & Checklist de despliegue y registros administrativos & Ver
 \bottomrule
 \end{longtable}
 
+\subsection{Consideraciones éticas}
 
+Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
 
-\subsubsection{Procedimiento}
-La aplicación de la metodología Investigación Basada en Diseño (IBD) se detalla en el Diseño de la investigación. En esta sección se profundiza en las Fases 3, 4 y 5 al ser el núcleo del trabajo.
+Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos). La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES. Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible. Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
+
+\section{Procedimiento}
+
+Esta sección describe el diseño del prototipo de software y su implementación, correspondiente a las Fases 3, 4 y 5 de la metodología IBD. Se profundiza en el diseño arquitectónico, el desarrollo de los componentes y la implementación en entorno real.
 
 Para una mejor comprensión metodológica, se detallan siguiendo la estructura:
 \begin{enumerate}[label=\arabic*)]
@@ -112,6 +121,8 @@ Para una mejor comprensión metodológica, se detallan siguiendo la estructura:
   \item Implementación y validación.
 \end{enumerate}
 Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno operativo real.
+
+\subsection{ETAPA 1: Planificación}
 
 \paragraph{Diseño de la arquitectura del sistema}
 \textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). Las decisiones clave se resumen en la Tabla 2.
@@ -180,6 +191,7 @@ Para tener un mejor detalle de cada componente, se presenta a continuación la a
 
 \clearpage
 \subsubsection{Arquitectura de la base de datos}
+
 Objetivo del modelo de datos: garantizar integridad referencial, consultas eficientes y soporte a multi negocio con segregación lógica por empresa.
 
 Para esta plataforma se optó por un modelo de base de datos relacional, adecuado para representar las entidades y relaciones propias del dominio (usuarios, productos, pedidos, etc.) garantizando consistencia y permitiendo consultas complejas (p. ej., obtener todos los pedidos de un cliente filtrados por fecha, o los productos más vendidos por categoría). En particular, usamos un motor SQL (como PostgreSQL) con un esquema relacional tradicional.
@@ -231,7 +243,7 @@ Finalmente, se prevé definir estrategias de respaldo y recuperación ante desas
 \label{fig:er-diagrama}
 \end{figure}
 
-\subsubsection{Roles, permisos y seguridad (JWT, RBAC) }
+\subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
 La plataforma implementa un esquema de roles y permisos (RBAC) para garantizar que cada usuario solo realice las acciones que le corresponden (Logto, s.f.). RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
 
 Administrador (ADMIN): Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma. En entornos multinegocio podría existir un administrador por empresa.
@@ -255,22 +267,14 @@ El flujo de autenticación y autorización se muestra en el siguiente diagrama, 
 \label{fig:auth-rbac}
 \end{figure}
 
-\subsubsection{Arquitectura del despliegue}
-Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android de los locales piloto. La Figura \ref{fig:despliegue-arquitectura} muestra la imagen de la arquitectura de despliegue.
-
-\begin{figure}[htbp]
-\centering
-\resizebox{\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
-\caption{Arquitectura del despliegue de la plataforma}
-\label{fig:despliegue-arquitectura}
-\end{figure}
-
-Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de "convención sobre configuración", nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto.
+\subsection{ETAPA 2: Desarrollo}
 
 \subsubsection{Desarrollo de la Plataforma SaaS}
-Estauxoe5tivos Específicos 3, 4 y 5, se centró en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas (Anexo 5). El desarrollo fue modular y paralelo:
-Configuración inicial: Se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
-\subsubsection{Desarrollo del frontend  móvil (React Native + Expo)}
+
+Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas (Anexo 5). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
+
+\subsubsection{Desarrollo del frontend móvil (React Native + Expo)}
+
 Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes y repartidores, con navegación predecible, validaciones tempranas y comunicación robusta con la API. El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código.
 
 React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de  vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sen sores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
@@ -537,7 +541,23 @@ Chatbot RAG: Desarrollo de un servicio independiente utilizando LangChain, integ
 
 Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 
-\subsubsection{Implementación y Validación Piloto}
+\subsection{ETAPA 3: Validación y Despliegue}
+
+\subsubsection{Arquitectura del despliegue}
+
+Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android de los locales piloto. La Figura \ref{fig:despliegue-arquitectura} muestra la imagen de la arquitectura de despliegue.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
+\caption{Arquitectura del despliegue de la plataforma}
+\label{fig:despliegue-arquitectura}
+\end{figure}
+
+Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
+
+\subsubsection{Implementación y validación piloto}
+
 Esta etapa tuvo como propósito evaluar el sistema integral en condiciones reales. Su desarrollo comprendió los siguientes pasos:
 \begin{enumerate}
 \item Despliegue en entorno de nube:
@@ -574,10 +594,6 @@ En la tercera semana se recogieron los datos post-implementación. Se aplicó el
 Se supervisó la disponibilidad del backend y el panel web, y se recopilaron los registros automáticos de la plataforma para validar las métricas de volumen y cancelaciones.
 \end{enumerate}
 
-\subsubsection{Consideraciones éticas}
-Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
-Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos).
-La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES. Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible.
-Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
+\subsection{ETAPA 4: Resultados del software}
 
-
+En esta etapa se recopilaron y documentaron los resultados propios del funcionamiento del software: pruebas unitarias e integración, métricas de disponibilidad y latencia del sistema, y resultados de las pruebas técnicas realizadas sobre los componentes de la plataforma. Estos resultados corresponden al artefacto de software y se distinguen de los resultados de la investigación (impacto en PYMES, usabilidad percibida, adopción), que se presentan en el capítulo Resultados.
