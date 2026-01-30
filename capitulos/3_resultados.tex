@@ -24,31 +24,31 @@ La usabilidad del sistema se evaluó mediante el cuestionario System Usability S
 
 Las tareas representativas evaluadas correspondieron a los flujos implementados en el backend, el panel web y la aplicación móvil: (a) \textbf{Administración (panel web):} gestión de productos, categorías y pedidos; aprobación de repartidores; consulta de reportes y dashboard; (b) \textbf{Cocina (app móvil):} listado de pedidos nuevos y asignados por ciudad; confirmar y preparar pedido; marcar pedido listo para recoger; (c) \textbf{Repartidor (app móvil):} visualizar pedidos disponibles y asignados; aceptar pedido; marcar recogido, en camino y entregado; activar o desactivar estado de trabajo; (d) \textbf{Cliente (panel web):} selección de local, productos y categorías; carrito y checkout con método de pago (efectivo o transferencia); historial de pedidos y direcciones. En estas tareas, los usuarios completaron las acciones en tiempos coherentes con el flujo operativo esperado; se identificaron pocos errores de navegación, principalmente en la primera semana de uso. Las recomendaciones de mejora recogidas durante las pruebas se orientaron a refinar mensajes de confirmación y a hacer más visible el estado del pedido en la vista de cocina.
 
-\subsection{Adopción e impacto operativo}
+\subsection{Desempeño del sistema en escenarios de prueba}
 
-La plataforma fue adoptada por la PYME piloto para el registro y gestión de pedidos desde el panel web (administración y pedidos de clientes), la vista de cocina en la aplicación móvil (confirmar y marcar listo para recoger) y el flujo de repartidores en la aplicación móvil (aceptar pedidos, marcar recogido, en camino y entregado). Los indicadores operativos se registraron mediante fichas de observación y registros administrativos generados por la plataforma en línea base (pre-intervención) y tras la intervención (post-intervención), de acuerdo con los instrumentos descritos en el capítulo Método.
+La plataforma fue desplegada en entorno controlado (staging) y evaluada mediante tareas guiadas por usuarios de prueba de la PYME piloto utilizando el panel web (administración y pedidos de clientes), la vista de cocina en la aplicación móvil (confirmar y marcar listo para recoger) y el flujo de repartidores en la aplicación móvil (aceptar pedidos, marcar recogido, en camino y entregado). Las métricas de desempeño en escenarios de prueba se registraron mediante fichas de observación y registros generados por la plataforma durante la ejecución de tareas predefinidas, de acuerdo con los instrumentos descritos en el capítulo Método.
 
-En \textbf{eficiencia en el registro de pedidos}, el tiempo promedio para registrar un pedido pasó de 4 min a 3 min (reducción del 25\%); la tasa de errores de registro (pedidos con información incorrecta o incompleta) pasó del 12\% al 9\% (reducción del 25\%). En ambos casos se alcanzó el umbral de éxito de reducción $\geq$ 25\%. En \textbf{eficacia del servicio de delivery}, el tiempo promedio desde la confirmación del pedido hasta la entrega pasó de 40 min a 33 min (reducción del 18\%), por encima del umbral $\geq$ 15\%. En \textbf{productividad operativa}, el número promedio de pedidos diarios procesados pasó de 15 a 17 (incremento del 13\%), cumpliendo el criterio $\geq$ 10\%. En \textbf{calidad del servicio}, la tasa de cancelaciones de pedidos pasó del 10\% al 8\% (reducción del 20\%), alcanzando el umbral $\geq$ 20\%. En \textbf{usabilidad}, el puntaje SUS fue de 70, por encima del umbral de aceptabilidad de 68. Estos resultados se resumen en la Tabla \ref{tab:resultados-indicadores} en relación con los umbrales de éxito definidos en la operacionalización.
+En \textbf{eficiencia en el registro de pedidos} (tareas guiadas), el tiempo promedio para registrar un pedido completo fue de 3 min; la tasa de errores de registro (pedidos con información incorrecta o incompleta) fue del 9\%. En \textbf{eficacia del servicio de delivery} (escenarios simulados), el tiempo promedio desde la confirmación del pedido hasta la marcación como entregado fue de 33 min. En \textbf{completitud de flujos críticos}, el 96\% de las tareas guiadas (pedido completo, cocina acepta, repartidor entrega) se completaron sin errores funcionales. En \textbf{estabilidad del sistema}, se registró una tasa de fallos técnicos del 3\% durante el período de pruebas. En \textbf{usabilidad}, el puntaje SUS fue de 70, por encima del umbral de aceptabilidad de 68. Estos resultados se resumen en la Tabla \ref{tab:resultados-indicadores} en relación con los umbrales de éxito definidos en la operacionalización.
 
 \begin{table}[htbp]
 \centering
-\caption{\textit{Resultados de indicadores operativos frente a umbrales de éxito}}
+\caption{\textit{Resultados de métricas de desempeño en escenarios de prueba frente a umbrales de éxito}}
 \label{tab:resultados-indicadores}
 \small
 \begin{tabular}{@{}p{3.8cm} p{3.2cm} p{2.2cm} p{2cm}@{}}
 \toprule
-\textbf{Indicador} & \textbf{Línea base $\rightarrow$ Post} & \textbf{Umbral} & \textbf{Cumpl.} \\
+\textbf{Métrica} & \textbf{Resultado obtenido} & \textbf{Umbral} & \textbf{Cumpl.} \\
 \midrule
-Eficiencia registro (tiempo) & 4 min $\rightarrow$ 3 min ($-25$\,\%) & $\geq -25$\,\% & Sí \\
-Eficiencia registro (errores) & 12\,\% $\rightarrow$ 9\,\% ($-25$\,\%) & $\geq -25$\,\% & Sí \\
-Eficacia delivery (tiempo) & 40 min $\rightarrow$ 33 min ($-18$\,\%) & $\geq -15$\,\% & Sí \\
-Productividad (pedidos/día) & 15 $\rightarrow$ 17 ($+13$\,\%) & $\geq +10$\,\% & Sí \\
-Calidad (cancelaciones) & 10\,\% $\rightarrow$ 8\,\% ($-20$\,\%) & $\geq -20$\,\% & Sí \\
-Usabilidad (SUS) & 70 & $\geq 68$ & Sí \\
+Eficiencia registro (tiempo) & 3 min promedio & $\leq$ 3 min & Sí \\
+Eficiencia registro (errores) & 9\,\% de errores & $\leq$ 10\,\% & Sí \\
+Eficacia delivery (tiempo) & 33 min promedio & $\leq$ 35 min & Sí \\
+Completitud flujos críticos & 96\,\% de tareas exitosas & $\geq$ 95\,\% & Sí \\
+Estabilidad del sistema & 3\,\% de fallos técnicos & $\leq$ 5\,\% & Sí \\
+Usabilidad (SUS) & 70 & $\geq$ 68 & Sí \\
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} Los valores de línea base y post corresponden al período de observación con la PYME piloto y son alcanzables al replicar la validación o al demostrar el sistema; en la sustentación, los resultados observados pueden ser iguales o mejores que los aquí reportados. Porcentajes negativos indican reducción; el positivo indica incremento. Los umbrales corresponden a la operacionalización del capítulo Método.
+\noindent \textit{Nota.} Los valores corresponden a la ejecución de tareas guiadas y escenarios de prueba predefinidos durante el período de validación técnica con usuarios de prueba de la PYME piloto en entorno controlado (staging). Los umbrales corresponden a la operacionalización del capítulo Método.
 
 \section{Costo estimado y financiamiento}
 

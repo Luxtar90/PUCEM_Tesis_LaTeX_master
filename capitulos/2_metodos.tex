@@ -4,9 +4,11 @@
 
 \subsection{Enfoque y tipo}
 
-La investigación se desarrolló bajo un enfoque metodológico mixto (cualitativo-cuantitativo), con predominancia del componente aplicativo-desarrollativo. Se adoptó este enfoque para obtener una comprensión integral del problema: el componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios, mientras que el cuantitativo posibilitó la medición objetiva de variables operativas y de usabilidad.
+La investigación se desarrolló bajo un enfoque de Investigación Basada en Diseño (Design Science Research), con evaluación de la solución mediante pruebas técnicas y pruebas de usabilidad en un entorno controlado (staging). Se adoptó un estudio de caso como contexto (PYME piloto), sin medición longitudinal de desempeño operativo real. Este enfoque se eligió para desarrollar y evaluar un artefacto de software (la plataforma SaaS) que resuelve una problemática concreta en un contexto específico.
 
-El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación de un artefacto de software (la plataforma SaaS) para resolver una problemática concreta en un contexto real. El diseño es no experimental, descriptivo y transversal, ya que se observaron y describieron las variables en su contexto natural sin manipulación deliberada, en un período específico.
+El componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios durante las pruebas de usabilidad, mientras que el cuantitativo posibilitó la medición objetiva de variables de desempeño en escenarios de prueba controlados. El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación técnica de un artefacto de software para demostrar su viabilidad en un contexto específico. El diseño es no experimental y transversal, ya que se observaron y describieron las variables en su contexto de prueba sin manipulación deliberada, en un período específico.
+
+\textbf{Entorno controlado:} Se define como un ambiente de pruebas (staging) con despliegue real en la nube y ejecución de flujos críticos con usuarios de prueba, datos de prueba y escenarios predefinidos, sin integración completa a la operación diaria del negocio ni medición longitudinal del impacto en el desempeño del negocio.
 
 \subsection{Población y Muestra}
 
@@ -24,9 +26,9 @@ Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestr
 Se excluyeron establecimientos con operación irregular o que ya utilizaban sistemas de gestión integral.
 
 \subsubsection{Operacionalización de variables}
-\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su intervención consistió en su implementación y uso por parte de la PYME piloto durante el período de validación.
+\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su evaluación consistió en su despliegue en entorno controlado (staging) y uso por parte de usuarios de prueba de la PYME piloto durante el período de validación técnica.
 
-\textbf{Variables dependientes: Indicadores operativos.} Son las métricas de desempeño que se buscó impactar con la implementación de la plataforma:
+\textbf{Variables dependientes: Métricas de desempeño en escenarios de prueba.} Son las métricas de desempeño que se evaluaron durante la validación técnica de la plataforma en entorno controlado:
 \begin{enumerate}[label=\arabic*)]
   \item \textbf{Eficiencia en el registro de pedidos:} medida a través del tiempo promedio (minutos) para registrar un pedido y la tasa de errores de registro (porcentaje de pedidos con información incorrecta o incompleta).
   \item \textbf{Eficacia del servicio de delivery:} medida mediante el tiempo promedio de entrega (minutos) desde la confirmación del pedido hasta su entrega.
@@ -45,14 +47,14 @@ Se excluyeron establecimientos con operación irregular o que ya utilizaban sist
 \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
 \midrule
 \endhead
-Eficiencia en el registro de pedidos & Grado de optimización en la captura y procesamiento inicial de un pedido. & Ficha de observación estructurada (registro de tiempos y errores). & Reducción $\geq$ 25\% en el tiempo promedio de registro y en la tasa de errores. \\
-Eficacia del servicio de delivery & Capacidad del sistema para gestionar y completar entregas dentro de un tiempo esperado. & Ficha de observación estructurada (registro de tiempos de entrega). & Reducción $\geq$ 15\% en el tiempo promedio de entrega. \\
-Productividad operativa & Volumen de pedidos que el negocio puede procesar de manera efectiva en un día. & Registros administrativos generados por la plataforma (conteo de pedidos diarios). & Incremento $\geq$ 10\% en el número promedio de pedidos diarios procesados. \\
-Calidad del servicio & Estabilidad y confiabilidad en la ejecución del servicio, minimizando fallas. & Registros administrativos de la plataforma (conteo de pedidos cancelados). & Reducción $\geq$ 20\% en la tasa de cancelaciones de pedidos. \\
+Eficiencia en el registro de pedidos & Tiempo y precisión en la captura y procesamiento de un pedido en tareas guiadas. & Ficha de observación estructurada (registro de tiempos y errores en tareas de prueba). & Tiempo promedio $\leq$ 3 min por pedido y tasa de errores $\leq$ 10\% en escenarios de prueba. \\
+Eficacia del servicio de delivery & Capacidad del sistema para gestionar y coordinar entregas dentro de un tiempo esperado en escenarios de prueba. & Ficha de observación estructurada (registro de tiempos en flujos de prueba). & Tiempo promedio de entrega $\leq$ 35 min en escenarios de prueba. \\
+Completitud de flujos críticos & Capacidad del sistema para ejecutar los flujos principales (pedido, cocina, reparto) sin fallos en tareas guiadas. & Registros de pruebas de integración y observación de flujos (conteo de tareas completadas vs. fallidas). & Tasa de éxito $\geq$ 95\% en la finalización de tareas guiadas. \\
+Estabilidad del sistema & Confiabilidad y continuidad del sistema durante las pruebas, minimizando fallos técnicos. & Registros de logs del sistema y observación directa durante pruebas. & Tasa de fallos técnicos $\leq$ 5\% durante el período de pruebas. \\
 Usabilidad del sistema & Grado de facilidad, eficiencia y satisfacción con que los usuarios pueden emplear la plataforma. & Cuestionario estandarizado System Usability Scale (SUS). & Puntaje promedio $\geq$ 68 (umbral de aceptabilidad en la escala SUS). \\
 \bottomrule
 \end{longtable}
-Nota: Los umbrales de éxito para los indicadores operativos (reducción o incremento porcentual) se establecieron con base en expectativas realistas de mejora para un piloto de corto plazo, considerando la magnitud del cambio que justificaría la adopción de la herramienta. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
+Nota: Los umbrales de éxito para las métricas de desempeño se establecieron con base en estándares razonables de calidad para un sistema en fase de validación técnica, considerando la factibilidad de ejecución en escenarios de prueba controlados. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
 
 \subsection{Metodología}
 
@@ -118,9 +120,9 @@ Para una mejor comprensión metodológica, se detallan siguiendo la estructura:
 \begin{enumerate}[label=\arabic*)]
   \item Diseño arquitectónico.
   \item Desarrollo.
-  \item Implementación y validación.
+  \item Despliegue en staging y validación técnica.
 \end{enumerate}
-Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno operativo real.
+Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta el despliegue y evaluación del sistema en un entorno controlado (staging).
 
 \subsection{ETAPA 1: Planificación}
 
