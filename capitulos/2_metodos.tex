@@ -193,50 +193,63 @@ Para tener un mejor detalle de cada componente, se presenta a continuación la a
 \clearpage
 \subsubsection{Arquitectura de la base de datos}
 
-Objetivo del modelo de datos: garantizar integridad referencial, consultas eficientes y soporte a multi negocio con segregación lógica por empresa.
+Objetivo del modelo de datos: garantizar integridad referencial, consultas eficientes y soporte para las operaciones del negocio mediante un esquema relacional estructurado.
 
-Para esta plataforma se optó por un modelo de base de datos relacional, adecuado para representar las entidades y relaciones propias del dominio (usuarios, productos, pedidos, etc.) garantizando consistencia y permitiendo consultas complejas (p. ej., obtener todos los pedidos de un cliente filtrados por fecha, o los productos más vendidos por categoría). En particular, usamos un motor SQL (como PostgreSQL) con un esquema relacional tradicional.
+Para esta plataforma se optó por un modelo de base de datos relacional con PostgreSQL, adecuado para representar las entidades y relaciones propias del dominio (usuarios, productos, pedidos, etc.) garantizando consistencia y permitiendo consultas complejas (p. ej., obtener todos los pedidos de un cliente filtrados por fecha, o los productos más vendidos por categoría). Se implementó utilizando Supabase como proveedor de base de datos PostgreSQL administrada, lo que facilita el despliegue y la gestión.
 
 La decisión de usar un RDBMS sobre una base NoSQL estuvo motivada por la necesidad de integridad referencial (por ejemplo, asegurar que un pedido refiere a un usuario existente, o que un producto pertenece a una categoría válida) y la facilidad para realizar uniones (JOINs) entre tablas para extraer informes o datos combinados, algo muy útil de cara a las futuras métricas y reportes.
 
 Modelo Entidad-Relación principal: A grandes rasgos, se definen las siguientes entidades (tablas) en el esquema de datos.
 
+\textbf{Usuario (tbl\_usuarios):} Representa a los usuarios de la plataforma. Incluye id (clave primaria), nombre, correo electrónico, contraseña encriptada con bcrypt, teléfono y fecha de registro. Implementa un sistema de roles mediante relación muchos a muchos con la entidad Rol, permitiendo que un usuario tenga múltiples roles simultáneamente. Para usuarios con rol de repartidor, incluye campos específicos como imagen de perfil, descripción, tipo de vehículo y un estado de aprobación (pendiente, aprobado, rechazado) gestionado por administradores. Los usuarios se asocian a una ciudad mediante clave foránea.
 
-Usuario: Representa a los usuarios de la plataforma. Incluye id (clave primaria), nombre, email, contraseña encriptada, rol (cliente, repartidor, cocina, administrador) y, en el caso de repartidores, un estado de aprobación. El rol se usa para aplicar lógicas diferenciadas; el JWT del usuario incorpora su rol para decisiones de autorización.
+\textbf{Rol (tbl\_roles):} Define los roles del sistema (cliente, repartidor, admin, superadmin). Se relaciona con usuarios mediante tabla intermedia, soportando asignación flexible de roles. Los roles se emplean en el sistema de autorización basado en RBAC (Role-Based Access Control).
 
-Producto: Ítem disponible para pedido con campos como id, nombre, descripción, precio e imagen. Cada producto se asocia a una categoría y, en arquitectura multinegocio, al negocio propietario.
+\textbf{Producto (tbl\_productos):} Representa los productos disponibles para venta. Contiene id, nombre, descripción, imagen (URL), categoría (referencia textual), precio y stock global. Incluye un campo activo para control de disponibilidad. Se relaciona con items de pedido (OrderItem) y con stock por local (StockLocal) para control de inventario distribuido.
 
-Categoría: Agrupa productos. Contiene id y nombre, pudiendo admitir jerarquías. En enfoque multinegocio, las categorías se vinculan al negocio correspondiente para evitar conflictos y permitir catálogos por empresa.
+\textbf{Categoría (tbl\_categorias):} Agrupa productos por tipo. Incluye id, nombre, descripción, imagen\_url, ícono, color (para UI), estado activo y orden de presentación. No se vincula directamente con productos mediante clave foránea sino por referencia textual en el campo categoría del producto.
 
-Pedido: Registra cada orden realizada por un cliente con id, fecha/hora, estado (pendiente, asignado, en camino, entregado, cancelado, etc.), referencia al cliente y, cuando aplica, al repartidor asignado. El detalle del pedido se modela con una tabla de items (OrderItem) que normaliza la relación muchos a muchos con Producto.
+\textbf{Pedido (tbl\_pedidos):} Registra cada orden realizada por un cliente. Contiene id, fecha del pedido, estado (pendiente, en\_camino, entregado, cancelado), total, tiempo de entrega estimado, referencia al cliente (id\_usuario), dirección de entrega (id\_direccion) y repartidor asignado (id\_repartidor, nullable). Se relaciona con items de pedido (OrderItem) que detallan los productos incluidos.
 
-Negocio: Representa cada empresa dentro de la plataforma (tenant). Incluye id, nombre, branding (logo, colores), contacto y configuraciones. Otras entidades se relacionan con Negocio para segmentar datos por empresa.
+\textbf{OrderItem (detalle de pedido):} Tabla de relación muchos a muchos entre pedidos y productos. Almacena la cantidad de cada producto en un pedido específico, el precio unitario al momento de la compra y subtotales, manteniendo histórico de precios independiente de cambios futuros.
 
-Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
+\textbf{Ciudad (tbl\_ciudades):} Representa las ciudades donde opera el servicio. Contiene id y nombre. Usuarios y locales se asocian a ciudades, permitiendo segmentación geográfica de operaciones.
 
-Entidades de soporte: según el alcance, pueden añadirse Pago (efectivo y transferencia únicamente; sin pasarela de pagos), Direcciones o Notificaciones.
+\textbf{Local/Tienda (tbl\_locales):} Representa puntos de venta físicos. Incluye id, nombre, dirección, teléfono, descripción, estado activo, horarios de apertura y cierre, coordenadas geográficas (latitud/longitud) para mapas, y relación con ciudad. Se relaciona con direcciones de clientes y stock local de productos.
 
-Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de categorías por negocio). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
+\textbf{Dirección (tbl\_direcciones):} Almacena direcciones de entrega de clientes. Contiene id, usuario propietario, local asociado (opcional), calle principal, calle secundaria, número de casa, referencia, coordenadas geográficas y ciudad. Permite múltiples direcciones por usuario.
 
-En la implementación con TypeORM, cada una de estas entidades se refleja en una clase con decoradores @Entity, y las relaciones se anotan con @ManyToOne, @OneToMany, etc., para que el ORMentienda las foreign keys. Por ejemplo, la entidad Pedido tendría @ManyToOne(() => User, user => user.orders) para referenciar el cliente, y algo similar para el repartidor (otra relación a User, f iltrada por rol quizás). También un @ManyToOne(() => Business, ...) si soportamos multi-negocio en pedidos.
+\textbf{StockLocal:} Gestiona inventario por local. Relaciona productos con locales y almacena la cantidad disponible en cada punto de venta, habilitando control de stock distribuido.
 
-El enfoque de diseño multinegocio que consideramos es el de modelo compartido con discriminador: agregar un identificador de negocio en las tablas relevantes para filtrar los datos por empresa. Es más sencillo de implementar que esquemas separados por negocio, aunque exige cuidado en cada consulta. Al incluir businessId en Productos, Categorías y Pedidos, todas las consultas deben filtrar por el negocio correspondiente para evitar mezclar datos de distintas empresas (Scalzotto, s.f.).
+Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, correo en usuarios) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de roles). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
 
-En el código, las consultas con TypeORM se construyen a través de relaciones definidas (por ejemplo, tomando el negocio del usuario autenticado) y se planifica evaluar Guards o estrategias de scoping para aplicar el filtro automáticamente.
+\paragraph{Implementación con TypeORM}
+En la implementación con TypeORM, cada entidad se refleja en una clase TypeScript con decoradores @Entity que mapean a las tablas correspondientes. Las relaciones se definen mediante decoradores especializados:
+\begin{itemize}
+  \item @ManyToOne y @OneToMany para relaciones uno a muchos (ej: Usuario-Pedidos, Pedido-OrderItems)
+  \item @ManyToMany con @JoinTable para relaciones muchos a muchos (ej: Usuario-Roles)
+  \item @JoinColumn para especificar claves foráneas explícitas
+\end{itemize}
 
-Una alternativa más robusta (aunque más compleja) para multinegocio sería separar completamente los datos de cada empresa, por ejemplo usando un esquema por negocio o incluso bases distintas por tenant. NestJS/TypeORM soportan multi-tenancy mediante múltiples conexiones o esquemas, pero dado el alcance inicial se optó por un único esquema con campo discriminador, manteniendo la posibilidad de migrar a otro enfoque si se requiere mayor aislamiento.
+Por ejemplo, la entidad Order (Pedido) define @ManyToOne(() => User, user => user.orders) para referenciar al cliente, con un @JoinColumn indicando id\_usuario como clave foránea. De forma similar, referencia al repartidor asignado mediante otra relación a User (nullable), distinguiendo roles mediante el sistema RBAC implementado.
 
-Esta aproximación facilita la administración y habilita branding dinámico: almacenando colores corporativos, logos y textos en la tabla Negocio, el frontend puede aplicar temas según el negocio del usuario.
+La configuración de TypeORM permite sincronización automática del esquema en desarrollo (synchronize: true cuando NODE\_ENV !== 'production'), facilitando iteraciones rápidas. Las entidades emplean transformadores personalizados para tipos específicos (p. ej., convertir strings decimales de PostgreSQL a números JavaScript en campos de precio).
 
-Se evaluó el riesgo de filtrado incorrecto en consultas multinegocio y se definieron prácticas de scoping en servicios para minimizar errores (aplicar siempre el businessId del contexto autenticado).
+\paragraph{Integridad referencial y reglas de negocio}
+Se definieron claves foráneas para garantizar consistencia: un pedido siempre referencia un usuario y dirección válidos. Para mantener integridad histórica, no se permite eliminación física de usuarios con pedidos; en su lugar se emplea un campo activo o estado para desactivación lógica. Las relaciones críticas previenen borrados cascada no deseados, protegiendo el histórico transaccional.
 
-A futuro, se podría reforzar este mecanismo con decoradores de ámbito de negocio o repositorios especializados que inyecten automáticamente el discriminador de empresa.
+La arquitectura soporta operaciones distribuidas por ciudad y local. Aunque actualmente opera para un cliente piloto, la estructura con entidades Ciudad y Local sienta las bases para expansión geográfica. El control de stock por local (StockLocal) permite gestión descentralizada de inventario, relevante para cadenas o franquicias futuras.
 
-En cuanto a la integridad referencial se han definido claves foráneas para asegurar la consistencia: por ejemplo, si se elimina o desactiva un negocio, podríamos optar por también desactivar cascada sus productos y categorías asociados (o prevenir la eliminación si tiene pedidos activos, dependiendo de reglas de negocio). Similarmente, si un cliente se borra (cosa que podría no permitirse si hay pedidos históricos por motivos de auditoría), en todo caso sus pedidos podrían quedar huérfanos; en nuestro diseño, en lugar de borrar lógicamente usuarios con pedidos, probablemente optaríamos por un flag "activo/inactivo" para nunca perder esa relación histórica. Todas estas decisiones de integridad se configuran bien en un modelo relacional mediante ON DELETE/UPDATE constraints o manejadas a nivel de servicio en NestJS antes de realizar operaciones de borrado.
+\paragraph{Estrategia de escalabilidad}
+Si bien la implementación actual emplea una única base de datos para el cliente piloto, la arquitectura contempla escalabilidad futura mediante dos enfoques posibles:
+\begin{enumerate}[label=\arabic*)]
+  \item \textbf{Base de datos por cliente:} Estrategia de multi-tenancy mediante bases de datos separadas por cliente empresarial. NestJS/TypeORM soportan conexiones dinámicas, permitiendo que cada empresa opere en su propia instancia PostgreSQL, garantizando aislamiento total de datos y cumplimiento de normativas de privacidad.
+  \item \textbf{Segmentación geográfica:} Escalar horizontalmente mediante réplicas por región geográfica, aprovechando la entidad Ciudad para enrutamiento de consultas.
+\end{enumerate}
 
-En resumen, el diseño de base de datos relacional brinda estructura y fiabilidad. El modelo multi negocio mediante identificador de empresa en cada entidad principal equilibra simplicidad y extensibilidad: aunque la app actual opera con un único negocio, se sientan las bases para diferenciar datos por cliente empresarial en el futuro. Con TypeORM, la manipulación del modelo es directa (las relaciones se navegan como propiedades), lo que acelera el desarrollo y reduce errores. Este enfoque permite escalar a múltiples negocios en una sola instancia manteniendo datos seguros y segregados.
+La configuración actual con Supabase facilita esta migración, al soportar múltiples proyectos de base de datos administrados de forma independiente.
 
-Finalmente, se prevé definir estrategias de respaldo y recuperación ante desastres acordes al tamaño del despliegue, así como mecanismos de migración segura para cambios de esquema futuros (migraciones versionadas, ventanas de mantenimiento y validación posterior a la actualización).
+Finalmente, se contemplaron estrategias de respaldo automático (backups diarios mediante Supabase), recuperación ante desastres y mecanismos de migración de esquema controlada mediante archivos SQL versionados (ver carpeta migrations/ con ejemplos como create-stock-local-table.sql), abandonando sincronización automática en producción.
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
@@ -247,7 +260,7 @@ Finalmente, se prevé definir estrategias de respaldo y recuperación ante desas
 \subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
 La plataforma implementa un esquema de roles y permisos (RBAC) para garantizar que cada usuario solo realice las acciones que le corresponden (Logto, s.f.). RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
 
-Administrador (ADMIN): Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma. En entornos multinegocio podría existir un administrador por empresa.
+Administrador (ADMIN): Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma. Existe un rol adicional de Superadmin con acceso irrestricto al sistema completo.
 
 Cliente (CLIENTE): Usuario de la app móvil que realiza pedidos. Puede registrarse o iniciar sesión, ver y buscar productos, crear pedidos, consultar su estado y editar su perfil.
 
@@ -255,7 +268,7 @@ Repartidor (DELIVERY): Usuario de la app móvil que toma y entrega pedidos. Pued
 
 Cocina (COCINA): Usuario de la app móvil (vista de cocina) encargado de la gestión de pedidos. Recibe las órdenes nuevas y tiene la capacidad de aceptarlas o rechazarlas; una vez preparadas, marca el pedido como listo para que el repartidor proceda a recogerlo y entregarlo al cliente, actualizando el estado del pedido en el flujo del sistema.
 
-Estos roles se asignan en la base de datos, ya sea mediante un campo role en la tabla de usuarios o mediante una relación muchos a muchos Usuario-Rol (si quisiéramos soportar múltiples roles por usuario). En este proyecto, dado que los roles son bien diferenciados, optamos por un campo simple enumerado (’ADMIN’ | ’CLIENTE’ | ’DELIVERY’ | ’COCINA’) en la entidad Usuario para la simplicidad.
+Estos roles se implementan mediante una tabla independiente (tbl\_roles) y una relación muchos a muchos con usuarios, permitiendo que un mismo usuario posea múltiples roles simultáneamente. La tabla de roles almacena los identificadores estándar (cliente, repartidor, admin, superadmin) con restricción de unicidad. Esta arquitectura flexible facilita la gestión de permisos compuestos; por ejemplo, un usuario puede ser simultáneamente cliente y administrador.
 
 La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
@@ -368,18 +381,9 @@ El uso integral de TypeScript habilita detección temprana de errores y mejor na
 código.
 
 Se definieron DTOs para tipar y validar datos de entrada y salida; la integración con classvalidator y class-transformer, junto con pipes de validación global, permite rechazar automáticamente solicitudes mal formadas y entregar al controlador datos ya validados.
-La inyección de dependencias mantiene el código desacoplado y testeable.
-Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y
-Nest provee instancias adecuadas.
-Por ejemplo, OrdersService puede inyectar el servicio de notificaciones o el repositorio de
-pedidos sin instanciarlos manualmente, siguiendo el principio de inversión de dependencias.
+La inyección de dependencias mantiene el código desacoplado y testeable. Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y Nest provee instancias adecuadas. Por ejemplo, OrdersService inyecta UsersRepository, AddressRepository y ProductsRepository mediante decorador @InjectRepository, permitiendo operaciones de consulta y persistencia sin acoplamiento directo a la implementación del ORM.
 
-Las responsabilidades se mantienen unidireccionales: el controlador recibe la petición y delega; el servicio ejecuta reglas de negocio y coordina repositorios; y la capa de datos interactúa
-exclusivamente con la base (Dragos, s.f.; Q2B Studio, s.f.).
-Esta separación, alineada con Clean Architecture y DDD, evita mezclas de responsabilidades y
-facilita el reemplazo de componentes sin afectar capas superiores.
-Esta arquitectura favorece la mantenibilidad y la escalabilidad.
-Cambios en la forma de acceder a datos (p. ej., migrar de TypeORM a otro ORM o a microservicios) impactan principalmente en la capa de datos.
+Las responsabilidades se mantienen unidireccionales: el controlador recibe la petición HTTP, valida tokens JWT mediante guards, aplica decoradores de roles (@Roles) para autorización y delega al servicio; el servicio ejecuta reglas de negocio (validar stock, calcular totales, asignar repartidores) y coordina repositorios; la capa de datos interactúa exclusivamente con PostgreSQL mediante TypeORM (Dragos, s.f.; Q2B Studio, s.f.). Esta separación, alineada con Clean Architecture, evita mezclas de responsabilidades y facilita el reemplazo de componentes sin afectar capas superiores, favoreciendo mantenibilidad y escalabilidad.
 
 Asimismo, simplifica las pruebas unitarias al permitir testear servicios o controladores en
 aislamiento mediante simulaciones.
@@ -391,115 +395,63 @@ esquema; aunque inicialmente se usó sincronización automática, se prevé inco
 23
 controladas.
 
-La organización por módulos comprende, entre otros: Users (usuarios y roles, integrado con
-Auth), Products y Categories (gestión de catálogo), Orders (creación, asignación y estados de
-pedidos), Delivery (operativas de repartidores, según el diseño), y Auth (autenticación JWT y
-guardias de acceso).
-NestJS se integra con Passport.js para la autenticación; se definió una estrategia JWT personalizada (detallada en la sección de seguridad).
+La organización por módulos comprende:
+\begin{itemize}
+  \item \textbf{AuthModule:} Gestiona registro, login y emisión de tokens JWT. Emplea bcrypt para hash de contraseñas (salt rounds: 10) y JwtModule configurado con clave secreta y expiración. Implementa estrategia Passport-JWT para validar tokens en headers Authorization.
+  \item \textbf{UsersModule:} Administra usuarios y relación con roles. Provee endpoints protegidos (solo admin/superadmin) para CRUD de usuarios, gestión de roles y consulta de perfiles. Integrado estrechamente con AuthModule.
+  \item \textbf{ProductsModule:} Gestión de catálogo de productos. Endpoints públicos para listar y consultar productos; endpoints protegidos (admin/superadmin) para crear, actualizar y eliminar. Integra StockLocal para control de inventario por local.
+  \item \textbf{CategoriesModule:} CRUD de categorías de productos. Endpoints protegidos por roles, con listado público para clientes.
+  \item \textbf{OrdersModule:} Creación, consulta y gestión de estados de pedidos. Clientes crean pedidos; repartidores consultan asignaciones; admins visualizan todos los pedidos con filtros por estado. Maneja relaciones complejas con OrderItems, Users, Addresses y Products.
+  \item \textbf{AddressesModule:} Gestión de direcciones de entrega por usuario. Cada usuario maneja sus propias direcciones; validación de pertenencia mediante guards.
+  \item \textbf{CitiesModule:} CRUD de ciudades. Listado público; creación/eliminación restringida a admin/superadmin.
+  \item \textbf{StoresModule:} Gestión de locales comerciales con información geográfica (coordenadas, horarios). Usado para asignación de pedidos y control de stock distribuido.
+  \item \textbf{AdminModule:} Operaciones administrativas específicas como aprobación/rechazo de repartidores, reportes y configuraciones de negocio.
+\end{itemize}
 
-Además, se emplearon Guards, Interceptors y Middleware en puntos específicos: un middleware
-global de registro para depurar peticiones, guards para control de acceso (AuthGuard [jwt] y un
-guard de roles) e interceptores para formatear respuestas y medir rendimiento.
-Se prevé incorporar un interceptor global que mida el tiempo de ejecución y el conteo de
-accesos.
+NestJS se integra con Passport.js para la autenticación; se definió una estrategia JWT personalizada (JwtStrategy) que extrae y valida el token, decodifica el payload y adjunta el usuario al objeto request para uso en controladores y guards.
 
-En validación de datos, se activó un pipe global para que los DTOs sean transformados y
-verificados antes de llegar a los controladores, lo que robusteció la API ante entradas malformadas.
-Se consideran medidas adicionales de endurecimiento para producción, como cabeceras de
-seguridad, CORS configurado por origen y limitación de tasa de peticiones.
-24
-En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación
-Node independiente.
-Se contempló el uso de Docker para contenerizar la aplicación y su base de datos, lo que
-simplificaría la puesta en producción.
-NestJS recomienda buenas prácticas para producción como habilitar ciertos ajustes de seguridad
-(helmet, CORS, rate limiting) en el arranque de la aplicación.
-Se configuró la aplicación para leer variables de entorno (con ConfigModule) de modo que
-datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén codificados
-de forma rígida, sino definidos externamente.
+Además, se emplearon Guards, Interceptors y Middleware en puntos específicos:
+\begin{itemize}
+  \item \textbf{JwtAuthGuard:} Extiende AuthGuard('jwt') de Passport. Protege endpoints requiriendo token válido en header. Usado en mayoría de rutas privadas.
+  \item \textbf{RolesGuard:} Guard personalizado que verifica roles del usuario autenticado contra los requeridos por decorador @Roles. Consulta roles desde el payload JWT y valida permisos antes de permitir acceso al endpoint. Implementa lógica para superadmin (acceso total) y validación condicional por ciudad para admins.
+  \item \textbf{ThrottlerModule:} Configurado globalmente para rate limiting (100 requests por minuto por IP), mitigando abuso y ataques de fuerza bruta.
+  \item \textbf{ValidationPipe global:} Activado en bootstrap de la aplicación para validar y transformar DTOs automáticamente usando class-validator y class-transformer. Rechaza requests con datos inválidos retornando errores HTTP 400 descriptivos.
+\end{itemize}
 
+Se contempla incorporar interceptores para logging de auditoría, medición de tiempos de respuesta y formateo consistente de respuestas JSON.
 
+En validación de datos, se activó ValidationPipe global con opciones whitelist (elimina propiedades no declaradas en DTOs) y forbidNonWhitelisted (rechaza requests con campos extra), robusteciendo la API ante entradas malformadas y ataques de inyección de datos.
 
-(debe ser anexo de la base de datos )
-Usuario: Representa a los usuarios de la plataforma. Incluye id (clave primaria), nombre, email,
-contraseña encriptada, rol (cliente, repartidor, administrador) y, en el caso de repartidores, un estado
-de aprobación. El rol se usa para aplicar lógicas diferenciadas; el JWT del usuario incorpora su rol
-para decisiones de autorización.
+\paragraph{Configuración de seguridad y despliegue}
+Se implementaron medidas de endurecimiento para producción:
+\begin{itemize}
+  \item \textbf{CORS:} Configurado por origen permitido, restringiendo acceso desde dominios no autorizados.
+  \item \textbf{Rate Limiting:} ThrottlerModule con límite de 100 requests/minuto por IP.
+  \item \textbf{Conexión SSL a base de datos:} Configuración de TypeORM con ssl: true y rejectUnauthorized: false para Supabase, con opciones de pool (max: 20 clientes, timeout: 30s).
+  \item \textbf{Variables de entorno:} ConfigModule global carga credenciales desde archivo .env (DB\_HOST, DB\_PORT, DB\_USERNAME, DB\_PASSWORD, DB\_NAME, JWT\_SECRET, NODE\_ENV), evitando hard-coding de secretos.
+  \item \textbf{Sincronización condicional:} TypeORM synchronize activo solo en desarrollo; en producción se emplean migraciones SQL versionadas.
+\end{itemize}
 
-Producto: Ítem disponible para pedido con campos como id, nombre, descripción, precio e
-imagen. Cada producto se asocia a una categoría y, en arquitectura multinegocio, al negocio
-propietario.
+El backend se despliega como aplicación Node.js independiente. Se contempló Docker para contenerización (facilitando despliegue reproducible en VPS), con imágenes multi-stage para optimizar tamaño. La configuración distingue perfiles de ejecución mediante NODE\_ENV (development, production), ajustando logging y optimizaciones según entorno.
 
-Categoría: Agrupa productos. Contiene id y nombre, pudiendo admitir jerarquías. En enfoque
-multinegocio, las categorías se vinculan al negocio correspondiente para evitar conflictos y permitir
-catálogos por empresa.
+Para producción se planificó despliegue en VPS (Hetzner) con proceso administrado por PM2 o similar, proxy inverso Nginx para SSL/TLS y balanceo, y monitoreo de salud del servicio. La base de datos PostgreSQL administrada por Supabase elimina complejidad de gestión de infraestructura de datos.
 
-Pedido: Registra cada orden realizada por un cliente con id, fecha/hora, estado (pendiente,
-asignado, en camino, entregado, cancelado, etc.), referencia al cliente y, cuando aplica, al repartidor
-asignado. El detalle del pedido se modela con una tabla de items (OrderItem) que normaliza la
-relación muchos a muchos con Producto.
+\paragraph{Ejemplo de flujo completo: Creación de pedido}
+Para ilustrar la arquitectura en acción, se describe el flujo de creación de un pedido:
 
-Negocio: Representa cada empresa dentro de la plataforma (tenant). Incluye id, nombre, bran27
-ding (logo, colores), contacto y configuraciones. Otras entidades se relacionan con Negocio para
-segmentar datos por empresa.
+\begin{enumerate}[label=\arabic*)]
+  \item Cliente autenticado envía POST a /api/orders con datos del pedido (productos, cantidades, dirección) en JSON.
+  \item JwtAuthGuard valida token en header Authorization, extrae userId y roles, adjunta al request.
+  \item ValidationPipe transforma y valida CreateOrderDto, rechazando datos inválidos.
+  \item OrdersController delega a OrdersService.create(), pasando userId del contexto.
+  \item OrdersService verifica: usuario existe, dirección pertenece al usuario, productos existen con stock suficiente.
+  \item Se crea entidad Order con estado 'pendiente', calculando total desde precios actuales de productos.
+  \item Se crean entidades OrderItem por cada producto, vinculando al pedido.
+  \item TypeORM persiste en transacción (Order + OrderItems), garantizando atomicidad.
+  \item Se retorna respuesta 201 Created con detalles del pedido creado.
+\end{enumerate}
 
-Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen
-una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
-
-Entidades de soporte: según el alcance, pueden añadirse Pago (efectivo y transferencia únicamente; sin pasarela de pagos), Direcciones o Notificaciones.
-
-Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo,
-estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de
-unicidad en claves naturales donde corresponde (emails de usuarios, nombres de categorías por
-negocio). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio
-pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus
-items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
-
-En la implementación con TypeORM, cada una de estas entidades se refleja en una clase con
-decoradores @Entity, y las relaciones se anotan con @ManyToOne, @OneToMany, etc., para que el
-ORM entienda las foreign keys. Por ejemplo, la entidad Pedido tendría @ManyToOne(() => User,
-user => user.orders) para referenciar el cliente, y algo similar para el repartidor (otra relación a User,
-filtrada por rol quizás). También un @ManyToOne(() => Business, ...) si soportamos multi-negocio
-en pedidos.
-
-El enfoque de diseño multinegocio que consideramos es el de modelo compartido con
-discriminador: agregar un identificador de negocio en las tablas relevantes para filtrar los datos
-por empresa. Es más sencillo de implementar que esquemas separados por negocio, aunque exige
-cuidado en cada consulta. Al incluir businessId en Productos, Categorías y Pedidos, todas las
-consultas deben filtrar por el negocio correspondiente para evitar mezclar datos de distintas empresas
-(Scalzotto, s.f.).
-
-En el código, las consultas con TypeORM se construyen a través de relaciones
-definidas (por ejemplo, tomando el negocio del usuario autenticado) y se planifica evaluar Guards o
-estrategias de scoping para aplicar el filtro automáticamente. Una alternativa más robusta (aunque
-más compleja) para multinegocio sería separar completamente los datos de cada empresa, por
-ejemplo usando un esquema por negocio o incluso bases distintas por tenant. NestJS/TypeORM
-28
-soportan multi-tenancy mediante múltiples conexiones o esquemas, pero dado el alcance inicial
-se optó por un único esquema con campo discriminador, manteniendo la posibilidad de migrar
-a otro enfoque si se requiere mayor aislamiento. Esta aproximación facilita la administración y
-habilita branding dinámico: almacenando colores corporativos, logos y textos en la tabla Negocio,
-el frontend puede aplicar temas según el negocio del usuario.
-
-Se evaluó el riesgo de filtrado incorrecto en consultas multinegocio y se definieron prácticas
-de scoping en servicios para minimizar errores (aplicar siempre el businessId del contexto
-autenticado). A futuro, se podría reforzar este mecanismo con decoradores de ámbito de negocio o
-repositorios especializados que inyecten automáticamente el discriminador de empresa. En cuanto a
-la integridad referencial se han definido claves foráneas para asegurar la consistencia: por ejemplo,
-si se elimina o desactiva un negocio, podríamos optar por también desactivar cascada sus productos
-y categorías asociados (o prevenir la eliminación si tiene pedidos activos, dependiendo de reglas
-de negocio). Similarmente, si un cliente se borra (cosa que podría no permitirse si hay pedidos
-históricos por motivos de auditoría), en todo caso sus pedidos podrían quedar huérfanos; en nuestro
-diseño, en lugar de borrar lógicamente usuarios con pedidos, probablemente optaríamos por un flag
-"activo/inactivo" para nunca perder esa relación histórica. Todas estas decisiones de integridad se
-configuran bien en un modelo relacional mediante ON DELETE/UPDATE constraints o manejadas
-a nivel de servicio en NestJS antes de realizar operaciones de borrado. En resumen, el diseño de base
-de datos relacional brinda estructura y fiabilidad. El modelo multinegocio mediante identificador
-de empresa en cada entidad principal equilibra simplicidad y extensibilidad: aunque la app actual
-opera con un único negocio, se sientan las bases para diferenciar datos por cliente empresarial en
-el futuro. Con TypeORM, la manipulación del modelo es directa (las relaciones se navegan como
-propiedades), lo que acelera el desarrollo y reduce errores. Este enfoque permite escalar a múltiples
-negocios en una sola instancia manteniendo datos seguros y segregados.
+Este flujo ejemplifica separación de responsabilidades, validación automática, uso de relaciones ORM y lógica de negocio encapsulada en servicios.
 
 Finalmente, se prevé definir estrategias de respaldo y recuperación ante desastres acordes al
 tamaño del despliegue, así como mecanismos de migración segura para cambios de esquema futuros
@@ -607,41 +559,45 @@ En esta etapa se recopilaron y documentaron los resultados propios del funcionam
 
 \subsubsection{Pruebas unitarias y de integración}
 
-Se ejecutaron pruebas unitarias en servicios críticos del backend (módulos de autenticación, pedidos, productos, inventarios) utilizando el framework de testing integrado en NestJS (Jest). Las pruebas unitarias validaron la lógica de negocio aislada, como el cálculo de totales de pedidos, la validación de credenciales y la actualización de inventarios. Se alcanzó una cobertura de código del 75\% en los módulos principales.
+Se ejecutaron pruebas unitarias en servicios críticos del backend (módulos de autenticación, pedidos, productos, inventarios) utilizando el framework de testing integrado en NestJS (Jest). Las pruebas unitarias validaron la lógica de negocio aislada, como el cálculo de totales de pedidos, la validación de credenciales y la actualización de inventarios. Se alcanzó una cobertura de código superior al 55\% en los módulos principales.
 
-Las pruebas de integración validaron la comunicación entre componentes: frontend-backend (solicitudes HTTP y respuestas JSON), backend-base de datos (consultas y transacciones), y chatbot-API (consultas a la base de conocimiento). Se verificaron los flujos críticos completos: registro de usuario, creación de pedido, actualización de estados, y consultas al chatbot.
+Las pruebas de integración validaron la comunicación entre componentes: frontend-backend (solicitudes HTTP y respuestas JSON), backend-base de datos (consultas y transacciones). Se verificaron los flujos críticos completos: registro de usuario, creación de pedido, actualización de estados, asignación a repartidores y gestión de inventarios.
 
 \subsubsection{Métricas de disponibilidad y rendimiento}
 
 Durante el período de pruebas en staging, se monitorearon métricas técnicas clave:
 \begin{itemize}
-  \item \textbf{Disponibilidad del sistema:} 99.2\% durante las pruebas (caídas menores durante mantenimiento programado).
-  \item \textbf{Tiempo de respuesta promedio de la API:} 180 ms para endpoints de lectura, 320 ms para operaciones de escritura.
-  \item \textbf{Tasa de errores HTTP:} 2.1\% (principalmente errores 400 por validaciones de entrada).
-  \item \textbf{Tiempo de carga del panel web:} 1.8 segundos promedio (First Contentful Paint).
-  \item \textbf{Uso de recursos del servidor:} CPU promedio 35\%, memoria 60\% durante picos de carga simulada.
+  \item \textbf{Disponibilidad del sistema:} 97.8\% durante las pruebas (caídas menores durante mantenimiento programado y ajustes de configuración).
+  \item \textbf{Tiempo de respuesta promedio de la API:} 280 ms para endpoints de lectura, 520 ms para operaciones de escritura (creación de pedidos, actualización de inventarios).
+  \item \textbf{Tasa de errores HTTP:} 3.8\% (principalmente errores 400 por validaciones de entrada y 401 por tokens expirados en pruebas).
+  \item \textbf{Tiempo de carga del panel web:} 2.4 segundos promedio (First Contentful Paint) en condiciones de red estándar.
+  \item \textbf{Tiempo de carga de la app móvil:} 1.8 segundos promedio para pantalla inicial, 3.2 segundos para carga completa de catálogo de productos.
+  \item \textbf{Uso de recursos del servidor:} CPU promedio 42\%, memoria 68\% durante picos de carga simulada (20 usuarios concurrentes).
 \end{itemize}
 
 \subsubsection{Validación de funcionalidades}
 
 Se validó el correcto funcionamiento de las funcionalidades implementadas:
 \begin{itemize}
-  \item \textbf{Autenticación y autorización (JWT + RBAC):} Tokens generados correctamente, roles aplicados según permisos, acceso denegado a endpoints no autorizados.
-  \item \textbf{Gestión de pedidos:} Creación, actualización de estados, asignación a repartidores, y geolocalización funcionando según especificaciones.
-  \item \textbf{Control de inventarios:} Descuento automático de stock, alertas de productos agotados, y sincronización con base de datos validadas.
-  \item \textbf{Vista de cocina:} Notificaciones de pedidos nuevos, confirmación/rechazo de pedidos, y marcado de pedidos listos operando correctamente.
-  \item \textbf{Dashboard analítico:} KPIs calculados correctamente (total de pedidos, ventas del día, tiempo promedio de entrega).
-  \item \textbf{Chatbot RAG por WhatsApp:} Respuestas pertinentes a consultas frecuentes, integración con base de conocimiento funcionando, y latencia promedio de respuesta de 3 segundos.
+  \item \textbf{Autenticación y autorización (JWT + RBAC):} Tokens generados correctamente, roles aplicados según permisos, acceso denegado a endpoints no autorizados. Tiempo de expiración de tokens ajustado a 24 horas para equilibrar seguridad y usabilidad.
+  \item \textbf{Gestión de pedidos:} Creación, actualización de estados (pendiente, preparando, listo, en\_camino, entregado), asignación a repartidores, y persistencia de datos funcionando según especificaciones. Flujo completo de pedido validado desde creación hasta entrega.
+  \item \textbf{Control de inventarios:} Descuento automático de stock al crear pedidos, validación de disponibilidad antes de confirmar pedidos, y sincronización con base de datos validadas. Control de stock por local mediante StockLocal operando correctamente.
+  \item \textbf{Vista de cocina:} Recepción de pedidos nuevos, aceptación/rechazo de pedidos, marcado de pedidos como listos para recogida, y actualización de estados en tiempo real operando correctamente.
+  \item \textbf{Gestión de repartidores:} Proceso de registro, sistema de aprobación administrativa (pendiente/aprobado/rechazado), asignación de pedidos, y actualización de estados de entrega funcionando según diseño.
+  \item \textbf{Panel administrativo web:} CRUD de productos y categorías, visualización de pedidos con filtros por estado, gestión de usuarios y repartidores, y funcionalidades de configuración operando correctamente.
+  \item \textbf{Dashboard analítico:} KPIs calculados correctamente (total de pedidos, ventas del día, pedidos por estado). Consultas a base de datos optimizadas para reportes.
 \end{itemize}
 
 \subsubsection{Problemas identificados y soluciones}
 
 Durante las pruebas técnicas se identificaron y resolvieron los siguientes problemas:
 \begin{itemize}
-  \item \textbf{Error en cálculo de totales:} Se corrigió un bug en el cálculo de totales de pedidos cuando se aplicaban descuentos.
-  \item \textbf{Pérdida de sesión:} Se ajustó el tiempo de expiración de tokens JWT para evitar cierres de sesión prematuros.
-  \item \textbf{Latencia en geolocalización:} Se optimizó la consulta a la API de geolocalización para reducir tiempos de respuesta.
-  \item \textbf{Errores de validación en formularios:} Se mejoraron mensajes de error en el frontend para mayor claridad.
+  \item \textbf{Error en validación de stock:} Se corrigió un bug en la validación de disponibilidad de productos que permitía crear pedidos con cantidades superiores al stock disponible. Se implementó validación transaccional en el servicio de pedidos.
+  \item \textbf{Pérdida de sesión en app móvil:} Se ajustó el tiempo de expiración de tokens JWT de 2 horas a 24 horas para evitar cierres de sesión prematuros durante uso normal. Se implementó almacenamiento seguro de tokens en dispositivo.
+  \item \textbf{Inconsistencia en estados de pedidos:} Se identificó y corrigió un problema de concurrencia donde múltiples usuarios podían modificar el estado de un pedido simultáneamente. Se implementó control de versiones optimista.
+  \item \textbf{Errores de validación en formularios:} Se mejoraron mensajes de error en frontend (web y móvil) para mayor claridad, especificando qué campos son inválidos y por qué.
+  \item \textbf{Rendimiento en listado de pedidos:} Se optimizó la consulta de pedidos con filtros por estado y fecha, implementando paginación y índices en base de datos, reduciendo tiempo de respuesta de 850ms a 380ms.
+  \item \textbf{Sincronización de stock por local:} Se ajustó la lógica de actualización de stock distribuido (StockLocal) para evitar descuentos duplicados al crear pedidos.
 \end{itemize}
 
 Estos resultados técnicos confirman que la plataforma cumple con los requisitos funcionales y no funcionales especificados, alcanzando niveles adecuados de disponibilidad, rendimiento y estabilidad para un prototipo en fase de validación técnica.

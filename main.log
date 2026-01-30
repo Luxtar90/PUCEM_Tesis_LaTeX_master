@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  30 JAN 2026 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  30 JAN 2026 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1770,26 +1770,26 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/b/n/10.95' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 17.
 
-) [34] [35] (imagenes/web_panel_prototipo.tikz) [36] [37] [38] [39] [40] [41] (imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) (imagenes/modulo_repartidores.tikz) [42] (imagenes/despliegue_arquitectura.tikz) [43] [44]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 583.
+) [34] [35] [36] (imagenes/web_panel_prototipo.tikz) [37] [38] [39] [40] [41] [42] (imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) (imagenes/modulo_repartidores.tikz) [43] (imagenes/despliegue_arquitectura.tikz) [44] [45]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 535.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `TS1/ptm/m/n/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 583.
+(microtype)                protrusion for this font on input line 535.
 
 
-Overfull \hbox (9.20386pt too wide) in paragraph at lines 581--593
+Overfull \hbox (9.20386pt too wide) in paragraph at lines 533--545
  [][] 
  []
 
-[45] [46] [47]) (capitulos/3_resultados.tex [48]
+[46] [47] [48]) (capitulos/3_resultados.tex [49]
 Cap\'{\i }tulo 3.
-[49
+[50
 
-] [50] [51]
+] [51] [52]
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `OT1/ztmcm/m/n/10.95' (context: `basictext'). Switching off
@@ -1841,40 +1841,40 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `OT1/ptm/m/it/6' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 38.
 
-[52]
-<imagenes/cronograma.png, id=512, 633.86812pt x 429.10312pt>
+[53]
+<imagenes/cronograma.png, id=527, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
 Package pdftex.def Info: imagenes/cronograma.png  used on input line 86.
 (pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
-) (capitulos/4_discucion.tex [53] [54 <./imagenes/cronograma.png>]
+) (capitulos/4_discucion.tex [54] [55 <./imagenes/cronograma.png>]
 Cap\'{\i }tulo 4.
-[55
+[56
 
-] [56] [57] [58] [59]) (capitulos/5_conclusiones.tex [60]
+] [57] [58] [59] [60]) (capitulos/5_conclusiones.tex [61]
 Cap\'{\i }tulo 5.
-[61
+[62
 
-]) [62] [63]
+]) [63] [64]
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 266.
 
-(apendices.tex [64
+(apendices.tex [65
 
 ]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=573, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=588, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-) [65
+) [66
 
 
-] [66 <./imagenes/reddiagrama.png>] (main.aux
+] [67 <./imagenes/reddiagrama.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1888,17 +1888,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39982 strings out of 467871
- 752252 string characters out of 5418376
+ 40018 strings out of 467871
+ 752540 string characters out of 5418376
  1677434 words of memory out of 5000000
  67673 multiletter control sequences out of 15000+600000
- 711776 words of font info for 321 fonts, out of 8000000 for 9000
+ 712792 words of font info for 337 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,94p,1546b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (82 pages, 1474003 bytes).
+Output written on main.pdf (83 pages, 1476531 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
+ 866 PDF objects out of 1000 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
  99873 words of extra memory for PDF output out of 106986 (max. 10000000)
 

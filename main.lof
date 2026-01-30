@@ -7,18 +7,18 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{25}{figure.caption.14}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura del panel web}}{26}{figure.caption.15}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{26}{figure.caption.16}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama entidad-relación (ER) del esquema de datos planificado}}{30}{figure.caption.17}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{32}{figure.caption.18}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{34}{figure.caption.19}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Flujo principal del panel web administrativo}}{36}{figure.caption.20}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Flujo general del proceso de pedido}}{42}{figure.caption.21}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama del módulo de inventario}}{42}{figure.caption.22}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama del módulo de repartidores}}{42}{figure.caption.23}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Arquitectura del despliegue de la plataforma}}{43}{figure.caption.24}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama entidad-relación (ER) del esquema de datos planificado}}{31}{figure.caption.17}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{33}{figure.caption.18}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{35}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Flujo principal del panel web administrativo}}{37}{figure.caption.20}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Flujo general del proceso de pedido}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama del módulo de inventario}}{43}{figure.caption.22}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama del módulo de repartidores}}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Arquitectura del despliegue de la plataforma}}{44}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{54}{figure.caption.28}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textit {Cronograma de actividades del proyecto de titulación}}}{55}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{66}{figure.caption.31}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{66}{figure.caption.32}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Diagrama entidad--relación de la base de datos de la plataforma SaaS}}}{67}{figure.caption.31}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \textit {Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}}{67}{figure.caption.32}%
