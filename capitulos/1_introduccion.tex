@@ -99,50 +99,53 @@ Diseñar, desarrollar y evaluar técnicamente una plataforma SaaS modular que in
 
 \section{Alcance}
 
-El presente proyecto se enmarca en el diseño, desarrollo y validación técnica de una plataforma
-SaaS modular orientada a la gestión operativa de PYMES gastronómicas de Portoviejo, en respuesta
-a los requisitos funcionales y no funcionales identificados y con demostración de viabilidad técnica
-mediante validación en entorno controlado. El alcance se define en dos dimensiones: los elementos
-que se desarrollan e implementan, y aquellos que quedan excluidos de esta fase.
-El proyecto abarca la identificación y documentación de requisitos (mediante revisión de literatura,
-análisis del dominio y entrevistas con actores del sector gastronómico), el diseño de la arquitectura
-técnica (estructura modular, patrones de diseño, modelo de datos, protocolos de seguridad e
-integración), el desarrollo de los módulos funcionales principales y la validación técnica en entorno
-controlado. La arquitectura resultante contempla un backend desarrollado con NestJS que expone
-una API RESTful, una aplicación móvil multiplataforma construida con React Native (con vistas
-para clientes, repartidores y cocina), y un sitio web implementado con Next.js que funciona
-principalmente como panel de administración y además permite iniciar sesión como cliente para
-realizar compras desde la web. La persistencia de datos se gestiona mediante una base de datos
-relacional PostgreSQL.
-La plataforma se concibe bajo el modelo SaaS en cuanto a provisión del software como servicio en
-la nube y acceso remoto, aunque en esta fase no se implementa una arquitectura multi-tenant,
-limitándose a una instancia única para fines de validación técnica.
-La plataforma integra los siguientes módulos funcionales: gestión de pedidos con geolocalización y
-medios de pago únicamente por efectivo y transferencia; control de inventarios; administración de
-repartidores; vista de cocina en la aplicación móvil para aceptar o rechazar pedidos y notificar
-cuando estén listos para que el repartidor recoja, integrada al flujo de órdenes; y dashboard
-analítico con indicadores clave de desempeño (KPIs). Como componente de atención automatizada,
-se integra un chatbot basado en el modelo de Generación Aumentada por Recuperación (RAG)
-accesible vía WhatsApp.
-La verificación del cumplimiento de requisitos funcionales y criterios de calidad se realiza mediante
-pruebas de integración y validación de flujos críticos en entorno controlado (staging). La
-viabilidad técnica y la usabilidad se evalúan en entorno controlado mediante la aplicación de la
-escala SUS (System Usability Scale) con usuarios de prueba en una PYME gastronómica piloto. El
-despliegue para esta validación utiliza infraestructura en la nube (servidor VPS para backend y base
-de datos, Vercel para el sitio web) y se distribuye la aplicación móvil como archivo APK para
-dispositivos Android.
+El presente proyecto se enmarca en el diseño, desarrollo y validación técnica de una plataforma 
+SaaS modular orientada a la gestión operativa de PYMES gastronómicas de Portoviejo, en 
+respuesta a los requisitos funcionales y no funcionales identificados y con demostración de 
+viabilidad técnica mediante validación en entorno controlado. El alcance se define en dos 
+dimensiones: los elementos que se desarrollan e implementan, y aquellos que quedan excluidos de 
+esta fase. El proyecto abarca la identificación y documentación de requisitos (mediante revisión de 
+literatura, análisis del dominio y entrevistas con actores del sector gastronómico), el diseño de la 
+arquitectura técnica (estructura modular, patrones de diseño, modelo de datos, protocolos de 
+seguridad e integración), el desarrollo de los módulos funcionales principales y la validación 
+técnica en entorno controlado. La arquitectura resultante contempla un backend desarrollado con 
+NestJS que expone una API RESTful, una aplicación móvil construida con React 
+Native (con vistas para clientes, repartidores y cocina), y un sitio web implementado con Next.js 
+que funciona principalmente como panel de administración y además permite iniciar sesión como 
+cliente para realizar compras desde la web. La persistencia de datos se gestiona mediante una base 
+de datos relacional PostgreSQL. La plataforma se concibe bajo el modelo SaaS en cuanto a 
+provisión del software como servicio en la nube y acceso remoto, aunque en esta fase no se 
+implementa una arquitectura multi-tenant, limitándose a una instancia única para fines de 
+validación técnica. La plataforma integra los siguientes módulos funcionales: gestión de pedidos 
+con geolocalización y medios de pago únicamente por efectivo y transferencia; control de 
+inventarios; administración de repartidores; vista de cocina en la aplicación móvil para aceptar o 
+rechazar pedidos y notificar cuando estén listos para que el repartidor recoja, integrada al flujo de 
+órdenes; y dashboard analítico con indicadores clave de desempeño (KPIs). Como componente de 
+atención automatizada, se integra un chatbot basado en el modelo de Generación Aumentada por 
+Recuperación (RAG) accesible vía WhatsApp. La verificación del cumplimiento de requisitos 
+funcionales y criterios de calidad se realiza mediante pruebas de integración y validación de flujos 
+críticos en entorno controlado (staging). La viabilidad técnica y la usabilidad se evalúan en entorno 
+controlado mediante la aplicación de la escala SUS (System Usability Scale) con usuarios de 
+prueba en una PYME gastronómica piloto. El despliegue para esta validación utiliza infraestructura 
+en la nube (servidor VPS para backend y base de datos, Vercel para el sitio web) y se distribuye la 
+aplicación móvil como archivo APK para dispositivos Android. 
 
-\textbf{Definición de entorno controlado:} Se entiende por entorno controlado un ambiente de pruebas (staging) con despliegue real en la nube y ejecución de flujos críticos con usuarios de prueba, datos de prueba y escenarios predefinidos, sin integración completa a la operación diaria del negocio ni medición longitudinal de impacto económico o financiero. La validación se realiza con participación de una PYME gastronómica como caso piloto, realizando pruebas guiadas y mediciones de usabilidad y cumplimiento funcional, sin requerir adopción operacional prolongada ni evaluación de impacto en el desempeño del negocio.
+Definición de entorno controlado: Se entiende por entorno controlado un ambiente de pruebas 
+(staging) con despliegue real en la nube y ejecución de flujos críticos con usuarios de prueba, datos 
+de prueba y escenarios predefinidos, sin integración completa a la operación diaria del negocio ni 
+medición longitudinal de impacto económico o financiero. La validación se realiza con 
+participación de una PYME gastronómica como caso piloto, realizando pruebas guiadas y 
+mediciones de usabilidad y cumplimiento funcional, sin requerir adopción operacional prolongada 
+ni evaluación de impacto en el desempeño del negocio. 
 
-Los medios de pago contemplados son únicamente efectivo y transferencia; no se integra servicio
-de pasarela de pagos. Quedan fuera del alcance: optimización automática de rutas; módulos
-complementarios como marketing, reseñas o gestión de proveedores; desarrollo de aplicación nativa
-para iOS; infraestructura de alta disponibilidad; validación a escala sectorial; y plan de soporte y
-mantenimiento post-implementación.
-El proyecto no tiene como finalidad medir el impacto económico, financiero o de adopción del
-sistema en el sector gastronómico, sino demostrar la factibilidad técnica, funcional y de usabilidad
-de una solución SaaS integrada, lo cual sienta las bases para futuras investigaciones orientadas a su
-implementación a mayor escala.
+Los medios de pago contemplados son únicamente efectivo y transferencia; no se integra servicio 
+de pasarela de pagos. Quedan fuera del alcance: optimización automática de rutas; módulos 
+complementarios como marketing, reseñas o gestión de proveedores; desarrollo de aplicación 
+nativa para iOS; infraestructura de alta disponibilidad; validación a escala sectorial; y plan de 
+soporte y mantenimiento post-implementación. El proyecto no tiene como finalidad medir el 
+impacto económico, financiero o de adopción del sistema en el sector gastronómico, sino demostrar 
+la factibilidad técnica, funcional y de usabilidad de una solución SaaS integrada, lo cual sienta las 
+bases para futuras investigaciones orientadas a su implementación a mayor escala.
 
 \begin{figure}[htbp]
 \centering
