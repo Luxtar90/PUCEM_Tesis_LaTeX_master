@@ -63,51 +63,55 @@ Resolver este problema es fundamental porque permitirá impulsar la transformaci
 
 \subsection{Pregunta general}
 
-¿De qué manera el desarrollo e implementación de una plataforma SaaS integral puede contribuir a la digitalización, optimización operativa y mejora de la atención al cliente en las PYMES gastronómicas de la ciudad de Portoviejo?
+¿Cómo diseñar y desarrollar una plataforma SaaS integral que responda a los requisitos funcionales y técnicos identificados para la digitalización de PYMES gastronómicas, y cuál es su viabilidad técnica demostrada mediante validación en entorno controlado?
 
 \subsection{Preguntas específicas}
 
 \begin{enumerate}
-    \item ¿Cuáles son las principales barreras tecnológicas, económicas y operativas que limitan la digitalización de las PYMES gastronómicas de Portoviejo?
-    \item ¿Qué módulos, características y funcionalidades son esenciales para mejorar la gestión de delivery, inventarios y procesos administrativos en el contexto gastronómico local?
-    \item ¿Cómo influye la integración de un módulo de inteligencia artificial basado en tecnología RAG en la eficiencia, rapidez y calidad de la atención al cliente?
-    \item ¿En qué medida la adopción de la plataforma SaaS desarrollada puede reducir costos operativos, optimizar tiempos de respuesta y mejorar la toma de decisiones estratégicas en las PYMES usuarias?
-    \item ¿Cuál es la percepción de usabilidad y satisfacción del usuario final respecto a la plataforma propuesta?
+    \item ¿Cuáles son los requisitos funcionales y no funcionales que debe satisfacer una plataforma SaaS orientada a la gestión operativa de PYMES gastronómicas en el contexto de Portoviejo?
+    \item ¿Qué arquitectura de software y stack tecnológico resultan adecuados para implementar una solución modular, escalable y mantenible que integre gestión de pedidos, inventarios, repartidores y dashboard analítico?
+    \item ¿Cómo integrar un módulo de inteligencia artificial basado en tecnología RAG para automatizar la atención al cliente mediante WhatsApp?
+    \item ¿En qué medida la plataforma desarrollada cumple con los requisitos funcionales especificados y los criterios de calidad de software establecidos?
+    \item ¿Cuál es el nivel de usabilidad percibida de la plataforma según evaluación con usuarios de prueba en entorno controlado?
 \end{enumerate}
 
 \section{Objetivos}
 
 \subsection{Objetivo general}
 
-Desarrollar y validar una plataforma SaaS que integre módulos de gestión operativa e inteligencia artificial, para optimizar los procesos de pedidos, inventarios, delivery y atención al cliente de las PYMES gastronómicas de Portoviejo.
+Diseñar, desarrollar y validar técnicamente una plataforma SaaS modular que integre funcionalidades de gestión de pedidos, inventarios, repartidores y atención automatizada mediante inteligencia artificial, orientada a las necesidades operativas de PYMES gastronómicas de Portoviejo.
 
 \subsection{Objetivos específicos}
 
 \begin{enumerate}
-    \item Realizar un diagnóstico del nivel de digitalización y un levantamiento detallado de requisitos funcionales y no funcionales con las PYMES objetivo, mediante entrevistas con dueños de las PYMES.
+    \item Identificar y documentar los requisitos funcionales y no funcionales mediante revisión de literatura, análisis del dominio y entrevistas con actores del sector gastronómico.
     
-    \item Diseñar la arquitectura técnica, de software y de despliegue de la plataforma, definiendo su estructura modular y los protocolos de seguridad e integración.
+    \item Diseñar la arquitectura técnica de la plataforma, definiendo la estructura modular, patrones de diseño, modelo de datos y protocolos de seguridad e integración.
     
-    \item Construir la plataforma mediante el desarrollo e integración simultánea de sus componentes modulares principales.
+    \item Desarrollar los módulos funcionales principales: gestión de pedidos con geolocalización, control de inventarios, administración de repartidores, vista de cocina y dashboard analítico con KPIs.
     
-    \item Implementar los módulos de gestión de pedidos (con geolocalización en tiempo real y medios de pago efectivo y transferencia), control de inventarios, administración de repartidores y optimización de rutas, y el dashboard analítico con KPIs.
+    \item Implementar e integrar un chatbot basado en el modelo RAG accesible vía WhatsApp para automatizar respuestas a consultas frecuentes.
     
-    \item Integrar un chatbot basado en el modelo RAG dentro de la plataforma, accesible por WhatsApp, para automatizar la atención al cliente y el soporte operativo.
+    \item Verificar el cumplimiento de requisitos funcionales mediante pruebas de integración y validación de flujos críticos en entorno de desarrollo o staging.
     
-    \item Evaluar la plataforma integral mediante pruebas de usabilidad (SUS), rendimiento, funcionalidad y aceptación con usuarios reales en un entorno piloto, cuantificando su impacto en la eficiencia operativa.
+    \item Evaluar la usabilidad de la plataforma mediante la aplicación de la escala SUS con usuarios de prueba en entorno controlado.
 \end{enumerate}
 
 \section{Alcance}
 
-El presente proyecto se enmarca en el diseño, desarrollo y validación de una plataforma SaaS integral dirigida a la digitalización de las Pequeñas y Medianas Empresas (PYMES) del sector gastronómico de Portoviejo. Con el fin de establecer límites claros y garantizar una ejecución realista, se define el alcance del proyecto en dos dimensiones: los elementos que serán desarrollados e implementados, y aquellos que quedan excluidos de esta fase.
+El presente proyecto se enmarca en el diseño, desarrollo y validación técnica de una plataforma SaaS modular orientada a la gestión operativa de PYMES gastronómicas de Portoviejo, en respuesta a los requisitos funcionales y no funcionales identificados y con demostración de viabilidad técnica mediante validación en entorno controlado. El alcance se define en dos dimensiones: los elementos que se desarrollan e implementan, y aquellos que quedan excluidos de esta fase.
 
-El proyecto abarca la creación completa de una solución tecnológica operativa, desde su concepción hasta su validación en un entorno controlado. En primer lugar, se realizó un análisis de requisitos basado en un diagnóstico del nivel de digitalización actual de las PYMES objetivo; la recolección de información para los requisitos, el objetivo general y los objetivos específicos se obtuvo mediante entrevistas con dueños de las PYMES, para derivar especificaciones funcionales y no funcionales. El diseño resultante contempla una arquitectura de software modular, compuesta por un backend desarrollado con NestJS que expone una API RESTful, una aplicación móvil multiplataforma construida con React Native (con vistas para clientes, repartidores y cocina), y un sitio web implementado con Next.js que funciona principalmente como panel de administración y además permite iniciar sesión como cliente para realizar compras desde la web. La persistencia de datos se gestionará mediante una base de datos relacional PostgreSQL.
+El proyecto abarca la identificación y documentación de requisitos (mediante revisión de literatura, análisis del dominio y entrevistas con actores del sector gastronómico), el diseño de la arquitectura técnica (estructura modular, patrones de diseño, modelo de datos, protocolos de seguridad e integración), el desarrollo de los módulos funcionales principales y la validación técnica en entorno controlado. La arquitectura resultante contempla un backend desarrollado con NestJS que expone una API RESTful, una aplicación móvil multiplataforma construida con React Native (con vistas para clientes, repartidores y cocina), y un sitio web implementado con Next.js que funciona principalmente como panel de administración y además permite iniciar sesión como cliente para realizar compras desde la web. La persistencia de datos se gestiona mediante una base de datos relacional PostgreSQL.
 
-La plataforma integrará módulos funcionales centrales para la gestión operativa: un sistema de pedidos con registro de geolocalización de direcciones y medios de pago únicamente por efectivo y transferencia (sin integración con pasarelas de pago); un módulo de control de inventarios básico; una vista o módulo de \textit{cocina} en la aplicación móvil para aceptar o rechazar pedidos y notificar cuando estén listos para que el repartidor recoja, integrado al flujo de solicitud de órdenes; un panel de administración de repartidores con procesos de aprobación y asignación manual de pedidos; y un dashboard analítico que presente indicadores clave de desempeño (KPIs) derivados de los datos transaccionales. Como componente innovador, se desarrollará e integrará un chatbot basado en el modelo de Generación Aumentada por Recuperación (RAG) a través de WhatsApp, para automatizar respuestas a consultas frecuentes de clientes.
+La plataforma se concibe bajo el modelo SaaS en cuanto a provisión del software como servicio en la nube y acceso remoto, aunque en esta fase no se implementa una arquitectura multi-tenant, limitándose a una instancia única para fines de validación técnica.
 
-La validación de la solución se llevará a cabo mediante un piloto controlado en al menos dos PYMES gastronómicas, donde se evaluará la usabilidad del sistema a través de la escala SUS (System Usability Scale), se verificará la funcionalidad de los flujos críticos y se medirá el impacto en métricas operativas como el tiempo de registro de pedidos y la tasa de errores. El despliegue para esta validación se realizará en infraestructura en la nube, utilizando un servidor VPS para el backend y la base de datos, Vercel para el panel web, y se distribuirá la aplicación móvil como archivo APK para dispositivos Android.
+La plataforma integra los siguientes módulos funcionales: gestión de pedidos con geolocalización y medios de pago únicamente por efectivo y transferencia (sin pasarela de pagos); control de inventarios; administración de repartidores; vista de cocina en la aplicación móvil para aceptar o rechazar pedidos y notificar cuando estén listos para que el repartidor recoja, integrada al flujo de órdenes; y dashboard analítico con indicadores clave de desempeño (KPIs). Como componente de atención automatizada, se integra un chatbot basado en el modelo de Generación Aumentada por Recuperación (RAG) accesible vía WhatsApp.
 
-Los medios de pago contemplados en la plataforma son únicamente efectivo y transferencia; no se integra servicio de pasarela de pagos. Para garantizar la viabilidad y el enfoque del proyecto, se excluyen además funcionalidades avanzadas y consideraciones de escala industrial. Esto incluye: el desarrollo de una arquitectura multi-tenant; la optimización automática de rutas y el live-tracking de repartidores; las notificaciones en tiempo real (WebSockets/push); y módulos complementarios como marketing, reseñas o gestión de proveedores. Tampoco se contempla el desarrollo de una aplicación nativa para iOS, el despliegue de infraestructura de alta disponibilidad, una validación a escala sectorial, o un plan de soporte y mantenimiento post-implementación.
+La verificación del cumplimiento de requisitos funcionales y criterios de calidad se realiza mediante pruebas de integración y validación de flujos críticos en entorno de desarrollo o staging. La viabilidad técnica y la usabilidad se evalúan en entorno controlado mediante la aplicación de la escala SUS (System Usability Scale) con usuarios de prueba en una PYME gastronómica piloto. El despliegue para esta validación utiliza infraestructura en la nube (servidor VPS para backend y base de datos, Vercel para el sitio web) y se distribuye la aplicación móvil como archivo APK para dispositivos Android.
+
+Los medios de pago contemplados son únicamente efectivo y transferencia; no se integra servicio de pasarela de pagos. Quedan fuera del alcance: arquitectura multi-tenant; optimización automática de rutas; módulos complementarios como marketing, reseñas o gestión de proveedores; desarrollo de aplicación nativa para iOS; infraestructura de alta disponibilidad; validación a escala sectorial; y plan de soporte y mantenimiento post-implementación.
+
+El proyecto no tiene como finalidad medir el impacto económico, financiero o de adopción del sistema en el sector gastronómico, sino demostrar la factibilidad técnica, funcional y de usabilidad de una solución SaaS integrada, lo cual sienta las bases para futuras investigaciones orientadas a su implementación a mayor escala.
 
 \begin{figure}[htbp]
 \centering

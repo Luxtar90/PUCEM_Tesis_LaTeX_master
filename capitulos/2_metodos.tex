@@ -13,7 +13,7 @@ El estudio se clasifica como investigación aplicada de tipo tecnológica, dado 
 \subsubsection{Población}
 La población objetivo estuvo constituida por la totalidad de las Pequeñas y Medianas Empresas (PYMES) del sector gastronómico formalmente establecidas en la ciudad de Portoviejo, provincia de Manabí, Ecuador.
 \subsubsection{Muestra y criterios de selección}
-Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestra final estuvo conformada por dos PYMES gastronómicas. Los criterios de inclusión fueron:
+Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestra final estuvo conformada por una PYME gastronómica. Los criterios de inclusión fueron:
 \begin{enumerate}[label=\arabic*)]
   \item Ser una PYME ubicada en Portoviejo.
   \item Contar con servicio de consumo en el local y delivery.
@@ -24,7 +24,7 @@ Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestr
 Se excluyeron establecimientos con operación irregular o que ya utilizaban sistemas de gestión integral.
 
 \subsubsection{Operacionalización de variables}
-\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su intervención consistió en su implementación y uso por parte de las PYMES piloto durante el período de validación.
+\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su intervención consistió en su implementación y uso por parte de la PYME piloto durante el período de validación.
 
 \textbf{Variables dependientes: Indicadores operativos.} Son las métricas de desempeño que se buscó impactar con la implementación de la plataforma:
 \begin{enumerate}[label=\arabic*)]
@@ -79,7 +79,7 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 \paragraph{Proceso ágil y sprints}
 La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
 
-\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla xx de la sección Técnicas e instrumentos de recolección de datos.
+\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la tabla de Técnicas e instrumentos de recolección de datos del presente capítulo.
 
 \textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
 
@@ -99,7 +99,7 @@ En la siguiente tabla se muestran las técnicas e instrumentos utilizados, defin
 \endhead
 Entrevista & Guía de entrevista semiestructurada & Profundizar en procesos operativos, necesidades y expectativas; obtener requisitos funcionales y no funcionales y objetivos (general y específicos) mediante entrevistas con dueños de las PYMES. & Preguntas abiertas por áreas (pedidos, inventario, delivery). Grabada y transcrita. & Fase 1: Diagnóstico (línea base). & Dueños de las PYMES. \\
 Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma implementada. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Validación (post-intervención). & Usuarios finales de la plataforma (administradores, cajeros, repartidores). \\
-Observación estructurada & Ficha de observación de indicadores operativos & Registrar datos cuantitativos objetivos sobre tiempos, errores y volúmenes de los procesos clave. & Diseñada para registrar: tiempos (min), conteo de errores, volumen de pedidos y cancelaciones. & En dos momentos: pre-intervención (línea base) y post-intervención (semana 3). & Procesos operativos de las PYMES piloto (Local A y B). \\
+Observación estructurada & Ficha de observación de indicadores operativos & Registrar datos cuantitativos objetivos sobre tiempos, errores y volúmenes de los procesos clave. & Diseñada para registrar: tiempos (min), conteo de errores, volumen de pedidos y cancelaciones. & En dos momentos: pre-intervención (línea base) y post-intervención (semana 3). & Procesos operativos de la PYME piloto. \\
 Revisión documental & Checklist de despliegue y registros administrativos & Verificar la correcta implementación técnica y recopilar datos productivos generados por el sistema. & Lista de verificación para servicios en la nube. Explotación de logs y reportes generados por la propia plataforma. & Fase 6: Validación (post-intervención). & Plataforma SaaS desplegada y sus registros automatizados. \\
 \bottomrule
 \end{longtable}
@@ -543,7 +543,7 @@ Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y prue
 
 \subsubsection{Arquitectura del despliegue}
 
-Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android de los locales piloto. La Figura \ref{fig:despliegue-arquitectura} muestra la imagen de la arquitectura de despliegue.
+Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto. La Figura \ref{fig:despliegue-arquitectura} muestra la imagen de la arquitectura de despliegue.
 
 \begin{figure}[htbp]
 \centering
@@ -561,7 +561,7 @@ Esta etapa tuvo como propósito evaluar el sistema integral en condiciones reale
 \item Despliegue en entorno de nube:
 En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación Node independiente. Se contempló el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción. NestJS recomienda buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la aplicación. Se configuró la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén codificados de forma rígida, sino definidos externamente. Se decidió desplegar el backend en un servidor en la nube de Hetzner, aprovechando su relación costo/rendimiento. Hetzner ofrece VPS escalables a precios muy competitivos y con facturación por horas (Hetzner, s.f.), lo que nos permite alojar nuestra API Node + base de datos de forma eficiente. La infraestructura prevista es tener la API corriendo (posiblemente en un contenedor Docker) escuchando peticiones HTTPS, y la base de datos SQL (PostgreSQL) corriendo ya sea en el mismo servidor o en un servicio administrado, según las necesidades de escala. Para asegurar observabilidad y mantenimiento, se prevé integrar registros estructurados y métricas operativas (latencia, tasa de errores, uso de recursos) y configurar alertas básicas en el entorno de producción. Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto. Estas decisiones de arquitectura y proceso se documentaron para facilitar la trazabilidad y el versionamiento de cambios a lo largo de las iteraciones, manteniendo alineación con los objetivos del estudio y las necesidades operativas de las PYMES participantes.
 \item Capacitación inicial:
-Se realizó una sesión de capacitación de 2 horas por local con el personal administrativo y los repartidores, cubriendo el uso básico de la aplicación móvil y el panel web.
+Se realizó una sesión de capacitación de 2 horas en el local piloto con el personal administrativo y los repartidores, cubriendo el uso básico de la aplicación móvil y el panel web.
 \item Período de validación:
 Se estableció un período operativo de tres semanas. La primera semana se destinó al levantamiento de la línea base (pretest) mediante observación directa de los procesos tradicionales. Las dos semanas siguientes se dedicaron al uso continuo de la plataforma SaaS para registrar su desempeño en condiciones reales.
 \end{enumerate}
@@ -587,7 +587,7 @@ N.º & Tarea & Rol & Criterio de éxito \\
 \begin{enumerate}
 \setcounter{enumi}{3}
 \item Recolección de datos de validación:
-En la tercera semana se recogieron los datos post-implementación. Se aplicó el cuestionario SUS a los usuarios finales (administrador, cajero, 2 repartidores por local) y se utilizó la ficha de observación para medir nuevamente los indicadores operativos (tiempos, errores, volúmenes) ahora con el sistema en funcionamiento.
+En la tercera semana se recogieron los datos post-implementación. Se aplicó el cuestionario SUS a los usuarios finales (administrador, cajero, repartidores del local) y se utilizó la ficha de observación para medir nuevamente los indicadores operativos (tiempos, errores, volúmenes) ahora con el sistema en funcionamiento.
 \item Monitoreo técnico:
 Se supervisó la disponibilidad del backend y el panel web, y se recopilaron los registros automáticos de la plataforma para validar las métricas de volumen y cancelaciones.
 \end{enumerate}

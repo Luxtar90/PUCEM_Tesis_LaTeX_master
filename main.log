@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.24)  29 JAN 2026 21:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.24)  29 JAN 2026 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,11 +1280,11 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-] [11])
+] [11] [12])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [12] (main.lof
+ [13] (main.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1292,7 +1292,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [13
+ [14
 
 ] (main.lot
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1302,7 +1302,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [14
+ [15
 
 ] (capitulos/1_introduccion.tex
 Cap\'{\i }tulo 1.
@@ -1316,10 +1316,10 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                protrusion for this font on input line 11.
 
 [2] [3] [4] [5] [6] [7] [8] [9]
-<imagenes/diagramaflujo.png, id=290, 6504.3pt x 12464.5675pt>
+<imagenes/diagramaflujo.png, id=299, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
-Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 119.
+Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 123.
 (pdftex.def)             Requested size: 305.38455pt x 585.22615pt.
 ) (capitulos/2_metodos.tex [10] [11 <./imagenes/diagramaflujo.png>]
 Cap\'{\i }tulo 2.
@@ -1824,40 +1824,117 @@ Overfull \hbox (9.20386pt too wide) in paragraph at lines 573--585
 Cap\'{\i }tulo 3.
 [46
 
-] [47]
-<imagenes/cronograma.png, id=471, 633.86812pt x 429.10312pt>
+] [47] [48]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 38.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/b/n/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 40.
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 42--42
+[]|\T1/ptm/m/n/10.95 (+20) 4 min $\OMS/ztmcm/m/n/10.95 !$ \T1/ptm/m/n/10.95 (+20) 3 min
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]|\T1/ptm/m/n/10.95 (+20) 12$ $% $\OMS/ztmcm/m/n/10.95 !$ \T1/ptm/m/n/10.95 (+20) 9$ $%
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/ptm/m/n/10.95 (+20) Productividad (pe-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\T1/ptm/m/n/10.95 (+20) 10$ $% $\OMS/ztmcm/m/n/10.95 !$ \T1/ptm/m/n/10.95 (+20) 8$ $%
+ []
+
+[49] [50]
+<imagenes/cronograma.png, id=493, 633.86812pt x 429.10312pt>
 File: imagenes/cronograma.png Graphic file (type png)
 <use imagenes/cronograma.png>
-Package pdftex.def Info: imagenes/cronograma.png  used on input line 58.
+Package pdftex.def Info: imagenes/cronograma.png  used on input line 86.
 (pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
-) (capitulos/4_discucion.tex [48 <./imagenes/cronograma.png>]
+) (capitulos/4_discucion.tex [51 <./imagenes/cronograma.png>]
 Cap\'{\i }tulo 4.
-[49
+[52
 
-] [50] [51] [52]) (capitulos/5_conclusiones.tex [53]
+] [53] [54] [55]) (capitulos/5_conclusiones.tex [56] [57]
 Cap\'{\i }tulo 5.
-[54
+[58
 
-]) [55] [56]
+]) [59] [60]
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 266.
 
-(apendices.tex [57
+(apendices.tex [61
 
 ]
 Ap\'{e}ndice A.
 (imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=523, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=550, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-) [58
+) [62
 
 
-] [59 <./imagenes/reddiagrama.png>] (main.aux
+] [63 <./imagenes/reddiagrama.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1871,17 +1948,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39804 strings out of 467871
- 743082 string characters out of 5428443
- 1676311 words of memory out of 5000000
- 67584 multiletter control sequences out of 15000+600000
- 695978 words of font info for 251 fonts, out of 8000000 for 9000
+ 39919 strings out of 467871
+ 744684 string characters out of 5428443
+ 1675409 words of memory out of 5000000
+ 67639 multiletter control sequences out of 15000+600000
+ 711074 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,94p,2659b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (74 pages, 1452838 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (79 pages, 1472109 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 81913 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
+ 99841 words of extra memory for PDF output out of 106986 (max. 10000000)
 
