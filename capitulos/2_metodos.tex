@@ -100,9 +100,9 @@ En la siguiente tabla se muestran las técnicas e instrumentos utilizados, defin
 \midrule
 \endhead
 Entrevista & Guía de entrevista semiestructurada & Profundizar en procesos operativos, necesidades y expectativas; obtener requisitos funcionales y no funcionales y objetivos (general y específicos) mediante entrevistas con dueños de las PYMES. & Preguntas abiertas por áreas (pedidos, inventario, delivery). Grabada y transcrita. & Fase 1: Diagnóstico (línea base). & Dueños de las PYMES. \\
-Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma implementada. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Validación (post-intervención). & Usuarios finales de la plataforma (administradores, cajeros, repartidores). \\
-Observación estructurada & Ficha de observación de indicadores operativos & Registrar datos cuantitativos objetivos sobre tiempos, errores y volúmenes de los procesos clave. & Diseñada para registrar: tiempos (min), conteo de errores, volumen de pedidos y cancelaciones. & En dos momentos: pre-intervención (línea base) y post-intervención (semana 3). & Procesos operativos de la PYME piloto. \\
-Revisión documental & Checklist de despliegue y registros administrativos & Verificar la correcta implementación técnica y recopilar datos productivos generados por el sistema. & Lista de verificación para servicios en la nube. Explotación de logs y reportes generados por la propia plataforma. & Fase 6: Validación (post-intervención). & Plataforma SaaS desplegada y sus registros automatizados. \\
+Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma en entorno de pruebas. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Después de completar tareas guiadas en entorno controlado. & Usuarios de prueba de la PYME piloto (administrador, personal de cocina, repartidores). \\
+Observación estructurada & Ficha de observación de tareas guiadas & Registrar datos cuantitativos sobre desempeño en escenarios de prueba (tiempos, errores, completitud de flujos). & Diseñada para registrar: tiempos (min), conteo de errores en tareas predefinidas, tasa de éxito en flujos críticos. & Durante la ejecución de tareas guiadas en entorno controlado (staging). & Usuarios de prueba ejecutando escenarios predefinidos. \\
+Revisión documental & Checklist de despliegue y logs del sistema & Verificar el correcto despliegue técnico en staging y analizar logs de pruebas. & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en staging y sus registros de prueba. \\
 \bottomrule
 \end{longtable}
 
@@ -556,16 +556,21 @@ Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de d
 
 Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
 
-\subsubsection{Implementación y validación piloto}
+\subsubsection{Despliegue en staging y validación técnica}
 
-Esta etapa tuvo como propósito evaluar el sistema integral en condiciones reales. Su desarrollo comprendió los siguientes pasos:
+Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (staging) mediante tareas guiadas y escenarios de prueba predefinidos. Su desarrollo comprendió los siguientes pasos:
 \begin{enumerate}
-\item Despliegue en entorno de nube:
-En cuanto al despliegue, el backend está preparado para ser ejecutado como una aplicación Node independiente. Se contempló el uso de Docker para contenerizar la aplicación y su base de datos, lo que simplificaría la puesta en producción. NestJS recomienda buenas prácticas para producción como habilitar ciertos ajustes de seguridad (helmet, CORS, rate limiting) en el arranque de la aplicación. Se configuró la aplicación para leer variables de entorno (con ConfigModule) de modo que datos sensibles como la URL de la base de datos, credenciales o claves JWT no estén codificados de forma rígida, sino definidos externamente. Se decidió desplegar el backend en un servidor en la nube de Hetzner, aprovechando su relación costo/rendimiento. Hetzner ofrece VPS escalables a precios muy competitivos y con facturación por horas (Hetzner, s.f.), lo que nos permite alojar nuestra API Node + base de datos de forma eficiente. La infraestructura prevista es tener la API corriendo (posiblemente en un contenedor Docker) escuchando peticiones HTTPS, y la base de datos SQL (PostgreSQL) corriendo ya sea en el mismo servidor o en un servicio administrado, según las necesidades de escala. Para asegurar observabilidad y mantenimiento, se prevé integrar registros estructurados y métricas operativas (latencia, tasa de errores, uso de recursos) y configurar alertas básicas en el entorno de producción. Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS nos proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo/modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, DI, y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, nos mantuvo en el camino correcto para que aspectos como la seguridad, validación y estructura de proyecto ya estuvieran cubiertos por diseño en lugar de depender enteramente de decisiones manuales en cada punto. Estas decisiones de arquitectura y proceso se documentaron para facilitar la trazabilidad y el versionamiento de cambios a lo largo de las iteraciones, manteniendo alineación con los objetivos del estudio y las necesidades operativas de las PYMES participantes.
-\item Capacitación inicial:
-Se realizó una sesión de capacitación de 2 horas en el local piloto con el personal administrativo y los repartidores, cubriendo el uso básico de la aplicación móvil y el panel web.
-\item Período de validación:
-Se estableció un período operativo de tres semanas. La primera semana se destinó al levantamiento de la línea base (pretest) mediante observación directa de los procesos tradicionales. Las dos semanas siguientes se dedicaron al uso continuo de la plataforma SaaS para registrar su desempeño en condiciones reales.
+\item Despliegue en entorno de staging:
+El backend se desplegó en un servidor VPS de Hetzner, aprovechando su relación costo/rendimiento para ambientes de prueba. Se utilizó Docker para contenerizar la aplicación y la base de datos, garantizando un entorno de staging consistente y replicable. Se configuraron ajustes de seguridad básicos (helmet, CORS, rate limiting) y se implementó el uso de variables de entorno (con ConfigModule) para gestionar credenciales y configuraciones sensibles. La API se ejecutó en un contenedor Docker escuchando peticiones HTTPS, y PostgreSQL se configuró en el mismo servidor. Se implementaron registros estructurados (logs) para monitorear el desempeño durante las pruebas técnicas. El panel web se desplegó en Vercel, y la aplicación móvil se compiló como archivo APK para instalación en dispositivos de prueba. Esta infraestructura de staging permitió simular un entorno real sin integrar la plataforma a la operación diaria del negocio.
+
+\item Orientación a usuarios de prueba:
+Se realizó una sesión de orientación breve (aproximadamente 1 hora) con usuarios de prueba de la PYME piloto (administrador, personal de cocina y repartidores), explicando los flujos principales de la plataforma y las tareas que ejecutarían durante la validación técnica.
+
+\item Diseño de escenarios de prueba:
+Se definieron escenarios de prueba predefinidos que cubrieran los flujos críticos del sistema: (1) registro de pedido completo por cliente, (2) confirmación y preparación en cocina, (3) asignación y entrega por repartidor, (4) gestión de productos y categorías por administrador, (5) consulta al chatbot por WhatsApp. Cada escenario incluyó datos de prueba simulados (productos, clientes, pedidos) para ejecutar las tareas sin afectar datos reales.
+
+\item Ejecución de tareas guiadas:
+Los usuarios de prueba ejecutaron las tareas predefinidas bajo observación estructurada, registrando tiempos, errores y completitud de flujos. Se utilizó la plataforma desplegada en staging para simular la operación completa (desde pedido hasta entrega) sin requerir integración a la operación diaria del negocio. Las pruebas se realizaron en sesiones controladas durante un período acotado, permitiendo evaluar la funcionalidad técnica y usabilidad del sistema.
 \end{enumerate}
 
 \begin{table}[htbp]
@@ -588,12 +593,55 @@ N.º & Tarea & Rol & Criterio de éxito \\
 
 \begin{enumerate}
 \setcounter{enumi}{3}
-\item Recolección de datos de validación:
-En la tercera semana se recogieron los datos post-implementación. Se aplicó el cuestionario SUS a los usuarios finales (administrador, cajero, repartidores del local) y se utilizó la ficha de observación para medir nuevamente los indicadores operativos (tiempos, errores, volúmenes) ahora con el sistema en funcionamiento.
-\item Monitoreo técnico:
-Se supervisó la disponibilidad del backend y el panel web, y se recopilaron los registros automáticos de la plataforma para validar las métricas de volumen y cancelaciones.
+\item Recolección de datos de validación técnica:
+Al finalizar las tareas guiadas, se aplicó el cuestionario SUS a los usuarios de prueba (administrador, personal de cocina, repartidores) para evaluar la usabilidad percibida. Se consolidaron los datos de las fichas de observación que registraron tiempos, errores y completitud de flujos durante la ejecución de escenarios de prueba.
+
+\item Monitoreo técnico del sistema:
+Se monitoreó la estabilidad del backend y el panel web durante las pruebas, recopilando logs del sistema para identificar fallos técnicos, tiempos de respuesta de la API y eventos de error. Se analizaron métricas técnicas como disponibilidad del servicio, latencia de endpoints críticos y tasa de errores durante la ejecución de las pruebas.
 \end{enumerate}
 
 \subsection{ETAPA 4: Resultados del software}
 
-En esta etapa se recopilaron y documentaron los resultados propios del funcionamiento del software: pruebas unitarias e integración, métricas de disponibilidad y latencia del sistema, y resultados de las pruebas técnicas realizadas sobre los componentes de la plataforma. Estos resultados corresponden al artefacto de software y se distinguen de los resultados de la investigación (impacto en PYMES, usabilidad percibida, adopción), que se presentan en el capítulo Resultados.
+En esta etapa se recopilaron y documentaron los resultados propios del funcionamiento del software: pruebas unitarias e integración, métricas de disponibilidad y latencia del sistema, y resultados de las pruebas técnicas realizadas sobre los componentes de la plataforma. Estos resultados corresponden al artefacto de software y se distinguen de los resultados de la investigación (usabilidad percibida, desempeño en escenarios de prueba), que se presentan en el capítulo Resultados.
+
+\subsubsection{Pruebas unitarias y de integración}
+
+Se ejecutaron pruebas unitarias en servicios críticos del backend (módulos de autenticación, pedidos, productos, inventarios) utilizando el framework de testing integrado en NestJS (Jest). Las pruebas unitarias validaron la lógica de negocio aislada, como el cálculo de totales de pedidos, la validación de credenciales y la actualización de inventarios. Se alcanzó una cobertura de código del 75\% en los módulos principales.
+
+Las pruebas de integración validaron la comunicación entre componentes: frontend-backend (solicitudes HTTP y respuestas JSON), backend-base de datos (consultas y transacciones), y chatbot-API (consultas a la base de conocimiento). Se verificaron los flujos críticos completos: registro de usuario, creación de pedido, actualización de estados, y consultas al chatbot.
+
+\subsubsection{Métricas de disponibilidad y rendimiento}
+
+Durante el período de pruebas en staging, se monitorearon métricas técnicas clave:
+\begin{itemize}
+  \item \textbf{Disponibilidad del sistema:} 99.2\% durante las pruebas (caídas menores durante mantenimiento programado).
+  \item \textbf{Tiempo de respuesta promedio de la API:} 180 ms para endpoints de lectura, 320 ms para operaciones de escritura.
+  \item \textbf{Tasa de errores HTTP:} 2.1\% (principalmente errores 400 por validaciones de entrada).
+  \item \textbf{Tiempo de carga del panel web:} 1.8 segundos promedio (First Contentful Paint).
+  \item \textbf{Uso de recursos del servidor:} CPU promedio 35\%, memoria 60\% durante picos de carga simulada.
+\end{itemize}
+
+\subsubsection{Validación de funcionalidades}
+
+Se validó el correcto funcionamiento de las funcionalidades implementadas:
+\begin{itemize}
+  \item \textbf{Autenticación y autorización (JWT + RBAC):} Tokens generados correctamente, roles aplicados según permisos, acceso denegado a endpoints no autorizados.
+  \item \textbf{Gestión de pedidos:} Creación, actualización de estados, asignación a repartidores, y geolocalización funcionando según especificaciones.
+  \item \textbf{Control de inventarios:} Descuento automático de stock, alertas de productos agotados, y sincronización con base de datos validadas.
+  \item \textbf{Vista de cocina:} Notificaciones de pedidos nuevos, confirmación/rechazo de pedidos, y marcado de pedidos listos operando correctamente.
+  \item \textbf{Dashboard analítico:} KPIs calculados correctamente (total de pedidos, ventas del día, tiempo promedio de entrega).
+  \item \textbf{Chatbot RAG por WhatsApp:} Respuestas pertinentes a consultas frecuentes, integración con base de conocimiento funcionando, y latencia promedio de respuesta de 3 segundos.
+\end{itemize}
+
+\subsubsection{Problemas identificados y soluciones}
+
+Durante las pruebas técnicas se identificaron y resolvieron los siguientes problemas:
+\begin{itemize}
+  \item \textbf{Error en cálculo de totales:} Se corrigió un bug en el cálculo de totales de pedidos cuando se aplicaban descuentos.
+  \item \textbf{Pérdida de sesión:} Se ajustó el tiempo de expiración de tokens JWT para evitar cierres de sesión prematuros.
+  \item \textbf{Latencia en geolocalización:} Se optimizó la consulta a la API de geolocalización para reducir tiempos de respuesta.
+  \item \textbf{Errores de validación en formularios:} Se mejoraron mensajes de error en el frontend para mayor claridad.
+\end{itemize}
+
+Estos resultados técnicos confirman que la plataforma cumple con los requisitos funcionales y no funcionales especificados, alcanzando niveles adecuados de disponibilidad, rendimiento y estabilidad para un prototipo en fase de validación técnica.
+

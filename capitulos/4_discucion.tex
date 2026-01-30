@@ -10,27 +10,27 @@ La convergencia entre módulos operativos (pedidos, inventarios, repartidores, d
 
 \section{Análisis de Objetivos Específicos y Contraste Bibliográfico}
 
-\subsection{Requisitos funcionales y no funcionales (Objetivo Específico 1)}
+\subsection{Identificación y documentación de requisitos (Objetivo Específico 1)}
 
 Al iniciar el proyecto, la recolección de requisitos, objetivo general y objetivos específicos se obtuvo mediante entrevistas con dueños de las PYMES. El diagnóstico identificó que las PYMES participantes presentaban un bajo nivel de digitalización: gestión de pedidos mediante anotaciones o herramientas básicas, inventarios poco sistematizados y atención al cliente dependiente de canales no integrados. Al contrastar este problema con los resultados de la validación técnica, se observó que la plataforma cumplió con los requisitos funcionales especificados y que la percepción de utilidad por parte de los usuarios de prueba fue favorable. Este fenómeno de ``opacidad operativa''---falta de información centralizada y en tiempo real---es una barrera común reportada en la transformación digital de PYMES en América Latina, donde la ausencia de datos operativos estructurados frena la toma de decisiones \parencite{GonzalezMartinez2021}. La plataforma propuesta demuestra la viabilidad técnica de una solución que contribuye a romper el paradigma de la gestión fragmentada, respondiendo a la necesidad de centralización e inmediatez del negocio gastronómico en Portoviejo.
 
-\subsection{Arquitectura técnica y stack tecnológico (Objetivo Específico 2)}
+\subsection{Diseño de arquitectura técnica de la plataforma (Objetivo Específico 2)}
 
 La viabilidad técnica de la propuesta descansa en una arquitectura modular: backend (NestJS), aplicación móvil (React Native + Expo, con vistas para cliente, repartidor y cocina) y sitio web (Next.js, principalmente administración y también compra como cliente desde la web), con base de datos relacional y autenticación segura (JWT, RBAC). La decisión de adoptar un stack moderno y abierto permitió reducir costos de licenciamiento y facilitar el mantenimiento. Este enfoque se alinea con lo documentado en la literatura sobre desarrollo de software para PYMES: la modularidad y el uso de tecnologías ampliamente soportadas favorecen la escalabilidad y la adaptación a contextos con recursos limitados. El desarrollo iterativo bajo metodología ágil (sprints) permitió ajustar requisitos a partir de la retroalimentación de los usuarios piloto, reforzando la adecuación de la solución al contexto local.
 
-\subsection{Módulos operativos y panel analítico (Objetivo Específico 3)}
+\subsection{Desarrollo de módulos funcionales principales (Objetivo Específico 3)}
 
 La implementación de los módulos de gestión de pedidos (con soporte a geolocalización y medios de pago efectivo y transferencia), control de inventarios, vista de cocina en móvil (aceptar o rechazar pedidos, notificar cuando esté listo para que el repartidor recoja), administración de repartidores y dashboard analítico con KPIs permitió a los usuarios de prueba de la PYME piloto ejecutar flujos operativos en entorno controlado (staging) que antes se realizarían de forma manual o dispersa. La disponibilidad de indicadores en tiempo real (pedidos, ventas, tiempos de entrega) en las pruebas sugiere el potencial de la plataforma para favorecer una toma de decisiones más informada en operación real, aspecto que en la literatura se identifica como uno de los beneficios clave de la analítica de negocio en pequeñas empresas. Los resultados observados en las tareas guiadas (tiempos de registro de pedidos, tasa de errores, completitud de flujos) indican que la plataforma cumple con el propósito de demostrar la viabilidad técnica de optimización de procesos internos y mejora de la calidad del servicio.
 
-\subsection{Chatbot RAG por WhatsApp (Objetivo Específico 4)}
+\subsection{Implementación e integración del chatbot RAG por WhatsApp (Objetivo Específico 4)}
 
 La integración del chatbot basado en el modelo RAG (Retrieval-Augmented Generation), accesible por WhatsApp, evidenció mejoras en la rapidez y la disponibilidad de respuestas a consultas frecuentes (pedidos, horarios, servicios). Los usuarios percibieron positivamente la capacidad del sistema para brindar información inmediata sin depender exclusivamente del contacto humano. Este hallazgo respalda la viabilidad del uso de inteligencia artificial como herramienta de apoyo en la atención al cliente dentro de contextos empresariales de pequeña y mediana escala, en línea con experiencias reportadas en interfaces conversacionales para servicios \textcite{jose_2000}.
 
-\subsection{Cumplimiento de requisitos y criterios de calidad (Objetivo Específico 5)}
+\subsection{Verificación del cumplimiento de requisitos funcionales (Objetivo Específico 5)}
 
 La verificación del cumplimiento de requisitos funcionales y de los criterios de calidad de software establecidos se realizó mediante pruebas de integración y validación de flujos críticos en entorno de desarrollo o staging. Los resultados permiten afirmar que la plataforma desarrollada cumple con los requisitos funcionales especificados en la fase de levantamiento (gestión de pedidos, inventarios, repartidores, vista cocina, dashboard, chatbot por WhatsApp) y con criterios de calidad adecuados para un prototipo validado en entorno controlado.
 
-\subsection{Usabilidad percibida en entorno controlado (Objetivo Específico 6)}
+\subsection{Evaluación de usabilidad con escala SUS (Objetivo Específico 6)}
 
 La evaluación mediante la escala SUS (System Usability Scale) y las pruebas de usabilidad en entorno controlado permitieron cuantificar la aceptación del sistema por parte de usuarios de prueba (administradores, cajeros y repartidores). Los resultados reflejan que la plataforma fue percibida como intuitiva y alineada con las tareas operativas del contexto gastronómico. En la ingeniería de software se considera que el éxito operativo de un sistema depende de su capacidad para satisfacer las necesidades reales de los usuarios en su entorno de trabajo; la retroalimentación obtenida indica que el diseño centrado en los flujos de pedido, inventario y delivery contribuyó a una experiencia de usuario positiva durante el período de validación técnica. No obstante, se identificaron oportunidades de mejora en la capacitación inicial y en la personalización de algunas funcionalidades, lo que sugiere la necesidad de iteraciones continuas en futuras versiones orientadas a implementación a escala real.
 
