@@ -1,17 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[92] biber-MSWIN64:342> INFO - === 
+[89] biber-MSWIN64:342> INFO - === 
 [129] Biber.pm:421> INFO - Reading 'main.bcf'
-[231] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
-[246] Biber.pm:4487> INFO - Processing section 0
-[256] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[307] bibtex.pm:1713> INFO - LaTeX decoding ...
-[321] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[225] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
+[241] Biber.pm:4487> INFO - Processing section 0
+[249] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[300] bibtex.pm:1713> INFO - LaTeX decoding ...
+[313] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
 [381] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
 [381] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [381] Biber.pm:4307> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'es-ES'
-[389] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[389] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[389] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'es-ES'
-[397] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[400] bbl.pm:779> INFO - Output to main.bbl
+[395] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[395] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[395] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'es-ES'
+[405] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[411] bbl.pm:779> INFO - Output to main.bbl

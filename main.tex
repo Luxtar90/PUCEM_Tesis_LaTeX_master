@@ -183,6 +183,20 @@
 % Archivo de estilo personalizado con títulos (CRÍTICO: NO quitar)
 \usepackage{PUCEM}
 
+% Configuración de encabezados y pies de página (Numeración a la derecha)
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
 % Configuración de sangría y espacio entre párrafos
 \setlength{\parindent}{1.5em}
 \setlength{\parskip}{0.5em}

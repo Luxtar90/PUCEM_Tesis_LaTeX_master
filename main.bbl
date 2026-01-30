@@ -19,6 +19,49 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
+      \endverb
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -107,6 +150,34 @@
       \endverb
       \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
+    \entry{DuranMero2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
+    \endentry
     \entry{GonzalezMartinez2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
@@ -146,10 +217,146 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+    \entry{MintelTransformation2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+    \endentry
+    \entry{MovistarEmpresas2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.movistar.com.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
+      \endverb
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -238,6 +445,34 @@
       \endverb
       \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
+    \entry{DuranMero2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
+    \endentry
     \entry{GonzalezMartinez2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
@@ -277,6 +512,99 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+    \entry{MintelTransformation2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+    \endentry
+    \entry{MovistarEmpresas2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.movistar.com.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist

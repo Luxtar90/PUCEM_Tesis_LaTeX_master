@@ -23,19 +23,9 @@ Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestr
 \end{enumerate}
 Se excluyeron establecimientos con operación irregular o que ya utilizaban sistemas de gestión integral.
 
+\clearpage
 \subsubsection{Operacionalización de variables}
-\textbf{Variable independiente: Plataforma SaaS.} Se define como el artefacto tecnológico desarrollado, una plataforma de Software como Servicio que integra módulos de gestión operativa e inteligencia artificial. Su evaluación consistió en su despliegue en entorno controlado (staging) y uso por parte de usuarios de prueba de la PYME piloto durante el período de validación técnica.
-
-\textbf{Variables dependientes: Métricas de desempeño en escenarios de prueba.} Son las métricas de desempeño que se evaluaron durante la validación técnica de la plataforma en entorno controlado:
-\begin{enumerate}[label=\arabic*)]
-  \item \textbf{Eficiencia en el registro de pedidos:} medida a través del tiempo promedio (minutos) para registrar un pedido y la tasa de errores de registro (porcentaje de pedidos con información incorrecta o incompleta) en tareas guiadas.
-  \item \textbf{Eficacia del servicio de delivery:} medida mediante el tiempo promedio de entrega (minutos) desde la confirmación del pedido hasta su entrega en escenarios simulados.
-  \item \textbf{Completitud de flujos críticos:} medida como el porcentaje de tareas guiadas completadas exitosamente sin fallos funcionales.
-  \item \textbf{Estabilidad del sistema:} medida a través de la tasa de fallos técnicos durante el período de pruebas.
-  \item \textbf{Usabilidad del sistema:} medida a través del puntaje en la System Usability Scale (SUS), que evalúa la facilidad de uso percibida.
-\end{enumerate}
-
-\begin{longtable}{p{3.3cm}p{5.0cm}p{4.2cm}p{3.0cm}}
+\begin{longtable}{p{3.0cm}p{4.6cm}p{4.0cm}p{2.8cm}}
 \caption{\textit{Operacionalización de variables e indicadores de medición}} \\
 \toprule
 \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
@@ -60,7 +50,7 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
 \caption{Ciclo iterativo de la Investigación Basada en Diseño}
 \label{fig:ibd-ciclo}
 \end{figure}
@@ -114,12 +104,11 @@ Se aplicó consentimiento informado, explicando objetivos del estudio, naturalez
 
 Esta sección describe el diseño del prototipo de software y su implementación, correspondiente a las Fases 3, 4 y 5 de la metodología IBD. Se profundiza en el diseño arquitectónico, el desarrollo de los componentes y la implementación en entorno real.
 
-Para una mejor comprensión metodológica, se detallan siguiendo la estructura en 4 Etapas:
+Para una mejor comprensión metodológica, se detallan siguiendo la estructura en 3 Etapas:
 \begin{enumerate}[label=\arabic*)]
   \item Planificación.
   \item Desarrollo.
   \item Validación y Despliegue.
-  \item Resultados del software.
 \end{enumerate}
 Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno controlado (staging).
 
@@ -151,40 +140,52 @@ Despliegue panel web & Vercel & Netlify, GitHub Pages & Integración nativa con 
 
 \subsubsection{Arquitectura de la Plataforma}
 
-Una vez establecidas las herramientas tecnológicas, se definió y estructuró una arquitectura por capas:
-
-\begin{figure}[htbp]
-\centering
-\resizebox{0.9\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
-\caption{Arquitectura por capas de la plataforma SaaS}
-\label{fig:arquitectura-capas}
-\end{figure}
-Los componentes principales de la plataforma son:
+Una vez establecidas las herramientas tecnológicas, se definió y estructuró una arquitectura por capas. Los componentes principales de la plataforma son:
 \begin{itemize}
   \item Aplicación móvil para clientes, repartidores y vista de cocina (aceptar o rechazar pedidos, notificar cuando esté listo para que el repartidor recoja, integrado al flujo de órdenes).
   \item Aplicación web principalmente para administración, con posibilidad de iniciar sesión como cliente para realizar compras desde la web.
   \item Servicios backends con sus respectivas APIs.
 \end{itemize}
-Para tener un mejor detalle de cada componente, se presenta a continuación la arquitectura de la aplicación móvil, la arquitectura de la aplicación web y el diagrama de la base de datos.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.7\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
-\caption{Arquitectura de la aplicación móvil}
+\resizebox{0.9\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
+\caption{\textit{Arquitectura por capas de la plataforma SaaS}}
+\label{fig:arquitectura-capas}
+\end{figure}
+
+La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa es independiente y se comunica con las adyacentes mediante interfaces bien definidas.
+
+\subsubsection{Arquitectura de la aplicación móvil}
+
+La aplicación móvil es la interfaz principal para tres roles: cliente, repartidor y cocina. Utiliza React Native + Expo para maximizar la reutilización de código entre plataformas.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{0.85\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
+\caption{\textit{Arquitectura de la aplicación móvil}}
 \label{fig:movil-arquitectura}
 \end{figure}
 
+\subsubsection{Arquitectura de la aplicación web}
+
+El panel web administrativo permite la gestión de productos, categorías, pedidos y repartidores, además de proporcionar acceso a clientes para realizar compras.
+
 \begin{figure}[htbp]
 \centering
-\resizebox{0.7\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
-\caption{Arquitectura del panel web}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
+\caption{\textit{Arquitectura de la aplicación web}}
 \label{fig:web-arquitectura}
 \end{figure}
+
+\subsubsection{Arquitectura del backend}
+
+El backend expone una API RESTful que centraliza toda la lógica de negocio, autenticación y manejo de datos.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{0.85\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
-\caption{Arquitectura modular del backend (NestJS) planificada}
+\caption{\textit{Arquitectura del backend (API REST)}}
 \label{fig:backend-arquitectura}
 \end{figure}
 
@@ -250,11 +251,12 @@ Si bien la implementación actual emplea una única base de datos para el client
 La configuración actual con Supabase facilita esta migración, al soportar múltiples proyectos de base de datos administrados de forma independiente.
 
 Finalmente, se contemplaron estrategias de respaldo automático (backups diarios mediante Supabase), recuperación ante desastres y mecanismos de migración de esquema controlada mediante archivos SQL versionados (ver carpeta migrations/ con ejemplos como create-stock-local-table.sql), abandonando sincronización automática en producción.
+
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
-\caption{Diagrama entidad-relación (ER) del esquema de datos planificado}
-\label{fig:er-diagrama}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
+\caption{\textit{Diagrama Entidad-Relación (ER) de la base de datos}}
+\label{fig:diagrama-bd}
 \end{figure}
 
 \subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
@@ -274,12 +276,10 @@ La autorización por roles se implementa de forma declarativa en endpoints crít
 
 Para la autenticación y autorización, utilizamos JWT (JSON Web Tokens) como mecanismo de autenticación stateless. JWT es un estándar abierto (RFC 7519) ampliamente utilizado para transmitir información de forma segura en forma de token JSON firmado. De hecho, la autenticación con tokens JWT se ha convertido en un estándar de facto para proteger los endpoints sensibles de aplicaciones web y APIs (Aguilera,. xm XX implementamos JWT mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
 
-El flujo de autenticación y autorización se muestra en el siguiente diagrama, y el detalle del mismo se encuentra en el Anexo XX.
-
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
-\caption{Flujo de autenticación y autorización (JWT + RBAC)}
+\resizebox{0.9\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
+\caption{\textit{Flujo de autenticación y autorización (JWT + RBAC)}}
 \label{fig:auth-rbac}
 \end{figure}
 
@@ -299,8 +299,8 @@ La aplicación ofrece flujos diferenciados para tres perfiles: Cliente, Repartid
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
-\caption{Flujo principal del frontend móvil para cliente, repartidor y cocina}
+\resizebox{0.8\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
+\caption{\textit{Flujo de la interfaz móvil por rol (Cliente, Repartidor, Cocina)}}
 \label{fig:frontend-prototipo}
 \end{figure}
 
@@ -344,8 +344,8 @@ reales.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
-\caption{Flujo principal del panel web administrativo}
+\resizebox{0.8\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
+\caption{\textit{Flujo del panel web administrativo}}
 \label{fig:web-panel-prototipo}
 \end{figure}
 
@@ -459,38 +459,41 @@ tamaño del despliegue, así como mecanismos de migración segura para cambios d
 
 Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas:
 
-Módulo de Pedidos:
+\paragraph{Módulo de Pedidos:}
 El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización.
-Se puede evidenciar en la figuara 7, y el detalle se encuentra en el anexoxxx.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
-\caption{Flujo general del proceso de pedido}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
+\caption{\textit{Diagrama de secuencia: flujo completo del proceso de pedido}}
 \label{fig:secuencia-pedido}
 \end{figure}
 
-Módulo de Inventario: Lógica para descontar stock y prevenir ventas de productos agotados.
+\paragraph{Módulo de Inventario:}
+Lógica para descontar stock y prevenir ventas de productos agotados.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
-\caption{Diagrama del módulo de inventario}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
+\caption{\textit{Lógica del módulo de inventarios y control de stock}}
 \label{fig:modulo-inventario}
 \end{figure}
 
-Módulo de Repartidores: Proceso de registro, aprobación administrativa y asignación manual de pedidos.
+\paragraph{Módulo de Repartidores:}
+Proceso de registro, aprobación administrativa y asignación manual de pedidos.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
-\caption{Diagrama del módulo de repartidores}
+\resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
+\caption{\textit{Flujo del módulo de repartidores}}
 \label{fig:modulo-repartidores}
 \end{figure}
 
-Dashboard Analítico: Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
+\paragraph{Dashboard Analítico:}
+Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
 
-Chatbot RAG por WhatsApp: Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma, desplegado como canal de atención a través de WhatsApp (WhatsApp Business Cloud).
+\paragraph{Chatbot RAG por WhatsApp:}
+Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma, desplegado como canal de atención a través de WhatsApp (WhatsApp Business Cloud).
 
 Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 
@@ -498,107 +501,23 @@ Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y prue
 
 \subsubsection{Arquitectura del despliegue}
 
-Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto. La Figura \ref{fig:despliegue-arquitectura} muestra la imagen de la arquitectura de despliegue.
+Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
-\caption{Arquitectura del despliegue de la plataforma}
+\resizebox{0.9\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
+\caption{\textit{Arquitectura de despliegue (VPS, Vercel, APK)}}
 \label{fig:despliegue-arquitectura}
 \end{figure}
 
 Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
 
 \subsubsection{Despliegue en staging y validación técnica}
-
-Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (staging) mediante tareas guiadas y escenarios de prueba predefinidos. Su desarrollo comprendió los siguientes pasos:
-\begin{enumerate}
-\item Despliegue en entorno de staging:
-El backend se desplegó en un servidor VPS de Hetzner, aprovechando su relación costo/rendimiento para ambientes de prueba. Se utilizó Docker para contenerizar la aplicación y la base de datos, garantizando un entorno de staging consistente y replicable. Se configuraron ajustes de seguridad básicos (helmet, CORS, rate limiting) y se implementó el uso de variables de entorno (con ConfigModule) para gestionar credenciales y configuraciones sensibles. La API se ejecutó en un contenedor Docker escuchando peticiones HTTPS, y PostgreSQL se configuró en el mismo servidor. Se implementaron registros estructurados (logs) para monitorear el desempeño durante las pruebas técnicas. El panel web se desplegó en Vercel, y la aplicación móvil se compiló como archivo APK para instalación en dispositivos de prueba. Esta infraestructura de staging permitió simular un entorno real sin integrar la plataforma a la operación diaria del negocio.
-
-\item Orientación a usuarios de prueba:
-Se realizó una sesión de orientación breve (aproximadamente 1 hora) con usuarios de prueba de la PYME piloto (administrador, personal de cocina y repartidores), explicando los flujos principales de la plataforma y las tareas que ejecutarían durante la validación técnica.
-
-\item Diseño de escenarios de prueba:
-Se definieron escenarios de prueba predefinidos que cubrieran los flujos críticos del sistema: (1) registro de pedido completo por cliente, (2) confirmación y preparación en cocina, (3) asignación y entrega por repartidor, (4) gestión de productos y categorías por administrador, (5) consulta al chatbot por WhatsApp. Cada escenario incluyó datos de prueba simulados (productos, clientes, pedidos) para ejecutar las tareas sin afectar datos reales.
-
-\item Ejecución de tareas guiadas:
-Los usuarios de prueba ejecutaron las tareas predefinidas bajo observación estructurada, registrando tiempos, errores y completitud de flujos. Se utilizó la plataforma desplegada en staging para simular la operación completa (desde pedido hasta entrega) sin requerir integración a la operación diaria del negocio. Las pruebas se realizaron en sesiones controladas durante un período acotado, permitiendo evaluar la funcionalidad técnica y usabilidad del sistema.
-\end{enumerate}
-
-\begin{table}[htbp]
-\centering
-\caption{Tareas evaluadas en pruebas de usabilidad}
-\label{tab:tareas-usabilidad}
-\begin{tabular}{|c|l|l|l|}
-\hline
-N.º & Tarea & Rol & Criterio de éxito \\
-\hline
-1 & Crear un nuevo pedido & Cliente & Completar en < 3 min \\
-2 & Consultar estado de pedido & Cliente & Localizar en < 30 seg \\
-3 & Agregar producto al catálogo & Administrador & Completar sin errores \\
-4 & Asignar pedido a repartidor & Administrador & Completar en < 1 min \\
-5 & Marcar pedido como entregado & Repartidor & Completar sin ayuda \\
-6 & Realizar consulta al chatbot por WhatsApp & Cliente & Obtener respuesta pertinente \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{enumerate}
-\setcounter{enumi}{3}
-\item Recolección de datos de validación técnica:
-Al finalizar las tareas guiadas, se aplicó el cuestionario SUS a los usuarios de prueba (administrador, personal de cocina, repartidores) para evaluar la usabilidad percibida. Se consolidaron los datos de las fichas de observación que registraron tiempos, errores y completitud de flujos durante la ejecución de escenarios de prueba.
-
-\item Monitoreo técnico del sistema:
-Se monitoreó la estabilidad del backend y el panel web durante las pruebas, recopilando logs del sistema para identificar fallos técnicos, tiempos de respuesta de la API y eventos de error. Se analizaron métricas técnicas como disponibilidad del servicio, latencia de endpoints críticos y tasa de errores durante la ejecución de las pruebas.
-\end{enumerate}
-
-\subsection{ETAPA 4: Resultados del software}
-
-En esta etapa se recopilaron y documentaron los resultados propios del funcionamiento del software: pruebas unitarias e integración, métricas de disponibilidad y latencia del sistema, y resultados de las pruebas técnicas realizadas sobre los componentes de la plataforma. Estos resultados corresponden al artefacto de software y se distinguen de los resultados de la investigación (usabilidad percibida, desempeño en escenarios de prueba), que se presentan en el capítulo Resultados.
-
-\subsubsection{Pruebas unitarias y de integración}
-
-Se ejecutaron pruebas unitarias en servicios críticos del backend (módulos de autenticación, pedidos, productos, inventarios) utilizando el framework de testing integrado en NestJS (Jest). Las pruebas unitarias validaron la lógica de negocio aislada, como el cálculo de totales de pedidos, la validación de credenciales y la actualización de inventarios. Se alcanzó una cobertura de código superior al 55\% en los módulos principales.
-
-Las pruebas de integración validaron la comunicación entre componentes: frontend-backend (solicitudes HTTP y respuestas JSON), backend-base de datos (consultas y transacciones). Se verificaron los flujos críticos completos: registro de usuario, creación de pedido, actualización de estados, asignación a repartidores y gestión de inventarios.
-
-\subsubsection{Métricas de disponibilidad y rendimiento}
-
-Durante el período de pruebas en staging, se monitorearon métricas técnicas clave:
+Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (staging) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice J. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:
 \begin{itemize}
-  \item \textbf{Disponibilidad del sistema:} 97.8\% durante las pruebas (caídas menores durante mantenimiento programado y ajustes de configuración).
-  \item \textbf{Tiempo de respuesta promedio de la API:} 280 ms para endpoints de lectura, 520 ms para operaciones de escritura (creación de pedidos, actualización de inventarios).
-  \item \textbf{Tasa de errores HTTP:} 3.8\% (principalmente errores 400 por validaciones de entrada y 401 por tokens expirados en pruebas).
-  \item \textbf{Tiempo de carga del panel web:} 2.4 segundos promedio (First Contentful Paint) en condiciones de red estándar.
-  \item \textbf{Tiempo de carga de la app móvil:} 1.8 segundos promedio para pantalla inicial, 3.2 segundos para carga completa de catálogo de productos.
-  \item \textbf{Uso de recursos del servidor:} CPU promedio 42\%, memoria 68\% durante picos de carga simulada (20 usuarios concurrentes).
+  \item \textbf{Despliegue controlado:} Backend y base de datos en VPS con Docker; panel web en Vercel; app móvil en APK para pruebas.
+  \item \textbf{Ejecución de escenarios:} Usuarios de prueba ejecutaron flujos críticos (pedido, cocina, reparto, administración y chatbot).
+  \item \textbf{Registro de métricas:} Se capturaron tiempos, errores, completitud de tareas y logs técnicos para análisis posterior.
 \end{itemize}
-
-\subsubsection{Validación de funcionalidades}
-
-Se validó el correcto funcionamiento de las funcionalidades implementadas:
-\begin{itemize}
-  \item \textbf{Autenticación y autorización (JWT + RBAC):} Tokens generados correctamente, roles aplicados según permisos, acceso denegado a endpoints no autorizados. Tiempo de expiración de tokens ajustado a 24 horas para equilibrar seguridad y usabilidad.
-  \item \textbf{Gestión de pedidos:} Creación, actualización de estados (pendiente, preparando, listo, en\_camino, entregado), asignación a repartidores, y persistencia de datos funcionando según especificaciones. Flujo completo de pedido validado desde creación hasta entrega.
-  \item \textbf{Control de inventarios:} Descuento automático de stock al crear pedidos, validación de disponibilidad antes de confirmar pedidos, y sincronización con base de datos validadas. Control de stock por local mediante StockLocal operando correctamente.
-  \item \textbf{Vista de cocina:} Recepción de pedidos nuevos, aceptación/rechazo de pedidos, marcado de pedidos como listos para recogida, y actualización de estados en tiempo real operando correctamente.
-  \item \textbf{Gestión de repartidores:} Proceso de registro, sistema de aprobación administrativa (pendiente/aprobado/rechazado), asignación de pedidos, y actualización de estados de entrega funcionando según diseño.
-  \item \textbf{Panel administrativo web:} CRUD de productos y categorías, visualización de pedidos con filtros por estado, gestión de usuarios y repartidores, y funcionalidades de configuración operando correctamente.
-  \item \textbf{Dashboard analítico:} KPIs calculados correctamente (total de pedidos, ventas del día, pedidos por estado). Consultas a base de datos optimizadas para reportes.
-\end{itemize}
-
-\subsubsection{Problemas identificados y soluciones}
-
-Durante las pruebas técnicas se identificaron y resolvieron los siguientes problemas:
-\begin{itemize}
-  \item \textbf{Error en validación de stock:} Se corrigió un bug en la validación de disponibilidad de productos que permitía crear pedidos con cantidades superiores al stock disponible. Se implementó validación transaccional en el servicio de pedidos.
-  \item \textbf{Pérdida de sesión en app móvil:} Se ajustó el tiempo de expiración de tokens JWT de 2 horas a 24 horas para evitar cierres de sesión prematuros durante uso normal. Se implementó almacenamiento seguro de tokens en dispositivo.
-  \item \textbf{Inconsistencia en estados de pedidos:} Se identificó y corrigió un problema de concurrencia donde múltiples usuarios podían modificar el estado de un pedido simultáneamente. Se implementó control de versiones optimista.
-  \item \textbf{Errores de validación en formularios:} Se mejoraron mensajes de error en frontend (web y móvil) para mayor claridad, especificando qué campos son inválidos y por qué.
-  \item \textbf{Rendimiento en listado de pedidos:} Se optimizó la consulta de pedidos con filtros por estado y fecha, implementando paginación y índices en base de datos, reduciendo tiempo de respuesta de 850ms a 380ms.
-  \item \textbf{Sincronización de stock por local:} Se ajustó la lógica de actualización de stock distribuido (StockLocal) para evitar descuentos duplicados al crear pedidos.
-\end{itemize}
-
-Estos resultados técnicos confirman que la plataforma cumple con los requisitos funcionales y no funcionales especificados, alcanzando niveles adecuados de disponibilidad, rendimiento y estabilidad para un prototipo en fase de validación técnica.
+El detalle de las tareas evaluadas y sus criterios de éxito se presenta en el Apéndice J (Tabla \ref{tab:apendice-tareas-usabilidad}).
 

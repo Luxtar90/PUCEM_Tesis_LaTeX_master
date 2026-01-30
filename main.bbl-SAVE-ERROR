@@ -1,0 +1,285 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{Castells2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
+           family={Castells},
+           familyi={C\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Blackwell}%
+      }
+      \strng{namehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{fullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{fullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{bibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorbibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authornamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorfullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorfullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{The rise of the network society}
+      \field{year}{2010}
+    \endentry
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
+      \field{year}{2025}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3743049.3748567
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3743049.3748567
+      \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
+    \endentry
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Castells2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
+           family={Castells},
+           familyi={C\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Blackwell}%
+      }
+      \strng{namehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{fullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{fullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{bibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorbibnamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authornamehash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorfullhash}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \strng{authorfullhashraw}{81719c25e6cbcfe23d2c4486745ca6ac}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{The rise of the network society}
+      \field{year}{2010}
+    \endentry
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
+      \field{year}{2025}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3743049.3748567
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3743049.3748567
+      \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
+    \endentry
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

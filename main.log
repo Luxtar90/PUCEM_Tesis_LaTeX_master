@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  30 JAN 2026 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  30 JAN 2026 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,7 +963,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 202.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 216.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (main.aux
@@ -974,26 +974,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Info: Redefining \. on input line 202.
-LaTeX Info: Redefining \% on input line 202.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\spanish-apa.lbx
@@ -1016,8 +1016,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 202.
-Package biblatex Info: Reference segment=0 on input line 202.
+Package biblatex Info: Reference section=0 on input line 216.
+Package biblatex Info: Reference segment=0 on input line 216.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1072,16 +1072,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 202.
-Package microtype Info: Applying patch `item' on input line 202.
-Package microtype Info: Applying patch `toc' on input line 202.
-Package microtype Info: Applying patch `eqnum' on input line 202.
+LaTeX Info: Redefining \microtypecontext on input line 216.
+Package microtype Info: Applying patch `item' on input line 216.
+Package microtype Info: Applying patch `toc' on input line 216.
+Package microtype Info: Applying patch `eqnum' on input line 216.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 202.
+Package microtype Warning: Unable to apply patch `footnote' on input line 216.
 
-Package microtype Info: Applying patch `verbatim' on input line 202.
-LaTeX Info: Redefining \microtypesetup on input line 202.
+Package microtype Info: Applying patch `verbatim' on input line 216.
+LaTeX Info: Redefining \microtypesetup on input line 216.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1099,14 +1099,14 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 202.
+(microtype)                protrusion for this font on input line 216.
 
-Package hyperref Info: Link coloring ON on input line 202.
+Package hyperref Info: Link coloring ON on input line 216.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count511
-Package hyperref Info: Option `pageanchor' set `false' on input line 211.
+Package hyperref Info: Option `pageanchor' set `false' on input line 225.
 (preliminares/1_portada.tex
 <imagenes/PUCEM_LOGO.png, id=6, 355.82938pt x 75.78313pt>
 File: imagenes/PUCEM_LOGO.png Graphic file (type png)
@@ -1261,26 +1261,28 @@ Package microtype Warning: I cannot find a protrusion list for font
 ]) (preliminares/7_agradecimientos.tex [6
 
 
-]) (preliminares/8_resumen_abstract.tex [7
-
-
-]
+]) (preliminares/8_resumen_abstract.tex
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/it/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 17.
+(microtype)                protrusion for this font on input line 13.
 
-[8] [9])
-Package hyperref Info: Option `pageanchor' set `true' on input line 224.
+[7
+
+
+] [8
+
+])
+Package hyperref Info: Option `pageanchor' set `true' on input line 238.
  (main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [10
+ [9
 
 
 
-] [11] [12])
+] [10] [11] [12])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1288,13 +1290,13 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [14
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [14
-
-] (main.lot
+ [15] (main.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1302,7 +1304,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [15
+ [16
 
 ] (capitulos/1_introduccion.tex
 Cap\'{\i }tulo 1.
@@ -1315,72 +1317,79 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/b/it/12' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 11.
 
-[2] [3] [4] [5] [6] [7] [8] [9]
-<imagenes/diagramaflujo.png, id=308, 6504.3pt x 12464.5675pt>
+[2] [3] [4] [5] [6] [7] [8]
+<imagenes/diagramaflujo.png, id=373, 6504.3pt x 12464.5675pt>
 File: imagenes/diagramaflujo.png Graphic file (type png)
 <use imagenes/diagramaflujo.png>
-Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 157.
+Package pdftex.def Info: imagenes/diagramaflujo.png  used on input line 130.
 (pdftex.def)             Requested size: 305.38455pt x 585.22615pt.
-) (capitulos/2_metodos.tex [10] [11 <./imagenes/diagramaflujo.png>]
+) (capitulos/2_metodos.tex [9] [10 <./imagenes/diagramaflujo.png>]
 Cap\'{\i }tulo 2.
-[12
+[11
 
-] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\T1/ptm/b/n/12 (+20) Variable de-pen-
+] [12]
+Underfull \hbox (badness 2150) in paragraph at lines 38--38
+[]|\T1/ptm/m/n/12 (+20) Eficiencia en el
  []
 
 
-Overfull \hbox (19.26231pt too wide) in alignment at lines 38--43
- [] [] [] [] 
+Underfull \hbox (badness 2277) in paragraph at lines 38--38
+[]|\T1/ptm/m/n/12 (+20) Ficha de ob-ser-va-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-[]|\T1/ptm/b/n/12 (+20) Variable de-pen-
+Underfull \hbox (badness 2277) in paragraph at lines 39--39
+[]|\T1/ptm/m/n/12 (+20) Ficha de ob-ser-va-ción
  []
 
 
-Overfull \hbox (19.26231pt too wide) in alignment at lines 43--47
- [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 48--48
-\T1/ptm/m/n/12 (+20) truc-tu-ra-da (re-gis-tro de
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 49--49
-\T1/ptm/m/n/12 (+20) truc-tu-ra-da (re-gis-tro de
- []
-
-
-Underfull \hbox (badness 6236) in paragraph at lines 49--49
+Underfull \hbox (badness 2469) in paragraph at lines 39--39
 \T1/ptm/m/n/12 (+20) tiem-pos en flu-jos de
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 50--50
-\T1/ptm/m/n/12 (+20) in-te-gra-ción y ob-ser-va-
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/ptm/m/n/12 (+20) Completitud de
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 51--52
-\T1/ptm/m/n/12 (+20) ran-te el pe-río-do
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/ptm/m/n/12 (+20) Estabilidad del
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 52--53
-\T1/ptm/m/n/12 (+20) acep-ta-bi-li-dad en
+Underfull \hbox (badness 1062) in paragraph at lines 41--41
+[]|\T1/ptm/m/n/12 (+20) Confiabilidad y con-ti-nui-
  []
 
 
-Overfull \hbox (19.26231pt too wide) in alignment at lines 47--54
- [] [] [] [] 
+Underfull \hbox (badness 1048) in paragraph at lines 41--41
+[]|\T1/ptm/m/n/12 (+20) Registros de logs del
  []
 
-ignored error: Infinite glue shrinkage found in box being split [14] [15] (imagenes/ibd_ciclo.tikz
+
+Underfull \hbox (badness 4582) in paragraph at lines 41--42
+[]|\T1/ptm/m/n/12 (+20) Tasa de fa-llos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\T1/ptm/m/n/12 (+20) Usabilidad del
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 42--42
+\T1/ptm/m/n/12 (+20) los usua-rios pue-den em-
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 42--43
+[]|\T1/ptm/m/n/12 (+20) Puntaje pro-me-
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [13
+
+] (imagenes/ibd_ciclo.tikz
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/10.95' (context: `basictext'). Switching off
@@ -1391,378 +1400,379 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/m/n/8' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 13.
 
-) [16] [17]
-Underfull \hbox (badness 3679) in paragraph at lines 93--94
+) [14] [15]
+Underfull \hbox (badness 3679) in paragraph at lines 83--84
 []|\T1/ptm/b/n/12 (+20) Público ob-
  []
 
 
-Overfull \hbox (31.88136pt too wide) in alignment at lines 90--95
+Overfull \hbox (31.88136pt too wide) in alignment at lines 80--85
  [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 97--98
+Underfull \hbox (badness 3679) in paragraph at lines 87--88
 []|\T1/ptm/b/n/12 (+20) Público ob-
  []
 
 
-Overfull \hbox (31.88136pt too wide) in alignment at lines 95--99
+Overfull \hbox (31.88136pt too wide) in alignment at lines 85--89
  [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 100--100
+Underfull \hbox (badness 1859) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) vis-ta se-mi-es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []|\T1/ptm/m/n/12 (+20) Profundizar en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) y ex-pec-ta-ti-vas;
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 100--100
+Underfull \hbox (badness 2717) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) ob-te-ner re-qui-si-
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 100--100
+Underfull \hbox (badness 1019) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) ob-je-ti-vos (ge-ne-
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 100--100
+Underfull \hbox (badness 3884) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) me-dian-te en-tre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 \T1/ptm/m/n/12 (+20) in-ven-ta-rio, de-li-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []|\T1/ptm/m/n/12 (+20) Prueba de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []|\T1/ptm/m/n/12 (+20) Cuestionario
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) Usa-bi-lity
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 101--101
+Underfull \hbox (badness 3323) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) ci-li-dad de uso,
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 101--101
+Underfull \hbox (badness 4120) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) sa-tis-fac-ción) de
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 101--101
+Underfull \hbox (badness 3098) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) am-plia-men-te do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []|\T1/ptm/m/n/12 (+20) Fase 6:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) Des-pués de
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 101--101
+Underfull \hbox (badness 2608) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) reas guia-das
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 \T1/ptm/m/n/12 (+20) en en-torno
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 101--102
+Underfull \hbox (badness 6859) in paragraph at lines 91--92
 []|\T1/ptm/m/n/12 (+20) Usuarios de
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 101--102
+Underfull \hbox (badness 2582) in paragraph at lines 91--92
 \T1/ptm/m/n/12 (+20) PY-ME pi-lo-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 101--102
+Underfull \hbox (badness 3701) in paragraph at lines 91--92
 \T1/ptm/m/n/12 (+20) to (ad-mi-nis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []|\T1/ptm/m/n/12 (-10) Observación
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 102--102
+Underfull \hbox (badness 6204) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) ser-va-ción de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []|\T1/ptm/m/n/12 (+20) Registrar da-tos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) cuan-ti-ta-ti-vos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []|\T1/ptm/m/n/12 (+20) Diseñada pa-ra
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 102--102
+Underfull \hbox (badness 1147) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) erro-res en ta-reas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []|\T1/ptm/m/n/12 (+20) Durante la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) eje-cu-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) de ta-reas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) guia-das
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) en en-torno
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/ptm/m/n/12 (+20) con-tro-la-do
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 102--103
+Underfull \hbox (badness 6859) in paragraph at lines 92--93
 []|\T1/ptm/m/n/12 (+20) Usuarios de
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 102--103
+Underfull \hbox (badness 3724) in paragraph at lines 92--93
 \T1/ptm/m/n/12 (+20) rios pre-de-fi-
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 103--103
+Underfull \hbox (badness 7186) in paragraph at lines 93--93
 []|\T1/ptm/m/n/12 (+20) Checklist de
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 103--103
+Underfull \hbox (badness 5862) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) des-plie-gue y
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 103--103
+Underfull \hbox (badness 2057) in paragraph at lines 93--93
 []|\T1/ptm/m/n/12 (+20) Verificar el co-
  []
 
 
-Underfull \hbox (badness 3635) in paragraph at lines 103--103
+Underfull \hbox (badness 3635) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) téc-ni-co en sta-
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 103--103
+Underfull \hbox (badness 2073) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) ging y ana-li-zar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 []|\T1/ptm/m/n/12 (+20) Durante y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) des-pués de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) las prue-bas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 \T1/ptm/m/n/12 (+20) en en-torno
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 []|\T1/ptm/m/n/12 (+20) Plataforma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \T1/ptm/m/n/12 (+20) SaaS des-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \T1/ptm/m/n/12 (+20) ple-ga-da en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \T1/ptm/m/n/12 (+20) re-gis-tros de
  []
 
 
-Overfull \hbox (31.88136pt too wide) in alignment at lines 99--105
+Overfull \hbox (31.88136pt too wide) in alignment at lines 89--95
  [] [] [] [] [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [18] [19] [20]
-Underfull \hbox (badness 1533) in paragraph at lines 141--141
+[16]
+ignored error: Infinite glue shrinkage found in box being split [17] [18] [19]
+Underfull \hbox (badness 1533) in paragraph at lines 130--130
 []|\T1/ptm/m/n/12 (+20) Backend (API
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []|\T1/ptm/m/n/12 (+20) NestJS (No-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []|\T1/ptm/m/n/12 (+20) Express.js (No-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 \T1/ptm/m/n/12 (+20) de.js), Djan-go
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 \T1/ptm/m/n/12 (+20) (Python), Spring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []|\T1/ptm/m/n/12 (+20) MySQL, Mon-
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 142--143
+Underfull \hbox (badness 1043) in paragraph at lines 131--132
 \T1/ptm/m/n/12 (+20) do pa-ra la in-te-gri-dad de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []|\T1/ptm/m/n/12 (+20) Flutter (Dart),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \T1/ptm/m/n/12 (+20) de-sa-rro-llo na-ti-vo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []|\T1/ptm/m/n/12 (+20) React (Crea-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \T1/ptm/m/n/12 (+20) te React App),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 []|\T1/ptm/m/n/12 (+20) Renderizado hí-bri-do
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 144--145
+Underfull \hbox (badness 2495) in paragraph at lines 133--134
 \T1/ptm/m/n/12 (+20) de car-ga; Tail-wind CSS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \T1/ptm/m/n/12 (+20) pa-ra es-ti-li-za-do ágil y
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 145--145
+Underfull \hbox (badness 4229) in paragraph at lines 134--134
 []|\T1/ptm/m/n/12 (+20) Sesiones en ser-
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 145--145
+Underfull \hbox (badness 1281) in paragraph at lines 134--134
 \T1/ptm/m/n/12 (+20) vi-dor, OAuth 2.0
  []
 
 
-Overfull \hbox (14.85693pt too wide) in paragraph at lines 146--146
+Overfull \hbox (14.85693pt too wide) in paragraph at lines 135--135
 []|\T1/ptm/m/n/12 (-20) Contenedorización| 
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 146--147
+Underfull \hbox (badness 2005) in paragraph at lines 135--136
 \T1/ptm/m/n/12 (+20) ga-ran-ti-zan-do con-sis-ten-cia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []|\T1/ptm/m/n/12 (+20) Despliegue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []|\T1/ptm/m/n/12 (+20) AWS/Azure
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 147--147
+Underfull \hbox (badness 5374) in paragraph at lines 136--136
 \T1/ptm/m/n/12 (+20) (cloud), Rail-way,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 []|\T1/ptm/m/n/12 (+20) Integración na-ti-va con
  []
 
-ignored error: Infinite glue shrinkage found in box being split [21]
-ignored error: Infinite glue shrinkage found in box being split [22] (imagenes/arquitectura_capas.tikz) [23] (imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) (imagenes/backend_arquitectura.tikz) [24] [25] [26] [27
+ignored error: Infinite glue shrinkage found in box being split [20]
+ignored error: Infinite glue shrinkage found in box being split [21] (imagenes/arquitectura_capas.tikz) [22] (imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) (imagenes/backend_arquitectura.tikz) [23] [24] [25] [26] [27
 
 ] [28] [29] (imagenes/diagrama_bd.tikz) [30] [31] (imagenes/auth_rbac.tikz) [32] [33] (imagenes/frontend_prototipo.tikz
 
@@ -1770,111 +1780,151 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T1/ptm/b/n/10.95' (context: `basictext'). Switching off
 (microtype)                protrusion for this font on input line 17.
 
-) [34] [35] [36] (imagenes/web_panel_prototipo.tikz) [37] [38] [39] [40] [41] [42] (imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) (imagenes/modulo_repartidores.tikz) [43] (imagenes/despliegue_arquitectura.tikz) [44] [45]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 535.
+) [34] [35] (imagenes/web_panel_prototipo.tikz) [36] [37] [38] [39] [40] [41] (imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) (imagenes/modulo_repartidores.tikz) [42] [43] (imagenes/despliegue_arquitectura.tikz) [44]) (capitulos/3_resultados.tex [45]
+Cap\'{\i }tulo 3.
+[46
+
+] [47] [48] [49]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ztmcm/m/n/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/b/n/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/10.95' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/8' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OT1/ptm/m/it/6' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 76.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\T1/ptm/b/n/10.95 (+20) Tiempo
+ []
+
+[50] [51] [52] [53] [54] [55] [56]
+<imagenes/cronograma.png, id=609, 633.86812pt x 429.10312pt>
+File: imagenes/cronograma.png Graphic file (type png)
+<use imagenes/cronograma.png>
+Package pdftex.def Info: imagenes/cronograma.png  used on input line 231.
+(pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
+) (capitulos/4_discucion.tex [57] [58 <./imagenes/cronograma.png>]
+Cap\'{\i }tulo 4.
+[59
+
+] [60] [61] [62] [63]) (capitulos/5_conclusiones.tex [64]
+Cap\'{\i }tulo 5.
+[65
+
+]) [66] [67]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
+(microtype)                protrusion for this font on input line 280.
+
+[68
+
+] (apendices.tex [69]
+Ap\'{e}ndice A.
+(imagenes/diagrama_bd.tikz) [70
+
+
+]
+Ap\'{e}ndice B.
+(imagenes/arquitectura_capas.tikz) [71
+
+]
+Ap\'{e}ndice C.
+(imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [72
+
+] [73]
+Ap\'{e}ndice D.
+(imagenes/backend_arquitectura.tikz) [74
+
+]
+Ap\'{e}ndice E.
+(imagenes/auth_rbac.tikz) [75
+
+]
+Ap\'{e}ndice F.
+(imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [76
+
+] [77]
+Ap\'{e}ndice G.
+(imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) [78
+
+] (imagenes/modulo_repartidores.tikz) [79]
+Ap\'{e}ndice H.
+(imagenes/despliegue_arquitectura.tikz) [80
+
+]
+Ap\'{e}ndice I.
+<imagenes/reddiagrama.png, id=725, 3144.74875pt x 2424.05624pt>
+File: imagenes/reddiagrama.png Graphic file (type png)
+<use imagenes/reddiagrama.png>
+Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 155.
+(pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
+[81
+
+ <./imagenes/reddiagrama.png>]
+Ap\'{e}ndice J.
+[82
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 188.
  (C:\Users\luxta\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `TS1/ptm/m/n/12' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 535.
+(microtype)                protrusion for this font on input line 188.
 
 
-Overfull \hbox (9.20386pt too wide) in paragraph at lines 533--545
+Overfull \hbox (9.20386pt too wide) in paragraph at lines 186--198
  [][] 
  []
 
-[46] [47] [48]) (capitulos/3_resultados.tex [49]
-Cap\'{\i }tulo 3.
-[50
-
-] [51] [52]
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ztmcm/m/n/10.95' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ztmcm/m/n/8' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ztmcm/m/n/6' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/b/n/10.95' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/b/n/8' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/b/n/6' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/m/it/10.95' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/m/it/8' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `OT1/ptm/m/it/6' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 38.
-
-[53]
-<imagenes/cronograma.png, id=527, 633.86812pt x 429.10312pt>
-File: imagenes/cronograma.png Graphic file (type png)
-<use imagenes/cronograma.png>
-Package pdftex.def Info: imagenes/cronograma.png  used on input line 86.
-(pdftex.def)             Requested size: 469.75539pt x 318.01585pt.
-) (capitulos/4_discucion.tex [54] [55 <./imagenes/cronograma.png>]
-Cap\'{\i }tulo 4.
-[56
-
-] [57] [58] [59] [60]) (capitulos/5_conclusiones.tex [61]
-Cap\'{\i }tulo 5.
-[62
-
-]) [63] [64]
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T1/ptm/m/n/9' (context: `basictext'). Switching off
-(microtype)                protrusion for this font on input line 266.
-
-(apendices.tex [65
-
-]
-Ap\'{e}ndice A.
-(imagenes/diagrama_bd.tikz)
-<imagenes/reddiagrama.png, id=588, 3144.74875pt x 2424.05624pt>
-File: imagenes/reddiagrama.png Graphic file (type png)
-<use imagenes/reddiagrama.png>
-Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 26.
-(pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-) [66
-
-
-] [67 <./imagenes/reddiagrama.png>] (main.aux
+) [83] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1888,17 +1938,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40018 strings out of 467871
- 752540 string characters out of 5418376
- 1677434 words of memory out of 5000000
- 67673 multiletter control sequences out of 15000+600000
- 712792 words of font info for 337 fonts, out of 8000000 for 9000
+ 40215 strings out of 467871
+ 757457 string characters out of 5418376
+ 1677428 words of memory out of 5000000
+ 67788 multiletter control sequences out of 15000+600000
+ 713242 words of font info for 344 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,94p,1546b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luxta/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (83 pages, 1476531 bytes).
+Output written on main.pdf (100 pages, 1535928 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 221 named destinations out of 1000 (max. 500000)
- 99873 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
+ 99993 words of extra memory for PDF output out of 106986 (max. 10000000)
 
