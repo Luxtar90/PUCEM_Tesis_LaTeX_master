@@ -26,37 +26,37 @@
 \contentsline {subsubsection}{\numberline {2.1.3.1}Técnicas e instrumentos de recolección de datos}{17}{subsubsection.2.1.3.1}%
 \contentsline {subsection}{\numberline {2.1.4}Consideraciones éticas}{19}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}Procedimiento}{20}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}ETAPA 1: Planificación}{20}{subsection.2.2.1}%
-\contentsline {paragraph}{Diseño de la arquitectura del sistema}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}ETAPA 1: Planificación}{21}{subsection.2.2.1}%
+\contentsline {paragraph}{Diseño de la arquitectura del sistema}{21}{subsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}Arquitectura de la Plataforma}{23}{subsubsection.2.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.2.1.2}Arquitectura de la base de datos}{26}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Roles, permisos y seguridad (JWT, RBAC)}{29}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Roles, permisos y seguridad (JWT, RBAC)}{30}{subsubsection.2.2.1.3}%
 \contentsline {subsection}{\numberline {2.2.2}ETAPA 2: Desarrollo}{31}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}Desarrollo de la Plataforma SaaS}{31}{subsubsection.2.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2.2}Desarrollo del frontend móvil (React Native + Expo)}{32}{subsubsection.2.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.3}Desarrollo del frontend panel web (Next.js + Tailwind CSS)}{33}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Desarrollo del backend (NestJS, capas, módulos)}{34}{subsubsection.2.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{41}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{41}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Desarrollo del backend (NestJS, capas, módulos)}{35}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{42}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{42}{subsubsection.2.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.2.3.2}Implementación y validación piloto}{42}{subsubsection.2.2.3.2}%
-\contentsline {subsection}{\numberline {2.2.4}ETAPA 4: Resultados del software}{44}{subsection.2.2.4}%
-\contentsline {chapter}{\numberline {3}Resultados}{45}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{45}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{45}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{45}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Adopción e impacto operativo}{46}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Costo estimado y financiamiento}{46}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Cronograma de actividades}{47}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Discusión}{48}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{48}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{49}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Diagnóstico de digitalización y brecha tecnológica (Objetivo Específico 1)}{49}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Arquitectura, diseño y desarrollo multiplataforma (Objetivos Específicos 2 y 3)}{50}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Módulos operativos y panel analítico (Objetivo Específico 4)}{50}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Chatbot RAG y atención al cliente (Objetivo Específico 5)}{50}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Usabilidad y aceptación del sistema (Objetivo Específico 6)}{51}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{51}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{53}{chapter.5}%
-\contentsline {chapter}{Referencias bibliográficas}{55}{chapter*.28}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{56}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {2.2.4}ETAPA 4: Resultados del software}{45}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Resultados}{46}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{46}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{46}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{46}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{47}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Adopción e impacto operativo}{47}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Costo estimado y financiamiento}{47}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Cronograma de actividades}{48}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Discusión}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{50}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Diagnóstico de digitalización y brecha tecnológica (Objetivo Específico 1)}{50}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura, diseño y desarrollo multiplataforma (Objetivos Específicos 2 y 3)}{51}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Módulos operativos y panel analítico (Objetivo Específico 4)}{51}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Chatbot RAG y atención al cliente (Objetivo Específico 5)}{52}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Usabilidad y aceptación del sistema (Objetivo Específico 6)}{52}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{52}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{54}{chapter.5}%
+\contentsline {chapter}{Referencias bibliográficas}{57}{chapter*.28}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{58}{appendix.Alph1}%

@@ -97,7 +97,7 @@ En la siguiente tabla se muestran las técnicas e instrumentos utilizados, defin
 \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
 \midrule
 \endhead
-Entrevista & Guía de entrevista semiestructurada & Profundizar en los procesos operativos, necesidades específicas y expectativas para el levantamiento de requisitos. & Preguntas abiertas organizadas por áreas (pedidos, inventario, delivery). Grabada y transcrita. & Fase 1: Diagnóstico (línea base). & Propietarios de las PYMES. \\
+Entrevista & Guía de entrevista semiestructurada & Profundizar en procesos operativos, necesidades y expectativas; obtener requisitos funcionales y no funcionales y objetivos (general y específicos) mediante entrevistas con dueños de las PYMES. & Preguntas abiertas por áreas (pedidos, inventario, delivery). Grabada y transcrita. & Fase 1: Diagnóstico (línea base). & Dueños de las PYMES. \\
 Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma implementada. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Validación (post-intervención). & Usuarios finales de la plataforma (administradores, cajeros, repartidores). \\
 Observación estructurada & Ficha de observación de indicadores operativos & Registrar datos cuantitativos objetivos sobre tiempos, errores y volúmenes de los procesos clave. & Diseñada para registrar: tiempos (min), conteo de errores, volumen de pedidos y cancelaciones. & En dos momentos: pre-intervención (línea base) y post-intervención (semana 3). & Procesos operativos de las PYMES piloto (Local A y B). \\
 Revisión documental & Checklist de despliegue y registros administrativos & Verificar la correcta implementación técnica y recopilar datos productivos generados por el sistema. & Lista de verificación para servicios en la nube. Explotación de logs y reportes generados por la propia plataforma. & Fase 6: Validación (post-intervención). & Plataforma SaaS desplegada y sus registros automatizados. \\
@@ -160,8 +160,8 @@ Una vez establecidas las herramientas tecnológicas, se definió y estructuró u
 \end{figure}
 Los componentes principales de la plataforma son:
 \begin{itemize}
-  \item Aplicación móvil para clientes y repartidores.
-  \item Aplicación web para el panel de administración.
+  \item Aplicación móvil para clientes, repartidores y vista de cocina (aceptar o rechazar pedidos, notificar cuando esté listo para que el repartidor recoja, integrado al flujo de órdenes).
+  \item Aplicación web principalmente para administración, con posibilidad de iniciar sesión como cliente para realizar compras desde la web.
   \item Servicios backends con sus respectivas APIs.
 \end{itemize}
 Para tener un mejor detalle de cada componente, se presenta a continuación la arquitectura de la aplicación móvil, la arquitectura de la aplicación web y el diagrama de la base de datos.
@@ -213,7 +213,7 @@ Negocio: Representa cada empresa dentro de la plataforma (tenant). Incluye id, n
 
 Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
 
-Entidades de soporte: según el alcance, pueden añadirse Pago, Direcciones o Notificaciones.
+Entidades de soporte: según el alcance, pueden añadirse Pago (efectivo y transferencia únicamente; sin pasarela de pagos), Direcciones o Notificaciones.
 
 Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de categorías por negocio). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
 
@@ -279,24 +279,22 @@ Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes y
 
 React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de  vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sen sores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
 
-La aplicación ofrece flujos diferenciados para dos roles: Cliente y Repartidor, además de pantallas de inicio de sesión y registro. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros. Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
+La aplicación ofrece flujos diferenciados para tres perfiles: Cliente, Repartidor y Cocina, además de pantallas de inicio de sesión y registro. Se incorporó un módulo o vista de \textit{cocina} en la aplicación móvil que permite aceptar o rechazar pedidos y notificar cuando el pedido está listo para que el repartidor recoja, conectado al flujo de solicitud de órdenes. Así, cuando un cliente realiza un pedido, la cocina puede visualizarlo, aceptarlo o rechazarlo, y al marcarlo como listo el repartidor puede ir a recogerlo para la entrega. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros. Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
-\caption{Flujo principal del frontend móvil para cliente y repartidor}
+\caption{Flujo principal del frontend móvil para cliente, repartidor y cocina}
 \label{fig:frontend-prototipo}
 \end{figure}
 
 La arquitectura del frontend móvil privilegia la simplicidad y la previsibilidad del estado. Se emplea estado local y patrones de elevación de estado donde corresponde, con manejo de formularios controlados y validación básica en cliente (tipos de entrada, obligatoriedad, formatos). La comunicación con la API se realiza mediante solicitudes HTTP que envían y reciben JSON; se contemplan casos de error (credenciales inválidas, falta de conectividad, respuestas 4xx/5xx) con mensajes claros al usuario y estrategias de reintento cuando es pertinente. La interfaz se diseñó con principios de consistencia visual y accesibilidad, cuidando contrastes, tamaños de toque y retroalimentación tras acciones. Para el diseño visual se empleó Tamagui, biblioteca de UI y sistema de estilos compatible con React Native y React web, que provee componentes y temas para construir interfaces coherentes y responsivas (Tamagui, s.f.). En el proyecto se estilizaron botones, tarjetas y formularios con componentes Tamagui, logran do consistencia y mantenibilidad. Su enfoque multiplataforma facilita la reutilización futura de componentes en una versión web, así como la personalización temática por negocio.
 
 \subsubsection{Desarrollo del frontend panel web (Next.js + Tailwind CSS)}
-Objetivo del panel web: proveer herramientas administrativas para gestionar catálogo, pedidos y
-repartidores, con formularios validados, vistas responsivas y flujos CRUD claros.
 
-Se desarrolló además un panel web administrativo con React y Next.js. Aunque el panel es
-interno, se aprovechó el renderizado del lado del servidor (SSR) en vistas específicas de dashboard
-cuando resultó conveniente.
+Objetivo del panel web: proveer principalmente herramientas de administración para gestionar catálogo, pedidos y repartidores, con formularios validados, vistas responsivas y flujos CRUD claros; además, se permite iniciar sesión como cliente para realizar compras desde la web.
+
+Se desarrolló un sitio web con React y Next.js cuya función principal es la administración del negocio (panel administrativo). También se implementó la posibilidad de que los clientes inicien sesión desde la web para realizar pedidos desde el navegador, complementando la opción de la aplicación móvil. Se aprovechó el renderizado del lado del servidor (SSR) en vistas específicas de dashboard cuando resultó conveniente.
 
 El estilado se realizó con Tailwind CSS, framework utility-first que permite componer diseños
 rápidos y consistentes mediante clases utilitarias (Tailwind CSS, s.f.). Su configuración admite alta
@@ -445,7 +443,7 @@ segmentar datos por empresa.
 Usuarios, Productos, Categorías y Pedidos: en enfoque multinegocio, estas entidades incluyen
 una referencia al negocio propietario para filtrar datos por empresa y mantener segregación lógica.
 
-Entidades de soporte: según el alcance, pueden añadirse Pago, Direcciones o Notificaciones.
+Entidades de soporte: según el alcance, pueden añadirse Pago (efectivo y transferencia únicamente; sin pasarela de pagos), Direcciones o Notificaciones.
 
 Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo,
 estado y fecha en pedidos, nombre en productos) para optimizar consultas, y restricciones de
@@ -537,7 +535,7 @@ Módulo de Repartidores: Proceso de registro, aprobación administrativa y asign
 
 Dashboard Analítico: Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
 
-Chatbot RAG: Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma para su posterior despliegue como API.
+Chatbot RAG por WhatsApp: Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma, desplegado como canal de atención a través de WhatsApp (WhatsApp Business Cloud).
 
 Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 
@@ -581,7 +579,7 @@ N.º & Tarea & Rol & Criterio de éxito \\
 3 & Agregar producto al catálogo & Administrador & Completar sin errores \\
 4 & Asignar pedido a repartidor & Administrador & Completar en < 1 min \\
 5 & Marcar pedido como entregado & Repartidor & Completar sin ayuda \\
-6 & Realizar consulta al chatbot & Cliente & Obtener respuesta pertinente \\
+6 & Realizar consulta al chatbot por WhatsApp & Cliente & Obtener respuesta pertinente \\
 \hline
 \end{tabular}
 \end{table}
