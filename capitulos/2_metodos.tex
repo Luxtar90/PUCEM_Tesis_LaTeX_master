@@ -25,7 +25,11 @@ Se excluyeron establecimientos con operación irregular o que ya utilizaban sist
 
 \clearpage
 \subsubsection{Operacionalización de variables}
-\begin{longtable}{p{3.0cm}p{4.6cm}p{4.0cm}p{2.8cm}}
+\begingroup
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.8cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{3.2cm}}
 \caption{\textit{Operacionalización de variables e indicadores de medición}} \\
 \toprule
 \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
@@ -42,6 +46,7 @@ Estabilidad del sistema & Confiabilidad y continuidad del sistema durante las pr
 Usabilidad del sistema & Grado de facilidad, eficiencia y satisfacción con que los usuarios pueden emplear la plataforma. & Cuestionario estandarizado System Usability Scale (SUS). & Puntaje promedio $\geq$ 68 (umbral de aceptabilidad en la escala SUS). \\
 \bottomrule
 \end{longtable}
+\endgroup
 Nota: Los umbrales de éxito para las métricas de desempeño se establecieron con base en estándares razonables de calidad para un sistema en fase de validación técnica, considerando la factibilidad de ejecución en escenarios de prueba controlados. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
 
 \subsection{Metodología}
@@ -77,7 +82,11 @@ La implementación ágil se estructuró en iteraciones cortas (sprints) con obje
 
 En la siguiente tabla se muestran las técnicas e instrumentos utilizados, definiendo el momento de la aplicación y el público objetivo.
 
-\begin{longtable}{p{2.1cm}p{2.4cm}p{2.9cm}p{3.1cm}p{2.3cm}p{2.3cm}}
+\begingroup
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.5cm}}
 \caption{\textit{Técnicas e instrumentos de recolección de datos}} \\
 \toprule
 \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
@@ -93,6 +102,7 @@ Observación estructurada & Ficha de observación de tareas guiadas & Registrar 
 Revisión documental & Checklist de despliegue y logs del sistema & Verificar el correcto despliegue técnico en staging y analizar logs de pruebas. & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en staging y sus registros de prueba. \\
 \bottomrule
 \end{longtable}
+\endgroup
 
 \subsection{Consideraciones éticas}
 
@@ -117,7 +127,11 @@ Este flujo garantizó una transición estructurada desde la conceptualización t
 \paragraph{Diseño de la arquitectura del sistema}
 \textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). Las decisiones clave se resumen en la Tabla 2.
 
-\begin{longtable}{p{2.6cm}p{3.1cm}p{3.2cm}p{4.6cm}}
+\begingroup
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{5.2cm}}
 \caption{\textit{Selección tecnológica para la arquitectura de la plataforma SaaS}} \\
 \toprule
 \textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
@@ -137,6 +151,7 @@ Despliegue backend/DB & VPS (Hetzner) & AWS/Azure (cloud), Railway, Render & Cos
 Despliegue panel web & Vercel & Netlify, GitHub Pages & Integración nativa con Next.js, despliegue automático por Git, CDN global y SSL gratuito, minimizando tareas de DevOps. \\
 \bottomrule
 \end{longtable}
+\endgroup
 
 \subsubsection{Arquitectura de la Plataforma}
 
