@@ -54,36 +54,47 @@
       \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
       \endverb
     \endentry
-    \entry{campusmvp_expo}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
-           family={{campusMVP}},
-           familyi={c\bibinitperiod}}}%
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \field{sortinit}{c}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{React Native y Expo: qué son y cómo se relacionan}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-      \verb{url}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
       \endverb
     \endentry
     \entry{Castells2010}{book}{}{}
@@ -117,20 +128,38 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{creapolis_nestjs_2025}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44c3e2aa75010dca4fe33d9c4ae07777}{%
-           family={{Creapolis}},
-           familyi={C\bibinitperiod}}}%
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{bibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorbibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authornamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -138,280 +167,249 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Guía Completa de NestJS para Principiantes}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
       \verb{urlraw}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
       \verb{url}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
-    \entry{dragosb_lo_mejor_nestjs}{online}{}{}
+    \entry{DuranMero2024}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=30b9a4598a9c9142cd89be376d1ace28}{%
-           family={Dragos},
-           familyi={D\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{bibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorbibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authornamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Lo Mejor de NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-      \verb{url}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
     \endentry
-    \entry{hetzner_cloud}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f63742ead3b9c76908ede3f185e67b}{%
-           family={{Hetzner}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{bibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorbibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authornamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Secure VPS hosting made in Germany}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-      \verb{url}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-    \endentry
-    \entry{logto_rbac_docs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
-           family={{Logto}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Control de acceso basado en roles (RBAC)}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-      \verb{url}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-    \endentry
-    \entry{scalzotto_multitenancy_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=914752966e56d1e03ecf43f32971e69d}{%
-           family={Scalzotto},
-           familyi={S\bibinitperiod},
-           given={Luca},
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \strng{bibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorbibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authornamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schema-based multitenancy in NestJS with TypeORM}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-      \verb{url}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
-    \entry{stackoverflow_roleguards}{online}{}{}
+    \entry{INEC2023}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
-           family={{Stack Overflow}},
-           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
       }
-      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{How to add multiple NestJS RoleGuards in controllers}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
       \field{urlday}{8}
       \field{urlmonth}{1}
       \field{urlyear}{2026}
+      \field{year}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
+      \verb https://www.ecuadorencifras.gob.ec/
       \endverb
       \verb{url}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
+      \verb https://www.ecuadorencifras.gob.ec/
       \endverb
     \endentry
-    \entry{tailwind_es}{online}{}{}
+    \entry{MintelTransformation2022}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
-           family={{Tailwind CSS}},
-           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
       }
-      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Tailwind CSS en Español — Construye rápidamente sitios web modernos sin salir de tu HTML}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
       \verb{urlraw}
-      \verb https://tailwindcss-es.com/
+      \verb https://www.arcotel.gob.ec/
       \endverb
       \verb{url}
-      \verb https://tailwindcss-es.com/
+      \verb https://www.arcotel.gob.ec/
       \endverb
     \endentry
-    \entry{tamagui_github}{online}{}{}
+    \entry{MovistarEmpresas2024}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
-           family={{Tamagui}},
-           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
       }
-      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{tamagui/tamagui: Style React fast with 100\% parity on web and native}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
       \verb{urlraw}
-      \verb https://github.com/tamagui/tamagui
+      \verb https://www.movistar.com.ec/
       \endverb
       \verb{url}
-      \verb https://github.com/tamagui/tamagui
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist
@@ -451,36 +449,47 @@
       \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
       \endverb
     \endentry
-    \entry{campusmvp_expo}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
-           family={{campusMVP}},
-           familyi={c\bibinitperiod}}}%
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \field{sortinit}{c}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{React Native y Expo: qué son y cómo se relacionan}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-      \verb{url}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
       \endverb
     \endentry
     \entry{Castells2010}{book}{}{}
@@ -514,20 +523,38 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{creapolis_nestjs_2025}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44c3e2aa75010dca4fe33d9c4ae07777}{%
-           family={{Creapolis}},
-           familyi={C\bibinitperiod}}}%
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{bibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorbibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authornamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -535,280 +562,249 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Guía Completa de NestJS para Principiantes}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
       \verb{urlraw}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
       \verb{url}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
-    \entry{dragosb_lo_mejor_nestjs}{online}{}{}
+    \entry{DuranMero2024}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=30b9a4598a9c9142cd89be376d1ace28}{%
-           family={Dragos},
-           familyi={D\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{bibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorbibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authornamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Lo Mejor de NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-      \verb{url}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
     \endentry
-    \entry{hetzner_cloud}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f63742ead3b9c76908ede3f185e67b}{%
-           family={{Hetzner}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{bibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorbibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authornamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Secure VPS hosting made in Germany}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-      \verb{url}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-    \endentry
-    \entry{logto_rbac_docs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
-           family={{Logto}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Control de acceso basado en roles (RBAC)}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-      \verb{url}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-    \endentry
-    \entry{scalzotto_multitenancy_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=914752966e56d1e03ecf43f32971e69d}{%
-           family={Scalzotto},
-           familyi={S\bibinitperiod},
-           given={Luca},
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \strng{bibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorbibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authornamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schema-based multitenancy in NestJS with TypeORM}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-      \verb{url}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
-    \entry{stackoverflow_roleguards}{online}{}{}
+    \entry{INEC2023}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
-           family={{Stack Overflow}},
-           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
       }
-      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{How to add multiple NestJS RoleGuards in controllers}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
       \field{urlday}{8}
       \field{urlmonth}{1}
       \field{urlyear}{2026}
+      \field{year}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
+      \verb https://www.ecuadorencifras.gob.ec/
       \endverb
       \verb{url}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
+      \verb https://www.ecuadorencifras.gob.ec/
       \endverb
     \endentry
-    \entry{tailwind_es}{online}{}{}
+    \entry{MintelTransformation2022}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
-           family={{Tailwind CSS}},
-           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
       }
-      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Tailwind CSS en Español — Construye rápidamente sitios web modernos sin salir de tu HTML}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
       \verb{urlraw}
-      \verb https://tailwindcss-es.com/
+      \verb https://www.arcotel.gob.ec/
       \endverb
       \verb{url}
-      \verb https://tailwindcss-es.com/
+      \verb https://www.arcotel.gob.ec/
       \endverb
     \endentry
-    \entry{tamagui_github}{online}{}{}
+    \entry{MovistarEmpresas2024}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
-           family={{Tamagui}},
-           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
       }
-      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{tamagui/tamagui: Style React fast with 100\% parity on web and native}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
       \verb{urlraw}
-      \verb https://github.com/tamagui/tamagui
+      \verb https://www.movistar.com.ec/
       \endverb
       \verb{url}
-      \verb https://github.com/tamagui/tamagui
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist

@@ -19,73 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
-    \entry{raguilera_jwt_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
-           family={Aguilera},
-           familyi={A\bibinitperiod},
-           given={Rafael},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Autenticación con JWT en NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
-      \endverb
-      \verb{url}
-      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
-      \endverb
-    \endentry
-    \entry{campusmvp_expo}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
-           family={{campusMVP}},
-           familyi={c\bibinitperiod}}}%
-      }
-      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \field{sortinit}{c}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{React Native y Expo: qué son y cómo se relacionan}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-      \verb{url}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -117,20 +50,38 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{creapolis_nestjs_2025}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44c3e2aa75010dca4fe33d9c4ae07777}{%
-           family={{Creapolis}},
-           familyi={C\bibinitperiod}}}%
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{bibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorbibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authornamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -138,351 +89,67 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Guía Completa de NestJS para Principiantes}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
       \verb{urlraw}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
       \verb{url}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
-    \entry{dragosb_lo_mejor_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=30b9a4598a9c9142cd89be376d1ace28}{%
-           family={Dragos},
-           familyi={D\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
            givenun=0}}%
-      }
-      \strng{namehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{bibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorbibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authornamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lo Mejor de NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-      \verb{url}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-    \endentry
-    \entry{hetzner_cloud}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f63742ead3b9c76908ede3f185e67b}{%
-           family={{Hetzner}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{bibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorbibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authornamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Secure VPS hosting made in Germany}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-      \verb{url}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-    \endentry
-    \entry{logto_rbac_docs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
-           family={{Logto}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Control de acceso basado en roles (RBAC)}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-      \verb{url}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-    \endentry
-    \entry{scalzotto_multitenancy_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=914752966e56d1e03ecf43f32971e69d}{%
-           family={Scalzotto},
-           familyi={S\bibinitperiod},
-           given={Luca},
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \strng{bibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorbibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authornamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schema-based multitenancy in NestJS with TypeORM}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-      \verb{url}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-    \endentry
-    \entry{stackoverflow_roleguards}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
-           family={{Stack Overflow}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{How to add multiple NestJS RoleGuards in controllers}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
-      \endverb
-      \verb{url}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
-      \endverb
-    \endentry
-    \entry{tailwind_es}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
-           family={{Tailwind CSS}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Tailwind CSS en Español — Construye rápidamente sitios web modernos sin salir de tu HTML}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://tailwindcss-es.com/
-      \endverb
-      \verb{url}
-      \verb https://tailwindcss-es.com/
-      \endverb
-    \endentry
-    \entry{tamagui_github}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
-           family={{Tamagui}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{tamagui/tamagui: Style React fast with 100\% parity on web and native}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://github.com/tamagui/tamagui
-      \endverb
-      \verb{url}
-      \verb https://github.com/tamagui/tamagui
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{raguilera_jwt_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
-           family={Aguilera},
-           familyi={A\bibinitperiod},
-           given={Rafael},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Autenticación con JWT en NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
-      \endverb
-      \verb{url}
-      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
-      \endverb
-    \endentry
-    \entry{campusmvp_expo}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
-           family={{campusMVP}},
-           familyi={c\bibinitperiod}}}%
-      }
-      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
-      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
-      \field{sortinit}{c}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{React Native y Expo: qué son y cómo se relacionan}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-      \verb{url}
-      \verb https://www.campusmvp.es/recursos/post/react-native-y-expo-que-son-y-como-se-relacionan.aspx?srsltid=AfmBOorkF2Zo1-I6xJIfobDhv5fXcELztjLffqit5GeqyjC2fYSZ55SX
-      \endverb
-    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -514,20 +181,38 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{creapolis_nestjs_2025}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44c3e2aa75010dca4fe33d9c4ae07777}{%
-           family={{Creapolis}},
-           familyi={C\bibinitperiod}}}%
+    \entry{jose_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiurui},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+           family={Niforatos},
+           familyi={N\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+           family={Kortuem},
+           familyi={K\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{fullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{bibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorbibnamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authornamehash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhash}{44c3e2aa75010dca4fe33d9c4ae07777}
-      \strng{authorfullhashraw}{44c3e2aa75010dca4fe33d9c4ae07777}
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
+      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -535,280 +220,63 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Guía Completa de NestJS para Principiantes}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
+      \field{isbn}{9798400715822}
+      \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
+      \field{series}{MuC '25}
+      \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
+      \field{pages}{494\bibrangedash 502}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3743049.3748567
+      \endverb
       \verb{urlraw}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
       \verb{url}
-      \verb https://creapolis.dev/guia-completa-de-guia-completa-de-nestjs-para-desa/
+      \verb https://doi.org/10.1145/3743049.3748567
       \endverb
+      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
-    \entry{dragosb_lo_mejor_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=30b9a4598a9c9142cd89be376d1ace28}{%
-           family={Dragos},
-           familyi={D\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
+    \entry{GonzalezMartinez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
            givenun=0}}%
-      }
-      \strng{namehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{fullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{bibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorbibnamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authornamehash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhash}{30b9a4598a9c9142cd89be376d1ace28}
-      \strng{authorfullhashraw}{30b9a4598a9c9142cd89be376d1ace28}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lo Mejor de NestJS}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-      \verb{url}
-      \verb https://dev.to/dragosb/lo-mejor-de-nestjs-5160
-      \endverb
-    \endentry
-    \entry{hetzner_cloud}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f63742ead3b9c76908ede3f185e67b}{%
-           family={{Hetzner}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{fullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{bibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorbibnamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authornamehash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhash}{77f63742ead3b9c76908ede3f185e67b}
-      \strng{authorfullhashraw}{77f63742ead3b9c76908ede3f185e67b}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Secure VPS hosting made in Germany}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-      \verb{url}
-      \verb https://www.hetzner.com/cloud-made-in-germany
-      \endverb
-    \endentry
-    \entry{logto_rbac_docs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
-           family={{Logto}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Control de acceso basado en roles (RBAC)}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-      \verb{url}
-      \verb https://docs.logto.io/es/authorization/role-based-access-control
-      \endverb
-    \endentry
-    \entry{q2bstudio_nestjs_modulos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c5c993f1a0fc4245810e898f1da86510}{%
-           family={{Q2B Studio}},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{fullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{bibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorbibnamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authornamehash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhash}{c5c993f1a0fc4245810e898f1da86510}
-      \strng{authorfullhashraw}{c5c993f1a0fc4245810e898f1da86510}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NestJS Semana 2: módulos, controladores y proveedores}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-      \verb{url}
-      \verb https://www.q2bstudio.com/nuestro-blog/14399/nestjs-semana-2-modulos-controladores-y-proveedores
-      \endverb
-    \endentry
-    \entry{scalzotto_multitenancy_nestjs}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=914752966e56d1e03ecf43f32971e69d}{%
-           family={Scalzotto},
-           familyi={S\bibinitperiod},
-           given={Luca},
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{fullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \strng{bibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorbibnamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authornamehash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhash}{914752966e56d1e03ecf43f32971e69d}
-      \strng{authorfullhashraw}{914752966e56d1e03ecf43f32971e69d}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{fullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{bibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorbibnamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authornamehash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhash}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \strng{authorfullhashraw}{2ce835f9d3a055f0c8f79af7b1fb724a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schema-based multitenancy in NestJS with TypeORM}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-      \verb{url}
-      \verb https://www.scalzotto.nl/posts/nestjs-typeorm-schema-multitenancy/
-      \endverb
-    \endentry
-    \entry{stackoverflow_roleguards}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
-           family={{Stack Overflow}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
-      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{How to add multiple NestJS RoleGuards in controllers}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
-      \endverb
-      \verb{url}
-      \verb https://stackoverflow.com/questions/61835295/how-to-add-multiple-nestjs-roleguards-in-controllers
-      \endverb
-    \endentry
-    \entry{tailwind_es}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
-           family={{Tailwind CSS}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
-      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Tailwind CSS en Español — Construye rápidamente sitios web modernos sin salir de tu HTML}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://tailwindcss-es.com/
-      \endverb
-      \verb{url}
-      \verb https://tailwindcss-es.com/
-      \endverb
-    \endentry
-    \entry{tamagui_github}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
-           family={{Tamagui}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
-      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{tamagui/tamagui: Style React fast with 100\% parity on web and native}
-      \field{urlday}{8}
-      \field{urlmonth}{1}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://github.com/tamagui/tamagui
-      \endverb
-      \verb{url}
-      \verb https://github.com/tamagui/tamagui
+      \field{journaltitle}{Revista Latinoamericana de Educación}
+      \field{number}{2}
+      \field{title}{Educación virtual y equidad digital en América Latina}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
   \enddatalist

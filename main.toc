@@ -1,73 +1,104 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{Certificación del Tutor}{1}{section*.1}%
-\contentsline {chapter}{Acta de aprobación del Tribunal}{1}{section*.2}%
-\contentsline {chapter}{Declaración de Originalidad}{1}{section*.3}%
-\contentsline {chapter}{Declaración de Derecho del Autor}{1}{section*.4}%
-\contentsline {chapter}{Dedicatoria}{1}{section*.5}%
-\contentsline {chapter}{Agradecimientos}{1}{section*.6}%
-\contentsline {chapter}{Resumen}{1}{section*.7}%
-\contentsline {chapter}{Abstract}{1}{section*.7}%
-\contentsline {chapter}{Lista de Apéndices}{7}{chapter*.12}%
-\contentsline {chapter}{\numberline {1}Introducción}{8}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Contexto y Relevancia}{8}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Gastronomía como motor cultural y económico}{8}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Estructura empresarial en Portoviejo}{8}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Problemática y Desafíos}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Baja adopción de tecnologías digitales}{9}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Factores agravantes}{9}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Brecha y Necesidades}{9}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Propuesta de Solución}{10}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Método}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Operacionalización de variables y criterios}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Diseño de la investigación}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Enfoque y alcance}{12}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Triangulación y validez}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Proceso ágil y sprints}{13}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Definiciones operativas y criterios}{13}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Población y muestra}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Población}{13}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Muestra}{13}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Criterios de inclusión y exclusión}{14}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Técnicas e instrumentos de recolección de datos}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Técnicas aplicadas}{14}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Instrumentos}{14}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Diseño de instrumentos}{15}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Encuestas}{15}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Entrevistas}{15}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Pruebas de usabilidad}{15}{subsection.2.4.6}%
-\contentsline {subsection}{\numberline {2.4.7}Piloto y SUS}{15}{subsection.2.4.7}%
-\contentsline {subsection}{\numberline {2.4.8}Gestión y organización de datos}{16}{subsection.2.4.8}%
-\contentsline {section}{\numberline {2.5}Procedimiento}{16}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Diseño y Desarrollo de una Plataforma de Pedidos y Entregas Multinegocio}{16}{subsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.1}Diseño y desarrollo del frontend (React Native + Expo)}{16}{subsubsection.2.5.1.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.2}Diseño y desarrollo del panel web (Next.js + Tailwind CSS)}{18}{subsubsection.2.5.1.2}%
-\contentsline {subsubsection}{\numberline {2.5.1.3}Diseño y desarrollo del backend (NestJS, capas, módulos)}{19}{subsubsection.2.5.1.3}%
-\contentsline {subsubsection}{\numberline {2.5.1.4}Diseño de la base de datos (modelo relacional, multinegocio)}{24}{subsubsection.2.5.1.4}%
-\contentsline {subsubsection}{\numberline {2.5.1.5}Roles, permisos y seguridad (JWT, RBAC)}{27}{subsubsection.2.5.1.5}%
-\contentsline {subsubsection}{\numberline {2.5.1.6}Flujo funcional (proceso de pedido de punta a punta)}{32}{subsubsection.2.5.1.6}%
-\contentsline {subsubsection}{\numberline {2.5.1.7}Estado actual del desarrollo}{34}{subsubsection.2.5.1.7}%
-\contentsline {subsubsection}{\numberline {2.5.1.8}Resumen del procedimiento}{36}{subsubsection.2.5.1.8}%
-\contentsline {subsubsection}{\numberline {2.5.1.9}Características pendientes y futuras}{36}{subsubsection.2.5.1.9}%
-\contentsline {section}{\numberline {2.6}Análisis de datos}{38}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Consideraciones éticas}{38}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Resultados}{40}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Resultados Esperados}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Costo Estimado y Financiamiento}{41}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Cronograma de Actividades}{41}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Presentación de Resultados}{43}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Discusión}{44}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Digitalización actual}{44}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Diseño y desarrollo multiplataforma}{44}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Gestión de repartidores y delivery}{45}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Panel administrativo y analítica}{45}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Chatbot con inteligencia artificial (RAG)}{45}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Usabilidad y aceptación del sistema}{46}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Síntesis}{46}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Principales}{48}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Importancia de la transformación digital}{48}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Viabilidad de la plataforma SaaS}{48}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Recomendaciones y Trabajo Futuro}{49}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Alianzas y participación de actores}{49}{subsection.5.2.1}%
-\contentsline {chapter}{Referencias bibliográficas}{51}{chapter*.23}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{52}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Contexto del sector gastronómico en Portoviejo}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Composición empresarial y digitalización en Ecuador}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Barreras para la digitalización de PYMES}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Políticas nacionales de transformación digital}{3}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Plataformas SaaS y digitalización en el sector gastronómico}{4}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Justificación de una solución SaaS para PYMES gastronómicas}{4}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Definición del problema}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Preguntas de investigación}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Pregunta principal}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Preguntas específicas}{7}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Objetivos}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Objetivo general}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Objetivos específicos}{8}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Alcance}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Flujo general de la plataforma}{10}{subsection.1.5.1}%
+\contentsline {chapter}{\numberline {2}Método}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Diseño de la Investigación}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Enfoque y tipo}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Población y Muestra}{13}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Población}{13}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Muestra y criterios de selección}{13}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Operacionalización de variables e indicadores}{13}{subsubsection.2.1.2.3}%
+\contentsline {subsection}{\numberline {2.1.3}Metodología}{16}{subsection.2.1.3}%
+\contentsline {paragraph}{Proceso ágil y sprints}{17}{figure.caption.12}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Técnicas e instrumentos de recolección de datos}{17}{subsubsection.2.1.3.1}%
+\contentsline {subsection}{\numberline {2.1.4}Consideraciones éticas}{20}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Procedimiento}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ETAPA 1: Planificación}{21}{subsection.2.2.1}%
+\contentsline {paragraph}{Diseño de la arquitectura del sistema}{21}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Arquitectura de la Plataforma}{23}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Arquitectura de la aplicación móvil}{24}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Arquitectura de la aplicación web}{24}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}Arquitectura del backend}{24}{subsubsection.2.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.2.1.5}Arquitectura de la base de datos}{27}{subsubsection.2.2.1.5}%
+\contentsline {paragraph}{Implementación con TypeORM}{29}{subsubsection.2.2.1.5}%
+\contentsline {paragraph}{Integridad referencial y reglas de negocio}{30}{subsubsection.2.2.1.5}%
+\contentsline {paragraph}{Estrategia de escalabilidad}{30}{subsubsection.2.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.2.1.6}Roles, permisos y seguridad (JWT, RBAC)}{31}{subsubsection.2.2.1.6}%
+\contentsline {subsection}{\numberline {2.2.2}ETAPA 2: Desarrollo}{32}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Desarrollo de la Plataforma SaaS}{32}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Desarrollo del frontend móvil (React Native + Expo)}{33}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Desarrollo del frontend panel web (Next.js + Tailwind CSS)}{35}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Desarrollo del backend (NestJS, capas, módulos)}{36}{subsubsection.2.2.2.4}%
+\contentsline {paragraph}{Configuración de seguridad y despliegue (Etapa 3)}{40}{subsubsection.2.2.2.4}%
+\contentsline {paragraph}{Módulo de Pedidos}{41}{subsubsection.2.2.2.4}%
+\contentsline {paragraph}{Módulo de Inventario:}{41}{figure.caption.21}%
+\contentsline {paragraph}{Módulo de Repartidores:}{43}{figure.caption.22}%
+\contentsline {paragraph}{Dashboard Analítico:}{43}{figure.caption.23}%
+\contentsline {paragraph}{Chatbot RAG por WhatsApp}{43}{figure.caption.23}%
+\contentsline {paragraph}{Clasificación de la solución como SaaS y alcance del piloto}{44}{figure.caption.23}%
+\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{44}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{44}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Despliegue en staging y validación técnica}{45}{subsubsection.2.2.3.2}%
+\contentsline {chapter}{\numberline {3}Resultados}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{48}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Caracterización de la PYME piloto}{48}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Estado de digitalización previo}{48}{subsection.3.2.2}%
+\contentsline {paragraph}{Gestión de pedidos}{49}{table.caption.25}%
+\contentsline {paragraph}{Comunicación con cocina, repartidores, inventario y atención}{49}{table.caption.25}%
+\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{50}{subsection.3.3.1}%
+\contentsline {paragraph}{Resultados por rol de usuario}{51}{table.caption.26}%
+\contentsline {paragraph}{Desempeño en tareas representativas}{51}{table.caption.26}%
+\contentsline {paragraph}{Errores y dificultades identificadas}{51}{table.caption.27}%
+\contentsline {subsection}{\numberline {3.3.2}Desempeño del sistema en escenarios de prueba}{53}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Resultados técnicos del software}{54}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Pruebas unitarias y de integración}{54}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Métricas de disponibilidad y rendimiento}{54}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Validación de funcionalidades}{55}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Problemas identificados y soluciones}{56}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Discusión}{58}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{59}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{60}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Identificación y documentación de requisitos (Objetivo Específico 1)}{60}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Diseño de arquitectura técnica de la plataforma (Objetivo Específico 2)}{60}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Desarrollo de módulos funcionales principales (Objetivo Específico 3)}{61}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Implementación e integración del chatbot RAG por WhatsApp (Objetivo Específico 4)}{61}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Verificación del cumplimiento de requisitos funcionales (Objetivo Específico 5)}{62}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Evaluación de usabilidad con escala SUS (Objetivo Específico 6)}{62}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{62}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{65}{chapter.5}%
+\contentsline {paragraph}{Objetivo general}{65}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 1 (Requisitos)}{65}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 2 (Arquitectura)}{65}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 3 (Módulos)}{66}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 4 (Chatbot RAG)}{66}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 5 (Verificación)}{66}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 6 (Usabilidad)}{66}{chapter.5}%
+\contentsline {chapter}{Referencias bibliográficas}{70}{chapter*.30}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{71}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Apéndice B}{72}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Apéndice C}{73}{appendix.Alph3}%
+\contentsline {chapter}{\numberline {D}Apéndice D}{75}{appendix.Alph4}%
+\contentsline {chapter}{\numberline {E}Apéndice E}{76}{appendix.Alph5}%
+\contentsline {chapter}{\numberline {F}Apéndice F}{77}{appendix.Alph6}%
+\contentsline {chapter}{\numberline {G}Apéndice G}{79}{appendix.Alph7}%
+\contentsline {chapter}{\numberline {H}Apéndice H}{81}{appendix.Alph8}%
+\contentsline {chapter}{\numberline {I}Apéndice I}{82}{appendix.Alph9}%
+\contentsline {chapter}{\numberline {J}Apéndice J}{83}{appendix.Alph10}%
+\contentsline {chapter}{\numberline {K}Apéndice K}{85}{appendix.Alph11}%

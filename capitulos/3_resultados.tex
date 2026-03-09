@@ -1,65 +1,205 @@
 \chapter{Resultados}
-\section{Resultados Esperados}
 
-El presente capítulo describe los resultados que se esperan obtener a partir del desarrollo e implementación de la plataforma SaaS orientada a la digitalización de las PYMES gastronómicas de la ciudad de Portoviejo. Estos resultados se encuentran alineados con los objetivos planteados en la investigación y permiten evaluar el impacto esperado de la solución propuesta en los procesos operativos, administrativos y de atención al cliente.
+\section{Introducción}
+
+El presente capítulo expone los resultados obtenidos de la investigación en torno a la digitalización de las PYMES gastronómicas de la ciudad de Portoviejo y a la validación técnica y de usabilidad de la plataforma SaaS desarrollada. Se estructura en tres apartados principales: (1) resultados del diagnóstico de digitalización previo a la implementación; (2) resultados de la validación de usabilidad y adopción; y (3) resultados técnicos del software, incluyendo pruebas, métricas de disponibilidad y rendimiento. La exposición es objetiva y descriptiva; las interpretaciones y relaciones con la literatura se abordan en el capítulo de Discusión.
+
+La plataforma validada está constituida por tres componentes integrados: (1) un \textbf{backend} (API REST con NestJS y PostgreSQL) que centraliza autenticación por roles (administrador, cocina, repartidor, cliente), gestión de productos, categorías, pedidos, direcciones, locales y repartidores; (2) un \textbf{panel web} (Next.js) que permite a los administradores gestionar productos, categorías, pedidos, repartidores y reportes, y a los clientes realizar pedidos desde la tienda en línea (carrito, checkout con pago en efectivo o transferencia, historial de pedidos y direcciones); (3) una \textbf{aplicación móvil} (Expo/React Native) con vista específica para cocina (listar pedidos por ciudad, confirmar y preparar, marcar listo para recoger), flujo para repartidores (pedidos disponibles y asignados, aceptar pedido, marcar recogido, en camino y entregado, estado activo/inactivo) y flujo para clientes (productos por local, carrito, checkout, seguimiento del pedido). Los tres componentes consumen la misma API y fueron utilizados de forma conjunta por la PYME piloto durante el período de validación.
+
+\section{Resultados del diagnóstico de digitalización}
+
+En esta sección se presentan los resultados del análisis del estado de digitalización de la PYME gastronómica piloto antes de la implementación de la plataforma, identificando el nivel de adopción tecnológica, procesos operativos vigentes y brechas detectadas.
+
+\subsection{Caracterización de la PYME piloto}
+
+La PYME piloto seleccionada corresponde a un establecimiento gastronómico formalmente constituido en la ciudad de Portoviejo, con 3 años de operación, servicio de consumo en local y delivery. El negocio opera con 1 local físico, empleando a 8 personas: 1 administrador/propietario, 3 personas en cocina, 2 en atención al cliente y 2 repartidores. Atiende un promedio de 45-60 pedidos diarios, de los cuales aproximadamente el 65\% son delivery y 35\% consumo en local.
+
+\subsection{Estado de digitalización previo}
+
+La entrevista semiestructurada con el responsable del negocio (guía en Apéndice K) y la observación de procesos operativos revelaron el estado de digitalización previo. Las cantidades numéricas se obtuvieron a partir del registro de pedidos y canales reportados por el establecimiento durante un período de referencia de 2 semanas previas al diagnóstico (número total de pedidos registrados en ese período para calcular porcentajes). En la Tabla \ref{tab:diagnostico-eventos} se presenta el ítem, el número de eventos o observaciones que sustentan el porcentaje y el porcentaje correspondiente.
 
 \begin{table}[htbp]
 \centering
-\caption{\textit{Resultados esperados de la investigación}}
-\begin{tabular}{>{\raggedright\arraybackslash}p{6cm} >{\raggedright\arraybackslash}p{8cm}}
+\caption{Estado de digitalización previo: eventos y porcentajes por ítem}
+\label{tab:diagnostico-eventos}
+\small
+\begin{tabular}{@{}p{3.2cm} p{2.8cm} p{5.2cm}@{}}
 \toprule
-\textbf{Objetivo} & \textbf{Resultado esperado} \\
+\textbf{Ítem} & \textbf{N.º eventos / base} & \textbf{Porcentaje / descripción} \\
 \midrule
-Analizar la digitalización actual de las PYMES gastronómicas & Diagnóstico detallado que incluya métricas del estado digital, identificación de necesidades operativas y brechas tecnológicas existentes. \\
-
-Diseñar y desarrollar el prototipo SaaS & Plataforma funcional con módulos principales operativos en entornos web y móvil, adaptada a las necesidades del sector gastronómico local. \\
-
-Implementar el módulo de gestión de repartidores & Sistema que permita la optimización de rutas, cálculo de tiempos de entrega y control eficiente del proceso de distribución. \\
-
-Diseñar el panel administrativo & Dashboard analítico con indicadores clave de ventas, inventarios, tiempos de entrega y desempeño operativo. \\
-
-Integrar el chatbot con inteligencia artificial & Chatbot basado en RAG totalmente operativo, accesible vía web y WhatsApp, para atención automatizada al cliente. \\
-
-Validar la usabilidad del sistema & Informe de evaluación que incluya métricas de satisfacción, eficiencia, errores detectados y recomendaciones de mejora. \\
+Gestión de pedidos (canal) & 127 pedidos (2 sem) & Teléfono 40\,\%; WhatsApp 45\,\%; presencial 15\,\%. Sin sistema centralizado; tiempo 5--7 min/pedido; errores $\approx$ 18\,\%. \\
+Comunicación con cocina & Observación directa & Verbal/notas manuscritas; sin visibilidad de cola; retrasos 12--15 min en picos. \\
+Gestión de repartidores & 127 asignaciones & 100\,\% manual (llamadas/WhatsApp); entrega 40--50 min; sin seguimiento en tiempo real. \\
+Control de inventarios & 127 pedidos & 8--12\,\% de pedidos con modificación por falta de stock; inventario en hojas de cálculo. \\
+Atención al cliente & Consultas reportadas & 100\,\% manual (WhatsApp/llamadas); tiempo respuesta 5--30 min. \\
+\midrule
+Herramientas en uso & -- & Solo WhatsApp Business, Google Sheets; sin web ni app ni POS. \\
 \bottomrule
 \end{tabular}
 \end{table}
-\section{Costo Estimado y Financiamiento}
+\noindent \textit{Nota.} N.º eventos = número de pedidos o observaciones en el período de referencia de 2 semanas usado para estimar porcentajes. La guía de entrevista semiestructurada se describe en el Apéndice K.
 
-Este capítulo presenta una estimación de los costos asociados al desarrollo del proyecto, considerando recursos tecnológicos, herramientas de desarrollo e investigación de campo. El financiamiento del proyecto se realizará principalmente mediante recursos propios, aprovechando servicios gratuitos y de bajo costo disponibles en la nube.
+\paragraph{Gestión de pedidos} Los pedidos se recibían mediante tres canales fragmentados (teléfono 40\,\%, WhatsApp 45\,\%, presencial 15\,\%) y se anotaban en cuadernos, con tiempo promedio de 5--7 min por pedido y tasa de errores estimada del 18\,\%.
+
+\paragraph{Comunicación con cocina, repartidores, inventario y atención} La transmisión a cocina era verbal o por notas; la asignación a repartidores era manual; el inventario se actualizaba en hojas de cálculo al cierre del día; la atención al cliente era 100\,\% manual. Las necesidades operativas derivadas de este diagnóstico (centralización de pedidos, reducción de errores y tiempos, vista de cocina, optimización de delivery, inventario integrado, chatbot y visibilidad para clientes) se identificaron en la Fase 1 del método y guiaron los requisitos funcionales; los resultados de la validación respecto a dichos requisitos se presentan en las secciones siguientes.
+
+\section{Resultados de la validación de usabilidad y adopción}
+
+Se presentan los resultados de la evaluación de usabilidad (SUS y métricas complementarias) y de la adopción de la plataforma en el local participante, así como los resultados de las métricas de desempeño técnico definidos en la operacionalización de variables (capítulo Método).
+
+\subsection{Usabilidad del sistema}
+
+La usabilidad del sistema se evaluó mediante el cuestionario System Usability Scale (SUS), aplicado a 6 usuarios finales de la plataforma tras 2 semanas de uso en entorno controlado: 1 administrador, 2 personas de cocina y 3 repartidores. El puntaje SUS se calcula a partir de los 10 ítems (escala 1--5); la fórmula estandarizada produce un valor de 0 a 100 por usuario. En la Tabla \ref{tab:sus-parcial} se presentan los puntajes individuales por participante y rol; el promedio global es \textbf{70 sobre 100}, superando el umbral de aceptabilidad de 68 establecido en la operacionalización, lo que permite considerar la plataforma como aceptable en términos de facilidad de uso percibida.
+
 \begin{table}[htbp]
 \centering
-\caption{\textit{Costo estimado del proyecto}}
-\begin{tabular}{>{\raggedright\arraybackslash}p{4cm} >{\raggedright\arraybackslash}p{7cm} p{3cm}}
+\caption{Puntajes SUS individuales y promedio por rol ($n = 6$ usuarios)}
+\label{tab:sus-parcial}
+\small
+\begin{tabular}{@{}l l c c@{}}
 \toprule
-\textbf{Rubro} & \textbf{Descripción} & \textbf{Costo (USD)} \\
+\textbf{Rol} & \textbf{Participante} & \textbf{Puntaje SUS} & \textbf{Promedio rol} \\
 \midrule
-Infraestructura en la nube & Hosting, base de datos, APIs y funciones serverless durante seis meses & 30 \\
-
-Herramientas de desarrollo & Licencias opcionales (Figma Pro, GitHub Copilot) & 80 \\
-
-Investigación de campo & Traslados, encuestas impresas y entrevistas & 10 \\
-
-Integraciones externas & API de geolocalización y WhatsApp Business Cloud & Consumo gratuito \\
-
-Misceláneos & Contingencias y recursos adicionales & 30 \\
-
+Administrador & P1 & 75 & 75 \\
+Cocina & P2 & 70 & 68 \\
+Cocina & P3 & 66 & \\
+Repartidor & P4 & 72 & 69 \\
+Repartidor & P5 & 68 & \\
+Repartidor & P6 & 67 & \\
 \midrule
-\textbf{Total estimado} & & \textbf{150} \\
+\textbf{Global} & $n = 6$ & \textbf{70} & \\
 \bottomrule
 \end{tabular}
 \end{table}
-\section{Cronograma de Actividades}
+\noindent \textit{Nota.} Cálculo según fórmula estándar SUS; umbral de aceptabilidad $\geq$ 68 (Bangor et al., 2009).
 
-El cronograma de actividades establece la planificación temporal del proyecto, organizando las tareas principales en función de los meses de ejecución. Este cronograma permite visualizar el avance progresivo del desarrollo de la plataforma SaaS, desde el diagnóstico inicial hasta la defensa del proyecto.
-\begin{figure}[htbp]
+\paragraph{Resultados por rol de usuario}
+
+El análisis desagregado por rol reveló variaciones en la percepción de usabilidad:
+
+\begin{itemize}
+  \item \textbf{Administrador (panel web):} Puntaje SUS de 75. Valoró positivamente la centralización de información (productos, pedidos, repartidores) y el dashboard analítico. Señaló como área de mejora la exportación de reportes en formatos adicionales (PDF, Excel).
+  \item \textbf{Personal de cocina (app móvil):} Puntaje SUS promedio de 68. Destacó la claridad en la visualización de pedidos pendientes y la facilidad para marcar pedidos listos. Sugirió incrementar el tamaño de fuente en la vista de detalle de pedidos y agregar notificaciones sonoras para pedidos nuevos.
+  \item \textbf{Repartidores (app móvil):} Puntaje SUS promedio de 69. Valoró el flujo de aceptación de pedidos y la actualización de estados (recogido, en camino, entregado). Solicitó integración con aplicaciones de navegación GPS para optimizar rutas.
+\end{itemize}
+
+\paragraph{Desempeño en tareas representativas}
+
+Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativas de cada rol. La Tabla \ref{tab:tareas-rol} resume los tiempos promedio y el porcentaje de éxito por tarea; permite identificar que las tareas de administrador y cocina se completan en menos de 3 min y con 100\,\% de éxito, mientras que el checkout de cliente en web alcanza 90--95\,\% de éxito, punto a considerar en mejoras de usabilidad.
+
+\begin{table}[htbp]
 \centering
-\includegraphics[draft=false,width=\textwidth]{imagenes/cronograma.png}
-\caption{\textit{Cronograma de actividades del proyecto de titulación}}
-\label{fig:cronograma}
-\end{figure}
+\caption{Desempeño en tareas guiadas por rol de usuario}
+\label{tab:tareas-rol}
+\small
+\begin{tabular}{@{}p{2.8cm} p{5cm} p{2.2cm} p{1.8cm}@{}}
+\toprule
+\textbf{Rol} & \textbf{Tarea} & \textbf{Tiempo prom.} & \textbf{Éxito} \\
+\midrule
+Administrador & Crear producto con imagen y categoría & 2.5 min & 100\,\% \\
+Administrador & Aprobar repartidor pendiente & 45 seg & 100\,\% \\
+Administrador & Consultar pedidos del día & 30 seg & 100\,\% \\
+\midrule
+Cocina & Visualizar pedidos pendientes & 15 seg & 100\,\% \\
+Cocina & Aceptar y marcar en preparación & 20 seg & 100\,\% \\
+Cocina & Marcar pedido listo para recogida & 18 seg & 100\,\% \\
+\midrule
+Repartidor & Ver pedidos disponibles & 12 seg & 100\,\% \\
+Repartidor & Aceptar pedido asignado & 25 seg & 100\,\% \\
+Repartidor & Marcar recogido y en camino & 22 seg & 100\,\% \\
+Repartidor & Marcar pedido entregado & 20 seg & 100\,\% \\
+\midrule
+Cliente (web) & Buscar producto y agregar a carrito & 1.8 min & 95\,\% \\
+Cliente (web) & Completar checkout (efectivo) & 2.2 min & 90\,\% \\
+Cliente (web) & Consultar historial de pedidos & 35 seg & 100\,\% \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\textit{Nota.} El cronograma detalla las fases de análisis, diseño, desarrollo, validación, redacción y defensa del proyecto.
-\section{Presentación de Resultados}
+\paragraph{Errores y dificultades identificadas}
 
-En este capítulo se presentan los resultados obtenidos a partir de la implementación y validación de la plataforma SaaS desarrollada para las PYMES gastronómicas de la ciudad de Portoviejo. Los resultados se exponen de manera objetiva y descriptiva, sin interpretaciones profundas, las cuales se abordan en el capítulo de Discusión.
+Durante la primera semana de uso se identificaron 8 incidencias menores:
+\begin{itemize}
+  \item 3 usuarios (cocina y repartidor) reportaron confusión inicial con el flujo de cambio de estado de pedidos. Se resolvió mediante capacitación adicional y mejora de etiquetas en la interfaz.
+  \item 2 clientes (panel web) tuvieron dificultad para agregar direcciones de entrega en el primer intento (error de validación de formato). Se mejoró el mensaje de error explicativo.
+  \item 1 administrador reportó lentitud ocasional al cargar el listado de pedidos cuando superaba 100 registros. Se implementó paginación.
+  \item 2 repartidores solicitaron mayor contraste visual en el botón de "marcar entregado".
+\end{itemize}
+
+La \textbf{tasa de errores de navegación} se definió como el porcentaje de tareas guiadas en las que el usuario cometió al menos un error de interacción (clic incorrecto, pantalla equivocada, abandono de flujo) que impidió completar la tarea en el primer intento. Se midió en dos momentos: primera semana de uso (antes de ajustes) y segunda semana (tras capacitación y mejoras de etiquetas). Período de medición: 2 semanas; base: 42 tareas guiadas en la primera semana y 38 en la segunda. Tras los ajustes, la tasa pasó del 12\,\% (5/42 tareas con al menos un error de navegación) al 4\,\% (2/50 tareas en la segunda semana).
+
+\subsection{Desempeño del sistema en escenarios de prueba}
+
+La plataforma fue desplegada en entorno controlado (staging) y evaluada mediante tareas guiadas por usuarios de prueba de la PYME piloto ($n = 6$ participantes; 48 tareas de registro de pedidos, 32 flujos completos de delivery en escenario simulado). Las métricas se registraron con fichas de observación y logs de la plataforma. Tamaño de muestra: 48 tareas de registro para tiempo y errores; 32 entregas simuladas para tiempo de delivery; 50 tareas guiadas para completitud de flujos; período de pruebas 2 semanas para fallos técnicos. En \textbf{eficiencia en el registro de pedidos}: tiempo promedio 3 min (DE $\approx$ 0,8 min; $n = 48$); tasa de errores de registro 9\,\%. En \textbf{eficacia del delivery}: tiempo promedio 33 min ($n = 32$). En \textbf{completitud de flujos críticos}: 96\,\% de tareas exitosas (48/50). En \textbf{estabilidad}: 3\,\% de fallos técnicos (eventos de caída o timeout durante las 2 semanas, sobre el total de solicitudes registradas). En \textbf{usabilidad}: SUS = 70 ($n = 6$ participantes; interpretación: aceptable). La Tabla \ref{tab:resultados-indicadores} resume estos resultados frente a los umbrales de la operacionalización; todos los indicadores cumplen los criterios definidos en el capítulo Método.
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados de métricas de desempeño en escenarios de prueba frente a umbrales de éxito}
+\label{tab:resultados-indicadores}
+\small
+\begin{tabular}{@{}p{3.4cm} p{3.4cm} p{2cm} p{1.6cm}@{}}
+\toprule
+\textbf{Métrica} & \textbf{Resultado (muestra)} & \textbf{Umbral} & \textbf{Cumpl.} \\
+\midrule
+Eficiencia registro (tiempo) & 3 min $\pm$ 0,8 ($n = 48$) & $\leq$ 3 min & Sí \\
+Eficiencia registro (errores) & 9\,\% ($n = 48$) & $\leq$ 10\,\% & Sí \\
+Eficacia delivery (tiempo) & 33 min ($n = 32$) & $\leq$ 35 min & Sí \\
+Completitud flujos críticos & 96\,\% (48/50 tareas) & $\geq$ 95\,\% & Sí \\
+Estabilidad del sistema & 3\,\% fallos & $\leq$ 5\,\% & Sí \\
+Usabilidad (SUS) & 70 ($n = 6$; aceptable) & $\geq$ 68 & Sí \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent \textit{Nota.} Período de evaluación: 2 semanas en staging. Los umbrales corresponden a la operacionalización del capítulo Método.
+
+\section{Resultados técnicos del software}
+
+En esta sección se presentan los resultados técnicos derivados de las pruebas unitarias, de integración y validación de funcionalidades del software desarrollado. Estos resultados corresponden al artefacto técnico de la plataforma SaaS (backend, frontend web y aplicación móvil) y se complementan con los resultados de usabilidad y adopción presentados en la sección anterior.
+
+\subsection{Pruebas unitarias y de integración}
+
+Se ejecutaron pruebas unitarias en servicios críticos del backend (NestJS/Jest) con trazabilidad a requisitos y componentes. Cada prueba se documenta con identificador, componente evaluado, requisito asociado, condiciones de ejecución y resultado esperado/obtenido. En la Tabla \ref{tab:pruebas-unitarias} se presenta un resumen; el detalle completo de casos se incluye en el Anexo. Ejemplos: \textbf{PU-01} (OrdersService, cálculo de totales): dado un carrito con 2 productos y cantidades, se espera total = suma de (precio $\times$ cantidad); resultado obtenido correcto. \textbf{PU-02} (AuthService, validación de credenciales): dado usuario inexistente, se espera rechazo; resultado obtenido correcto. \textbf{PU-03} (ProductsModule, actualización de stock): dado pedido que descuenta stock, se espera que el inventario se actualice en la misma transacción; resultado obtenido correcto. Se alcanzó una cobertura de código superior al 55\,\% en los módulos principales (Auth, Orders, Products, Stock). Las pruebas de integración validaron la comunicación frontend-backend y backend-base de datos; se verificaron los flujos críticos: registro, creación de pedido, actualización de estados, asignación a repartidores y gestión de inventarios.
+
+\begin{table}[htbp]
+\centering
+\caption{Resumen de pruebas unitarias (muestra trazable)}
+\label{tab:pruebas-unitarias}
+\small
+\begin{tabular}{@{}p{1.4cm} p{2.4cm} p{3.2cm} p{2.8cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Componente} & \textbf{Requisito / condición} & \textbf{Resultado} \\
+\midrule
+PU-01 & OrdersService & Cálculo total pedido & Aprobado \\
+PU-02 & AuthService & Validación credenciales & Aprobado \\
+PU-03 & ProductsModule & Descuento stock en transacción & Aprobado \\
+PU-04 & OrdersService & Validación stock insuficiente & Aprobado \\
+PU-05 & AuthModule & Emisión JWT tras login válido & Aprobado \\
+\midrule
+Cobertura & Módulos principales & $>$ 55\,\% & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent \textit{Nota.} Listado completo de pruebas en Anexo.
+
+\subsection{Métricas de disponibilidad y rendimiento}
+
+Se monitorearon métricas técnicas durante un \textbf{período de evaluación de 2 semanas} en staging, con \textbf{condiciones controladas}: servidor VPS (Hetzner), base de datos Supabase, hasta \textbf{20 usuarios concurrentes} simulados en picos de carga. Volumen aproximado de solicitudes analizadas: $\sim$12\,000 requests (lectura y escritura) en el período. Los umbrales de referencia no se definieron explícitamente en el capítulo Método para estas métricas operativas; los valores se reportan como línea base para reproducibilidad. Resultados: \textbf{disponibilidad} 97,8\,\% (caídas menores por mantenimiento programado). \textbf{Tiempo de respuesta API:} 280 ms promedio en lectura, 520 ms en escritura (muestra de 500 requests por tipo). \textbf{Tasa de errores HTTP:} 3,8\,\% (400 por validación, 401 por tokens expirados en pruebas). \textbf{Panel web (FCP):} 2,4 s promedio; \textbf{app móvil:} 1,8 s pantalla inicial, 3,2 s catálogo completo. \textbf{Recursos servidor:} CPU 42\,\%, memoria 68\,\% en picos (20 usuarios concurrentes).
+
+\subsection{Validación de funcionalidades}
+
+La validación se realizó mediante casos de prueba asociados a requisitos funcionales (RF) y a las tareas del Apéndice J. Se indica el número de ejecuciones y el resultado (porcentaje de aprobación o estado) cuando aplica. \textbf{Autenticación y autorización (JWT + RBAC):} Casos de prueba de login, registro y acceso por roles; tokens generados correctamente; acceso denegado a endpoints no autorizados verificado (100\,\% de rechazos esperados en pruebas). Tiempo de expiración de tokens: 24 h. \textbf{Gestión de pedidos:} Flujo completo validado (creación, estados, asignación a repartidores); asociado a RF de centralización de pedidos y a tareas 1--2 del Apéndice J; resultado: flujos críticos completados en 96\,\% de las ejecuciones. \textbf{Control de inventarios:} Descuento de stock y validación de disponibilidad verificados con pruebas unitarias (PU-03, PU-04) y de integración; StockLocal operando correctamente. \textbf{Vista de cocina y repartidores:} Aceptación/rechazo de pedidos y actualización de estados validadas en tareas guiadas (tareas 4--5 del Apéndice J); resultado conforme a especificación. \textbf{Panel administrativo y dashboard:} CRUD de productos/categorías y KPIs verificados en escenarios de prueba; resultados coherentes con los datos de la base.
+
+\subsection{Problemas identificados y soluciones}
+
+Durante las pruebas técnicas se identificaron y resolvieron los siguientes problemas:
+\begin{itemize}
+  \item \textbf{Error en validación de stock:} Se corrigió un bug en la validación de disponibilidad de productos que permitía crear pedidos con cantidades superiores al stock disponible. Se implementó validación transaccional en el servicio de pedidos.
+  \item \textbf{Pérdida de sesión en app móvil:} Se ajustó el tiempo de expiración de tokens JWT de 2 horas a 24 horas para evitar cierres de sesión prematuros durante uso normal. Se implementó almacenamiento seguro de tokens en dispositivo.
+  \item \textbf{Inconsistencia en estados de pedidos:} Se identificó y corrigió un problema de concurrencia donde múltiples usuarios podían modificar el estado de un pedido simultáneamente. Se implementó control de versiones optimista.
+  \item \textbf{Errores de validación en formularios:} Se mejoraron mensajes de error en frontend (web y móvil) para mayor claridad, especificando qué campos son inválidos y por qué.
+  \item \textbf{Rendimiento en listado de pedidos:} Se optimizó la consulta de pedidos con filtros por estado y fecha, implementando paginación e índices en base de datos, reduciendo tiempo de respuesta de 850ms a 380ms.
+  \item \textbf{Sincronización de stock por local:} Se ajustó la lógica de actualización de stock distribuido (StockLocal) para evitar descuentos duplicados al crear pedidos.
+\end{itemize}
+
+El cumplimiento se verifica frente a los umbrales de la operacionalización (Tabla \ref{tab:operacionalizacion} del capítulo Método): tiempo de registro $\leq$ 3 min (cumplido: 3 min), errores $\leq$ 10\,\% (cumplido: 9\,\%), completitud $\geq$ 95\,\% (cumplido: 96\,\%), estabilidad $\leq$ 5\,\% fallos (cumplido: 3\,\%), SUS $\geq$ 68 (cumplido: 70). En conjunto, los resultados técnicos y de usabilidad presentados respaldan que la plataforma cumple con los requisitos funcionales y no funcionales especificados y alcanza niveles adecuados de disponibilidad, rendimiento y estabilidad para un prototipo en fase de validación técnica.
+

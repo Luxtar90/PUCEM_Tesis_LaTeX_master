@@ -1,34 +1,56 @@
-\begin{tikzpicture}[scale=0.95, every node/.style={align=center, transform shape}]
+\begin{tikzpicture}[scale=0.82, every node/.style={align=center, transform shape, font=\small}]
 \tikzset{
-  cstep/.style={draw, rounded corners, fill=blue!10, minimum width=3.8cm, minimum height=0.9cm},
-  dstep/.style={draw, rounded corners, fill=green!15, minimum width=3.8cm, minimum height=0.9cm}
+  cstep/.style={draw, rounded corners, fill=blue!10, minimum width=3.0cm, minimum height=0.8cm},
+  kstep/.style={draw, rounded corners, fill=orange!15, minimum width=3.0cm, minimum height=0.8cm},
+  dstep/.style={draw, rounded corners, fill=green!15, minimum width=3.0cm, minimum height=0.8cm}
 }
-\node[cstep] (cl_login) at (-4,3) {Login y registro};
-\node[cstep] (cl_catalog) at (-4,2) {Catálogo};
-\node[cstep] (cl_detalle) at (-4,1) {Detalle producto};
-\node[cstep] (cl_carrito) at (-4,0) {Carrito};
-\node[cstep] (cl_crea) at (-4,-1) {Crear pedido};
-\node[cstep] (cl_estado) at (-4,-2) {Estado pedido};
-\draw[dashed, rounded corners] (-6,3.5) rectangle (-2,-2.5);
-\node at (-4,3.7) {Cliente};
+
+% Cliente (Left)
+\node[cstep] (cl_login) at (-6,4) {Login y registro};
+\node[cstep] (cl_catalog) at (-6,3) {Catálogo};
+\node[cstep] (cl_detalle) at (-6,2) {Detalle producto};
+\node[cstep] (cl_carrito) at (-6,1) {Carrito};
+\node[cstep] (cl_crea) at (-6,0) {Crear pedido};
+\node[cstep] (cl_estado) at (-6,-1) {Estado pedido};
+
+\draw[dashed, rounded corners] (-7.7,4.5) rectangle (-4.3,-1.5);
+\node at (-6,4.7) {\textbf{Cliente}};
+
 \draw[-latex] (cl_login) -- (cl_catalog);
 \draw[-latex] (cl_catalog) -- (cl_detalle);
 \draw[-latex] (cl_detalle) -- (cl_carrito);
 \draw[-latex] (cl_carrito) -- (cl_crea);
 \draw[-latex] (cl_crea) -- (cl_estado);
-\node[dstep] (dl_login) at (4,3) {Login};
-\node[dstep] (dl_pend) at (4,2) {Pedidos pendientes};
-\node[dstep] (dl_asign) at (4,1) {Aceptar y asignar};
-\node[dstep] (dl_activo) at (4,0) {Entrega en curso};
-\node[dstep] (dl_done) at (4,-1) {Entregado};
-\draw[dashed, rounded corners] (2,3.5) rectangle (6,-1.5);
-\node at (4,3.7) {Repartidor};
-\draw[-latex] (dl_login) -- (dl_pend);
-\draw[-latex] (dl_pend) -- (dl_asign);
-\draw[-latex] (dl_asign) -- (dl_activo);
-\draw[-latex] (dl_activo) -- (dl_done);
-\draw[-latex] (cl_crea.east) .. controls (-1,-1) and (1,2) .. (dl_pend.west);
-\node at (0,1.1) {Pedido nuevo};
-\draw[-latex] (dl_done.west) .. controls (1,-1) and (-1,-2) .. (cl_estado.east);
-\node at (0,-1.6) {Entrega confirmada};
+
+% Cocina (Center)
+\node[kstep] (kc_login) at (0,4) {Login};
+\node[kstep] (kc_recep) at (0,0) {Recepción y\\Aceptación};
+\node[kstep] (kc_prep) at (0,-1) {Preparación};
+\node[kstep] (kc_listo) at (0,-2) {Marcar listo};
+
+\draw[dashed, rounded corners] (-1.7,4.5) rectangle (1.7,-2.5);
+\node at (0,4.7) {\textbf{Cocina}};
+
+\draw[-latex] (kc_login) -- (kc_recep);
+\draw[-latex] (kc_recep) -- (kc_prep);
+\draw[-latex] (kc_prep) -- (kc_listo);
+
+% Repartidor (Right)
+\node[dstep] (dl_login) at (6,4) {Login};
+\node[dstep] (dl_listo) at (6,-2) {Pedidos listos\\(Recoger)};
+\node[dstep] (dl_curso) at (6,-3) {Entrega en curso};
+\node[dstep] (dl_fin) at (6,-4) {Entregado};
+
+\draw[dashed, rounded corners] (4.3,4.5) rectangle (7.7,-4.5);
+\node at (6,4.7) {\textbf{Repartidor}};
+
+\draw[-latex] (dl_login) -- (dl_listo);
+\draw[-latex] (dl_listo) -- (dl_curso);
+\draw[-latex] (dl_curso) -- (dl_fin);
+
+% Interactions
+\draw[-latex, thick] (cl_crea.east) -- node[above, scale=0.8] {Nuevo pedido} (kc_recep.west);
+\draw[-latex, thick] (kc_listo.east) -- node[above, scale=0.8] {Notificación} (dl_listo.west);
+\draw[-latex, thick] (dl_fin.west) .. controls (0,-5) and (-3,-4) .. node[below, pos=0.5, scale=0.8] {Entrega confirmada} (cl_estado.south);
+
 \end{tikzpicture}

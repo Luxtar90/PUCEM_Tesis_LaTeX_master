@@ -1,9 +1,9 @@
-\begin{tikzpicture}[x=3.6cm, y=2.0cm, every node/.style={align=center, transform shape}]
+\begin{tikzpicture}[x=3.8cm, y=2.2cm, every node/.style={align=center, transform shape}]
 \tikzset{
   entity/.style={draw, rounded corners, thick, fill=blue!10, minimum width=3.3cm, minimum height=0.95cm},
   entityalt/.style={draw, rounded corners, thick, fill=green!10, minimum width=3.3cm, minimum height=0.95cm},
   link/.style={draw, rounded corners, thick, fill=orange!18, minimum width=2.9cm, minimum height=0.9cm},
-  relabel/.style={font=\scriptsize, fill=white, inner sep=1.2pt}
+  relabel/.style={font=\scriptsize, fill=white, inner sep=2pt, outer sep=0.5pt}
 }
 \node[entity] (usuarios) at (0,2) {Usuarios};
 \node[link] (roles) at (1,2) {Roles};
@@ -15,15 +15,15 @@
 \node[entity] (productos) at (3,1) {Productos};
 \node[entityalt] (pedidoDetalle) at (2,0) {PedidoDetalle};
 \node[entityalt] (pagos) at (3,-1) {Pagos};
-\draw[-latex, thick] (usuarios) -- node[relabel, above] {N..1} (roles);
-\draw[-latex, thick] (usuarios) -- node[relabel, left] {1..1} (repartidores);
-\draw[-latex, thick] (usuarios) -- node[relabel, left] {1..N} (direcciones);
-\draw[-latex, thick] (usuarios.east) to[out=0,in=180] node[relabel, above] {1..N} (pedidos.west);
-\draw[-latex, thick] (empresas.east) -- node[relabel, above] {1..N} (pedidos.west);
-\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above] {1..N} (categorias.west);
-\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above, near end] {1..N} (productos.west);
-\draw[-latex, thick] (categorias) -- node[relabel, right] {1..N} (productos);
-\draw[-latex, thick] (pedidos) -- node[relabel, right] {1..N} (pedidoDetalle);
-\draw[-latex, thick] (productos.south) to[out=-90,in=0] node[relabel, above] {1..N} (pedidoDetalle.east);
-\draw[-latex, thick] (pedidos.south) to[out=-90,in=180] node[relabel, below] {1..1} (pagos.west);
+\draw[-latex, thick] (usuarios) -- node[relabel, above, pos=0.5] {N..1} (roles);
+\draw[-latex, thick] (usuarios) -- node[relabel, left, pos=0.5] {1..1} (repartidores);
+\draw[-latex, thick] (usuarios) -- node[relabel, left, pos=0.5] {1..N} (direcciones);
+\draw[-latex, thick] (usuarios.east) to[out=0,in=180] node[relabel, above, pos=0.5] {1..N} (pedidos.west);
+\draw[-latex, thick] (empresas.east) -- node[relabel, above, pos=0.5] {1..N} (pedidos.west);
+\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above, pos=0.5] {1..N} (categorias.west);
+\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above, pos=0.55] {1..N} (productos.west);
+\draw[-latex, thick] (categorias) -- node[relabel, right, pos=0.5] {1..N} (productos);
+\draw[-latex, thick] (pedidos) -- node[relabel, right, pos=0.5] {1..N} (pedidoDetalle);
+\draw[-latex, thick] (productos.south) to[out=-90,in=0] node[relabel, above, pos=0.5] {1..N} (pedidoDetalle.east);
+\draw[-latex, thick] (pedidos.south) to[out=-90,in=180] node[relabel, below, pos=0.5] {1..1} (pagos.west);
 \end{tikzpicture}
