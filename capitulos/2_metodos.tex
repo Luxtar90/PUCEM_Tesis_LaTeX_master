@@ -32,11 +32,10 @@ Para poder evaluar si la plataforma cumple los criterios de viabilidad técnica 
 \clearpage
 \begingroup
 \small
-\setlength{\tabcolsep}{5pt}
+\setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.8cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{3.2cm}}
-\caption{Operacionalización de variables e indicadores de medición} \\
-\label{tab:operacionalizacion}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{3.8cm}>{\raggedright\arraybackslash}p{3.0cm}}
+\caption{Operacionalización de variables e indicadores de medición}\label{tab:operacionalizacion} \\
 \toprule
 \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
 \midrule
@@ -61,7 +60,7 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.32\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
+\resizebox{0.78\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
 \caption{Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}
 \label{fig:ibd-ciclo}
 \end{figure}
@@ -87,11 +86,10 @@ Las técnicas e instrumentos utilizados en cada fase del estudio se resumen en l
 
 \begingroup
 \small
-\setlength{\tabcolsep}{5pt}
+\setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.5cm}}
-\caption{Técnicas e instrumentos de recolección de datos} \\
-\label{tab:tecnicas-instrumentos} \\
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.2cm}}
+\caption{Técnicas e instrumentos de recolección de datos}\label{tab:tecnicas-instrumentos} \\
 \toprule
 \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
 \midrule
@@ -135,9 +133,8 @@ Este flujo garantizó una transición estructurada desde la conceptualización t
 \small
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{5.2cm}}
-\caption{Selección tecnológica para la arquitectura de la plataforma SaaS} \\
-\label{tab:stack-tecnologico} \\
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{5.0cm}}
+\caption{Selección tecnológica para la arquitectura de la plataforma SaaS}\label{tab:stack-tecnologico} \\
 \toprule
 \textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
 \midrule
@@ -151,7 +148,7 @@ Base de datos & PostgreSQL & MySQL, MongoDB (NoSQL) & Modelo relacional adecuado
 Aplicación móvil & React Native + Expo & Flutter (Dart), desarrollo nativo (Kotlin/Swift) & Desarrollo ágil y eficiente para Android. Expo agiliza el ciclo de desarrollo (builds, testing) y el acceso a APIs nativas sin complejidad. \\
 Panel web admin & Next.js (React) + Tailwind CSS & React (Create React App), Vue.js, Angular & Renderizado híbrido (SSR/CSR) de Next.js para mejor SEO y performance de carga; Tailwind CSS para estilizado ágil y consistente. \\
 Autenticación & JWT (JSON Web Tokens) + bcrypt & Sesiones en servidor, OAuth 2.0 (third-party) & Stateless y escalable para APIs REST. Simplicidad de implementación y seguridad suficiente para el alcance del piloto. \\
-Contenedorización & Docker & -- & Estandarización del entorno de desarrollo y despliegue, garantizando consistencia entre equipos y facilitando el deployment en la nube. \\
+Contenedorización & Docker & -- & Estandarización del entorno de desarrollo y despliegue, con consistencia entre equipos y facilidad para desplegar en la nube. \\
 Despliegue backend/DB & VPS (Hetzner) & AWS/Azure (cloud), Railway, Render & Costo-eficiencia y control total del servidor para un piloto, con rendimiento predecible y facturación simple. \\
 Despliegue panel web & Vercel & Netlify, GitHub Pages & Integración nativa con Next.js, despliegue automático por Git, CDN global y SSL gratuito, minimizando tareas de DevOps. \\
 \bottomrule
@@ -160,7 +157,7 @@ Despliegue panel web & Vercel & Netlify, GitHub Pages & Integración nativa con 
 
 \subsubsection{Arquitectura de la Plataforma}
 
-Una vez establecidas las herramientas tecnológicas, se definió y estructuró una arquitectura por capas. Los componentes principales de la plataforma son:
+Una vez establecidas las herramientas tecnológicas, se definió una arquitectura principal \textbf{modular en capas}: modular por dominios de negocio y en capas para separar responsabilidades técnicas. Los componentes principales de la plataforma son:
 \begin{itemize}
   \item Aplicación móvil para clientes, repartidores y vista de cocina (aceptar o rechazar pedidos, notificar cuando esté listo para que el repartidor recoja, integrado al flujo de órdenes).
   \item Aplicación web principalmente para administración, con posibilidad de iniciar sesión como cliente para realizar compras desde la web.
@@ -169,16 +166,19 @@ Una vez establecidas las herramientas tecnológicas, se definió y estructuró u
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.9\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
+\resizebox{0.82\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
 \caption{Arquitectura por capas de la plataforma SaaS}
 \label{fig:arquitectura-capas}
 \end{figure}
 
-La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa es independiente y se comunica con las adyacentes mediante interfaces bien definidas.
+La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa se comunica con las adyacentes mediante interfaces bien definidas, mientras que la separación por módulos permite evolucionar funcionalidades sin afectar dominios no relacionados.
+Como parte de la Etapa 1, se diseñó también el flujo integral del sistema para modelar de extremo a extremo la interacción cliente-cocina-repartidor-dashboard; dicho flujo se detalla en la Figura \ref{fig:secuencia-pedido} y se implementa en la Etapa 2.
+Como material complementario, la versión ampliada del diagrama por capas se incluye en el Apéndice B.
 
 \subsubsection{Arquitectura de la aplicación móvil}
 
 La aplicación móvil es la interfaz principal para tres roles: cliente, repartidor y cocina. Utiliza React Native + Expo para maximizar la reutilización de código entre plataformas.
+La versión ampliada de esta arquitectura se presenta en el Apéndice C.
 
 \begin{figure}[htbp]
 \centering
@@ -190,6 +190,7 @@ La aplicación móvil es la interfaz principal para tres roles: cliente, reparti
 \subsubsection{Arquitectura de la aplicación web}
 
 El panel web administrativo permite la gestión de productos, categorías, pedidos y repartidores, además de proporcionar acceso a clientes para realizar compras.
+La versión ampliada del diagrama del panel web se presenta en el Apéndice C.
 
 \begin{figure}[htbp]
 \centering
@@ -201,6 +202,7 @@ El panel web administrativo permite la gestión de productos, categorías, pedid
 \subsubsection{Arquitectura del backend}
 
 El backend expone una API RESTful que centraliza toda la lógica de negocio, autenticación y manejo de datos.
+La versión ampliada de la arquitectura modular del backend se incluye en el Apéndice D.
 
 \begin{figure}[htbp]
 \centering
@@ -269,6 +271,7 @@ Si bien la implementación actual emplea una única base de datos para el client
 La configuración actual con Supabase facilita esta migración, al soportar múltiples proyectos de base de datos administrados de forma independiente.
 
 Finalmente, se contemplaron estrategias de respaldo automático (backups diarios mediante Supabase), recuperación ante desastres y mecanismos de migración de esquema controlada mediante archivos SQL versionados (ver carpeta migrations/ con ejemplos como create-stock-local-table.sql), abandonando sincronización automática en producción.
+La versión ampliada del diagrama entidad-relación también se incorpora en el Apéndice A.
 
 \begin{figure}[htbp]
 \centering
@@ -293,6 +296,7 @@ Estos roles se implementan mediante una tabla independiente (tbl\_roles) y una r
 La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
 Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \textcite{raguilera_jwt_nestjs}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+El detalle gráfico extendido del flujo de autenticación y autorización se presenta en el Apéndice E.
 
 \begin{figure}[htbp]
 \centering
@@ -305,7 +309,7 @@ Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como me
 
 \subsubsection{Desarrollo de la Plataforma SaaS}
 
-Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas (Anexo 5). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
+Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas y consolidando evidencia de avance en la bitácora técnica de validación (Apéndice J). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
 
 \subsubsection{Desarrollo del frontend móvil (React Native + Expo)}
 
@@ -314,6 +318,7 @@ Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes, 
 React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de  vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sen sores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
 
 La aplicación ofrece flujos diferenciados para tres perfiles: Cliente, Repartidor y Cocina, además de pantallas de inicio de sesión y registro. Se incorporó un módulo o vista de \textit{cocina} en la aplicación móvil que permite aceptar o rechazar pedidos y notificar cuando el pedido está listo para que el repartidor recoja, conectado al flujo de solicitud de órdenes. Así, cuando un cliente realiza un pedido, la cocina puede visualizarlo, aceptarlo o rechazarlo, y al marcarlo como listo el repartidor puede ir a recogerlo para la entrega. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros. Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
+El flujo visual ampliado por rol se documenta en el Apéndice F.
 
 \begin{figure}[htbp]
 \centering
@@ -349,6 +354,7 @@ pedidos en curso y solicitudes pendientes.
 Cuando un repartidor se registra desde la app móvil, su cuenta queda "pendiente" hasta la
 revisión administrativa, tras la cual puede ser habilitada o rechazada, garantizando control de
 calidad.
+El flujo visual ampliado del panel web se documenta en el Apéndice F.
 
 Ambos frontends consumen el mismo backend mediante API REST y JSON. La separación
 de responsabilidades mantiene el frontend enfocado en la experiencia y presentación, mientras la
@@ -368,47 +374,19 @@ reales.
 \end{figure}
 
 \subsubsection{Desarrollo del backend (NestJS, capas, módulos)}
-Objetivo del backend: exponer servicios estables y seguros, aplicar reglas de negocio y coordinar
-persistencia con una arquitectura modular mantenible.
+Objetivo del backend: exponer servicios estables y seguros, aplicar reglas de negocio y coordinar persistencia con una arquitectura modular mantenible.
 
-El backend se implementó con NestJS, framework de Node.js de arquitectura modular que
-promueve buenas prácticas mediante el uso de TypeScript, decoradores e inyección de dependencias.
-Frente a Express puro, NestJS aporta una estructura clara basada en módulos, controladores
-y servicios, facilitando la escalabilidad y el mantenimiento del código por dominios de negocio
-(Usuarios, Productos, Pedidos, Autenticación, entre otros).
+\paragraph{Decisión arquitectónica}
+La arquitectura del backend se definió como \textbf{modular en capas}. Se implementó con NestJS, framework de Node.js que aporta estructura modular nativa basada en TypeScript, decoradores e inyección de dependencias. Frente a Express puro, NestJS ofrece una organización más clara para separar responsabilidades, facilitar la escalabilidad y mantener consistencia en proyectos con múltiples dominios (usuarios, productos, pedidos y autenticación).
 
-Cada módulo agrupa tres componentes fundamentales: un controlador que define endpoints y
-atiende solicitudes HTTP; un servicio que concentra la lógica de negocio; y una capa de datos o
-repositorio que interactúa con la base de datos, ya sea mediante un ORM o consultas específicas
-(Dragos, s.f.).
-Siguiendo este patrón, el módulo de Autenticación expone rutas para login y registro en su
-controlador; el servicio valida credenciales y emite tokens JWT; y se apoya en el módulo de Usuarios
-para verificar identidad. De modo análogo, el módulo de Productos ofrece rutas para listar y crear
-productos (acción reservada al administrador), mientras su servicio aplica reglas de negocio y sus
-entidades mapean a tablas mediante el ORM.
+\paragraph{Estructura interna por capas}
+La arquitectura técnica se organiza en tres capas principales: controlador, servicio y acceso a datos. El controlador expone endpoints HTTP y orquesta el flujo de entrada; el servicio concentra reglas de negocio; y el repositorio o capa de datos persiste y consulta información en PostgreSQL mediante TypeORM. Esta separación mantiene un flujo unidireccional (controlador $\rightarrow$ servicio $\rightarrow$ datos), evita acoplamiento entre transporte y lógica, y simplifica el mantenimiento evolutivo.
 
-La capa de control incluye manejo de errores y respuestas consistentes; se emplean filtros de
-excepciones para capturar y formatear fallos (validación, autorización, acceso a datos) en códigos
-HTTP adecuados.
-Los servicios encapsulan reglas de negocio con claridad, evitando dependencias con detalles de
-transporte HTTP.
-La configuración de la aplicación se centraliza con lectura de variables de entorno, diferenciando
-perfiles de ejecución (desarrollo, pruebas, producción) y resguardando credenciales.
-El uso integral de TypeScript habilita detección temprana de errores y mejor navegación del código.
+\paragraph{Componentes transversales}
+Se definieron DTOs para tipado y validación de entrada/salida; la integración de class-validator y class-transformer con ValidationPipe global permite rechazar solicitudes mal formadas antes de ejecutar lógica de negocio. La inyección de dependencias con @Injectable() mantiene el código desacoplado y testeable. En persistencia, TypeORM se integró con @nestjs/typeorm, utilizando entidades tipadas, repositorios y QueryBuilder para operaciones transaccionales y consultas estructuradas.
 
-Se definieron DTOs para tipar y validar datos de entrada y salida; la integración con classvalidator y class-transformer, junto con pipes de validación global, permite rechazar automáticamente solicitudes mal formadas y entregar al controlador datos ya validados.
-La inyección de dependencias mantiene el código desacoplado y testeable. Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y Nest provee instancias adecuadas. Por ejemplo, OrdersService inyecta UsersRepository, AddressRepository y ProductsRepository mediante decorador @InjectRepository, permitiendo operaciones de consulta y persistencia sin acoplamiento directo a la implementación del ORM.
-
-Las responsabilidades se mantienen unidireccionales: el controlador recibe la petición HTTP, valida tokens JWT mediante guards, aplica decoradores de roles (@Roles) para autorización y delega al servicio; el servicio ejecuta reglas de negocio (validar stock, calcular totales, asignar repartidores) y coordina repositorios; la capa de datos interactúa exclusivamente con PostgreSQL mediante TypeORM (Dragos, s.f.; Q2B Studio, s.f.). Esta separación, alineada con Clean Architecture, evita mezclas de responsabilidades y facilita el reemplazo de componentes sin afectar capas superiores, favoreciendo mantenibilidad y escalabilidad.
-
-Asimismo, simplifica las pruebas unitarias al permitir testear servicios o controladores en
-aislamiento mediante simulaciones.
-La persistencia se maneja con TypeORM, integrado mediante @nestjs/typeorm.
-Las entidades TypeScript decoradas representan tablas; los repositorios y el QueryBuilder
-facilitan operaciones sin escribir SQL manual.
-TypeORM soporta múltiples motores (PostgreSQL, MySQL, etc.) y ofrece migraciones de esquema; aunque inicialmente se usó sincronización automática, se prevé incorporar migraciones controladas.
-
-La organización del backend es a la vez por \textbf{capas} (controlador $\rightarrow$ servicio $\rightarrow$ repositorio/datos) y por \textbf{módulos de dominio}. Cada módulo agrupa en un mismo ámbito de negocio su controlador, servicios y acceso a datos. La siguiente lista describe cada módulo y su aporte al sistema:
+\paragraph{Módulos de dominio}
+La organización del backend combina capas técnicas y módulos de dominio. Cada módulo agrupa su controlador, servicios y acceso a datos en torno a una responsabilidad funcional, lo que permite describir con claridad su función e importancia en el sistema. Esta organización mejora la trazabilidad entre requisito, endpoint e implementación.
 
 La organización por módulos comprende:
 \begin{itemize}
@@ -431,24 +409,11 @@ Se contempla incorporar interceptores para logging de auditoría, medición de t
 
 En validación de datos, se activó ValidationPipe global con opciones whitelist (elimina propiedades no declaradas en DTOs) y forbidNonWhitelisted (rechaza requests con campos extra), robusteciendo la API ante entradas malformadas y ataques de inyección de datos.
 
-\paragraph{Configuración de seguridad y despliegue (Etapa 3)}
-Las siguientes medidas de seguridad y despliegue corresponden a la ETAPA 3: Validación y Despliegue (descrita más adelante en este capítulo); se detallan aquí por coherencia con la arquitectura del backend. Se implementaron las siguientes medidas:
-\begin{itemize}
-  \item \textbf{CORS:} Configurado por origen permitido, restringiendo acceso desde dominios no autorizados.
-  \item \textbf{Rate Limiting:} ThrottlerModule con límite de 100 requests/minuto por IP.
-  \item \textbf{Conexión SSL a base de datos:} Configuración de TypeORM con ssl: true y rejectUnauthorized: false para Supabase, con opciones de pool (max: 20 clientes, timeout: 30s).
-  \item \textbf{Variables de entorno:} ConfigModule global carga credenciales desde archivo .env (DB\_HOST, DB\_PORT, DB\_USERNAME, DB\_PASSWORD, DB\_NAME, JWT\_SECRET, NODE\_ENV), evitando hard-coding de secretos.
-  \item \textbf{Sincronización condicional:} TypeORM synchronize activo solo en desarrollo; en producción se emplean migraciones SQL versionadas.
-\end{itemize}
-
-El backend se despliega como aplicación Node.js independiente. Se contempló Docker para contenerización (facilitando despliegue reproducible en VPS), con imágenes multi-stage para optimizar tamaño. La configuración distingue perfiles de ejecución mediante NODE\_ENV (development, production), ajustando logging y optimizaciones según entorno.
-
-Para producción se planificó despliegue en VPS (Hetzner) con proceso administrado por PM2 o similar, proxy inverso Nginx para SSL/TLS y balanceo, y monitoreo de salud del servicio. La base de datos PostgreSQL administrada por Supabase elimina complejidad de gestión de infraestructura de datos.
-
 Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
 
 \paragraph{Módulo de Pedidos}
 El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido es el siguiente: (1) el cliente autenticado envía POST a \texttt{/api/orders} con productos, cantidades y dirección; (2) JwtAuthGuard valida el token y adjunta el usuario al request; (3) ValidationPipe valida el DTO; (4) OrdersController delega en OrdersService.create(); (5) el servicio verifica usuario, dirección y stock; (6) se crea la entidad Order y los OrderItem en una transacción TypeORM; (7) se retorna 201 Created. Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
+El diagrama ampliado de este flujo se incluye en el Apéndice G.
 
 \begin{figure}[htbp]
 \centering
@@ -459,6 +424,7 @@ El flujo general del proceso de pedido contempla la creación, estados (pendient
 
 \paragraph{Módulo de Inventario:}
 Lógica para descontar stock y prevenir ventas de productos agotados.
+La versión ampliada del diagrama se presenta en el Apéndice G.
 
 \begin{figure}[htbp]
 \centering
@@ -469,6 +435,7 @@ Lógica para descontar stock y prevenir ventas de productos agotados.
 
 \paragraph{Módulo de Repartidores:}
 Proceso de registro, aprobación administrativa y asignación manual de pedidos.
+La versión ampliada del flujo se presenta en el Apéndice G.
 
 \begin{figure}[htbp]
 \centering
@@ -492,7 +459,9 @@ Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y prue
 
 \subsubsection{Arquitectura del despliegue}
 
-Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de datos PostgreSQL. El panel web se desplegó automáticamente en Vercel. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto.
+Se configuró un VPS en Hetzner con Docker para alojar el backend y la conectividad segura hacia la base de datos PostgreSQL administrada en Supabase. El panel web se desplegó automáticamente en Vercel con integración continua por repositorio. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto.
+La infraestructura operó con separación funcional: capa de presentación (web y app), capa API (NestJS), capa de datos (PostgreSQL) y servicios externos (WhatsApp Business Cloud API), con comunicación por HTTPS y control de acceso basado en JWT.
+La versión ampliada de la arquitectura de despliegue se incorpora en el Apéndice H.
 
 \begin{figure}[htbp]
 \centering
@@ -501,7 +470,21 @@ Se configuró un VPS en Hetzner con Docker para alojar el backend y la base de d
 \label{fig:despliegue-arquitectura}
 \end{figure}
 
+\subsubsection{Seguridad operativa y configuración de despliegue}
+
+Las medidas de seguridad y despliegue se consolidan en esta etapa porque se validan sobre el entorno staging y la infraestructura efectiva del piloto:
+\begin{itemize}
+  \item \textbf{CORS:} Configurado por origen permitido, restringiendo acceso desde dominios no autorizados.
+  \item \textbf{Rate Limiting:} ThrottlerModule con límite de 100 requests/minuto por IP.
+  \item \textbf{Conexión SSL a base de datos:} Configuración de TypeORM con ssl: true y rejectUnauthorized: false para Supabase, con opciones de pool (max: 20 clientes, timeout: 30s).
+  \item \textbf{Variables de entorno:} ConfigModule global carga credenciales desde archivo .env (DB\_HOST, DB\_PORT, DB\_USERNAME, DB\_PASSWORD, DB\_NAME, JWT\_SECRET, NODE\_ENV), evitando hard-coding de secretos.
+  \item \textbf{Sincronización condicional:} TypeORM synchronize activo solo en desarrollo; en producción se emplean migraciones SQL versionadas.
+\end{itemize}
+
+El backend se despliega como aplicación Node.js independiente. Se contempló Docker para contenerización y reproducibilidad en VPS, con imágenes multi-stage para optimizar tamaño y perfiles por entorno (development, production). Para producción se planificó operación en VPS (Hetzner) con proceso administrado por PM2 o similar, proxy inverso Nginx para SSL/TLS y monitoreo de salud del servicio. La base de datos PostgreSQL administrada por Supabase reduce la carga operativa de infraestructura.
+
 Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
+El diagrama de red integral de interacción entre clientes, API y servicios externos se presenta en el Apéndice I.
 
 \subsubsection{Despliegue en staging y validación técnica}
 Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (staging) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice J. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:

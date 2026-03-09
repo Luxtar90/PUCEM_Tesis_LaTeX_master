@@ -95,8 +95,7 @@
 \usepackage{longtable}
 % Tipografía y cortes de línea mejorados
 \iffastcompile\else
-\usepackage[protrusion=true,expansion=true,tracking=false,spacing=false,kerning=true]{microtype}
-\microtypecontext{protrusion=basictext}
+\usepackage[protrusion=false,expansion=true,tracking=false,spacing=false,kerning=true,nopatch=footnote]{microtype}
 \fi
 
 % Hipervínculos y formato de referencias
@@ -226,6 +225,10 @@
 \pagenumbering{roman}
 \setcounter{page}{1}
 \setcounter{tocdepth}{-1}
+\pagestyle{empty}
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
 \input{preliminares/1_portada}
 \input{preliminares/2_certificaion_tutor}
 \input{preliminares/3_acta_aprobacion_tribunal}
@@ -235,8 +238,13 @@
 \input{preliminares/7_agradecimientos}
 \input{preliminares/8_resumen_abstract}
 \clearpage
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+\pagestyle{fancy}
 \hypersetup{pageanchor=true}
 \setcounter{tocdepth}{3}
+\setcounter{page}{1}
 
 % Índices automáticos
 \iffastcompile

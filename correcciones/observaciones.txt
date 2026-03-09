@@ -1,0 +1,468 @@
+OBSERVACIONES DEL DOCENTE
+1. OBJETIVOS
+
+El objetivo actual es coherente, pero resulta demasiado amplio, ya que combina:
+
+diseño
+
+desarrollo
+
+evaluación
+
+en una sola formulación, lo que dificulta su delimitación metodológica.
+
+Se recomienda:
+
+Separar en objetivos específicos
+
+Definir criterios técnicos y métricas
+
+Reformular el objetivo general
+
+El objetivo general debe:
+
+Indicar claramente el fin último del proyecto
+
+Incluir criterios técnicos
+
+Incluir métricas de validación en un entorno controlado
+
+2. ALCANCE DEL PROYECTO
+
+El alcance está redactado usando verbos de acción, por ejemplo:
+
+diseñar
+
+desarrollar
+
+validar
+
+Esto es incorrecto.
+
+El alcance debe redactarse en términos de entregables (sustantivos) y no acciones.
+
+Los verbos corresponden a objetivos o actividades, no al alcance.
+
+3. FIGURA 1
+
+La figura aparece sin contexto al final de la introducción.
+
+Problemas:
+
+No está referenciada en el texto
+
+No tiene explicación
+
+Aparece de forma repentina
+
+Correcciones sugeridas:
+
+Ubicarla en una sección relacionada
+
+Describirla en el texto
+
+Explicar cada componente del diagrama
+
+Rediseñar el diagrama para mejorar legibilidad
+
+4. TABLA 1 – OPERACIONALIZACIÓN DE VARIABLES
+
+Problema:
+
+No se explica por qué la tabla está incluida.
+
+Se recomienda:
+
+Ubicarla en una sección metodológica adecuada
+
+Referenciarla en el texto
+
+Explicar su contenido
+
+Mostrar su utilidad
+
+Las tablas deben incluir:
+
+explicación textual
+
+interpretación de los datos
+
+justificación de su inclusión
+
+5. METODOLOGÍA – FASES
+
+Problema:
+
+Las fases 3 y 4 están mezcladas, lo que genera confusión.
+
+Se recomienda:
+
+Separar claramente las fases
+
+O unirlas en una sola
+
+Especificar qué actividades corresponden a cada fase
+
+Si las fases están superpuestas:
+
+indicar qué tareas pertenecen a cada una
+
+6. FIGURAS DEL DOCUMENTO
+
+Problemas detectados:
+
+Mala distribución espacial
+
+Tamaños desproporcionados
+
+Letras demasiado pequeñas
+
+Etiquetas superpuestas
+
+Líneas cruzadas
+
+Recomendaciones:
+
+Mantener tamaño visual consistente
+
+Usar máximo 25–30% de la página
+
+Mejorar legibilidad
+
+Evitar superposición de elementos
+
+7. TABLAS (TABLA 2, TABLA 3, ETC.)
+
+Problema:
+
+Las tablas aparecen sin descripción textual.
+
+Se recomienda:
+
+Para cada tabla incluir:
+
+un párrafo explicativo
+
+referencia a la tabla
+
+interpretación de los datos
+
+tendencias o inferencias
+
+También:
+
+eliminar información innecesaria
+
+mantener solo datos relevantes
+
+8. CONSIDERACIONES ÉTICAS
+
+Problema:
+
+La redacción es difícil de entender.
+
+Se recomienda:
+
+mejorar la puntuación
+
+reestructurar oraciones
+
+usar frases claras
+
+revisar todo el documento
+
+9. BASE DE DATOS
+
+Problema detectado:
+
+En una parte se menciona modelo relacional, pero luego se menciona RDBMS NoSQL.
+
+Se debe aclarar:
+
+qué tipo de base de datos se usa
+
+si se usan varios modelos
+
+razones técnicas de selección
+
+Ejemplo:
+
+explicar por qué Supabase (PaaS en la nube) fue seleccionado.
+
+10. SECCIÓN DE BACKEND
+
+Esta sección presenta problemas graves de estructura.
+
+Se mezclan conceptos como:
+
+módulos
+
+capas
+
+controladores
+
+servicios
+
+middleware
+
+guards
+
+interceptores
+
+sin organización clara.
+
+Se recomienda:
+
+estructurar en temas y subtemas
+
+definir si la arquitectura es:
+
+Arquitectura en capas
+o
+Arquitectura modular
+
+Luego describir:
+
+cada módulo
+
+su función
+
+su importancia en el backend
+
+También mejorar la redacción:
+
+párrafos de 4–5 oraciones
+
+ideas claras
+
+orden lógico
+
+11. SEGURIDAD Y DESPLIEGUE
+
+Problema:
+
+Esta sección está mal ubicada.
+
+Debe pertenecer a la etapa 3 del método.
+
+12. FLUJO COMPLETO DEL SISTEMA
+
+El ejemplo de flujo podría ubicarse mejor en:
+
+Etapa 1 – Diseño
+
+Porque permitiría:
+
+mostrar el funcionamiento general
+
+explicar la lógica del sistema
+
+Si se deja donde está:
+
+debe aclararse su relación con la sección
+
+13. SECCIONES SUELTAS
+
+Algunas secciones aparecen sin relación clara con el contenido.
+
+Se recomienda:
+
+reorganizar la estructura
+
+agruparlas en subsecciones
+
+eliminar contenido innecesario
+
+14. ARQUITECTURA DEL SISTEMA
+
+La arquitectura desplegada debe describirse con mayor detalle.
+
+Se recomienda explicar:
+
+componentes del sistema
+
+infraestructura utilizada
+
+configuración del despliegue
+
+15. PRUEBAS Y RESULTADOS
+
+La etapa de pruebas es muy superficial.
+
+Se recomienda incluir:
+
+pruebas técnicas
+
+pruebas de usabilidad
+
+métricas de validación
+
+relación con objetivos del proyecto
+
+Esto es clave para el capítulo de resultados.
+
+16. RESULTADOS EN PORCENTAJES
+
+Se presentan porcentajes pero no se conoce el número de eventos.
+
+Se recomienda crear tablas con:
+
+ítem evaluado
+
+número de eventos
+
+porcentaje
+
+También explicar:
+
+cómo se obtuvieron los datos
+
+17. USABILIDAD – MÉTODO SUS
+
+Se menciona un puntaje SUS de 70, pero no se presentan los datos.
+
+Se recomienda incluir:
+
+respuestas individuales
+
+cálculo del puntaje
+
+tabla de resultados
+
+18. PRUEBAS UNITARIAS
+
+No basta con indicar:
+
+“la prueba pasó o falló”.
+
+Cada prueba debe incluir:
+
+identificador único (PU-01)
+
+componente probado
+
+requisito validado
+
+condiciones de prueba
+
+resultado esperado
+
+resultado obtenido
+
+19. MÉTRICAS DE RENDIMIENTO
+
+Falta información sobre:
+
+periodo de medición
+
+tamaño de muestra
+
+condiciones del entorno
+
+Ejemplo recomendado:
+
+3 min ± 0.8 min (n = 42 tareas)
+
+20. VALIDACIÓN DE FUNCIONALIDADES
+
+Actualmente se presenta de forma declarativa.
+
+Debe incluir:
+
+casos de prueba
+
+porcentaje de aprobación
+
+evidencia (logs, capturas, tablas)
+
+21. DISCUSIÓN
+
+Debe alinearse con:
+
+preguntas de investigación
+
+objetivos del estudio
+
+También se recomienda:
+
+ampliar contraste bibliográfico
+
+comparar resultados con otras investigaciones
+
+22. CONCLUSIONES
+
+Las conclusiones deben:
+
+alinearse con los objetivos
+
+explicar cómo se lograron
+
+mencionar hallazgos importantes
+
+23. BIBLIOGRAFÍA
+
+Problema:
+
+Bibliografía insuficiente.
+
+Se requieren mínimo 25 fuentes académicas.
+
+24. CHATBOT CON RAG
+
+El documento menciona un chatbot en WhatsApp con RAG, pero no se explican aspectos técnicos:
+
+Debe describirse:
+
+arquitectura
+
+modelo utilizado
+
+base vectorial
+
+proceso de indexación
+
+integración con WhatsApp
+
+métricas de evaluación
+
+25. MODELO SaaS
+
+Se menciona que el sistema es SaaS, pero no se justifica.
+
+Se recomienda explicar:
+
+arquitectura multi-tenant
+
+aislamiento de datos
+
+escalabilidad
+
+provisión para múltiples clientes
+
+26. CONCLUSIÓN DEL EVALUADOR
+
+El software funciona correctamente, pero el documento no refleja el nivel técnico del sistema.
+
+Se requieren mejoras en:
+
+descripción metodológica
+
+claridad técnica
+
+estructura académica
+
+Las correcciones permitirán mejorar significativamente el nivel de la investigación.
+
+TAREA PARA LA IA
+
+Con base en estas observaciones:
+
+Identifica cómo debe reestructurarse la tesis
+
+Propón mejoras de redacción académica
+
+Sugiere cambios en cada sección
+
+Explica cómo corregir los problemas metodológicos
+
+Propón ejemplos de tablas, métricas y pruebas

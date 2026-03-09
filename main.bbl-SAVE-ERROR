@@ -19,6 +19,128 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{raguilera_jwt_nestjs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Autenticación con JWT en NestJS}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+      \verb{url}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+    \endentry
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
+      \endverb
+    \endentry
+    \entry{Bangor2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{fullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorfullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining what individual SUS scores mean: Adding an adjective rating scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -107,6 +229,34 @@
       \endverb
       \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
+    \entry{DuranMero2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
+    \endentry
     \entry{GonzalezMartinez2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
@@ -146,10 +296,353 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+    \entry{INEC2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
+    \entry{ISO25010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhashraw}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhashraw}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 25010:2011 -- Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{Lewis2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{7}
+      \field{title}{The System Usability Scale: Past, present, and future}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 590}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/10447318.2018.1455307
+      \endverb
+    \endentry
+    \entry{MintelTransformation2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+    \endentry
+    \entry{MovistarEmpresas2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.movistar.com.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{raguilera_jwt_nestjs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Autenticación con JWT en NestJS}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+      \verb{url}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+    \endentry
+    \entry{AyoraRecalde2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
+           family={Ayora\bibnamedelima Recalde},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a48b3ae019d8cdf121c97ea0a9913}{%
+           family={Illescas\bibnamedelima Rendon},
+           familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46ccb894d5ae76e4e936959d9825fddf}{%
+           family={Reigosa\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{fullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{fullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \strng{bibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorbibnamehash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authornamehash}{66009d7af9c064e4097225d55c4ae51b}
+      \strng{authorfullhash}{98daf27c75436781821832aa6ba3697d}
+      \strng{authorfullhashraw}{98daf27c75436781821832aa6ba3697d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Investigación}
+      \field{title}{The Digital Revolution in Ecuadorian SMEs: New Business Models and Growth Opportunities}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.53591/iti.v16i22.1647
+      \endverb
+    \endentry
+    \entry{Bangor2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{fullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorfullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining what individual SUS scores mean: Adding an adjective rating scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -238,6 +731,34 @@
       \endverb
       \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
+    \entry{DuranMero2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3526e963707ee4e8b7ffa7a546db0f32}{%
+           family={Durán\bibnamedelima Mero},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{fullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{bibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorbibnamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authornamehash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhash}{3526e963707ee4e8b7ffa7a546db0f32}
+      \strng{authorfullhashraw}{3526e963707ee4e8b7ffa7a546db0f32}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Multidisciplinaria en Ciencias Sociales y Humanidades Eucken}
+      \field{title}{Transformación digital en las PYMES ecuatorianas: desafíos y oportunidades}
+      \field{year}{2024}
+    \endentry
     \entry{GonzalezMartinez2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=de9aefa0c7abcd797e626c60d7adf0f4}{%
@@ -277,6 +798,227 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1234/rle.2021.55.2.45
+      \endverb
+    \endentry
+    \entry{INEC2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
+    \entry{ISO25010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhashraw}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhashraw}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 25010:2011 -- Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{Lewis2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{7}
+      \field{title}{The System Usability Scale: Past, present, and future}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 590}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/10447318.2018.1455307
+      \endverb
+    \endentry
+    \entry{MintelTransformation2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
+           family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ARCOTEL}%
+      }
+      \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{fullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{bibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorbibnamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authornamehash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhash}{12a224a376f8f20495a3fcb59ad02557}
+      \strng{authorfullhashraw}{12a224a376f8f20495a3fcb59ad02557}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.arcotel.gob.ec/
+      \endverb
+    \endentry
+    \entry{MovistarEmpresas2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8d8aa81f74c28385b05e9c924ad1708}{%
+           family={{Movistar Empresas / Telefónica Ecuador}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{fullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{bibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorbibnamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authornamehash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhash}{c8d8aa81f74c28385b05e9c924ad1708}
+      \strng{authorfullhashraw}{c8d8aa81f74c28385b05e9c924ad1708}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.movistar.com.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+    \endentry
+    \entry{Vistazo2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025cf4aa2f1d27e2a3f213c5ef22bf95}{%
+           family={{Vistazo}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{fullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{bibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorbibnamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authornamehash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhash}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \strng{authorfullhashraw}{025cf4aa2f1d27e2a3f213c5ef22bf95}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vistazo.com/
+      \endverb
+      \verb{url}
+      \verb https://www.vistazo.com/
       \endverb
     \endentry
   \enddatalist

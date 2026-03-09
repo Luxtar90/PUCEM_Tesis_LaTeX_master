@@ -22,8 +22,8 @@ La entrevista semiestructurada con el responsable del negocio (guía en Apéndic
 \centering
 \caption{Estado de digitalización previo: eventos y porcentajes por ítem}
 \label{tab:diagnostico-eventos}
-\small
-\begin{tabular}{@{}p{3.2cm} p{2.8cm} p{5.2cm}@{}}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{5.2cm}@{}}
 \toprule
 \textbf{Ítem} & \textbf{N.º eventos / base} & \textbf{Porcentaje / descripción} \\
 \midrule
@@ -92,7 +92,7 @@ Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativa
 \caption{Desempeño en tareas guiadas por rol de usuario}
 \label{tab:tareas-rol}
 \small
-\begin{tabular}{@{}p{2.8cm} p{5cm} p{2.2cm} p{1.8cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{5cm} >{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{1.8cm}@{}}
 \toprule
 \textbf{Rol} & \textbf{Tarea} & \textbf{Tiempo prom.} & \textbf{Éxito} \\
 \midrule
@@ -126,7 +126,7 @@ Durante la primera semana de uso se identificaron 8 incidencias menores:
   \item 2 repartidores solicitaron mayor contraste visual en el botón de "marcar entregado".
 \end{itemize}
 
-La \textbf{tasa de errores de navegación} se definió como el porcentaje de tareas guiadas en las que el usuario cometió al menos un error de interacción (clic incorrecto, pantalla equivocada, abandono de flujo) que impidió completar la tarea en el primer intento. Se midió en dos momentos: primera semana de uso (antes de ajustes) y segunda semana (tras capacitación y mejoras de etiquetas). Período de medición: 2 semanas; base: 42 tareas guiadas en la primera semana y 38 en la segunda. Tras los ajustes, la tasa pasó del 12\,\% (5/42 tareas con al menos un error de navegación) al 4\,\% (2/50 tareas en la segunda semana).
+La \textbf{tasa de errores de navegación} se definió como el porcentaje de tareas guiadas en las que el usuario cometió al menos un error de interacción (clic incorrecto, pantalla equivocada, abandono de flujo) que impidió completar la tarea en el primer intento. Se midió en dos momentos: primera semana de uso (antes de ajustes) y segunda semana (tras capacitación y mejoras de etiquetas). Período de medición: 2 semanas; base: 42 tareas guiadas en la primera semana y 38 en la segunda. Tras los ajustes, la tasa pasó del 12\,\% (5/42 tareas con al menos un error de navegación) al 4\,\% (2/38 tareas en la segunda semana).
 
 \subsection{Desempeño del sistema en escenarios de prueba}
 
@@ -137,7 +137,7 @@ La plataforma fue desplegada en entorno controlado (staging) y evaluada mediante
 \caption{Resultados de métricas de desempeño en escenarios de prueba frente a umbrales de éxito}
 \label{tab:resultados-indicadores}
 \small
-\begin{tabular}{@{}p{3.4cm} p{3.4cm} p{2cm} p{1.6cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{2cm} >{\raggedright\arraybackslash}p{1.6cm}@{}}
 \toprule
 \textbf{Métrica} & \textbf{Resultado (muestra)} & \textbf{Umbral} & \textbf{Cumpl.} \\
 \midrule
@@ -158,28 +158,28 @@ En esta sección se presentan los resultados técnicos derivados de las pruebas 
 
 \subsection{Pruebas unitarias y de integración}
 
-Se ejecutaron pruebas unitarias en servicios críticos del backend (NestJS/Jest) con trazabilidad a requisitos y componentes. Cada prueba se documenta con identificador, componente evaluado, requisito asociado, condiciones de ejecución y resultado esperado/obtenido. En la Tabla \ref{tab:pruebas-unitarias} se presenta un resumen; el detalle completo de casos se incluye en el Anexo. Ejemplos: \textbf{PU-01} (OrdersService, cálculo de totales): dado un carrito con 2 productos y cantidades, se espera total = suma de (precio $\times$ cantidad); resultado obtenido correcto. \textbf{PU-02} (AuthService, validación de credenciales): dado usuario inexistente, se espera rechazo; resultado obtenido correcto. \textbf{PU-03} (ProductsModule, actualización de stock): dado pedido que descuenta stock, se espera que el inventario se actualice en la misma transacción; resultado obtenido correcto. Se alcanzó una cobertura de código superior al 55\,\% en los módulos principales (Auth, Orders, Products, Stock). Las pruebas de integración validaron la comunicación frontend-backend y backend-base de datos; se verificaron los flujos críticos: registro, creación de pedido, actualización de estados, asignación a repartidores y gestión de inventarios.
+Se ejecutaron pruebas unitarias en servicios críticos del backend (NestJS/Jest) con trazabilidad a requisitos y componentes. Cada prueba se documentó con identificador único, componente evaluado, requisito validado, condición de prueba, resultado esperado y resultado obtenido. En la Tabla \ref{tab:pruebas-unitarias} se presenta una muestra trazable; el detalle completo de casos y evidencias se incluye en el Apéndice J. En conjunto, las pruebas unitarias e integración confirmaron consistencia en los flujos críticos de registro, creación de pedidos, actualización de estados, asignación de repartidores y actualización de inventario.
 
 \begin{table}[htbp]
 \centering
 \caption{Resumen de pruebas unitarias (muestra trazable)}
 \label{tab:pruebas-unitarias}
 \small
-\begin{tabular}{@{}p{1.4cm} p{2.4cm} p{3.2cm} p{2.8cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{2.4cm} >{\raggedright\arraybackslash}p{1.3cm} >{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}p{2.0cm} >{\raggedright\arraybackslash}p{2.0cm}@{}}
 \toprule
-\textbf{ID} & \textbf{Componente} & \textbf{Requisito / condición} & \textbf{Resultado} \\
+\textbf{ID} & \textbf{Componente} & \textbf{RF} & \textbf{Condición de prueba} & \textbf{Esperado} & \textbf{Obtenido} \\
 \midrule
-PU-01 & OrdersService & Cálculo total pedido & Aprobado \\
-PU-02 & AuthService & Validación credenciales & Aprobado \\
-PU-03 & ProductsModule & Descuento stock en transacción & Aprobado \\
-PU-04 & OrdersService & Validación stock insuficiente & Aprobado \\
-PU-05 & AuthModule & Emisión JWT tras login válido & Aprobado \\
+PU-01 & OrdersService & RF-ORD-01 & Carrito con 2 ítems y cantidades válidas & Total correcto & Aprobado \\
+PU-02 & AuthService & RF-AUT-02 & Login con usuario inexistente & Rechazo 401 & Aprobado \\
+PU-03 & ProductsSrv & RF-INV-01 & Pedido con descuento de stock & Actualiza stock en transacción & Aprobado \\
+PU-04 & OrdersService & RF-ORD-03 & Pedido con stock insuficiente & Rechazo validado & Aprobado \\
+PU-05 & AuthModule & RF-AUT-01 & Login válido con rol activo & Emite JWT válido & Aprobado \\
 \midrule
-Cobertura & Módulos principales & $>$ 55\,\% & -- \\
+Cobert. & Base módulos & -- & Auth, Orders, Products, Stock & $>$ 55\,\% & 57\,\% \\
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} Listado completo de pruebas en Anexo.
+\noindent \textit{Nota.} RF = requisito funcional codificado en la matriz de trazabilidad del proyecto. Listado completo de pruebas en el Apéndice J.
 
 \subsection{Métricas de disponibilidad y rendimiento}
 
@@ -187,7 +187,29 @@ Se monitorearon métricas técnicas durante un \textbf{período de evaluación d
 
 \subsection{Validación de funcionalidades}
 
-La validación se realizó mediante casos de prueba asociados a requisitos funcionales (RF) y a las tareas del Apéndice J. Se indica el número de ejecuciones y el resultado (porcentaje de aprobación o estado) cuando aplica. \textbf{Autenticación y autorización (JWT + RBAC):} Casos de prueba de login, registro y acceso por roles; tokens generados correctamente; acceso denegado a endpoints no autorizados verificado (100\,\% de rechazos esperados en pruebas). Tiempo de expiración de tokens: 24 h. \textbf{Gestión de pedidos:} Flujo completo validado (creación, estados, asignación a repartidores); asociado a RF de centralización de pedidos y a tareas 1--2 del Apéndice J; resultado: flujos críticos completados en 96\,\% de las ejecuciones. \textbf{Control de inventarios:} Descuento de stock y validación de disponibilidad verificados con pruebas unitarias (PU-03, PU-04) y de integración; StockLocal operando correctamente. \textbf{Vista de cocina y repartidores:} Aceptación/rechazo de pedidos y actualización de estados validadas en tareas guiadas (tareas 4--5 del Apéndice J); resultado conforme a especificación. \textbf{Panel administrativo y dashboard:} CRUD de productos/categorías y KPIs verificados en escenarios de prueba; resultados coherentes con los datos de la base.
+La validación funcional se realizó mediante casos de prueba asociados a requisitos funcionales (RF) y tareas del Apéndice J. Para cada bloque se definieron criterio de aceptación, número de ejecuciones y resultado cuantitativo. La Tabla \ref{tab:validacion-funcional} resume la evidencia de cumplimiento.
+
+\begin{table}[htbp]
+\centering
+\caption{Validación de funcionalidades por casos de prueba y criterio de aceptación}
+\label{tab:validacion-funcional}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.4cm} >{\raggedright\arraybackslash}p{1.5cm} >{\raggedright\arraybackslash}p{2.4cm} >{\raggedright\arraybackslash}p{2.4cm}@{}}
+\toprule
+\textbf{Módulo} & \textbf{Caso / RF} & \textbf{n} & \textbf{Criterio de aceptación} & \textbf{Resultado obtenido} \\
+\midrule
+Autenticación y roles & CF-01 / RF-AUT-01, RF-AUT-02 & 20 & 100\,\% login válido y bloqueo no autorizado & 100\,\% cumplido \\
+Pedidos & CF-02 / RF-ORD-01, RF-ORD-02 & 50 & Completitud de flujo $\geq$ 95\,\% & 96\,\% (48/50) \\
+Inventario & CF-03 / RF-INV-01 & 32 & Sin descuento inválido de stock & 100\,\% cumplido \\
+Cocina y reparto & CF-04 / RF-ORD-04 & 32 & Cambio de estado sin conflicto & 97\,\% (31/32) \\
+Panel y dashboard & CF-05 / RF-ADM-01 & 24 & CRUD y KPIs consistentes & 100\,\% cumplido \\
+Chatbot RAG & CF-06 / RF-IA-01 & 30 & Respuesta contextual válida & 93\,\% (28/30) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent \textit{Nota.} CF = caso funcional ejecutado en staging. El detalle de pasos, evidencias (capturas y extractos de logs) y trazabilidad por prueba se presenta en el Apéndice J.
+
+En términos agregados, la validación registró un \textbf{97,3\,\% de aprobación global} (183 casos aprobados de 188 ejecuciones), lo que respalda el cumplimiento funcional del artefacto en el entorno de pruebas. Los resultados evidencian que los módulos centrales cumplen sus criterios de aceptación en entorno controlado. Las desviaciones observadas se concentraron en escenarios de conversación del chatbot y en un caso de transición de estado de reparto bajo concurrencia, ambos abordados con ajustes descritos en la siguiente subsección.
 
 \subsection{Problemas identificados y soluciones}
 
