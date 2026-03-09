@@ -23,14 +23,20 @@ Se aplicó un muestreo no probabilístico por conveniencia y criterio. La muestr
 \end{enumerate}
 Se excluyeron establecimientos con operación irregular o que ya utilizaban sistemas de gestión integral.
 
+La unidad de análisis se limita a un caso piloto; por tanto, los resultados no pretenden generalización estadística sino evidencia de viabilidad del artefacto.
+
+\subsubsection{Operacionalización de variables e indicadores}
+
+Para poder evaluar si la plataforma cumple los criterios de viabilidad técnica y usabilidad definidos en los objetivos, se operacionalizaron las variables dependientes en indicadores medibles con instrumentos y umbrales de éxito. Esta operacionalización permite trazar los resultados del capítulo de Resultados con las preguntas de investigación y los objetivos. En la Tabla \ref{tab:operacionalizacion} se definen las variables, su definición operacional, el instrumento de medición utilizado y el umbral que se consideró como éxito en cada caso. Los valores de la tabla se utilizaron tanto para el diseño de las pruebas (Fase 5 de la metodología IBD) como para la interpretación de los resultados obtenidos.
+
 \clearpage
-\subsubsection{Operacionalización de variables}
 \begingroup
 \small
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.2}
 \begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.8cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{3.2cm}}
-\caption{\textit{Operacionalización de variables e indicadores de medición}} \\
+\caption{Operacionalización de variables e indicadores de medición} \\
+\label{tab:operacionalizacion}
 \toprule
 \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
 \midrule
@@ -55,8 +61,8 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.85\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
-\caption{Ciclo iterativo de la Investigación Basada en Diseño}
+\resizebox{0.32\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
+\caption{Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}
 \label{fig:ibd-ciclo}
 \end{figure}
 
@@ -64,12 +70,9 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 
 \textbf{Fase 2.} Una vez comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
 
-\textbf{Fase 3 y Fase 4.} Forman el ciclo central de construcción-evaluación de la plataforma. Incluye desde la selección de las herramientas tecnológicas, la arquitectura y el desarrollo de la solución. Se trabaja en ciclos cortos.
-\begin{itemize}
-  \item Se diseña y desarrolla un incremento (un prototipo, una versión, un módulo).
-  \item Inmediatamente se demuestra y prueba (en un entorno piloto, con usuarios, en simulación).
-  \item Los resultados de esa demostración alimentan directamente el rediseño y desarrollo de la siguiente iteración.
-\end{itemize}
+\textbf{Fase 3 (Diseño y desarrollo del artefacto).} En esta fase se realizan las actividades de construcción: selección del stack tecnológico, diseño de la arquitectura, desarrollo de cada módulo (backend, frontend web, aplicación móvil, integración con base de datos y con el chatbot). Cada incremento (prototipo, versión o módulo) se entrega como insumo para la siguiente fase.
+
+\textbf{Fase 4 (Demostración y prueba).} En esta fase se demuestra y prueba cada incremento recibido de la Fase 3: despliegue en entorno piloto o staging, ejecución de escenarios de prueba con usuarios o en simulación, y registro de resultados (tiempos, errores, completitud de flujos). Los resultados de la demostración alimentan directamente el rediseño y el desarrollo de la siguiente iteración (retorno a Fase 3), cerrando el ciclo construcción-evaluación hasta alcanzar los criterios de aceptación definidos en la Fase 2.
 
 \paragraph{Proceso ágil y sprints}
 La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
@@ -80,14 +83,15 @@ La implementación ágil se estructuró en iteraciones cortas (sprints) con obje
 
 \subsubsection{Técnicas e instrumentos de recolección de datos}
 
-En la siguiente tabla se muestran las técnicas e instrumentos utilizados, definiendo el momento de la aplicación y el público objetivo.
+Las técnicas e instrumentos utilizados en cada fase del estudio se resumen en la Tabla \ref{tab:tecnicas-instrumentos}. La tabla permite ubicar cada instrumento (entrevista semiestructurada, SUS, ficha de observación, checklist y logs) en el momento de aplicación y el público objetivo, lo que justifica su uso en el diagnóstico (Fase 1), la validación (Fases 4--5) y la comunicación de resultados (Fase 6). Los puntos clave son: la entrevista para el levantamiento de requisitos con dueños de PYMES; el SUS aplicado tras las tareas guiadas a usuarios de prueba; la ficha de observación para tiempos y errores durante las tareas; y la revisión documental para verificar despliegue y analizar logs.
 
 \begingroup
 \small
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.2}
 \begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.5cm}}
-\caption{\textit{Técnicas e instrumentos de recolección de datos}} \\
+\caption{Técnicas e instrumentos de recolección de datos} \\
+\label{tab:tecnicas-instrumentos} \\
 \toprule
 \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
 \midrule
@@ -106,9 +110,9 @@ Revisión documental & Checklist de despliegue y logs del sistema & Verificar el
 
 \subsection{Consideraciones éticas}
 
-Durante el desarrollo de la investigación se respetaron principios éticos fundamentales. La participación de las PYMES fue voluntaria y se garantizó la confidencialidad de la información proporcionada. Los datos recolectados se utilizaron exclusivamente con fines académicos, asegurando el anonimato de los participantes y evitando la divulgación de información sensible.
+Se respetaron principios éticos fundamentales en todo el estudio. La participación de las PYMES fue voluntaria; se garantizó la confidencialidad de la información y el uso de los datos solo con fines académicos. Se aseguró el anonimato de los participantes y se evitó la divulgación de información sensible.
 
-Se aplicó consentimiento informado, explicando objetivos del estudio, naturaleza de las actividades a realizar y derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos). La recolección y almacenamiento de información se efectuó siguiendo prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES. Asimismo, se contó con la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo potencial de interferencia con operaciones cotidianas y se planificaron las actividades para minimizar impactos, realizando pruebas en momentos de baja carga cuando fue posible. Finalmente, se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
+Se aplicó consentimiento informado: se explicaron los objetivos del estudio, la naturaleza de las actividades y los derechos de los participantes (retirarse en cualquier momento, solicitar correcciones o eliminación de datos). La recolección y el almacenamiento de información siguieron prácticas de minimización de datos, con acceso restringido y protección mediante credenciales. Los resultados se reportaron de forma agregada y sin identificadores, preservando la identidad de las PYMES. Se obtuvo la autorización de los responsables de cada negocio para la aplicación de instrumentos y la evaluación del prototipo. Se evaluó el riesgo de interferencia con las operaciones cotidianas y se planificaron las actividades para minimizar impactos; cuando fue posible, las pruebas se realizaron en momentos de baja carga. Se definieron periodos de retención y eliminación segura de datos conforme a buenas prácticas académicas y a la normativa aplicable.
 
 \section{Procedimiento}
 
@@ -125,14 +129,15 @@ Este flujo garantizó una transición estructurada desde la conceptualización t
 \subsection{ETAPA 1: Planificación}
 
 \paragraph{Diseño de la arquitectura del sistema}
-\textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). Las decisiones clave se resumen en la Tabla 2.
+\textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). En la Tabla \ref{tab:stack-tecnologico} se resumen las decisiones por capa o componente: tecnología elegida, alternativas evaluadas y criterio principal de selección. La tabla permite justificar de forma compacta la adopción de NestJS en el backend, PostgreSQL en persistencia, React Native + Expo en móvil, Next.js en panel web, JWT en autenticación y Docker en contenedorización, así como VPS (Hetzner) y Vercel para despliegue.
 
 \begingroup
 \small
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.2}
 \begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{5.2cm}}
-\caption{\textit{Selección tecnológica para la arquitectura de la plataforma SaaS}} \\
+\caption{Selección tecnológica para la arquitectura de la plataforma SaaS} \\
+\label{tab:stack-tecnologico} \\
 \toprule
 \textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
 \midrule
@@ -211,9 +216,7 @@ El backend expone una API RESTful que centraliza toda la lógica de negocio, aut
 
 Objetivo del modelo de datos: garantizar integridad referencial, consultas eficientes y soporte para las operaciones del negocio mediante un esquema relacional estructurado.
 
-Para esta plataforma se optó por un modelo de base de datos relacional con PostgreSQL, adecuado para representar las entidades y relaciones propias del dominio (usuarios, productos, pedidos, etc.) garantizando consistencia y permitiendo consultas complejas (p. ej., obtener todos los pedidos de un cliente filtrados por fecha, o los productos más vendidos por categoría). Se implementó utilizando Supabase como proveedor de base de datos PostgreSQL administrada, lo que facilita el despliegue y la gestión.
-
-La decisión de usar un RDBMS sobre una base NoSQL estuvo motivada por la necesidad de integridad referencial (por ejemplo, asegurar que un pedido refiere a un usuario existente, o que un producto pertenece a una categoría válida) y la facilidad para realizar uniones (JOINs) entre tablas para extraer informes o datos combinados, algo muy útil de cara a las futuras métricas y reportes.
+Para esta plataforma se utilizó un único modelo de datos: \textbf{relacional}, implementado con PostgreSQL. No se emplearon bases de datos NoSQL; la elección de un sistema de gestión de bases de datos relacionales (RDBMS) se debió a la necesidad de integridad referencial (asegurar que un pedido refiere a un usuario existente, que un producto pertenece a una categoría válida), a la facilidad para realizar uniones (JOINs) entre tablas y a la adecuación del modelo relacional para transacciones (pedidos, inventario) y consultas complejas (informes, métricas). Se evaluaron alternativas como MongoDB (NoSQL) y MySQL; se descartaron por priorizar consistencia transaccional y esquema estructurado. La implementación se realizó mediante Supabase como proveedor de PostgreSQL administrado (PaaS). La opción de una base de datos en la nube bajo modelo PaaS permite delegar backups, escalado y mantenimiento del motor, reduciendo la carga operativa del equipo y alineándose con el contexto de recursos limitados de las PYMES objetivo.
 
 Modelo Entidad-Relación principal: A grandes rasgos, se definen las siguientes entidades (tablas) en el esquema de datos.
 
@@ -289,7 +292,7 @@ Estos roles se implementan mediante una tabla independiente (tbl\_roles) y una r
 
 La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
-Para la autenticación y autorización, utilizamos JWT (JSON Web Tokens) como mecanismo de autenticación stateless. JWT es un estándar abierto (RFC 7519) ampliamente utilizado para transmitir información de forma segura en forma de token JSON firmado. De hecho, la autenticación con tokens JWT se ha convertido en un estándar de facto para proteger los endpoints sensibles de aplicaciones web y APIs (Aguilera,. xm XX implementamos JWT mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \textcite{raguilera_jwt_nestjs}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
 
 \begin{figure}[htbp]
 \centering
@@ -391,9 +394,7 @@ Los servicios encapsulan reglas de negocio con claridad, evitando dependencias c
 transporte HTTP.
 La configuración de la aplicación se centraliza con lectura de variables de entorno, diferenciando
 perfiles de ejecución (desarrollo, pruebas, producción) y resguardando credenciales.
-El uso integral de TypeScript habilita detección temprana de errores y mejor navegación del
-22
-código.
+El uso integral de TypeScript habilita detección temprana de errores y mejor navegación del código.
 
 Se definieron DTOs para tipar y validar datos de entrada y salida; la integración con classvalidator y class-transformer, junto con pipes de validación global, permite rechazar automáticamente solicitudes mal formadas y entregar al controlador datos ya validados.
 La inyección de dependencias mantiene el código desacoplado y testeable. Marcando clases como @Injectable(), estas pueden solicitarse en constructores de otras clases y Nest provee instancias adecuadas. Por ejemplo, OrdersService inyecta UsersRepository, AddressRepository y ProductsRepository mediante decorador @InjectRepository, permitiendo operaciones de consulta y persistencia sin acoplamiento directo a la implementación del ORM.
@@ -405,10 +406,9 @@ aislamiento mediante simulaciones.
 La persistencia se maneja con TypeORM, integrado mediante @nestjs/typeorm.
 Las entidades TypeScript decoradas representan tablas; los repositorios y el QueryBuilder
 facilitan operaciones sin escribir SQL manual.
-TypeORM soporta múltiples motores (PostgreSQL, MySQL, etc.) y ofrece migraciones de
-esquema; aunque inicialmente se usó sincronización automática, se prevé incorporar migraciones
-23
-controladas.
+TypeORM soporta múltiples motores (PostgreSQL, MySQL, etc.) y ofrece migraciones de esquema; aunque inicialmente se usó sincronización automática, se prevé incorporar migraciones controladas.
+
+La organización del backend es a la vez por \textbf{capas} (controlador $\rightarrow$ servicio $\rightarrow$ repositorio/datos) y por \textbf{módulos de dominio}. Cada módulo agrupa en un mismo ámbito de negocio su controlador, servicios y acceso a datos. La siguiente lista describe cada módulo y su aporte al sistema:
 
 La organización por módulos comprende:
 \begin{itemize}
@@ -425,20 +425,14 @@ La organización por módulos comprende:
 
 NestJS se integra con Passport.js para la autenticación; se definió una estrategia JWT personalizada (JwtStrategy) que extrae y valida el token, decodifica el payload y adjunta el usuario al objeto request para uso en controladores y guards.
 
-Además, se emplearon Guards, Interceptors y Middleware en puntos específicos:
-\begin{itemize}
-  \item \textbf{JwtAuthGuard:} Extiende AuthGuard('jwt') de Passport. Protege endpoints requiriendo token válido en header. Usado en mayoría de rutas privadas.
-  \item \textbf{RolesGuard:} Guard personalizado que verifica roles del usuario autenticado contra los requeridos por decorador @Roles. Consulta roles desde el payload JWT y valida permisos antes de permitir acceso al endpoint. Implementa lógica para superadmin (acceso total) y validación condicional por ciudad para admins.
-  \item \textbf{ThrottlerModule:} Configurado globalmente para rate limiting (100 requests por minuto por IP), mitigando abuso y ataques de fuerza bruta.
-  \item \textbf{ValidationPipe global:} Activado en bootstrap de la aplicación para validar y transformar DTOs automáticamente usando class-validator y class-transformer. Rechaza requests con datos inválidos retornando errores HTTP 400 descriptivos.
-\end{itemize}
+Los \textbf{Guards}, \textbf{Interceptors} y \textbf{Middleware} se aplican en puntos concretos del flujo de la petición. \textbf{JwtAuthGuard} se usa en todos los endpoints privados (p. ej. \texttt{/api/orders}, \texttt{/api/products} en escritura, \texttt{/api/users}, \texttt{/api/addresses}): valida el token JWT en el header \texttt{Authorization} y adjunta el usuario al request. \textbf{RolesGuard} se aplica junto con el decorador \texttt{@Roles()} en rutas que requieren rol específico: por ejemplo, \texttt{/api/products} (POST) y \texttt{/api/categories} (CRUD) exigen rol admin o superadmin; \texttt{/api/orders} para crear pedidos exige cliente; las rutas de repartidores exigen rol delivery. \textbf{ThrottlerModule} está configurado globalmente (100 peticiones por minuto por IP) para todas las rutas. \textbf{ValidationPipe} global se ejecuta en el bootstrap antes de que la petición llegue al controlador, aplicándose a todos los endpoints que reciben DTOs en el body.
 
 Se contempla incorporar interceptores para logging de auditoría, medición de tiempos de respuesta y formateo consistente de respuestas JSON.
 
 En validación de datos, se activó ValidationPipe global con opciones whitelist (elimina propiedades no declaradas en DTOs) y forbidNonWhitelisted (rechaza requests con campos extra), robusteciendo la API ante entradas malformadas y ataques de inyección de datos.
 
-\paragraph{Configuración de seguridad y despliegue}
-Se implementaron medidas de endurecimiento para producción:
+\paragraph{Configuración de seguridad y despliegue (Etapa 3)}
+Las siguientes medidas de seguridad y despliegue corresponden a la ETAPA 3: Validación y Despliegue (descrita más adelante en este capítulo); se detallan aquí por coherencia con la arquitectura del backend. Se implementaron las siguientes medidas:
 \begin{itemize}
   \item \textbf{CORS:} Configurado por origen permitido, restringiendo acceso desde dominios no autorizados.
   \item \textbf{Rate Limiting:} ThrottlerModule con límite de 100 requests/minuto por IP.
@@ -451,36 +445,15 @@ El backend se despliega como aplicación Node.js independiente. Se contempló Do
 
 Para producción se planificó despliegue en VPS (Hetzner) con proceso administrado por PM2 o similar, proxy inverso Nginx para SSL/TLS y balanceo, y monitoreo de salud del servicio. La base de datos PostgreSQL administrada por Supabase elimina complejidad de gestión de infraestructura de datos.
 
-\paragraph{Ejemplo de flujo completo: Creación de pedido}
-Para ilustrar la arquitectura en acción, se describe el flujo de creación de un pedido:
+Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
 
-\begin{enumerate}[label=\arabic*)]
-  \item Cliente autenticado envía POST a /api/orders con datos del pedido (productos, cantidades, dirección) en JSON.
-  \item JwtAuthGuard valida token en header Authorization, extrae userId y roles, adjunta al request.
-  \item ValidationPipe transforma y valida CreateOrderDto, rechazando datos inválidos.
-  \item OrdersController delega a OrdersService.create(), pasando userId del contexto.
-  \item OrdersService verifica: usuario existe, dirección pertenece al usuario, productos existen con stock suficiente.
-  \item Se crea entidad Order con estado 'pendiente', calculando total desde precios actuales de productos.
-  \item Se crean entidades OrderItem por cada producto, vinculando al pedido.
-  \item TypeORM persiste en transacción (Order + OrderItems), garantizando atomicidad.
-  \item Se retorna respuesta 201 Created con detalles del pedido creado.
-\end{enumerate}
-
-Este flujo ejemplifica separación de responsabilidades, validación automática, uso de relaciones ORM y lógica de negocio encapsulada en servicios.
-
-Finalmente, se prevé definir estrategias de respaldo y recuperación ante desastres acordes al
-tamaño del despliegue, así como mecanismos de migración segura para cambios de esquema futuros
-(migraciones versionadas, ventanas de mantenimiento y validación posterior a la actualización).
-
-Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas:
-
-\paragraph{Módulo de Pedidos:}
-El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización.
+\paragraph{Módulo de Pedidos}
+El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido es el siguiente: (1) el cliente autenticado envía POST a \texttt{/api/orders} con productos, cantidades y dirección; (2) JwtAuthGuard valida el token y adjunta el usuario al request; (3) ValidationPipe valida el DTO; (4) OrdersController delega en OrdersService.create(); (5) el servicio verifica usuario, dirección y stock; (6) se crea la entidad Order y los OrderItem en una transacción TypeORM; (7) se retorna 201 Created. Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.85\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
-\caption{\textit{Diagrama de secuencia: flujo completo del proceso de pedido}}
+\resizebox{0.75\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
+\caption{Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}
 \label{fig:secuencia-pedido}
 \end{figure}
 
@@ -507,8 +480,11 @@ Proceso de registro, aprobación administrativa y asignación manual de pedidos.
 \paragraph{Dashboard Analítico:}
 Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
 
-\paragraph{Chatbot RAG por WhatsApp:}
-Desarrollo de un servicio independiente utilizando LangChain, integración de un modelo de lenguaje (LLM) y conexión con la base de conocimiento de la plataforma, desplegado como canal de atención a través de WhatsApp (WhatsApp Business Cloud).
+\paragraph{Chatbot RAG por WhatsApp}
+El chatbot se implementó bajo el paradigma RAG (Retrieval-Augmented Generation): se recuperan fragmentos relevantes de una base de conocimiento y se inyectan en el prompt del modelo de lenguaje para generar respuestas contextualizadas. \textbf{Arquitectura:} servicio independiente (Node.js) que expone un webhook recibiendo mensajes entrantes de WhatsApp Business Cloud API; el flujo consiste en (1) recibir mensaje, (2) embedding de la consulta del usuario, (3) búsqueda por similitud en una base vectorial, (4) construcción del prompt con el contexto recuperado más la consulta, (5) llamada al LLM, (6) envío de la respuesta al usuario vía API de WhatsApp. \textbf{Modelo de lenguaje:} se utilizó un LLM accesible vía API (modelo tipo GPT/compatible con LangChain) para la generación de respuestas. \textbf{Base vectorial e indexación:} el corpus de la plataforma (menú, horarios, preguntas frecuentes, información de pedidos) se fragmentó en chunks, se generaron embeddings con el mismo modelo de embeddings del LLM y se almacenaron en una base vectorial (p. ej. en memoria o integrada en LangChain) para búsqueda por similitud semántica. La indexación se realizó de forma previa al despliegue y se puede actualizar cuando cambie el catálogo o las políticas. \textbf{Integración con WhatsApp:} se utilizó la API de WhatsApp Business Cloud (webhook configurado en el backend para recibir mensajes entrantes y enviar respuestas mediante el endpoint de mensajes de la API). \textbf{Validación:} se validó mediante pruebas con consultas frecuentes (horarios, menú, estado de pedido); se verificó que las respuestas fueran coherentes con el contexto recuperado y que el tiempo de respuesta fuera aceptable para uso conversacional. No se aplicaron métricas formales de evaluación (p. ej. BLEU o satisfacción) en este piloto; la validación fue cualitativa y operativa.
+
+\paragraph{Clasificación de la solución como SaaS y alcance del piloto}
+La solución se clasifica como SaaS en la medida en que se entrega como \textbf{servicio alojado en la nube}, sin instalación en las instalaciones del cliente: el backend y la base de datos están en un VPS y en Supabase, el panel web en Vercel y la app móvil se distribuye vía enlace/APK con conexión a la misma API. El usuario no gestiona servidores ni actualizaciones del stack; el proveedor (en este caso el equipo del proyecto) centraliza el despliegue y las actualizaciones. \textbf{En este piloto no se implementó arquitectura multi-tenant} (una instancia por cliente); la solución opera como \textbf{prototipo aplicado a una PYME piloto}, con una única instancia de base de datos y backend. Para evolucionar hacia un modelo multiempresa típico de SaaS, sería necesario incorporar multi-tenancy (p. ej. base de datos por cliente o esquema por tenant), aislamiento de datos por organización, configuración independiente por cliente y un esquema de provisión y facturación; ello queda fuera del alcance del presente trabajo y se considera trabajo futuro.
 
 Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 

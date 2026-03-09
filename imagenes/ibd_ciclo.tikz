@@ -8,22 +8,22 @@
 }
 \node[container] (ciclo) {};
 \node[font=\bfseries, yshift=-0.25cm] at (ciclo.north) {Ciclo iterativo};
-\node[phase, anchor=west, xshift=0.7cm, yshift=-0.15cm] at (ciclo.west) (fase3) {Fase 3: Diseño \& Desarrollo\\(Construcción del Artefacto)};
-\node[phase, anchor=east, xshift=-0.7cm, yshift=-0.15cm] at (ciclo.east) (fase4) {Fase 4: Demostración\\(Aplicación/Prueba)};
-\draw[flow] (fase3.east) -- node[above, font=\scriptsize]{Prototipo / Iteración N} (fase4.west);
+\node[phase, anchor=west, xshift=0.7cm, yshift=-0.15cm] at (ciclo.west) (fase3) {Fase 3: Dise\~no \& Desarrollo\\(Construcci\'on del Artefacto)};
+\node[phase, anchor=east, xshift=-0.7cm, yshift=-0.15cm] at (ciclo.east) (fase4) {Fase 4: Demostraci\'on\\(Aplicaci\'on/Prueba)};
+\draw[flow] (fase3.east) -- node[above, font=\scriptsize]{Prototipo / Iteraci\'on N} (fase4.west);
 \draw[flow] (fase4.west) -- node[below, font=\scriptsize]{Feedback / Resultados} (fase3.east);
-\node[phasediamond, below=1.4cm of ciclo] (fase5) {Fase 5: Evaluación Formal};
+\node[phasediamond, below=1.4cm of ciclo] (fase5) {Fase 5: Evaluaci\'on Formal};
 \draw[flow] (ciclo.south) -- (fase5.north);
-\draw[flow] (fase5.north) to[out=25,in=-80] node[right, font=\scriptsize, align=left, xshift=0.2cm]{Evaluación NO satisfactoria\\(Nuevos requisitos / problema)} (ciclo.south east);
-\node[phasesmall, below=0.85cm of fase5, fill=green!8] (evalok) {Evaluación satisfactoria};
+\draw[flow] (fase5.north) to[out=25,in=-80] node[right, font=\scriptsize, align=left, xshift=0.2cm]{Evaluaci\'on NO satisfactoria\\(Nuevos requisitos / problema)} (ciclo.south east);
+\node[phasesmall, below=0.85cm of fase5, fill=green!8] (evalok) {Evaluaci\'on satisfactoria};
 \draw[flow] (fase5.south) -- (evalok.north);
-\node[phase, below=0.7cm of evalok] (fase6) {Fase 6: Comunicación \& Difusión};
+\node[phase, below=0.7cm of evalok] (fase6) {Fase 6: Comunicaci\'on \& Difusi\'on};
 \draw[flow] (evalok.south) -- (fase6.north);
-\node[phasesmall, below=0.7cm of fase6] (nuevo) {Nuevo Problema o\\Contexto de Aplicación};
+\node[phasesmall, below=0.7cm of fase6] (nuevo) {Nuevo Problema o\\Contexto de Aplicaci\'on};
 \draw[flow] (fase6.south) -- (nuevo.north);
-\node[phase, below=0.7cm of nuevo] (fase1) {Fase 1: Identificación del Problema};
+\node[phase, below=0.7cm of nuevo] (fase1) {Fase 1: Identificaci\'on del Problema};
 \draw[flow] (nuevo.south) -- (fase1.north);
-\node[phase, below=0.7cm of fase1] (fase2) {Fase 2: Definición de Objetivos};
+\node[phase, below=0.7cm of fase1] (fase2) {Fase 2: Definici\'on de Objetivos};
 \draw[flow] (fase1.south) -- (fase2.north);
 \draw[flow] (fase2.east) to[out=-10,in=-90] (ciclo.south east);
 \end{tikzpicture}

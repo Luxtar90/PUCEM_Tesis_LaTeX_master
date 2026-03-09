@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{raguilera_jwt_nestjs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Autenticación con JWT en NestJS}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+      \verb{url}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+    \endentry
     \entry{AyoraRecalde2024}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
@@ -219,6 +254,41 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
+    \entry{INEC2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
     \entry{MintelTransformation2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
@@ -280,6 +350,36 @@
       \endverb
       \verb{url}
       \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
       \endverb
     \endentry
     \entry{Vistazo2025}{online}{}{}
@@ -314,6 +414,41 @@
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{raguilera_jwt_nestjs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{fullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{bibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorbibnamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authornamehash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhash}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Autenticación con JWT en NestJS}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+      \verb{url}
+      \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
+      \endverb
+    \endentry
     \entry{AyoraRecalde2024}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=07e5657471c9ceed41d327bdbe9a5c36}{%
@@ -514,6 +649,41 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
+    \entry{INEC2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
+           family={{Instituto Nacional de Estadística y Censos}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{fullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{bibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorbibnamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authornamehash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhash}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \strng{authorfullhashraw}{a98355f5c0cde3a9866bcfeb075ad4e9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
+      \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+      \verb{url}
+      \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
     \entry{MintelTransformation2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
@@ -575,6 +745,36 @@
       \endverb
       \verb{url}
       \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{UNESCO2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://en.unesco.org/creative-cities/
+      \endverb
+      \verb{url}
+      \verb https://en.unesco.org/creative-cities/
       \endverb
     \endentry
     \entry{Vistazo2025}{online}{}{}
