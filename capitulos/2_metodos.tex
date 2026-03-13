@@ -4,7 +4,7 @@
 
 \subsection{Enfoque y tipo}
 
-La investigación se desarrolló bajo un enfoque de Investigación Basada en Diseño (Design Science Research), con evaluación de la solución mediante pruebas técnicas y pruebas de usabilidad en un entorno controlado (staging). Se adoptó un estudio de caso como contexto (PYME piloto), sin medición longitudinal de desempeño operativo real. Este enfoque se eligió para desarrollar y evaluar un artefacto de software (la plataforma SaaS) que resuelve una problemática concreta en un contexto específico.
+La investigación se desarrolló bajo un enfoque de Investigación Basada en Diseño (Design Science Research), con evaluación de la solución mediante pruebas técnicas y pruebas de usabilidad en un entorno controlado (\textit{staging}). Se adoptó un estudio de caso como contexto (PYME piloto), sin medición longitudinal de desempeño operativo real. Este enfoque se eligió para desarrollar y evaluar un artefacto de software (la plataforma SaaS) que resuelve una problemática concreta en un contexto específico.
 
 El componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios durante las pruebas de usabilidad, mientras que el cuantitativo posibilitó la medición objetiva de variables de desempeño en escenarios de prueba controlados. El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación técnica de un artefacto de software para demostrar su viabilidad en un contexto específico. El diseño es no experimental y transversal, ya que se observaron y describieron las variables en su contexto de prueba sin manipulación deliberada, en un período específico.
 
@@ -54,9 +54,11 @@ Usabilidad del sistema & Grado de facilidad, eficiencia y satisfacción con que 
 \endgroup
 Nota: Los umbrales de éxito para las métricas de desempeño se establecieron con base en estándares razonables de calidad para un sistema en fase de validación técnica, considerando la factibilidad de ejecución en escenarios de prueba controlados. El umbral para el SUS se basa en la clasificación estándar de Bangor et al. (2009).
 
+La Tabla \ref{tab:operacionalizacion} define explícitamente los criterios de éxito que luego se emplean en el capítulo de Resultados para verificar el cumplimiento de objetivos.
+
 \subsection{Metodología}
 
-El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por ser una metodología de investigación poderosa para desarrollar y evaluar artefactos (productos, procesos, métodos, modelos, etc.) que resuelven problemas del mundo real. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares pero con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de Hevner et al. (2004) y Peffers et al. (2007).
+El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por su capacidad para desarrollar y evaluar artefactos (productos, procesos, métodos o modelos) orientados a resolver problemas del mundo real \parencite{hevner2004,peffers2007}. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de \textcite{hevner2004} y \textcite{peffers2007}.
 
 \begin{figure}[htbp]
 \centering
@@ -65,18 +67,78 @@ El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD)
 \label{fig:ibd-ciclo}
 \end{figure}
 
+La Figura \ref{fig:ibd-ciclo} comunica la lógica de avance del estudio: diagnóstico del problema (Fases 1 y 2), construcción técnica del artefacto (Fase 3), demostración y prueba en entorno controlado (Fase 4), evaluación formal frente a criterios (Fase 5) y comunicación de resultados (Fase 6). Su propósito es mostrar el alcance metodológico completo y los elementos que se retroalimentan en cada iteración.
+
 \textbf{Fase 1.} El objetivo de esta fase fue comprender y definir claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
 
 \textbf{Fase 2.} Una vez comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
 
+\subsubsection{Requerimientos funcionales y no funcionales (Objetivo específico 1)}
+
+Con base en la entrevista semiestructurada, revisión documental y análisis del dominio, se levantaron los requerimientos que guiaron el diseño y la validación del prototipo. La Tabla \ref{tab:requerimientos-rf-rnf} presenta una síntesis de los requerimientos funcionales (RF) y no funcionales (RNF) utilizados como referencia en las pruebas de integración y validación funcional.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{5.9cm}>{\raggedright\arraybackslash}p{6.0cm}}
+\caption{Requerimientos funcionales y no funcionales priorizados}\label{tab:requerimientos-rf-rnf} \\
+\toprule
+\textbf{Código} & \textbf{Descripción} & \textbf{Criterio de verificación} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Código} & \textbf{Descripción} & \textbf{Criterio de verificación} \\
+\midrule
+\endhead
+RF-ORD-01 & Registrar pedidos con productos, cantidades y dirección de entrega. & El pedido se crea sin errores y queda visible para cocina/administración. \\
+RF-ORD-02 & Gestionar estados de pedido (pendiente, en preparación, listo, en camino, entregado). & El cambio de estado mantiene trazabilidad y secuencia válida. \\
+RF-INV-01 & Descontar inventario por pedido confirmado y evitar stock negativo. & Las existencias se actualizan de forma consistente tras cada operación. \\
+RF-DEL-01 & Asignar y gestionar pedidos para repartidores. & El repartidor visualiza pedidos y puede confirmar hitos de entrega. \\
+RF-ADM-01 & Administrar catálogo (productos/categorías) desde panel web. & Operaciones CRUD ejecutan con validación y persistencia correctas. \\
+RF-IA-01 & Responder consultas frecuentes mediante chatbot por WhatsApp con contexto del negocio. & Respuestas coherentes para consultas de menú, horarios y estado. \\
+RNF-SEG-01 & Proteger endpoints con autenticación JWT y autorización por roles (RBAC). & Accesos no autorizados son bloqueados y registrados. \\
+RNF-REN-01 & Mantener tiempos de respuesta aceptables en entorno de prueba. & API dentro de umbrales definidos durante validación técnica. \\
+RNF-DIS-01 & Garantizar disponibilidad del servicio en \textit{staging}. & Servicio operativo durante el período de pruebas con baja tasa de fallos. \\
+RNF-USA-01 & Alcanzar usabilidad aceptable medida con SUS. & Puntaje SUS promedio $\geq$ 68 en usuarios de prueba. \\
+\bottomrule
+\end{longtable}
+\endgroup
+
 \textbf{Fase 3 (Diseño y desarrollo del artefacto).} En esta fase se realizan las actividades de construcción: selección del stack tecnológico, diseño de la arquitectura, desarrollo de cada módulo (backend, frontend web, aplicación móvil, integración con base de datos y con el chatbot). Cada incremento (prototipo, versión o módulo) se entrega como insumo para la siguiente fase.
 
-\textbf{Fase 4 (Demostración y prueba).} En esta fase se demuestra y prueba cada incremento recibido de la Fase 3: despliegue en entorno piloto o staging, ejecución de escenarios de prueba con usuarios o en simulación, y registro de resultados (tiempos, errores, completitud de flujos). Los resultados de la demostración alimentan directamente el rediseño y el desarrollo de la siguiente iteración (retorno a Fase 3), cerrando el ciclo construcción-evaluación hasta alcanzar los criterios de aceptación definidos en la Fase 2.
+\textbf{Fase 4 (Demostración y prueba).} En esta fase se demuestra y prueba cada incremento recibido de la Fase 3: despliegue en entorno piloto o \textit{staging}, ejecución de escenarios de prueba con usuarios o en simulación, y registro de resultados (tiempos, errores, completitud de flujos). Los resultados de la demostración alimentan directamente el rediseño y el desarrollo de la siguiente iteración (retorno a Fase 3), cerrando el ciclo construcción-evaluación hasta alcanzar los criterios de aceptación definidos en la Fase 2.
+
+En este estudio, las Fases 3 y 4 no se fusionan en una sola fase; se mantienen diferenciadas y se ejecutan de manera acoplada e iterativa. Primero se construye el incremento (Fase 3) y luego se demuestra/evalúa ese mismo incremento (Fase 4) antes de pasar al siguiente ciclo.
 
 \paragraph{Proceso ágil y sprints}
 La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
 
-\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la tabla de Técnicas e instrumentos de recolección de datos del presente capítulo.
+Para evidenciar la planificación, la Tabla \ref{tab:plan-sprints} resume la organización de sprints utilizada durante el desarrollo del prototipo.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{5.4cm}>{\raggedright\arraybackslash}p{3.9cm}}
+\caption{Planificación de sprints del desarrollo}\label{tab:plan-sprints} \\
+\toprule
+\textbf{Sprint} & \textbf{Duración} & \textbf{Objetivo principal} & \textbf{Entregables clave} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Sprint} & \textbf{Duración} & \textbf{Objetivo principal} & \textbf{Entregables clave} \\
+\midrule
+\endhead
+Sprint 1 & Semanas 1--2 & Levantar requisitos y definir arquitectura base. & Backlog inicial, matriz RF/RNF, diseño de arquitectura. \\
+Sprint 2 & Semanas 3--4 & Implementar núcleo backend y modelo de datos. & Módulos de autenticación, usuarios, productos y pedidos. \\
+Sprint 3 & Semanas 5--6 & Construir interfaces móvil y web para flujos críticos. & Flujo de pedido cliente-cocina-repartidor, panel administrativo inicial. \\
+Sprint 4 & Semanas 7--8 & Integrar módulos y ejecutar validación técnica/usabilidad. & Despliegue en \textit{staging}, pruebas guiadas, ajustes finales. \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla \ref{tab:tecnicas-instrumentos} del presente capítulo.
 
 \textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
 
@@ -100,8 +162,8 @@ Las técnicas e instrumentos utilizados en cada fase del estudio se resumen en l
 \endhead
 Entrevista & Guía de entrevista semiestructurada & Profundizar en procesos operativos, necesidades y expectativas; obtener requisitos funcionales y no funcionales y objetivos (general y específicos) mediante entrevistas con dueños de las PYMES. & Preguntas abiertas por áreas (pedidos, inventario, delivery). Transcrita. & Fase 1: Diagnóstico (línea base). & Dueños de las PYMES. \\
 Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma en entorno de pruebas. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Después de completar tareas guiadas en entorno controlado. & Usuarios de prueba de la PYME piloto (administrador, personal de cocina, repartidores). \\
-Observación estructurada & Ficha de observación de tareas guiadas & Registrar datos cuantitativos sobre desempeño en escenarios de prueba (tiempos, errores, completitud de flujos). & Diseñada para registrar: tiempos (min), conteo de errores en tareas predefinidas, tasa de éxito en flujos críticos. & Durante la ejecución de tareas guiadas en entorno controlado (staging). & Usuarios de prueba ejecutando escenarios predefinidos. \\
-Revisión documental & Checklist de despliegue y logs del sistema & Verificar el correcto despliegue técnico en staging y analizar logs de pruebas. & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en staging y sus registros de prueba. \\
+Observación estructurada & Ficha de observación de tareas guiadas & Registrar datos cuantitativos sobre desempeño en escenarios de prueba (tiempos, errores, completitud de flujos). & Diseñada para registrar: tiempos (min), conteo de errores en tareas predefinidas, tasa de éxito en flujos críticos. & Durante la ejecución de tareas guiadas en entorno controlado (\textit{staging}). & Usuarios de prueba ejecutando escenarios predefinidos. \\
+Revisión documental & Checklist de despliegue y logs del sistema & Verificar el correcto despliegue técnico en \textit{staging} y analizar logs de pruebas. & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en \textit{staging} y sus registros de prueba. \\
 \bottomrule
 \end{longtable}
 \endgroup
@@ -122,7 +184,7 @@ Para una mejor comprensión metodológica, se detallan siguiendo la estructura e
   \item Desarrollo.
   \item Validación y Despliegue.
 \end{enumerate}
-Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno controlado (staging).
+Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno controlado (\textit{staging}).
 
 \subsection{ETAPA 1: Planificación}
 
@@ -182,7 +244,7 @@ La versión ampliada de esta arquitectura se presenta en el Apéndice C.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.85\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
+\resizebox{0.75\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
 \caption{Arquitectura de la aplicación móvil}
 \label{fig:movil-arquitectura}
 \end{figure}
@@ -194,7 +256,7 @@ La versión ampliada del diagrama del panel web se presenta en el Apéndice C.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.85\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
+\resizebox{0.75\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
 \caption{Arquitectura de la aplicación web}
 \label{fig:web-arquitectura}
 \end{figure}
@@ -206,10 +268,12 @@ La versión ampliada de la arquitectura modular del backend se incluye en el Ap�
 
 \begin{figure}[htbp]
 \centering
-\resizebox{0.85\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
+\resizebox{0.75\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
 \caption{Arquitectura del backend (API REST)}
 \label{fig:backend-arquitectura}
 \end{figure}
+
+Esta figura mantiene la misma escala visual que las arquitecturas móvil y web para asegurar uniformidad de presentación y facilitar la comparación entre componentes.
 
 
 
@@ -295,7 +359,7 @@ Estos roles se implementan mediante una tabla independiente (tbl\_roles) y una r
 
 La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
-Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \textcite{raguilera_jwt_nestjs}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \parencite{raguilera_jwt_nestjs}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
 El detalle gráfico extendido del flujo de autenticación y autorización se presenta en el Apéndice E.
 
 \begin{figure}[htbp]
@@ -323,7 +387,7 @@ El flujo visual ampliado por rol se documenta en el Apéndice F.
 \begin{figure}[htbp]
 \centering
 \resizebox{0.8\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
-\caption{Flujo de la interfaz móvil por rol (Cliente, Repartidor, Cocina)}
+\caption{Flujo de la interfaz móvil por rol (cliente, repartidor, cocina)}
 \label{fig:frontend-prototipo}
 \end{figure}
 
@@ -409,7 +473,7 @@ Se contempla incorporar interceptores para logging de auditoría, medición de t
 
 En validación de datos, se activó ValidationPipe global con opciones whitelist (elimina propiedades no declaradas en DTOs) y forbidNonWhitelisted (rechaza requests con campos extra), robusteciendo la API ante entradas malformadas y ataques de inyección de datos.
 
-Integración de módulos funcionales: Una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
+Integración de módulos funcionales: una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
 
 \paragraph{Módulo de Pedidos}
 El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido es el siguiente: (1) el cliente autenticado envía POST a \texttt{/api/orders} con productos, cantidades y dirección; (2) JwtAuthGuard valida el token y adjunta el usuario al request; (3) ValidationPipe valida el DTO; (4) OrdersController delega en OrdersService.create(); (5) el servicio verifica usuario, dirección y stock; (6) se crea la entidad Order y los OrderItem en una transacción TypeORM; (7) se retorna 201 Created. Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
@@ -472,7 +536,7 @@ La versión ampliada de la arquitectura de despliegue se incorpora en el Apéndi
 
 \subsubsection{Seguridad operativa y configuración de despliegue}
 
-Las medidas de seguridad y despliegue se consolidan en esta etapa porque se validan sobre el entorno staging y la infraestructura efectiva del piloto:
+Las medidas de seguridad y despliegue se consolidan en esta etapa porque se validan sobre el entorno \textit{staging} y la infraestructura efectiva del piloto:
 \begin{itemize}
   \item \textbf{CORS:} Configurado por origen permitido, restringiendo acceso desde dominios no autorizados.
   \item \textbf{Rate Limiting:} ThrottlerModule con límite de 100 requests/minuto por IP.
@@ -486,8 +550,8 @@ El backend se despliega como aplicación Node.js independiente. Se contempló Do
 Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
 El diagrama de red integral de interacción entre clientes, API y servicios externos se presenta en el Apéndice I.
 
-\subsubsection{Despliegue en staging y validación técnica}
-Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (staging) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice J. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:
+\subsubsection{Despliegue en \textit{staging} y validación técnica}
+Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (\textit{staging}) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice J. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:
 \begin{itemize}
   \item \textbf{Despliegue controlado:} Backend y base de datos en VPS con Docker; panel web en Vercel; app móvil en APK para pruebas.
   \item \textbf{Ejecución de escenarios:} Usuarios de prueba ejecutaron flujos críticos (pedido, cocina, reparto, administración y chatbot).

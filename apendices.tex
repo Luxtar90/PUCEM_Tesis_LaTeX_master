@@ -2,7 +2,7 @@
 \cleardoublepage
 \phantomsection
 
-\chapter{Apéndice A}
+\chapter{Apéndice A}\label{ap:A}
 
 \section*{Diagrama de la base de datos}
 La siguiente figura presenta el modelo entidad--relación completo utilizado en la plataforma, con las entidades principales y sus relaciones.
@@ -16,7 +16,19 @@ La siguiente figura presenta el modelo entidad--relación completo utilizado en 
 
 \textit{Nota.} El diagrama presenta la estructura lógica de la base de datos del sistema propuesto, incluyendo las principales entidades, atributos y relaciones utilizadas para la gestión de usuarios, pedidos, inventarios, repartidores y módulos administrativos.
 
-\chapter{Apéndice B}
+\subsection*{Detalle de relaciones críticas del modelo de datos}
+Para complementar la lectura del diagrama ER, se describen las relaciones de mayor impacto funcional:
+\begin{itemize}
+    \item \textbf{Usuario--Pedido (1:N):} un usuario puede registrar múltiples pedidos; cada pedido pertenece a un único cliente.
+    \item \textbf{Pedido--OrderItem (1:N):} un pedido contiene uno o varios ítems con cantidad y precio unitario histórico.
+    \item \textbf{Producto--OrderItem (1:N):} un producto puede aparecer en múltiples pedidos y conserva trazabilidad de ventas.
+    \item \textbf{Usuario--Rol (N:M):} un usuario puede tener más de un rol (cliente, repartidor, administrador).
+    \item \textbf{Producto--StockLocal--Local:} el inventario se gestiona por local para evitar inconsistencias de disponibilidad.
+\end{itemize}
+
+Estas relaciones sustentan la integridad transaccional del sistema, la trazabilidad de estados en el flujo de pedidos y la consistencia de inventario en tiempo real.
+
+\chapter{Apéndice B}\label{ap:B}
 
 \section*{Arquitectura por capas de la plataforma}
 La arquitectura general por capas describe la organización de componentes y la separación de responsabilidades del sistema.
@@ -28,7 +40,7 @@ La arquitectura general por capas describe la organización de componentes y la 
     \label{fig:apendice-arquitectura-capas}
 \end{figure}
 
-\chapter{Apéndice C}
+\chapter{Apéndice C}\label{ap:C}
 
 \section*{Arquitectura de la aplicación móvil}
 El siguiente diagrama muestra la arquitectura de la aplicación móvil, sus capas lógicas y la comunicación con la API.
@@ -50,7 +62,7 @@ Se presenta la arquitectura del panel web administrativo con sus principales com
     \label{fig:apendice-web-arquitectura}
 \end{figure}
 
-\chapter{Apéndice D}
+\chapter{Apéndice D}\label{ap:D}
 
 \section*{Arquitectura modular del backend}
 El diagrama muestra la organización modular del backend con sus módulos y dependencias principales.
@@ -62,7 +74,7 @@ El diagrama muestra la organización modular del backend con sus módulos y depe
     \label{fig:apendice-backend-arquitectura}
 \end{figure}
 
-\chapter{Apéndice E}
+\chapter{Apéndice E}\label{ap:E}
 
 \section*{Flujo de autenticación y autorización (JWT + RBAC)}
 El siguiente diagrama describe el flujo de autenticación con JWT y la validación de permisos por roles.
@@ -74,7 +86,7 @@ El siguiente diagrama describe el flujo de autenticación con JWT y la validaci�
     \label{fig:apendice-auth-rbac}
 \end{figure}
 
-\chapter{Apéndice F}
+\chapter{Apéndice F}\label{ap:F}
 
 \section*{Flujo principal del frontend móvil}
 Se presenta el flujo principal de navegación para clientes, cocina y repartidores en la aplicación móvil.
@@ -96,7 +108,7 @@ El siguiente diagrama resume el flujo operativo del panel web para administraci�
     \label{fig:apendice-web-panel-prototipo}
 \end{figure}
 
-\chapter{Apéndice G}
+\chapter{Apéndice G}\label{ap:G}
 
 \section*{Flujo general del proceso de pedido}
 La figura muestra el proceso completo desde la creación del pedido hasta la entrega, incluyendo la vista de cocina y repartidores.
@@ -128,10 +140,10 @@ El diagrama describe el proceso de registro, aprobación y asignación de pedido
     \label{fig:apendice-modulo-repartidores}
 \end{figure}
 
-\chapter{Apéndice H}
+\chapter{Apéndice H}\label{ap:H}
 
 \section*{Arquitectura del despliegue}
-Se muestra la arquitectura de despliegue en staging con los servicios en VPS, panel web en Vercel y app móvil distribuida como APK.
+Se muestra la arquitectura de despliegue en \textit{staging} con los servicios en VPS, panel web en Vercel y app móvil distribuida como APK.
 
 \begin{figure}[htbp]
     \centering
@@ -140,7 +152,7 @@ Se muestra la arquitectura de despliegue en staging con los servicios en VPS, pa
     \label{fig:apendice-despliegue-arquitectura}
 \end{figure}
 
-\chapter{Apéndice I}
+\chapter{Apéndice I}\label{ap:I}
 
 \section*{Diagrama de red del sistema}
 El diagrama de red ilustra la arquitectura general del sistema y la interacción entre usuarios web y móviles, la API y servicios externos.
@@ -159,12 +171,12 @@ El diagrama de red ilustra la arquitectura general del sistema y la interacción
 
 \textit{Nota.} El diagrama de red muestra la interacción entre el frontend web y móvil, la API backend, la base de datos, el chatbot con inteligencia artificial (por WhatsApp) y servicios externos como geolocalización; los medios de pago son efectivo y transferencia (sin pasarela de pagos).
 
-\chapter{Apéndice J}
+\chapter{Apéndice J}\label{ap:J}
 
-\section*{Procedimiento detallado de validación en staging}
+\section*{Procedimiento detallado de validación en \textit{staging}}
 Este apéndice amplía el procedimiento de validación técnica descrito en el capítulo Método, con el detalle de los pasos ejecutados en entorno controlado.
 
-\subsection*{1. Despliegue en entorno de staging}
+\subsection*{1. Despliegue en entorno de \textit{staging}}
 El backend se desplegó en un servidor VPS de Hetzner, utilizando Docker para contenerizar la aplicación y la base de datos PostgreSQL. Se configuraron ajustes de seguridad básicos (helmet, CORS, rate limiting) y variables de entorno mediante ConfigModule. La API se ejecutó en HTTPS y se activaron logs estructurados para monitoreo. El panel web se desplegó en Vercel y la aplicación móvil se distribuyó como APK para dispositivos de prueba.
 
 \subsection*{2. Orientación a usuarios de prueba}
@@ -198,9 +210,63 @@ N.º & Tarea & Rol & Criterio de éxito \\
 \end{tabular}
 \end{table}
 
-\chapter{Apéndice K}
+\subsection*{6. Respaldo de pruebas unitarias e integración}
+Se documentó evidencia técnica de ejecución de pruebas en backend con Jest y validaciones de integración de endpoints críticos. El resumen de ejecución se presenta en la Tabla \ref{tab:apendice-evidencia-pruebas}; el detalle completo (salidas de consola, capturas y checklist de casos) se conservó en la bitácora técnica del proyecto.
+
+\begin{table}[htbp]
+\centering
+\caption{Evidencia resumida de pruebas unitarias y de integración}
+\label{tab:apendice-evidencia-pruebas}
+\small
+\begin{tabular}{|>{\raggedright\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{4.0cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{4.2cm}|}
+\hline
+\textbf{Tipo} & \textbf{Módulo / alcance} & \textbf{Resultado} & \textbf{Evidencia registrada} \\
+\hline
+Unitaria & AuthService, OrdersService, ProductsService & Aprobadas & Salida Jest + trazabilidad por identificador de caso \\
+\hline
+Integración & Flujo login + creación de pedido + cambio de estado & Aprobadas & Registro de requests/responses y verificación de estados en BD \\
+\hline
+Integración & Gestión de inventario por pedido y validación de stock & Aprobadas & Comparación antes/después en tablas de stock y logs de servicio \\
+\hline
+Integración & Acceso por roles (admin, cliente, repartidor) & Aprobadas & Pruebas de autorización con respuestas 200/401/403 según rol \\
+\hline
+\end{tabular}
+\end{table}
+
+\chapter{Apéndice K}\label{ap:K}
 
 \section*{Guía de entrevista semiestructurada (diagnóstico Fase 1)}
 
 La guía de entrevista utilizada en el diagnóstico con responsables de las PYMES (capítulo Método, Fase 1; capítulo Resultados, estado de digitalización previo) se estructura por bloques temáticos: (1) datos generales del negocio y antigüedad; (2) gestión de pedidos (canales actuales, volumen, tiempos, errores); (3) comunicación con cocina y repartidores; (4) control de inventarios; (5) atención al cliente y herramientas digitales en uso. Las preguntas son abiertas para profundizar en procesos operativos, necesidades y expectativas. El instrumento completo en formato utilizable para replicación se incluye en el repositorio del proyecto o puede solicitarse a los autores.
+
+\chapter{Apéndice L}\label{ap:L}
+
+\section*{Arquitectura detallada de la plataforma}
+Este apéndice integra, en una sola vista textual, la arquitectura de la plataforma y las responsabilidades por capa para facilitar su revisión técnica sin depender únicamente de diagramas.
+
+\begin{table}[htbp]
+\centering
+\caption{Detalle de arquitectura por capas y componentes}
+\label{tab:apendice-arquitectura-detalle}
+\small
+\begin{tabular}{|>{\raggedright\arraybackslash}p{2.4cm}|>{\raggedright\arraybackslash}p{3.1cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{3.6cm}|}
+\hline
+\textbf{Capa} & \textbf{Componente} & \textbf{Tecnología} & \textbf{Responsabilidad principal} \\
+\hline
+Presentación & App móvil & React Native + Expo & Interfaz para cliente, cocina y repartidor; ejecución de flujos operativos. \\
+\hline
+Presentación & Panel web & Next.js + Tailwind CSS & Administración de catálogo, pedidos, repartidores y visualización de KPIs. \\
+\hline
+Negocio / API & Backend modular & NestJS + TypeScript & Reglas de negocio, seguridad JWT/RBAC, exposición de endpoints REST. \\
+\hline
+Datos & Persistencia transaccional & PostgreSQL (Supabase) + TypeORM & Gestión de entidades, relaciones e integridad de pedidos, usuarios e inventario. \\
+\hline
+Servicios externos & Mensajería y asistencia IA & WhatsApp Business API + servicio RAG & Atención automatizada y consultas frecuentes contextualizadas. \\
+\hline
+Infraestructura & Despliegue & VPS (Hetzner), Vercel, Docker & Operación en \textit{staging}, publicación y continuidad técnica del prototipo. \\
+\hline
+\end{tabular}
+\end{table}
+
+La arquitectura se diseñó para mantener separación de responsabilidades, bajo acoplamiento entre capas y escalabilidad incremental, permitiendo evolucionar módulos sin afectar de forma directa el resto de componentes.
 

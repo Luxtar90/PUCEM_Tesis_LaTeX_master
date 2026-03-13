@@ -1,7 +1,7 @@
-\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\small}, node distance=0.9cm and 1.8cm]
+\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\small}, node distance=1.0cm and 2.0cm]
 \tikzset{
-  phase/.style={draw=black!60, rounded corners=2pt, fill=blue!6, minimum width=6.0cm, minimum height=0.95cm},
-  phasesmall/.style={draw=black!55, rounded corners=2pt, fill=gray!10, minimum width=5.2cm, minimum height=0.85cm},
+  phase/.style={draw=black!60, rounded corners=2pt, fill=blue!6, minimum width=6.0cm, minimum height=1.15cm, text width=5.4cm, inner sep=3.5pt},
+  phasesmall/.style={draw=black!55, rounded corners=2pt, fill=gray!10, minimum width=5.2cm, minimum height=0.95cm, text width=4.8cm, inner sep=3pt},
   phasediamond/.style={draw=black!60, shape=diamond, aspect=2.2, fill=orange!12, minimum width=5.0cm, minimum height=1.7cm},
   container/.style={draw=black!45, rounded corners=3pt, fill=gray!6, minimum width=14.2cm, minimum height=3.0cm},
   flow/.style={-Latex, draw=black!70, line width=0.5pt}

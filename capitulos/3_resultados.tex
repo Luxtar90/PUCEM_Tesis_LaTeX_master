@@ -6,6 +6,8 @@ El presente capítulo expone los resultados obtenidos de la investigación en to
 
 La plataforma validada está constituida por tres componentes integrados: (1) un \textbf{backend} (API REST con NestJS y PostgreSQL) que centraliza autenticación por roles (administrador, cocina, repartidor, cliente), gestión de productos, categorías, pedidos, direcciones, locales y repartidores; (2) un \textbf{panel web} (Next.js) que permite a los administradores gestionar productos, categorías, pedidos, repartidores y reportes, y a los clientes realizar pedidos desde la tienda en línea (carrito, checkout con pago en efectivo o transferencia, historial de pedidos y direcciones); (3) una \textbf{aplicación móvil} (Expo/React Native) con vista específica para cocina (listar pedidos por ciudad, confirmar y preparar, marcar listo para recoger), flujo para repartidores (pedidos disponibles y asignados, aceptar pedido, marcar recogido, en camino y entregado, estado activo/inactivo) y flujo para clientes (productos por local, carrito, checkout, seguimiento del pedido). Los tres componentes consumen la misma API y fueron utilizados de forma conjunta por la PYME piloto durante el período de validación.
 
+La presentación de resultados mantiene trazabilidad directa con los objetivos de investigación: primero se reporta el diagnóstico que sustenta los requerimientos (Objetivo específico 1), luego la validación de usabilidad y métricas de desempeño (Objetivos específicos 2 y 5), y finalmente la evidencia técnica de pruebas unitarias/integración y validación funcional del artefacto (Objetivos específicos 3 y 4).
+
 \section{Resultados del diagnóstico de digitalización}
 
 En esta sección se presentan los resultados del análisis del estado de digitalización de la PYME gastronómica piloto antes de la implementación de la plataforma, identificando el nivel de adopción tecnológica, procesos operativos vigentes y brechas detectadas.
@@ -92,7 +94,7 @@ Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativa
 \caption{Desempeño en tareas guiadas por rol de usuario}
 \label{tab:tareas-rol}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{5cm} >{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{1.8cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{4.8cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{2.0cm}@{}}
 \toprule
 \textbf{Rol} & \textbf{Tarea} & \textbf{Tiempo prom.} & \textbf{Éxito} \\
 \midrule
@@ -130,7 +132,7 @@ La \textbf{tasa de errores de navegación} se definió como el porcentaje de tar
 
 \subsection{Desempeño del sistema en escenarios de prueba}
 
-La plataforma fue desplegada en entorno controlado (staging) y evaluada mediante tareas guiadas por usuarios de prueba de la PYME piloto ($n = 6$ participantes; 48 tareas de registro de pedidos, 32 flujos completos de delivery en escenario simulado). Las métricas se registraron con fichas de observación y logs de la plataforma. Tamaño de muestra: 48 tareas de registro para tiempo y errores; 32 entregas simuladas para tiempo de delivery; 50 tareas guiadas para completitud de flujos; período de pruebas 2 semanas para fallos técnicos. En \textbf{eficiencia en el registro de pedidos}: tiempo promedio 3 min (DE $\approx$ 0,8 min; $n = 48$); tasa de errores de registro 9\,\%. En \textbf{eficacia del delivery}: tiempo promedio 33 min ($n = 32$). En \textbf{completitud de flujos críticos}: 96\,\% de tareas exitosas (48/50). En \textbf{estabilidad}: 3\,\% de fallos técnicos (eventos de caída o timeout durante las 2 semanas, sobre el total de solicitudes registradas). En \textbf{usabilidad}: SUS = 70 ($n = 6$ participantes; interpretación: aceptable). La Tabla \ref{tab:resultados-indicadores} resume estos resultados frente a los umbrales de la operacionalización; todos los indicadores cumplen los criterios definidos en el capítulo Método.
+La plataforma fue desplegada en entorno controlado (\textit{staging}) y evaluada mediante tareas guiadas por usuarios de prueba de la PYME piloto ($n = 6$ participantes; 48 tareas de registro de pedidos, 32 flujos completos de delivery en escenario simulado). Las métricas se registraron con fichas de observación y logs de la plataforma. Tamaño de muestra: 48 tareas de registro para tiempo y errores; 32 entregas simuladas para tiempo de delivery; 50 tareas guiadas para completitud de flujos; período de pruebas 2 semanas para fallos técnicos. En \textbf{eficiencia en el registro de pedidos}: tiempo promedio 3 min (DE $\approx$ 0,8 min; $n = 48$); tasa de errores de registro 9\,\%. En \textbf{eficacia del delivery}: tiempo promedio 33 min ($n = 32$). En \textbf{completitud de flujos críticos}: 96\,\% de tareas exitosas (48/50). En \textbf{estabilidad}: 3\,\% de fallos técnicos (eventos de caída o timeout durante las 2 semanas, sobre el total de solicitudes registradas). En \textbf{usabilidad}: SUS = 70 ($n = 6$ participantes; interpretación: aceptable). La Tabla \ref{tab:resultados-indicadores} resume estos resultados frente a los umbrales de la operacionalización; todos los indicadores cumplen los criterios definidos en el capítulo Método.
 
 \begin{table}[htbp]
 \centering
@@ -150,7 +152,7 @@ Usabilidad (SUS) & 70 ($n = 6$; aceptable) & $\geq$ 68 & Sí \\
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} Período de evaluación: 2 semanas en staging. Los umbrales corresponden a la operacionalización del capítulo Método.
+\noindent \textit{Nota.} Período de evaluación: 2 semanas en \textit{staging}. Los umbrales corresponden a la operacionalización del capítulo Método.
 
 \section{Resultados técnicos del software}
 
@@ -183,7 +185,7 @@ Cobert. & Base módulos & -- & Auth, Orders, Products, Stock & $>$ 55\,\% & 57\,
 
 \subsection{Métricas de disponibilidad y rendimiento}
 
-Se monitorearon métricas técnicas durante un \textbf{período de evaluación de 2 semanas} en staging, con \textbf{condiciones controladas}: servidor VPS (Hetzner), base de datos Supabase, hasta \textbf{20 usuarios concurrentes} simulados en picos de carga. Volumen aproximado de solicitudes analizadas: $\sim$12\,000 requests (lectura y escritura) en el período. Los umbrales de referencia no se definieron explícitamente en el capítulo Método para estas métricas operativas; los valores se reportan como línea base para reproducibilidad. Resultados: \textbf{disponibilidad} 97,8\,\% (caídas menores por mantenimiento programado). \textbf{Tiempo de respuesta API:} 280 ms promedio en lectura, 520 ms en escritura (muestra de 500 requests por tipo). \textbf{Tasa de errores HTTP:} 3,8\,\% (400 por validación, 401 por tokens expirados en pruebas). \textbf{Panel web (FCP):} 2,4 s promedio; \textbf{app móvil:} 1,8 s pantalla inicial, 3,2 s catálogo completo. \textbf{Recursos servidor:} CPU 42\,\%, memoria 68\,\% en picos (20 usuarios concurrentes).
+Se monitorearon métricas técnicas durante un \textbf{período de evaluación de 2 semanas} en \textit{staging}, con \textbf{condiciones controladas}: servidor VPS (Hetzner), base de datos Supabase, hasta \textbf{20 usuarios concurrentes} simulados en picos de carga. Volumen aproximado de solicitudes analizadas: $\sim$12\,000 requests (lectura y escritura) en el período. Los umbrales de referencia no se definieron explícitamente en el capítulo Método para estas métricas operativas; los valores se reportan como línea base para reproducibilidad. Resultados: \textbf{disponibilidad} 97,8\,\% (caídas menores por mantenimiento programado). \textbf{Tiempo de respuesta API:} 280 ms promedio en lectura, 520 ms en escritura (muestra de 500 requests por tipo). \textbf{Tasa de errores HTTP:} 3,8\,\% (400 por validación, 401 por tokens expirados en pruebas). \textbf{Panel web (FCP):} 2,4 s promedio; \textbf{app móvil:} 1,8 s pantalla inicial, 3,2 s catálogo completo. \textbf{Recursos servidor:} CPU 42\,\%, memoria 68\,\% en picos (20 usuarios concurrentes).
 
 \subsection{Validación de funcionalidades}
 
@@ -207,7 +209,7 @@ Chatbot RAG & CF-06 / RF-IA-01 & 30 & Respuesta contextual válida & 93\,\% (28/
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} CF = caso funcional ejecutado en staging. El detalle de pasos, evidencias (capturas y extractos de logs) y trazabilidad por prueba se presenta en el Apéndice J.
+\noindent \textit{Nota.} CF = caso funcional ejecutado en \textit{staging}. El detalle de pasos, evidencias (capturas y extractos de logs) y trazabilidad por prueba se presenta en el Apéndice J.
 
 En términos agregados, la validación registró un \textbf{97,3\,\% de aprobación global} (183 casos aprobados de 188 ejecuciones), lo que respalda el cumplimiento funcional del artefacto en el entorno de pruebas. Los resultados evidencian que los módulos centrales cumplen sus criterios de aceptación en entorno controlado. Las desviaciones observadas se concentraron en escenarios de conversación del chatbot y en un caso de transición de estado de reparto bajo concurrencia, ambos abordados con ajustes descritos en la siguiente subsección.
 
