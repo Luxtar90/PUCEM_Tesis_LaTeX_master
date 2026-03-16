@@ -3078,33 +3078,31 @@
     <bcf:citekey order="4" intorder="2">DuranMero2024</bcf:citekey>
     <bcf:citekey order="4" intorder="3">AyoraRecalde2024</bcf:citekey>
     <bcf:citekey order="5" intorder="1">UNESCO2019</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">UNESCO2019</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">MovistarEmpresas2024</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">DuranMero2024</bcf:citekey>
-    <bcf:citekey order="8" intorder="2">AyoraRecalde2024</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Vistazo2025</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">MintelTransformation2022</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">DuranMero2024</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">MovistarEmpresas2024</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">MintelTransformation2022</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">AyoraRecalde2024</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">INEC2023</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">MintelTransformation2022</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">UNESCO2019</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">MovistarEmpresas2024</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">DuranMero2024</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">AyoraRecalde2024</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Vistazo2025</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">MintelTransformation2022</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">DuranMero2024</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">MovistarEmpresas2024</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">MintelTransformation2022</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">AyoraRecalde2024</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">INEC2023</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">MintelTransformation2022</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">hevner2004</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">peffers2007</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">hevner2004</bcf:citekey>
     <bcf:citekey order="18" intorder="1">hevner2004</bcf:citekey>
-    <bcf:citekey order="18" intorder="2">peffers2007</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">hevner2004</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">hevner2004</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">peffers2007</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">peffers2007</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">raguilera_jwt_nestjs</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">GonzalezMartinez2021</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Castells2010</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Bangor2009</bcf:citekey>
-    <bcf:citekey order="26" intorder="2">Lewis2018</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">ISO25010</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">GonzalezMartinez2021</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">jose_2000</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">peffers2007</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">peffers2007</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">raguilera_jwt_nestjs</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">GonzalezMartinez2021</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Castells2010</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Bangor2009</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">Lewis2018</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">ISO25010</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">GonzalezMartinez2021</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">jose_2000</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -12,13 +12,11 @@
 \node[phase, anchor=east, xshift=-0.7cm, yshift=-0.15cm] at (ciclo.east) (fase4) {Fase 4: Demostraci\'on\\(Aplicaci\'on/Prueba)};
 \draw[flow] (fase3.east) -- node[above, font=\scriptsize]{Prototipo / Iteraci\'on N} (fase4.west);
 \draw[flow] (fase4.west) -- node[below, font=\scriptsize]{Feedback / Resultados} (fase3.east);
-\node[phasediamond, below=1.4cm of ciclo] (fase5) {Fase 5: Evaluaci\'on Formal};
+\node[phasediamond, below=1.4cm of ciclo] (fase5) {Fase 5: Evaluaci\'on};
 \draw[flow] (ciclo.south) -- (fase5.north);
-\draw[flow] (fase5.north) to[out=25,in=-80] node[right, font=\scriptsize, align=left, xshift=0.2cm]{Evaluaci\'on NO satisfactoria\\(Nuevos requisitos / problema)} (ciclo.south east);
-\node[phasesmall, below=0.85cm of fase5, fill=green!8] (evalok) {Evaluaci\'on satisfactoria};
-\draw[flow] (fase5.south) -- (evalok.north);
-\node[phase, below=0.7cm of evalok] (fase6) {Fase 6: Comunicaci\'on \& Difusi\'on};
-\draw[flow] (evalok.south) -- (fase6.north);
+\draw[flow] (fase5.east) -- ++(1.0cm,0) coordinate(tmp) -- ++(0,1.0cm) coordinate(tmp2) -- (ciclo.south east) node[midway,right, font=\scriptsize]{No};
+\node[phase, below=0.7cm of fase5] (fase6) {Fase 6: Comunicaci\'on \& Difusi\'on};
+\draw[flow] (fase5.south) -- node[right, font=\scriptsize]{S\'i} (fase6.north);
 \node[phasesmall, below=0.7cm of fase6] (nuevo) {Nuevo Problema o\\Contexto de Aplicaci\'on};
 \draw[flow] (fase6.south) -- (nuevo.north);
 \node[phase, below=0.7cm of nuevo] (fase1) {Fase 1: Identificaci\'on del Problema};

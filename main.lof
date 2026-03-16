@@ -4,8 +4,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2}{\ignorespaces Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}}{17}{figure.caption.14}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{29}{figure.caption.16}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura de la aplicación web}}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{28}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura de la aplicación web}}{29}{figure.caption.17}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura del backend (API REST)}}{30}{figure.caption.18}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Diagrama Entidad-Relación (ER) de la base de datos}}{35}{figure.caption.19}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{37}{figure.caption.20}%

@@ -169,7 +169,7 @@ El diagrama de red ilustra la arquitectura general del sistema y la interacción
     \label{fig:diagrama_red}
 \end{figure}
 
-\textit{Nota.} El diagrama de red muestra la interacción entre el frontend web y móvil, la API backend, la base de datos, el chatbot con inteligencia artificial (por WhatsApp) y servicios externos como geolocalización; los medios de pago son efectivo y transferencia (sin pasarela de pagos).
+\textit{Nota.} El diagrama de red muestra la interacción entre el frontend web y móvil, la API backend, la base de datos, el chatbot con inteligencia artificial integrado en la plataforma web y servicios externos como geolocalización; los medios de pago son efectivo y transferencia (sin pasarela de pagos).
 
 \chapter{Apéndice J}\label{ap:J}
 
@@ -183,7 +183,7 @@ El backend se desplegó en un servidor VPS de Hetzner, utilizando Docker para co
 Se realizó una sesión de orientación breve (aproximadamente 1 hora) con usuarios de la PYME piloto (administrador, personal de cocina y repartidores), explicando flujos principales y tareas de prueba.
 
 \subsection*{3. Diseño de escenarios de prueba}
-Se definieron escenarios predefinidos para cubrir flujos críticos: (1) registro de pedido completo por cliente, (2) confirmación y preparación en cocina, (3) asignación y entrega por repartidor, (4) gestión de productos y categorías por administrador, (5) consulta al chatbot por WhatsApp. Cada escenario utilizó datos simulados.
+Se definieron escenarios predefinidos para cubrir flujos críticos: (1) registro de pedido completo por cliente, (2) confirmación y preparación en cocina, (3) asignación y entrega por repartidor, (4) gestión de productos y categorías por administrador, (5) consulta al chatbot en la plataforma web. Cada escenario utilizó datos simulados.
 
 \subsection*{4. Ejecución de tareas guiadas}
 Los usuarios ejecutaron tareas bajo observación estructurada, registrando tiempos, errores y completitud de flujos. Las pruebas se realizaron en sesiones controladas durante un período acotado.
@@ -205,7 +205,7 @@ N.º & Tarea & Rol & Criterio de éxito \\
 3 & Agregar producto al catálogo & Administrador & Completar sin errores \\
 4 & Asignar pedido a repartidor & Administrador & Completar en < 1 min \\
 5 & Marcar pedido como entregado & Repartidor & Completar sin ayuda \\
-6 & Realizar consulta al chatbot por WhatsApp & Cliente & Obtener respuesta pertinente \\
+6 & Realizar consulta al chatbot en la plataforma web & Cliente & Obtener respuesta pertinente \\
 \hline
 \end{tabular}
 \end{table}
@@ -261,7 +261,7 @@ Negocio / API & Backend modular & NestJS + TypeScript & Reglas de negocio, segur
 \hline
 Datos & Persistencia transaccional & PostgreSQL (Supabase) + TypeORM & Gestión de entidades, relaciones e integridad de pedidos, usuarios e inventario. \\
 \hline
-Servicios externos & Mensajería y asistencia IA & WhatsApp Business API + servicio RAG & Atención automatizada y consultas frecuentes contextualizadas. \\
+Servicios externos & Mensajería y asistencia IA & Servicio web de chatbot RAG & Atención automatizada y consultas frecuentes contextualizadas. \\
 \hline
 Infraestructura & Despliegue & VPS (Hetzner), Vercel, Docker & Operación en \textit{staging}, publicación y continuidad técnica del prototipo. \\
 \hline
