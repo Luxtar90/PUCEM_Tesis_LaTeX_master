@@ -28,18 +28,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {19}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{81}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {20}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{83}{figure.caption.40}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{82}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {21}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{84}{figure.caption.41}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Flujo principal del panel web administrativo}}{85}{figure.caption.42}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{83}{figure.caption.41}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Flujo principal del panel web administrativo}}{84}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {23}{\ignorespaces Flujo general del proceso de pedido}}{86}{figure.caption.43}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Diagrama del módulo de inventario}}{87}{figure.caption.44}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama del módulo de repartidores}}{87}{figure.caption.45}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Flujo general del proceso de pedido}}{85}{figure.caption.43}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagrama del módulo de inventario}}{86}{figure.caption.44}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama del módulo de repartidores}}{86}{figure.caption.45}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {26}{\ignorespaces Arquitectura del despliegue de la plataforma}}{88}{figure.caption.46}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Arquitectura del despliegue de la plataforma}}{87}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {27}{\ignorespaces Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}{89}{figure.caption.47}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}{88}{figure.caption.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

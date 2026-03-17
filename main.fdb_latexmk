@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773723555.77362 0
-  "main.bcf" 1773723555 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
+["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773724307.89037 0
+  "main.bcf" 1773724307 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
   "referencias.bib" 1773684001 8726 cdf0b30129667d34acd394473b362989 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773723551.11848 "main.tex" "main.pdf" "main" 1773723555.77434 0
+["pdflatex"] 1773724303.29167 "main.tex" "main.pdf" "main" 1773724307.89128 0
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773716716 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1769144925 24152 12ad24ee1acbce787f58d6e1bcc2cccc ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1769713453 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -238,7 +238,7 @@
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "PUCEM.sty" 1773081385 2049 1550bdc4db7e7102a54a168d2456dd1a ""
-  "apendices.tex" 1773684482 14248 9f21084bcda0dc787bb49d2c46991b5a ""
+  "apendices.tex" 1773724280 14260 184d098ee28173c58eb80d78402a483c ""
   "capitulos/1_introduccion.tex" 1773708434 19249 276691e4e2b1e102d467f702911d17c8 ""
   "capitulos/2_metodos.tex" 1773722146 65801 601120b4f218ffdd5f4f2100b2101932 ""
   "capitulos/3_resultados.tex" 1773723527 22708 319557f18e747a61838f68ba58005beb ""
@@ -260,13 +260,13 @@
   "imagenes/secuencia_pedido.tikz" 1773081385 2690 c309231611438b82c632c5bf345701d1 ""
   "imagenes/web_arquitectura.tikz" 1773081385 1028 5da9fc45691408c5c9e2dc3ef3d9188a ""
   "imagenes/web_panel_prototipo.tikz" 1773081385 1989 12c9669aa8ffd13d57292260ffed88b1 ""
-  "main.aux" 1773723555 71259 875ebbf4e27cdc4316e49df9d3feeb52 "pdflatex"
-  "main.bbl" 1773721633 53503 35dfee42963203f50772a367b012a6a5 "biber main"
-  "main.lof" 1773723555 4076 67a8cea230a2ee6457f2ae76eebfacbf "pdflatex"
-  "main.lot" 1773723555 2233 99a0915167e19d8e2853778687cc5cea "pdflatex"
-  "main.run.xml" 1773723555 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.aux" 1773724307 71259 0ad588abb59c1339e84d8e93f683ac41 "pdflatex"
+  "main.bbl" 1773724102 53503 35dfee42963203f50772a367b012a6a5 "biber main"
+  "main.lof" 1773724307 4076 3ae9049012c712e6b8234c1f45420dd9 "pdflatex"
+  "main.lot" 1773724307 2233 97f440791ea1ff8632df25387436c3fe "pdflatex"
+  "main.run.xml" 1773724307 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1773716668 10917 7851477d5a00e98101380c9edccf2b48 ""
-  "main.toc" 1773723555 10467 ee2b35f1147bbe1ea6d0754504727e54 "pdflatex"
+  "main.toc" 1773724307 10467 edebab6dee5a48589b3cb0d90da5e8f1 "pdflatex"
   "preliminares/1_portada.tex" 1773684001 3388 bb76a78b8b4f8c6dc8f75a2fbdd42e38 ""
   "preliminares/2_certificaion_tutor.tex" 1773081385 1000 eb7429e97fddf3bb26911f3fd0196620 ""
   "preliminares/3_acta_aprobacion_tribunal.tex" 1773081385 1301 989346b66d0030ba670a360b158ea253 ""
