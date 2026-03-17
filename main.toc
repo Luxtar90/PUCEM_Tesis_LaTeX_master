@@ -51,60 +51,59 @@
 \contentsline {paragraph}{Módulos de dominio}{41}{subsubsection.2.2.2.4}%
 \contentsline {paragraph}{Módulo de Pedidos}{43}{subsubsection.2.2.2.4}%
 \contentsline {paragraph}{Módulo de Inventario:}{44}{figure.caption.23}%
-\contentsline {paragraph}{Módulo de Repartidores:}{44}{figure.caption.24}%
-\contentsline {paragraph}{Dashboard Analítico:}{44}{figure.caption.25}%
-\contentsline {paragraph}{Chatbot RAG integrado en la plataforma web}{44}{figure.caption.25}%
-\contentsline {paragraph}{Clasificación de la solución como SaaS y alcance del piloto}{45}{figure.caption.25}%
-\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{46}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{46}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}Seguridad operativa y configuración de despliegue}{46}{subsubsection.2.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.2.3.3}Despliegue en \textit {staging} y validación técnica}{48}{subsubsection.2.2.3.3}%
-\contentsline {chapter}{\numberline {3}Resultados}{49}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{49}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{50}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Caracterización de la PYME piloto}{50}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Estado de digitalización previo}{50}{subsection.3.2.2}%
-\contentsline {paragraph}{Gestión de pedidos}{51}{table.caption.27}%
-\contentsline {paragraph}{Comunicación con cocina, repartidores, inventario y atención}{51}{table.caption.27}%
-\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{52}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{52}{subsection.3.3.1}%
-\contentsline {paragraph}{Resultados por rol de usuario}{53}{table.caption.28}%
-\contentsline {paragraph}{Desempeño en tareas representativas}{53}{table.caption.28}%
-\contentsline {paragraph}{Errores y dificultades identificadas}{53}{table.caption.29}%
-\contentsline {subsection}{\numberline {3.3.2}Desempeño del sistema en escenarios de prueba}{55}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Resultados técnicos del software}{56}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Pruebas unitarias y de integración}{56}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Métricas de disponibilidad y rendimiento}{56}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Validación de funcionalidades}{58}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Problemas identificados y soluciones}{59}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Discusión}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{62}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{63}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Identificación y documentación de requisitos (Objetivo Específico 1)}{63}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Diseño de arquitectura técnica de la plataforma (Objetivo Específico 2)}{63}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Desarrollo de módulos funcionales principales (Objetivo Específico 3)}{64}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Implementación e integración del chatbot RAG en la plataforma web (Objetivo Específico 4)}{64}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Verificación del cumplimiento de requisitos funcionales (Objetivo Específico 5)}{65}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Evaluación de usabilidad con escala SUS (Objetivo Específico 6)}{65}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{66}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{68}{chapter.5}%
-\contentsline {paragraph}{Objetivo general}{68}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 1 (Requisitos)}{68}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 2 (Arquitectura)}{68}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 3 (Módulos)}{69}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 4 (Chatbot RAG)}{69}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 5 (Verificación)}{69}{chapter.5}%
-\contentsline {paragraph}{Objetivo específico 6 (Usabilidad)}{69}{chapter.5}%
-\contentsline {chapter}{Referencias bibliográficas}{74}{chapter*.33}%
-\contentsline {chapter}{\numberline {A}Apéndice A}{75}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Apéndice B}{77}{appendix.Alph2}%
-\contentsline {chapter}{\numberline {C}Apéndice C}{78}{appendix.Alph3}%
-\contentsline {chapter}{\numberline {D}Apéndice D}{80}{appendix.Alph4}%
-\contentsline {chapter}{\numberline {E}Apéndice E}{81}{appendix.Alph5}%
-\contentsline {chapter}{\numberline {F}Apéndice F}{83}{appendix.Alph6}%
-\contentsline {chapter}{\numberline {G}Apéndice G}{85}{appendix.Alph7}%
-\contentsline {chapter}{\numberline {H}Apéndice H}{87}{appendix.Alph8}%
-\contentsline {chapter}{\numberline {I}Apéndice I}{88}{appendix.Alph9}%
-\contentsline {chapter}{\numberline {J}Apéndice J}{90}{appendix.Alph10}%
-\contentsline {chapter}{\numberline {K}Apéndice K}{93}{appendix.Alph11}%
-\contentsline {chapter}{\numberline {L}Apéndice L}{94}{appendix.Alph12}%
+\contentsline {paragraph}{Módulo de Repartidores:}{45}{figure.caption.24}%
+\contentsline {paragraph}{Chatbot RAG integrado en la plataforma web}{45}{figure.caption.25}%
+\contentsline {paragraph}{Clasificación de la solución como SaaS y alcance del piloto}{46}{figure.caption.25}%
+\contentsline {subsection}{\numberline {2.2.3}ETAPA 3: Validación y Despliegue}{47}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Arquitectura del despliegue}{47}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Seguridad operativa y configuración de despliegue}{47}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}Despliegue en \textit {staging} y validación técnica}{49}{subsubsection.2.2.3.3}%
+\contentsline {chapter}{\numberline {3}Resultados}{50}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{50}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Resultados del diagnóstico de digitalización}{51}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Caracterización de la PYME piloto}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Estado de digitalización previo}{51}{subsection.3.2.2}%
+\contentsline {paragraph}{Gestión de pedidos}{52}{table.caption.27}%
+\contentsline {paragraph}{Comunicación con cocina, repartidores, inventario y atención}{52}{table.caption.27}%
+\contentsline {section}{\numberline {3.3}Resultados de la validación de usabilidad y adopción}{53}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Usabilidad del sistema}{53}{subsection.3.3.1}%
+\contentsline {paragraph}{Resultados por rol de usuario}{54}{table.caption.28}%
+\contentsline {paragraph}{Desempeño en tareas representativas}{54}{table.caption.28}%
+\contentsline {paragraph}{Errores y dificultades identificadas}{54}{table.caption.29}%
+\contentsline {subsection}{\numberline {3.3.2}Desempeño del sistema en escenarios de prueba}{56}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Resultados técnicos del software}{57}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Pruebas unitarias y de integración}{57}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Métricas de disponibilidad y rendimiento}{57}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Validación de funcionalidades}{59}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Problemas identificados y soluciones}{60}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Discusión}{62}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Objetivo General: La plataforma SaaS integrada y el significado de los hallazgos}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Análisis de Objetivos Específicos y Contraste Bibliográfico}{64}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Identificación y documentación de requisitos (Objetivo Específico 1)}{64}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Diseño de arquitectura técnica de la plataforma (Objetivo Específico 2)}{64}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Desarrollo de módulos funcionales principales (Objetivo Específico 3)}{65}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Implementación e integración del chatbot RAG en la plataforma web (Objetivo Específico 4)}{65}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Verificación del cumplimiento de requisitos funcionales (Objetivo Específico 5)}{66}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Evaluación de usabilidad con escala SUS (Objetivo Específico 6)}{66}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Limitaciones de la Investigación}{67}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{69}{chapter.5}%
+\contentsline {paragraph}{Objetivo general}{69}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 1 (Requisitos)}{69}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 2 (Arquitectura)}{69}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 3 (Módulos)}{70}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 4 (Chatbot RAG)}{70}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 5 (Verificación)}{70}{chapter.5}%
+\contentsline {paragraph}{Objetivo específico 6 (Usabilidad)}{70}{chapter.5}%
+\contentsline {chapter}{Referencias bibliográficas}{75}{chapter*.33}%
+\contentsline {chapter}{\numberline {A}Apéndice A}{76}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Apéndice B}{78}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Apéndice C}{79}{appendix.Alph3}%
+\contentsline {chapter}{\numberline {D}Apéndice D}{81}{appendix.Alph4}%
+\contentsline {chapter}{\numberline {E}Apéndice E}{82}{appendix.Alph5}%
+\contentsline {chapter}{\numberline {F}Apéndice F}{84}{appendix.Alph6}%
+\contentsline {chapter}{\numberline {G}Apéndice G}{86}{appendix.Alph7}%
+\contentsline {chapter}{\numberline {H}Apéndice H}{88}{appendix.Alph8}%
+\contentsline {chapter}{\numberline {I}Apéndice I}{89}{appendix.Alph9}%
+\contentsline {chapter}{\numberline {J}Apéndice J}{91}{appendix.Alph10}%
+\contentsline {chapter}{\numberline {K}Apéndice K}{94}{appendix.Alph11}%
+\contentsline {chapter}{\numberline {L}Apéndice L}{95}{appendix.Alph12}%

@@ -475,10 +475,20 @@
   Integración de módulos funcionales: una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
 
   \paragraph{Módulo de Pedidos}
-  El flujo general del proceso de pedido contempla la creación, estados (pendiente, en camino, entregado) y asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido es el siguiente: (1) el cliente autenticado envía POST a \texttt{/api/orders} con productos, cantidades y dirección; (2) JwtAuthGuard valida el token y adjunta el usuario al request; (3) ValidationPipe valida el DTO; (4) OrdersController delega en OrdersService.create(); (5) el servicio verifica usuario, dirección y stock; (6) se crea la entidad Order y los OrderItem en una transacción TypeORM; (7) se retorna 201 Created. Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
+  El flujo general del proceso de pedido contempla la creación, la transición de estados (pendiente, en camino, entregado) y su asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido se resume en los siguientes pasos:
+  \begin{enumerate}
+    \item El cliente autenticado envía una solicitud \texttt{POST} a \texttt{/api/orders} con productos, cantidades y dirección.
+    \item \textbf{JwtAuthGuard} valida el token JWT y adjunta el usuario al objeto \textit{request}.
+    \item \textbf{ValidationPipe} valida el DTO de entrada (estructura, tipos y reglas declaradas).
+    \item \textbf{OrdersController} delega la operación en \texttt{OrdersService.create()}.
+    \item El servicio verifica usuario, dirección y disponibilidad de stock.
+    \item Se crea la entidad \texttt{Order} y sus \texttt{OrderItem} dentro de una transacción en TypeORM.
+    \item Se retorna \texttt{201 Created} con la información del pedido creado.
+  \end{enumerate}
+  Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
   El diagrama ampliado de este flujo se incluye en el Apéndice G.
 
-  \begin{figure}[htbp]
+  \begin{figure}[H]
   \centering
   \resizebox{0.75\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
   \caption{Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}
@@ -486,29 +496,24 @@
   \end{figure}
 
   \paragraph{Módulo de Inventario:}
-  Lógica para descontar stock y prevenir ventas de productos agotados.
-  La versión ampliada del diagrama se presenta en el Apéndice G.
+  Lógica para descontar stock y prevenir ventas de productos agotados. La Figura \ref{fig:modulo-inventario} corresponde a un \textbf{diagrama de bloques}: el panel web administrativo dispara operaciones de actualización (altas, bajas y ajustes de inventario), el backend/API aplica validaciones y reglas (por ejemplo, evitar stock negativo o inconsistencias) y finalmente persiste cambios en la base de datos de productos y stock; el bloque de validación resume la lógica que protege la integridad del inventario ante operaciones concurrentes y pedidos.
 
-  \begin{figure}[htbp]
+  \begin{figure}[H]
   \centering
   \resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
-  \caption{Lógica del módulo de inventarios y control de stock}
+  \caption{Diagrama de bloques del módulo de inventario y control de stock (versión ampliada en el Apéndice G)}
   \label{fig:modulo-inventario}
   \end{figure}
 
   \paragraph{Módulo de Repartidores:}
-  Proceso de registro, aprobación administrativa y asignación manual de pedidos.
-  La versión ampliada del flujo se presenta en el Apéndice G.
+  Proceso de registro, aprobación administrativa y asignación manual de pedidos. La Figura \ref{fig:modulo-repartidores} corresponde a un \textbf{diagrama de bloques}: cada bloque representa un componente (app móvil, backend/API, base de datos y aprobación administrativa) y las flechas resumen las interacciones principales (registro, persistencia, actualización de estado y asignación de pedidos).
 
-  \begin{figure}[htbp]
+  \begin{figure}[H]
   \centering
   \resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
-  \caption{Flujo del módulo de repartidores}
+  \caption{Diagrama de bloques del módulo de repartidores (versión ampliada en el Apéndice G)}
   \label{fig:modulo-repartidores}
   \end{figure}
-
-  \paragraph{Dashboard Analítico:}
-  Consultas SQL y visualización de KPIs (total de pedidos, ventas por día).
 
   \paragraph{Chatbot RAG integrado en la plataforma web}
   El chatbot se implementó bajo el paradigma RAG (Retrieval-Augmented Generation): se recuperan fragmentos relevantes de una base de conocimiento y se inyectan en el prompt del modelo de lenguaje para generar respuestas contextualizadas. \textbf{Arquitectura:} servicio independiente (Node.js) que expone un endpoint REST para recibir mensajes desde el frontend web; el flujo consiste en (1) recibir mensaje, (2) embedding de la consulta del usuario, (3) búsqueda por similitud en una base vectorial, (4) construcción del prompt con el contexto recuperado más la consulta, (5) llamada al LLM, (6) envío de la respuesta al frontend para mostrarla al usuario en el chat. \textbf{Modelo de lenguaje:} se utilizó un LLM accesible vía API (modelo tipo GPT/compatible con LangChain) para la generación de respuestas. \textbf{Base vectorial e indexación:} el corpus de la plataforma (menú, horarios, preguntas frecuentes, información de pedidos) se fragmentó en chunks, se generaron embeddings con el mismo modelo de embeddings del LLM y se almacenaron en una base vectorial (p. ej. en memoria o integrada en LangChain) para búsqueda por similitud semántica. La indexación se realizó de forma previa al despliegue y se puede actualizar cuando cambie el catálogo o las políticas. \textbf{Validación:} se validó mediante pruebas con consultas frecuentes (horarios, menú, estado de pedido); se verificó que las respuestas fueran coherentes con el contexto recuperado y que el tiempo de respuesta fuera aceptable para uso conversacional. No se aplicaron métricas formales de evaluación (p. ej. BLEU o satisfacción) en este piloto; la validación fue cualitativa y operativa.

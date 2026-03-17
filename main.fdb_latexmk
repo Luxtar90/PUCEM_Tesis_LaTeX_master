@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773715767.61229 0
-  "main.bcf" 1773715767 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
+["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773716958.1706 0
+  "main.bcf" 1773716957 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
   "referencias.bib" 1773684001 8726 cdf0b30129667d34acd394473b362989 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773715763.09366 "main.tex" "main.pdf" "main" 1773715767.61343 0
-  "C:/Users/luigg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769155369 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1773716953.32314 "main.tex" "main.pdf" "main" 1773716958.17135 0
+  "C:/Users/luigg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773716716 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1769144925 24152 12ad24ee1acbce787f58d6e1bcc2cccc ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1769713453 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/luigg/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769144683 13333487 8f07135d7534c9af819efcfad5b6d4fd ""
@@ -175,6 +175,7 @@
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1759409308 46885 8953c67ffba03252c6090aa19568b8ba ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty" 1740138435 31715 19e60610b63819fe670dfa1cd84a4e94 ""
+  "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty" 1469023953 6916 16d2656a1984957e674b149555f1ea1d ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
   "C:/Users/luigg/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg" 1465894292 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -239,7 +240,7 @@
   "PUCEM.sty" 1773081385 2049 1550bdc4db7e7102a54a168d2456dd1a ""
   "apendices.tex" 1773684482 14248 9f21084bcda0dc787bb49d2c46991b5a ""
   "capitulos/1_introduccion.tex" 1773708434 19249 276691e4e2b1e102d467f702911d17c8 ""
-  "capitulos/2_metodos.tex" 1773715748 64825 aca874300274f684bdf7fd1271476337 ""
+  "capitulos/2_metodos.tex" 1773716928 65844 d199c0c496605909e66f78f914711c65 ""
   "capitulos/3_resultados.tex" 1773684001 22756 aa6dbe0917e633a4087860e5cca84dbb ""
   "capitulos/4_discucion.tex" 1773684482 13624 08f9e185502d5fbc5e7a8eb351509405 ""
   "capitulos/5_conclusiones.tex" 1773684482 7192 21075b8bdd751891337d05f9962da7e0 ""
@@ -259,13 +260,13 @@
   "imagenes/secuencia_pedido.tikz" 1773081385 2690 c309231611438b82c632c5bf345701d1 ""
   "imagenes/web_arquitectura.tikz" 1773081385 1028 5da9fc45691408c5c9e2dc3ef3d9188a ""
   "imagenes/web_panel_prototipo.tikz" 1773081385 1989 12c9669aa8ffd13d57292260ffed88b1 ""
-  "main.aux" 1773715767 71172 5a3a967583c0e2f66644a45b056cd3f8 "pdflatex"
+  "main.aux" 1773716957 71260 f38c5ddb2f032841bfde9ea38c8eb7d3 "pdflatex"
   "main.bbl" 1773711522 53503 35dfee42963203f50772a367b012a6a5 "biber main"
-  "main.lof" 1773715767 3975 9183e40953fd44e010f090d899ddc2bc "pdflatex"
-  "main.lot" 1773715767 2233 12a15e253994f9275e699c0f9483176f "pdflatex"
-  "main.run.xml" 1773715767 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
-  "main.tex" 1773709291 10898 0c0dc8917a57b9a64410d7e514a91e41 ""
-  "main.toc" 1773715767 10540 62e02628cf8bc3be69b44aec392ed709 "pdflatex"
+  "main.lof" 1773716957 4076 67a8cea230a2ee6457f2ae76eebfacbf "pdflatex"
+  "main.lot" 1773716957 2233 2421d030bf43bfb124131e75f5a37dc0 "pdflatex"
+  "main.run.xml" 1773716957 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.tex" 1773716668 10917 7851477d5a00e98101380c9edccf2b48 ""
+  "main.toc" 1773716957 10467 8da68b9b35fe5242e9ff4187c08f25b6 "pdflatex"
   "preliminares/1_portada.tex" 1773684001 3388 bb76a78b8b4f8c6dc8f75a2fbdd42e38 ""
   "preliminares/2_certificaion_tutor.tex" 1773081385 1000 eb7429e97fddf3bb26911f3fd0196620 ""
   "preliminares/3_acta_aprobacion_tribunal.tex" 1773081385 1301 989346b66d0030ba670a360b158ea253 ""

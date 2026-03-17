@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,20 +561,28 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@chunks=\count448
 \LT@p@ftn=\toks28
 )
+(C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count449
+\float@exts=\toks29
+\float@box=\box62
+\@float@everytoks=\toks30
+\@floatcapt=\box63
+)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-\MT@toks=\toks29
-\MT@tempbox=\box62
-\MT@count=\count449
+\MT@toks=\toks31
+\MT@tempbox=\box64
+\MT@count=\count450
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks30
+\MT@prot@toks=\toks32
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen185
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count450
+\MT@listname@count=\count451
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
 tex.def
@@ -613,7 +621,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count451
+\c@section@level=\count452
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
@@ -621,8 +629,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen186
-\Hy@linkcounter=\count452
-\Hy@pagecounter=\count453
+\Hy@linkcounter=\count453
+\Hy@pagecounter=\count454
  (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -630,7 +638,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count454
+\Hy@SavedSpaceFactor=\count455
  (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -644,7 +652,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count455
+\c@Hy@tempcnt=\count456
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen187
 
@@ -656,7 +664,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count456
+\Fld@menulength=\count457
 \Field@Width=\dimen188
 \Fld@charsize=\dimen189
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -666,16 +674,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring ON on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count457
-\c@Item=\count458
-\c@Hfootnote=\count459
+\Hy@abspage=\count458
+\c@Item=\count459
+\c@Hfootnote=\count460
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count460
-\c@bookmark@seq@number=\count461
+\Fld@listcount=\count461
+\c@bookmark@seq@number=\count462
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -696,7 +704,7 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count462
+\BKM@id=\count463
 )) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 
@@ -716,8 +724,9 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen197
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count463
-\c@continuedfloat=\count464
+\c@caption@flags=\count464
+\c@continuedfloat=\count465
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -728,15 +737,15 @@ y
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip84
 \enit@outerparindent=\dimen198
-\enit@toks=\toks31
-\enit@inbox=\box63
-\enit@count@id=\count465
-\enitdp@description=\count466
+\enit@toks=\toks33
+\enit@inbox=\box65
+\enit@count@id=\count466
+\enitdp@description=\count467
 ) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count467
-\c@@ppsavesec=\count468
-\c@@ppsaveapp=\count469
+\c@@pps=\count468
+\c@@ppsavesec=\count469
+\c@@ppsaveapp=\count470
 ) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
@@ -754,16 +763,16 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip96
 \f@nch@widthC=\skip97
 \f@nch@widthR=\skip98
-\@temptokenb=\toks32
+\@temptokenb=\toks34
 ) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count470
-\csq@gtype=\count471
-\csq@glevel=\count472
-\csq@qlevel=\count473
-\csq@maxlvl=\count474
-\csq@tshold=\count475
-\csq@ltx@everypar=\toks33
+\csq@reset=\count471
+\csq@gtype=\count472
+\csq@glevel=\count473
+\csq@qlevel=\count474
+\csq@maxlvl=\count475
+\csq@tshold=\count476
+\csq@ltx@everypar=\toks35
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
@@ -791,26 +800,26 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count476
-\lst@gtempboxa=\box64
-\lst@token=\toks34
-\lst@length=\count477
+\lst@mode=\count477
+\lst@gtempboxa=\box66
+\lst@token=\toks36
+\lst@length=\count478
 \lst@currlwidth=\dimen199
-\lst@column=\count478
-\lst@pos=\count479
+\lst@column=\count479
+\lst@pos=\count480
 \lst@lostspace=\dimen256
 \lst@width=\dimen257
-\lst@newlines=\count480
-\lst@lineno=\count481
+\lst@newlines=\count481
+\lst@lineno=\count482
 \lst@maxwidth=\dimen258
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count482
-\lst@skipnumbers=\count483
-\lst@framebox=\box65
+\c@lstnumber=\count483
+\lst@skipnumbers=\count484
+\lst@framebox=\box67
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
@@ -830,13 +839,13 @@ sty
 y
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks35
+\pgfutil@everybye=\toks37
 \pgfutil@tempdima=\dimen259
 \pgfutil@tempdimb=\dimen260
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box66
+\pgfutil@abb=\box68
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -855,12 +864,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks38
+\pgfkeys@tmptoks=\toks40
 ))
 \pgf@x=\dimen261
 \pgf@y=\dimen262
@@ -874,14 +883,14 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen270
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count484
-\c@pgf@countb=\count485
-\c@pgf@countc=\count486
-\c@pgf@countd=\count487
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count488
+\c@pgf@counta=\count485
+\c@pgf@countb=\count486
+\c@pgf@countc=\count487
+\c@pgf@countd=\count488
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count489
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -900,8 +909,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count489
-\pgfsyssoftpath@bigbuffer@items=\count490
+\pgfsyssoftpath@smallbuffer@items=\count490
+\pgfsyssoftpath@bigbuffer@items=\count491
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -918,11 +927,11 @@ code.tex)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen271
-\pgfmath@count=\count491
-\pgfmath@box=\box67
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
+\pgfmath@count=\count492
+\pgfmath@box=\box69
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
@@ -946,7 +955,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count492
+\c@pgfmathroundto@lastzeros=\count493
 ))
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -983,10 +992,10 @@ File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count493
+\pgfpic=\box70
+\pgf@hbox=\box71
+\pgf@layerbox@main=\box72
+\pgf@picture@serial@count=\count494
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -1021,8 +1030,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen295
-\pgf@sys@shading@range@num=\count494
-\pgf@shadingcount=\count495
+\pgf@sys@shading@range@num=\count495
+\pgf@shadingcount=\count496
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -1031,7 +1040,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box71
+\pgfexternal@startupbox=\box73
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -1052,7 +1061,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box72
+\pgfnodeparttextbox=\box74
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -1082,8 +1091,8 @@ code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen298
 \pgffor@skip=\dimen299
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -1092,7 +1101,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count496
+\pgf@plot@mark@count=\count497
 \pgfplotmarksize=\dimen300
 )
 \tikz@lastx=\dimen301
@@ -1103,23 +1112,23 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lastmovetoy=\dimen306
 \tikzleveldistance=\dimen307
 \tikzsiblingdistance=\dimen308
-\tikz@figbox=\box73
-\tikz@figbox@bg=\box74
-\tikz@tempbox=\box75
-\tikz@tempbox@bg=\box76
-\tikztreelevel=\count497
-\tikznumberofchildren=\count498
-\tikznumberofcurrentchild=\count499
-\tikz@fig@count=\count500
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count498
+\tikznumberofchildren=\count499
+\tikznumberofcurrentchild=\count500
+\tikz@fig@count=\count501
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count501
-\pgfmatrixcurrentcolumn=\count502
-\pgf@matrix@numberofcolumns=\count503
+\pgfmatrixcurrentrow=\count502
+\pgfmatrixcurrentcolumn=\count503
+\pgf@matrix@numberofcolumns=\count504
 )
-\tikz@expandcount=\count504
+\tikz@expandcount=\count505
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -1155,12 +1164,12 @@ File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (PUCEM.sty
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box77
+\ttl@box=\box79
 \beforetitleunit=\skip99
 \aftertitleunit=\skip100
 \ttl@plus=\dimen313
 \ttl@minus=\dimen314
-\ttl@toksa=\toks47
+\ttl@toksa=\toks49
 \titlewidth=\dimen315
 \titlewidthlast=\dimen316
 \titlewidthfirst=\dimen317
@@ -1209,7 +1218,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 21
-4.
+5.
 
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1222,26 +1231,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
 
@@ -1270,8 +1279,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 214.
-Package biblatex Info: Reference segment=0 on input line 214.
+Package biblatex Info: Reference section=0 on input line 215.
+Package biblatex Info: Reference segment=0 on input line 215.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1311,17 +1320,17 @@ Package biblatex Info: Reference segment=0 on input line 214.
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count505
+\scratchcounter=\count506
 \scratchdimen=\dimen318
-\scratchbox=\box78
-\nofMPsegments=\count506
-\nofMParguments=\count507
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count508
+\scratchbox=\box80
+\nofMPsegments=\count507
+\nofMParguments=\count508
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count509
 \MPscratchDim=\dimen319
-\MPnumerator=\count509
-\makeMPintoPDFobject=\count510
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count510
+\makeMPintoPDFobject=\count511
+\everyMPtoPDFconversion=\toks51
 )
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1333,12 +1342,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 214.
-Package microtype Info: Applying patch `item' on input line 214.
-Package microtype Info: Applying patch `toc' on input line 214.
-Package microtype Info: Applying patch `eqnum' on input line 214.
-Package microtype Info: Applying patch `verbatim' on input line 214.
-LaTeX Info: Redefining \microtypesetup on input line 214.
+LaTeX Info: Redefining \microtypecontext on input line 215.
+Package microtype Info: Applying patch `item' on input line 215.
+Package microtype Info: Applying patch `toc' on input line 215.
+Package microtype Info: Applying patch `eqnum' on input line 215.
+Package microtype Info: Applying patch `verbatim' on input line 215.
+LaTeX Info: Redefining \microtypesetup on input line 215.
 Package microtype Info: Generating PDF output.
 Package microtype Info: No character protrusion.
 Package microtype Info: Automatic font expansion enabled (level 2),
@@ -1353,12 +1362,12 @@ Package microtype Info: Using default kerning set `alltext'.
 (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package hyperref Info: Link coloring ON on input line 214.
+Package hyperref Info: Link coloring ON on input line 215.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count511
-Package hyperref Info: Option `pageanchor' set `false' on input line 223.
+\c@lstlisting=\count512
+Package hyperref Info: Option `pageanchor' set `false' on input line 224.
 
 (preliminares/1_portada.tex
 <imagenes/PUCEM_LOGO.png, id=6, 355.82938pt x 75.78313pt>
@@ -1442,7 +1451,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 ] [8
 
 ])
-Package hyperref Info: Option `pageanchor' set `true' on input line 244.
+Package hyperref Info: Option `pageanchor' set `true' on input line 245.
  (main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1515,12 +1524,12 @@ x being split [24] [25] (imagenes/arquitectura_capas.tikz) [26]
 ] [30] [31] [32]
 (imagenes/diagrama_bd.tikz) [33] (imagenes/auth_rbac.tikz) [34] [35] [36]
 (imagenes/frontend_prototipo.tikz) [37] [38] (imagenes/web_panel_prototipo.tikz
-) [39] [40] [41] [42] (imagenes/secuencia_pedido.tikz)
-(imagenes/modulo_inventario.tikz) [43] (imagenes/modulo_repartidores.tikz)
-[44] [45] (imagenes/despliegue_arquitectura.tikz) [46] [47])
-(capitulos/3_resultados.tex [48]
+) [39] [40] [41] [42] (imagenes/secuencia_pedido.tikz) [43]
+(imagenes/modulo_inventario.tikz) [44] (imagenes/modulo_repartidores.tikz)
+[45] [46] (imagenes/despliegue_arquitectura.tikz) [47] [48])
+(capitulos/3_resultados.tex [49]
 Cap\'{\i }tulo 3.
-[49
+[50
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -1532,75 +1541,75 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
  (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[50] [51] [52] [53] [54] [55] [56] [57] [58] [59]) (capitulos/4_discucion.tex
-[60]
+[51] [52] [53] [54] [55] [56] [57] [58] [59] [60]) (capitulos/4_discucion.tex
+[61]
 Cap\'{\i }tulo 4.
-[61
+[62
 
-] [62] [63] [64] [65] [66]) (capitulos/5_conclusiones.tex [67]
+] [63] [64] [65] [66] [67]) (capitulos/5_conclusiones.tex [68]
 Cap\'{\i }tulo 5.
-[68
+[69
 
-] [69] [70]) [71] [72
+] [70] [71]) [72] [73
 
-] [73] (apendices.tex [74]
+] [74] (apendices.tex [75]
 Ap\'{e}ndice A.
-(imagenes/diagrama_bd.tikz) [75
+(imagenes/diagrama_bd.tikz) [76
 
 
-] [76]
+] [77]
 Ap\'{e}ndice B.
-(imagenes/arquitectura_capas.tikz) [77
+(imagenes/arquitectura_capas.tikz) [78
 
 ]
 Ap\'{e}ndice C.
-(imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [78
+(imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [79
 
 ]
-[79]
+[80]
 Ap\'{e}ndice D.
-(imagenes/backend_arquitectura.tikz) [80
+(imagenes/backend_arquitectura.tikz) [81
 
 ]
 Ap\'{e}ndice E.
-(imagenes/auth_rbac.tikz) [81
+(imagenes/auth_rbac.tikz) [82
 
-] [82]
+] [83]
 Ap\'{e}ndice F.
-(imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [83
+(imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [84
 
 ]
-[84]
+[85]
 Ap\'{e}ndice G.
-(imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) [85
+(imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) [86
 
 ]
-(imagenes/modulo_repartidores.tikz) [86]
+(imagenes/modulo_repartidores.tikz) [87]
 Ap\'{e}ndice H.
-(imagenes/despliegue_arquitectura.tikz) [87
+(imagenes/despliegue_arquitectura.tikz) [88
 
 ]
 Ap\'{e}ndice I.
-<imagenes/reddiagrama.png, id=833, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=847, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 167.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-[88
+[89
 
- <./imagenes/reddiagrama.png>] [89]
+ <./imagenes/reddiagrama.png>] [90]
 Ap\'{e}ndice J.
-[90
+[91
 
-] [91] [92]
+] [92] [93]
 Ap\'{e}ndice K.
-[93
+[94
 
 ]
 Ap\'{e}ndice L.
-) [94
+) [95
 
-] [95] (main.aux
+] [96] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1614,11 +1623,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40578 strings out of 467871
- 764054 string characters out of 5418376
- 1680748 words of memory out of 5000000
- 68062 multiletter control sequences out of 15000+600000
- 739459 words of font info for 414 fonts, out of 8000000 for 9000
+ 40649 strings out of 467871
+ 765120 string characters out of 5418376
+ 1682171 words of memory out of 5000000
+ 68115 multiletter control sequences out of 15000+600000
+ 739909 words of font info for 418 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,94p,1757b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -1630,9 +1639,9 @@ pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (113 pages, 636540 bytes).
+Output written on main.pdf (114 pages, 641966 bytes).
 PDF statistics:
- 1247 PDF objects out of 1440 (max. 8388607)
- 278 named destinations out of 1000 (max. 500000)
+ 1270 PDF objects out of 1440 (max. 8388607)
+ 286 named destinations out of 1000 (max. 500000)
  125615 words of extra memory for PDF output out of 128383 (max. 10000000)
 
