@@ -53,7 +53,7 @@
   \bottomrule
   \end{longtable}
   \endgroup
-  Nota: Los umbrales de éxito para las métricas de desempeño se definieron en base a referencias concretas de usabilidad y calidad de software. Para los tiempos de respuesta se consideraron las recomendaciones de Nielsen Norman Group para interfaces interactivas (mantener la percepción de respuesta por debajo de 1 s y tiempos de tarea dentro de un rango aceptable para aplicaciones de consumo), complementadas con los criterios de eficiencia de rendimiento del estándar ISO/IEC 25010 (característica de 	extit{performance efficiency}). La tasa de éxito ≥95\% y la tasa de fallos ≤5\% se establecieron siguiendo los principios de fiabilidad del mismo estándar ISO/IEC 25010 (característica de 	extit{reliability}) y prácticas comunes en pruebas de software de prototipos. El umbral de SUS (≥68) se basa en la clasificación estándar de Bangor et al. (2009) para distinguir niveles aceptables de usabilidad.
+  Nota: Los umbrales de éxito para las métricas de desempeño se definieron en base a referencias concretas de usabilidad y calidad de software. Para los tiempos de respuesta se consideraron las recomendaciones de Nielsen Norman Group para interfaces interactivas (mantener la percepción de respuesta por debajo de 1~s y tiempos de tarea dentro de un rango aceptable para aplicaciones de consumo), complementadas con los criterios de eficiencia de rendimiento del estándar ISO/IEC 25010 (característica de \textit{performance efficiency}). La tasa de éxito $\geq$ 95\% y la tasa de fallos $\leq$ 5\% se establecieron siguiendo los principios de fiabilidad del mismo estándar ISO/IEC 25010 (característica de \textit{reliability}) y prácticas comunes en pruebas de software de prototipos. El umbral de SUS ($\geq$ 68) se basa en la clasificación estándar de Bangor et al. (2009) para distinguir niveles aceptables de usabilidad.
 
   La Tabla \ref{tab:operacionalizacion} define explícitamente los criterios de éxito que luego se emplean en el capítulo de Resultados para verificar el cumplimiento de objetivos.
 
@@ -221,25 +221,27 @@
     \item Servicios backends con sus respectivas APIs.
   \end{itemize}
 
+  La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa se comunica con las adyacentes mediante interfaces bien definidas, mientras que la separación por módulos permite evolucionar funcionalidades sin afectar dominios no relacionados. La Figura \ref{fig:arquitectura-capas} resume esta organización y la relación entre componentes (usuarios, acceso, presentación, servicios, datos e integraciones).
+  Como parte de la Etapa 1, se diseñó también el flujo integral del sistema para modelar de extremo a extremo la interacción cliente-cocina-repartidor-dashboard; dicho flujo se detalla en la Figura \ref{fig:secuencia-pedido} y se implementa en la Etapa 2.
+  Como material complementario, la versión ampliada del diagrama por capas se incluye en el Apéndice B.
+
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.82\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
+  \resizebox{0.68\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
   \caption{Arquitectura por capas de la plataforma SaaS}
   \label{fig:arquitectura-capas}
   \end{figure}
 
-  La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa se comunica con las adyacentes mediante interfaces bien definidas, mientras que la separación por módulos permite evolucionar funcionalidades sin afectar dominios no relacionados.
-  Como parte de la Etapa 1, se diseñó también el flujo integral del sistema para modelar de extremo a extremo la interacción cliente-cocina-repartidor-dashboard; dicho flujo se detalla en la Figura \ref{fig:secuencia-pedido} y se implementa en la Etapa 2.
-  Como material complementario, la versión ampliada del diagrama por capas se incluye en el Apéndice B.
-
   \subsubsection{Arquitectura de la aplicación móvil}
+
+  Dado que el prototipo busca cubrir el flujo operativo completo de una PYME gastronómica, se definieron roles explícitos para representar a los actores del proceso y delimitar responsabilidades. En la aplicación móvil se contemplan tres roles principales: \textbf{Cliente} (realiza pedidos y consulta su estado), \textbf{Cocina} (recibe, acepta/rechaza y marca pedidos como listos) y \textbf{Repartidor} (toma pedidos asignados, recoge y registra la entrega). Adicionalmente, la plataforma incorpora un rol de \textbf{Administrador} (panel web) y un rol \textbf{Superadmin} para configuración y control global. Esta separación por roles guía el diseño de pantallas, navegación y flujos, de modo que cada perfil visualice únicamente las funciones pertinentes, y se refuerza con validaciones del backend para asegurar coherencia y seguridad durante la ejecución de los casos de prueba.
 
   La aplicación móvil es la interfaz principal para tres roles: cliente, repartidor y cocina. Utiliza React Native + Expo para maximizar la reutilización de código entre plataformas.
   La versión ampliada de esta arquitectura se presenta en el Apéndice C.
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.75\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
+  \resizebox{0.55\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
   \caption{Arquitectura de la aplicación móvil}
   \label{fig:movil-arquitectura}
   \end{figure}
@@ -251,7 +253,7 @@
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.75\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
+  \resizebox{0.55\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
   \caption{Arquitectura de la aplicación web}
   \label{fig:web-arquitectura}
   \end{figure}
@@ -263,12 +265,12 @@
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.75\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
+  \resizebox{0.80\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
   \caption{Arquitectura del backend (API REST)}
   \label{fig:backend-arquitectura}
   \end{figure}
 
-  Esta figura mantiene la misma escala visual que las arquitecturas móvil y web para asegurar uniformidad de presentación y facilitar la comparación entre componentes.
+  Esta figura mantiene la misma coherencia visual que las arquitecturas móvil y web, ajustando su escala para asegurar legibilidad y facilitar la comparación entre componentes.
 
 
 

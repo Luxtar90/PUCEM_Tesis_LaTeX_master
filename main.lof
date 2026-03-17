@@ -1,45 +1,45 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de flujo del funcionamiento general de la plataforma SaaS. Fuente: elaboración propia.}}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de flujo del funcionamiento general de la plataforma SaaS. Fuente: elaboración propia.}}{10}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}}{17}{figure.caption.14}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura de la aplicación web}}{29}{figure.caption.17}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura del backend (API REST)}}{30}{figure.caption.18}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama Entidad-Relación (ER) de la base de datos}}{35}{figure.caption.19}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{37}{figure.caption.20}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Flujo de la interfaz móvil por rol (cliente, repartidor, cocina)}}{39}{figure.caption.21}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Flujo del panel web administrativo}}{41}{figure.caption.22}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}}{45}{figure.caption.23}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Lógica del módulo de inventarios y control de stock}}{45}{figure.caption.24}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Flujo del módulo de repartidores}}{45}{figure.caption.25}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Arquitectura de despliegue (VPS, Vercel, APK)}}{48}{figure.caption.26}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura de la aplicación móvil}}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Arquitectura de la aplicación web}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Arquitectura del backend (API REST)}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama Entidad-Relación (ER) de la base de datos}}{33}{figure.caption.19}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{35}{figure.caption.20}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Flujo de la interfaz móvil por rol (cliente, repartidor, cocina)}}{36}{figure.caption.21}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Flujo del panel web administrativo}}{38}{figure.caption.22}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}}{42}{figure.caption.23}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Lógica del módulo de inventarios y control de stock}}{43}{figure.caption.24}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Flujo del módulo de repartidores}}{43}{figure.caption.25}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Arquitectura de despliegue (VPS, Vercel, APK)}}{45}{figure.caption.26}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama entidad--relación de la base de datos de la plataforma SaaS}}{76}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {16}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{78}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {17}{\ignorespaces Arquitectura de la aplicación móvil}}{79}{figure.caption.37}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Arquitectura del panel web}}{80}{figure.caption.38}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama entidad--relación de la base de datos de la plataforma SaaS}}{74}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {19}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{81}{figure.caption.39}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Arquitectura por capas de la plataforma SaaS}}{76}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {20}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{82}{figure.caption.40}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Arquitectura de la aplicación móvil}}{77}{figure.caption.37}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Arquitectura del panel web}}{78}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {21}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{83}{figure.caption.41}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Flujo principal del panel web administrativo}}{84}{figure.caption.42}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Arquitectura modular del backend (NestJS) planificada}}{79}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {23}{\ignorespaces Flujo general del proceso de pedido}}{85}{figure.caption.43}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Diagrama del módulo de inventario}}{86}{figure.caption.44}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama del módulo de repartidores}}{86}{figure.caption.45}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Flujo de autenticación y autorización (JWT + RBAC)}}{80}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {26}{\ignorespaces Arquitectura del despliegue de la plataforma}}{87}{figure.caption.46}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Flujo principal del frontend móvil para cliente, repartidor y cocina}}{81}{figure.caption.41}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Flujo principal del panel web administrativo}}{82}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {27}{\ignorespaces Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}{88}{figure.caption.47}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Flujo general del proceso de pedido}}{83}{figure.caption.43}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagrama del módulo de inventario}}{84}{figure.caption.44}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama del módulo de repartidores}}{84}{figure.caption.45}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {26}{\ignorespaces Arquitectura del despliegue de la plataforma}}{85}{figure.caption.46}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {27}{\ignorespaces Diagrama de red y arquitectura de la plataforma SaaS web y móvil}}{86}{figure.caption.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

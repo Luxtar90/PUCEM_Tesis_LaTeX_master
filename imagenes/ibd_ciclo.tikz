@@ -1,17 +1,18 @@
 \begin{tikzpicture}[every node/.style={align=center, transform shape, font=\small}, node distance=1.0cm and 2.0cm]
 \tikzset{
-  phase/.style={draw=black!60, rounded corners=2pt, fill=blue!6, minimum width=6.0cm, minimum height=1.15cm, text width=5.4cm, inner sep=3.5pt},
+  phase/.style={draw=black!60, rounded corners=2pt, fill=blue!6, minimum width=5.5cm, minimum height=1.2cm, text width=4.9cm, inner sep=3.5pt},
   phasesmall/.style={draw=black!55, rounded corners=2pt, fill=gray!10, minimum width=5.2cm, minimum height=0.95cm, text width=4.8cm, inner sep=3pt},
   phasediamond/.style={draw=black!60, shape=diamond, aspect=2.2, fill=orange!12, minimum width=5.0cm, minimum height=1.7cm},
-  container/.style={draw=black!45, rounded corners=3pt, fill=gray!6, minimum width=14.2cm, minimum height=3.0cm},
-  flow/.style={-Latex, draw=black!70, line width=0.5pt}
+  container/.style={draw=black!45, rounded corners=3pt, fill=gray!6, minimum width=14.2cm, minimum height=3.6cm},
+  flow/.style={-Latex, draw=black!70, line width=0.5pt},
+  arrowlabel/.style={font=\scriptsize, fill=white, fill opacity=0.95, text opacity=1, inner sep=1.6pt, text=black, rounded corners=1pt}
 }
 \node[container] (ciclo) {};
-\node[font=\bfseries, yshift=-0.25cm] at (ciclo.north) {Ciclo iterativo};
-\node[phase, anchor=west, xshift=0.7cm, yshift=-0.15cm] at (ciclo.west) (fase3) {Fase 3: Dise\~no \& Desarrollo\\(Construcci\'on del Artefacto)};
-\node[phase, anchor=east, xshift=-0.7cm, yshift=-0.15cm] at (ciclo.east) (fase4) {Fase 4: Demostraci\'on\\(Aplicaci\'on/Prueba)};
-\draw[flow] (fase3.east) -- node[above, font=\scriptsize]{Prototipo / Iteraci\'on N} (fase4.west);
-\draw[flow] (fase4.west) -- node[below, font=\scriptsize]{Feedback / Resultados} (fase3.east);
+\node[font=\bfseries, yshift=-0.15cm] at (ciclo.north) {Ciclo iterativo};
+\node[phase, anchor=west, xshift=0.35cm, yshift=-0.55cm] at (ciclo.west) (fase3) {Fase 3: Dise\~no \& Desarrollo\\(Construcci\'on del Artefacto)};
+\node[phase, anchor=east, xshift=-0.35cm, yshift=-0.55cm] at (ciclo.east) (fase4) {Fase 4: Demostraci\'on\\(Aplicaci\'on/Prueba)};
+\draw[flow] (fase3.east) to[bend left=18] node[arrowlabel, midway, yshift=16pt]{Prototipo / Iteraci\'on N} (fase4.west);
+\draw[flow] (fase4.west) to[bend left=18] node[arrowlabel, midway, yshift=-16pt]{Feedback / Resultados} (fase3.east);
 \node[phasediamond, below=1.4cm of ciclo] (fase5) {Fase 5: Evaluaci\'on};
 \draw[flow] (ciclo.south) -- (fase5.north);
 \draw[flow] (fase5.east) -- ++(1.0cm,0) coordinate(tmp) -- ++(0,1.0cm) coordinate(tmp2) -- (ciclo.south east) node[midway,right, font=\scriptsize]{No};
