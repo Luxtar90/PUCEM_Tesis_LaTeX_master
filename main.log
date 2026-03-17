@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 21:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1512,15 +1512,15 @@ x being split [24] [25] (imagenes/arquitectura_capas.tikz) [26]
 (imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [27]
 (imagenes/backend_arquitectura.tikz) [28] [29
 
-] [30] [31]
-(imagenes/diagrama_bd.tikz) [32] [33] (imagenes/auth_rbac.tikz) [34] [35]
-(imagenes/frontend_prototipo.tikz) [36] [37] (imagenes/web_panel_prototipo.tikz
-) [38] [39] [40] [41] (imagenes/secuencia_pedido.tikz)
-(imagenes/modulo_inventario.tikz) [42] (imagenes/modulo_repartidores.tikz)
-[43] [44] (imagenes/despliegue_arquitectura.tikz) [45] [46])
-(capitulos/3_resultados.tex [47]
+] [30] [31] [32]
+(imagenes/diagrama_bd.tikz) [33] (imagenes/auth_rbac.tikz) [34] [35] [36]
+(imagenes/frontend_prototipo.tikz) [37] [38] (imagenes/web_panel_prototipo.tikz
+) [39] [40] [41] [42] (imagenes/secuencia_pedido.tikz)
+(imagenes/modulo_inventario.tikz) [43] (imagenes/modulo_repartidores.tikz)
+[44] [45] (imagenes/despliegue_arquitectura.tikz) [46] [47])
+(capitulos/3_resultados.tex [48]
 Cap\'{\i }tulo 3.
-[48
+[49
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -1532,75 +1532,75 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
  (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[49] [50] [51] [52] [53] [54] [55] [56] [57] [58]) (capitulos/4_discucion.tex
-[59]
+[50] [51] [52] [53] [54] [55] [56] [57] [58] [59]) (capitulos/4_discucion.tex
+[60]
 Cap\'{\i }tulo 4.
-[60
+[61
 
-] [61] [62] [63] [64] [65]) (capitulos/5_conclusiones.tex [66]
+] [62] [63] [64] [65] [66]) (capitulos/5_conclusiones.tex [67]
 Cap\'{\i }tulo 5.
-[67
+[68
 
-] [68] [69]) [70] [71
+] [69] [70]) [71] [72
 
-] [72] (apendices.tex [73]
+] [73] (apendices.tex [74]
 Ap\'{e}ndice A.
-(imagenes/diagrama_bd.tikz) [74
+(imagenes/diagrama_bd.tikz) [75
 
 
-] [75]
+] [76]
 Ap\'{e}ndice B.
-(imagenes/arquitectura_capas.tikz) [76
+(imagenes/arquitectura_capas.tikz) [77
 
 ]
 Ap\'{e}ndice C.
-(imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [77
+(imagenes/movil_arquitectura.tikz) (imagenes/web_arquitectura.tikz) [78
 
 ]
-[78]
+[79]
 Ap\'{e}ndice D.
-(imagenes/backend_arquitectura.tikz) [79
+(imagenes/backend_arquitectura.tikz) [80
 
 ]
 Ap\'{e}ndice E.
-(imagenes/auth_rbac.tikz) [80
+(imagenes/auth_rbac.tikz) [81
 
-]
+] [82]
 Ap\'{e}ndice F.
-(imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [81
+(imagenes/frontend_prototipo.tikz) (imagenes/web_panel_prototipo.tikz) [83
 
 ]
-[82]
+[84]
 Ap\'{e}ndice G.
-(imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) [83
+(imagenes/secuencia_pedido.tikz) (imagenes/modulo_inventario.tikz) [85
 
 ]
-(imagenes/modulo_repartidores.tikz) [84]
+(imagenes/modulo_repartidores.tikz) [86]
 Ap\'{e}ndice H.
-(imagenes/despliegue_arquitectura.tikz) [85
+(imagenes/despliegue_arquitectura.tikz) [87
 
 ]
 Ap\'{e}ndice I.
-<imagenes/reddiagrama.png, id=825, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=833, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 167.
 (pdftex.def)             Requested size: 422.74733pt x 325.86491pt.
-[86
-
- <./imagenes/reddiagrama.png>] [87]
-Ap\'{e}ndice J.
 [88
 
-] [89] [90]
+ <./imagenes/reddiagrama.png>] [89]
+Ap\'{e}ndice J.
+[90
+
+] [91] [92]
 Ap\'{e}ndice K.
-[91
+[93
 
 ]
 Ap\'{e}ndice L.
-) [92
+) [94
 
-] [93] (main.aux
+] [95] (main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1614,11 +1614,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40563 strings out of 467871
- 763813 string characters out of 5418376
+ 40578 strings out of 467871
+ 764054 string characters out of 5418376
  1680748 words of memory out of 5000000
- 68052 multiletter control sequences out of 15000+600000
- 739332 words of font info for 412 fonts, out of 8000000 for 9000
+ 68062 multiletter control sequences out of 15000+600000
+ 739459 words of font info for 414 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,94p,1757b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -1630,9 +1630,9 @@ pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (111 pages, 629911 bytes).
+Output written on main.pdf (113 pages, 636540 bytes).
 PDF statistics:
- 1229 PDF objects out of 1440 (max. 8388607)
- 276 named destinations out of 1000 (max. 500000)
+ 1247 PDF objects out of 1440 (max. 8388607)
+ 278 named destinations out of 1000 (max. 500000)
  125615 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -305,12 +305,12 @@
 
   Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, correo en usuarios) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de roles). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
 
-  \paragraph{Implementación con TypeORM}
-  En la implementación con TypeORM, cada entidad se refleja en una clase TypeScript con decoradores @Entity que mapean a las tablas correspondientes. Las relaciones se definen mediante decoradores especializados:
+  \paragraph{Mapeo Objeto--Relacional con TypeORM}
+  En la implementación con TypeORM, un ORM (Object-Relational Mapping) para aplicaciones Node.js/TypeScript, cada entidad del dominio se modela como una clase TypeScript anotada con decoradores como \texttt{@Entity}, lo cual permite mapear el modelo de objetos a tablas relacionales y simplificar las operaciones de persistencia. Las relaciones se definen mediante decoradores especializados:
   \begin{itemize}
-    \item @ManyToOne y @OneToMany para relaciones uno a muchos (ej: Usuario-Pedidos, Pedido-OrderItems)
-    \item @ManyToMany con @JoinTable para relaciones muchos a muchos (ej: Usuario-Roles)
-    \item @JoinColumn para especificar claves foráneas explícitas
+    \item \texttt{@ManyToOne} y \texttt{@OneToMany} para relaciones uno a muchos (ej: Usuario-Pedidos, Pedido-OrderItems)
+    \item \texttt{@ManyToMany} con \texttt{@JoinTable} para relaciones muchos a muchos (ej: Usuario-Roles)
+    \item \texttt{@JoinColumn} para especificar claves foráneas explícitas
   \end{itemize}
 
   Por ejemplo, la entidad Order (Pedido) define @ManyToOne(() => User, user => user.orders) para referenciar al cliente, con un @JoinColumn indicando id\_usuario como clave foránea. De forma similar, referencia al repartidor asignado mediante otra relación a User (nullable), distinguiendo roles mediante el sistema RBAC implementado.
@@ -336,21 +336,23 @@
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.85\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
+  \resizebox{0.90\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
   \caption{Diagrama Entidad-Relación (ER) de la base de datos}
   \label{fig:diagrama-bd}
   \end{figure}
 
   \subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
-  La plataforma implementa un esquema de roles y permisos (RBAC) para garantizar que cada usuario solo realice las acciones que le corresponden (Logto, s.f.). RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
+  Como se introdujo previamente en la arquitectura de la aplicación móvil, el prototipo contempla roles operativos diferenciados. En esta subsección se formaliza el esquema de roles y permisos (RBAC) que garantiza que cada usuario solo realice las acciones que le corresponden (Logto, s.f.). RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
 
-  Administrador (ADMIN): Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma. Existe un rol adicional de Superadmin con acceso irrestricto al sistema completo.
+  \textbf{Administrador (ADMIN):} Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma.
+  
+  \textbf{Superadmin (SUPERADMIN):} Rol con acceso irrestricto al sistema, utilizado para configuración y control global.
 
-  Cliente (CLIENTE): Usuario de la app móvil que realiza pedidos. Puede registrarse o iniciar sesión, ver y buscar productos, crear pedidos, consultar su estado y editar su perfil.
+  \textbf{Cliente (CLIENTE):} Usuario de la app móvil que realiza pedidos. Puede registrarse o iniciar sesión, ver y buscar productos, crear pedidos, consultar su estado y editar su perfil.
 
-  Repartidor (DELIVERY): Usuario de la app móvil que toma y entrega pedidos. Puede ver pedidos pendientes, aceptar/declinar encargos, marcar entregas y revisar su historial. Requiere aprobación administrativa antes de operar.
+  \textbf{Repartidor (DELIVERY):} Usuario de la app móvil que toma y entrega pedidos. Puede ver pedidos pendientes, aceptar/declinar encargos, marcar entregas y revisar su historial. Requiere aprobación administrativa antes de operar.
 
-  Cocina (COCINA): Usuario de la app móvil (vista de cocina) encargado de la gestión de pedidos. Recibe las órdenes nuevas y tiene la capacidad de aceptarlas o rechazarlas; una vez preparadas, marca el pedido como listo para que el repartidor proceda a recogerlo y entregarlo al cliente, actualizando el estado del pedido en el flujo del sistema.
+  \textbf{Cocina (COCINA):} Usuario de la app móvil (vista de cocina) encargado de la gestión de pedidos. Recibe las órdenes nuevas y tiene la capacidad de aceptarlas o rechazarlas; una vez preparadas, marca el pedido como listo para que el repartidor proceda a recogerlo y entregarlo al cliente, actualizando el estado del pedido en el flujo del sistema.
 
   Estos roles se implementan mediante una tabla independiente (tbl\_roles) y una relación muchos a muchos con usuarios, permitiendo que un mismo usuario posea múltiples roles simultáneamente. La tabla de roles almacena los identificadores estándar (cliente, repartidor, admin, superadmin) con restricción de unicidad. Esta arquitectura flexible facilita la gestión de permisos compuestos; por ejemplo, un usuario puede ser simultáneamente cliente y administrador.
 
@@ -361,7 +363,7 @@
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.9\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
+  \resizebox{0.82\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
   \caption{Flujo de autenticación y autorización (JWT + RBAC)}
   \label{fig:auth-rbac}
   \end{figure}
@@ -372,7 +374,7 @@
 
   Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas y consolidando evidencia de avance en la bitácora técnica de validación (Apéndice J). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
 
-  \subsubsection{Desarrollo del frontend móvil (React Native + Expo)}
+  \subsubsection{Desarrollo de la aplicación móvil}
 
   Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes, repartidores y personal de cocina, con navegación predecible, validaciones tempranas y comunicación robusta con la API. El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código.
 
@@ -390,7 +392,7 @@
 
   La arquitectura del frontend móvil privilegia la simplicidad y la previsibilidad del estado. Se emplea estado local y patrones de elevación de estado donde corresponde, con manejo de formularios controlados y validación básica en cliente (tipos de entrada, obligatoriedad, formatos). La comunicación con la API se realiza mediante solicitudes HTTP que envían y reciben JSON; se contemplan casos de error (credenciales inválidas, falta de conectividad, respuestas 4xx/5xx) con mensajes claros al usuario y estrategias de reintento cuando es pertinente. La interfaz se diseñó con principios de consistencia visual y accesibilidad, cuidando contrastes, tamaños de toque y retroalimentación tras acciones. Para el diseño visual se empleó Tamagui, biblioteca de UI y sistema de estilos compatible con React Native, que provee componentes y temas para construir interfaces coherentes y responsivas (Tamagui, s.f.). En el proyecto se estilizaron botones, tarjetas y formularios con componentes Tamagui, logrando consistencia y mantenibilidad. Su sistema de temas facilita la personalización visual (colores, tipografía) y asegura una apariencia uniforme en la aplicación Android, adaptándose a las necesidades de identidad del negocio.
 
-  \subsubsection{Desarrollo del frontend panel web (Next.js + Tailwind CSS)}
+  \subsubsection{Desarrollo de la aplicación web}
 
   Objetivo del panel web: proveer principalmente herramientas de administración para gestionar catálogo, pedidos y repartidores, con formularios validados, vistas responsivas y flujos CRUD claros; además, se permite iniciar sesión como cliente para realizar compras desde la web.
 
@@ -429,7 +431,7 @@
 
   \begin{figure}[htbp]
   \centering
-  \resizebox{0.8\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
+  \resizebox{0.95\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
   \caption{Flujo del panel web administrativo}
   \label{fig:web-panel-prototipo}
   \end{figure}
@@ -444,12 +446,12 @@
   La arquitectura técnica se organiza en tres capas principales: controlador, servicio y acceso a datos. El controlador expone endpoints HTTP y orquesta el flujo de entrada; el servicio concentra reglas de negocio; y el repositorio o capa de datos persiste y consulta información en PostgreSQL mediante TypeORM. Esta separación mantiene un flujo unidireccional (controlador $\rightarrow$ servicio $\rightarrow$ datos), evita acoplamiento entre transporte y lógica, y simplifica el mantenimiento evolutivo.
 
   \paragraph{Componentes transversales}
-  Se definieron DTOs para tipado y validación de entrada/salida; la integración de class-validator y class-transformer con ValidationPipe global permite rechazar solicitudes mal formadas antes de ejecutar lógica de negocio. La inyección de dependencias con @Injectable() mantiene el código desacoplado y testeable. En persistencia, TypeORM se integró con @nestjs/typeorm, utilizando entidades tipadas, repositorios y QueryBuilder para operaciones transaccionales y consultas estructuradas.
+  Se definieron DTOs (\textit{Data Transfer Objects}), es decir, estructuras de datos que describen el contrato de la API para transportar información entre cliente y servidor; en NestJS se usan para tipar y validar el contenido de las solicitudes y respuestas (por ejemplo, campos requeridos y formatos). La integración de class-validator y class-transformer con ValidationPipe global permite rechazar solicitudes mal formadas antes de ejecutar lógica de negocio. La inyección de dependencias con @Injectable() mantiene el código desacoplado y testeable. En persistencia, TypeORM se integró con @nestjs/typeorm, utilizando entidades tipadas, repositorios y QueryBuilder para operaciones transaccionales y consultas estructuradas.
 
   \paragraph{Módulos de dominio}
   La organización del backend combina capas técnicas y módulos de dominio. Cada módulo agrupa su controlador, servicios y acceso a datos en torno a una responsabilidad funcional, lo que permite describir con claridad su función e importancia en el sistema. Esta organización mejora la trazabilidad entre requisito, endpoint e implementación.
 
-  La organización por módulos comprende:
+  La organización del backend por módulos (módulos de dominio) comprende:
   \begin{itemize}
     \item \textbf{AuthModule:} Gestiona registro, login y emisión de tokens JWT. Emplea bcrypt para hash de contraseñas (salt rounds: 10) y JwtModule configurado con clave secreta y expiración. Implementa estrategia Passport-JWT para validar tokens en headers Authorization.
     \item \textbf{UsersModule:} Administra usuarios y relación con roles. Provee endpoints protegidos (solo admin/superadmin) para CRUD de usuarios, gestión de roles y consulta de perfiles. Integrado estrechamente con AuthModule.

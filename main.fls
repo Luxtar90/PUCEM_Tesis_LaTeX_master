@@ -590,6 +590,7 @@ INPUT imagenes\web_arquitectura.tikz
 INPUT .\imagenes\backend_arquitectura.tikz
 INPUT .\imagenes\backend_arquitectura.tikz
 INPUT imagenes\backend_arquitectura.tikz
+INPUT C:\Users\luigg\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT .\imagenes\diagrama_bd.tikz
 INPUT .\imagenes\diagrama_bd.tikz
 INPUT imagenes\diagrama_bd.tikz
@@ -602,7 +603,6 @@ INPUT imagenes\frontend_prototipo.tikz
 INPUT .\imagenes\web_panel_prototipo.tikz
 INPUT .\imagenes\web_panel_prototipo.tikz
 INPUT imagenes\web_panel_prototipo.tikz
-INPUT C:\Users\luigg\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT .\imagenes\secuencia_pedido.tikz
 INPUT .\imagenes\secuencia_pedido.tikz
 INPUT imagenes\secuencia_pedido.tikz

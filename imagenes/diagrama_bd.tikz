@@ -3,11 +3,12 @@
   entity/.style={draw, rounded corners, thick, fill=blue!10, minimum width=3.3cm, minimum height=0.95cm},
   entityalt/.style={draw, rounded corners, thick, fill=green!10, minimum width=3.3cm, minimum height=0.95cm},
   link/.style={draw, rounded corners, thick, fill=orange!18, minimum width=2.9cm, minimum height=0.9cm},
-  relabel/.style={font=\scriptsize, fill=white, inner sep=2pt, outer sep=0.5pt}
+  relabel/.style={font=\scriptsize, fill=white, inner sep=2pt, outer sep=0.5pt},
+  relation/.style={-latex, thick, rounded corners=8pt, line cap=round, line join=round, shorten <=2pt, shorten >=2pt}
 }
 \node[entity] (usuarios) at (0,2) {Usuarios};
 \node[link] (roles) at (1,2) {Roles};
-\node[entityalt] (empresas) at (1,1) {Empresas};
+\node[entityalt] (empresas) at (2,2) {Empresas};
 \node[entity] (categorias) at (3,2) {Categorías};
 \node[entity] (repartidores) at (0,1) {Repartidores};
 \node[entity] (direcciones) at (0,0) {Direcciones};
@@ -15,15 +16,19 @@
 \node[entity] (productos) at (3,1) {Productos};
 \node[entityalt] (pedidoDetalle) at (2,0) {PedidoDetalle};
 \node[entityalt] (pagos) at (3,-1) {Pagos};
-\draw[-latex, thick] (usuarios) -- node[relabel, above, pos=0.5] {N..1} (roles);
-\draw[-latex, thick] (usuarios) -- node[relabel, left, pos=0.5] {1..1} (repartidores);
-\draw[-latex, thick] (usuarios) -- node[relabel, left, pos=0.5] {1..N} (direcciones);
-\draw[-latex, thick] (usuarios.east) to[out=0,in=180] node[relabel, above, pos=0.5] {1..N} (pedidos.west);
-\draw[-latex, thick] (empresas.east) -- node[relabel, above, pos=0.5] {1..N} (pedidos.west);
-\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above, pos=0.5] {1..N} (categorias.west);
-\draw[-latex, thick] (empresas.east) to[out=0,in=180] node[relabel, above, pos=0.55] {1..N} (productos.west);
-\draw[-latex, thick] (categorias) -- node[relabel, right, pos=0.5] {1..N} (productos);
-\draw[-latex, thick] (pedidos) -- node[relabel, right, pos=0.5] {1..N} (pedidoDetalle);
-\draw[-latex, thick] (productos.south) to[out=-90,in=0] node[relabel, above, pos=0.5] {1..N} (pedidoDetalle.east);
-\draw[-latex, thick] (pedidos.south) to[out=-90,in=180] node[relabel, below, pos=0.5] {1..1} (pagos.west);
+
+\draw[relation] (usuarios) -- node[relabel, above, pos=0.5, yshift=8pt] {N..1} (roles);
+\draw[relation] (usuarios) -- node[relabel, right, pos=0.4, xshift=6pt] {1..1} (repartidores);
+
+\draw[relation] (usuarios.south west) to[out=-140,in=140] node[relabel, left, pos=0.55, xshift=-6pt] {1..N} (direcciones.north west);
+\draw[relation] (usuarios.south east) to[out=-20,in=180] node[relabel, above, pos=0.35, yshift=10pt] {1..N} (pedidos.west);
+
+\draw[relation] (empresas.south) -- node[relabel, right, pos=0.5, xshift=6pt] {1..N} (pedidos.north);
+\draw[relation] (empresas) -- node[relabel, above, pos=0.5, yshift=8pt] {1..N} (categorias);
+
+\draw[relation] (categorias) -- node[relabel, right, pos=0.5, xshift=6pt] {1..N} (productos);
+
+\draw[relation] (pedidos) -- node[relabel, right, pos=0.5, xshift=6pt] {1..N} (pedidoDetalle);
+\draw[relation] (productos.south west) to[out=-120,in=0] node[relabel, above, pos=0.45, yshift=8pt] {1..N} (pedidoDetalle.east);
+\draw[relation] (pedidos.south east) to[out=-90,in=180] node[relabel, below, pos=0.5, yshift=-6pt] {1..1} (pagos.west);
 \end{tikzpicture}
