@@ -4,9 +4,7 @@
 
 El presente capítulo expone los resultados obtenidos de la investigación en torno a la digitalización de las PYMES gastronómicas de la ciudad de Portoviejo y a la validación técnica y de usabilidad de la plataforma SaaS desarrollada. Se estructura en tres apartados principales: (1) resultados del diagnóstico de digitalización previo a la implementación; (2) resultados de la validación de usabilidad y adopción; y (3) resultados técnicos del software, incluyendo pruebas, métricas de disponibilidad y rendimiento. La exposición es objetiva y descriptiva; las interpretaciones y relaciones con la literatura se abordan en el capítulo de Discusión.
 
-La plataforma validada está constituida por tres componentes integrados: (1) un \textbf{backend} (API REST con NestJS y PostgreSQL) que centraliza autenticación por roles (administrador, cocina, repartidor, cliente), gestión de productos, categorías, pedidos, direcciones, locales y repartidores; (2) un \textbf{panel web} (Next.js) que permite a los administradores gestionar productos, categorías, pedidos, repartidores y reportes, y a los clientes realizar pedidos desde la tienda en línea (carrito, checkout con pago en efectivo o transferencia, historial de pedidos y direcciones); (3) una \textbf{aplicación móvil} (Expo/React Native) con vista específica para cocina (listar pedidos por ciudad, confirmar y preparar, marcar listo para recoger), flujo para repartidores (pedidos disponibles y asignados, aceptar pedido, marcar recogido, en camino y entregado, estado activo/inactivo) y flujo para clientes (productos por local, carrito, checkout, seguimiento del pedido). Los tres componentes consumen la misma API y fueron utilizados de forma conjunta por la PYME piloto durante el período de validación.
-
-La presentación de resultados mantiene trazabilidad directa con los objetivos de investigación: primero se reporta el diagnóstico que sustenta los requerimientos (Objetivo específico 1), luego la validación de usabilidad y métricas de desempeño (Objetivos específicos 2 y 5), y finalmente la evidencia técnica de pruebas unitarias/integración y validación funcional del artefacto (Objetivos específicos 3 y 4).
+La validación se realizó sobre la plataforma descrita en el capítulo Método, compuesta por \textbf{backend} (NestJS + PostgreSQL), \textbf{panel web} (Next.js) y \textbf{aplicación móvil} (Expo/React Native), integrados mediante una misma API. La presentación de resultados mantiene trazabilidad directa con los objetivos de investigación: primero se reporta el diagnóstico que sustenta los requerimientos (objetivo específico 1), luego la validación de usabilidad y métricas de desempeño (objetivos específicos 2 y 5), y finalmente la evidencia técnica de pruebas unitarias/integración y validación funcional del artefacto (objetivos específicos 3 y 4).
 
 \section{Resultados del diagnóstico de digitalización}
 
@@ -64,16 +62,16 @@ La usabilidad del sistema se evaluó mediante el cuestionario System Usability S
 \midrule
 Administrador & P1 & 75 & 75 \\
 Cocina & P2 & 70 & 68 \\
-Cocina & P3 & 66 & \\
+ & P3 & 66 & \\
 Repartidor & P4 & 72 & 69 \\
-Repartidor & P5 & 68 & \\
-Repartidor & P6 & 67 & \\
+ & P5 & 68 & \\
+ & P6 & 67 & \\
 \midrule
 \textbf{Global} & $n = 6$ & \textbf{70} & \\
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} Cálculo según fórmula estándar SUS; umbral de aceptabilidad $\geq$ 68 (Bangor et al., 2009).
+\noindent \textit{Nota.} Promedio rol corresponde al promedio del puntaje SUS por cada rol y se reporta en la primera fila del grupo. Cálculo según fórmula estándar SUS; umbral de aceptabilidad $\geq$ 68 (Bangor et al., 2009).
 
 \paragraph{Resultados por rol de usuario}
 
@@ -87,7 +85,7 @@ El análisis desagregado por rol reveló variaciones en la percepción de usabil
 
 \paragraph{Desempeño en tareas representativas}
 
-Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativas de cada rol. La Tabla \ref{tab:tareas-rol} resume los tiempos promedio y el porcentaje de éxito por tarea; permite identificar que las tareas de administrador y cocina se completan en menos de 3 min y con 100\,\% de éxito, mientras que el checkout de cliente en web alcanza 90--95\,\% de éxito, punto a considerar en mejoras de usabilidad.
+Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativas de cada rol. En la Tabla \ref{tab:tareas-rol}, \textbf{rol} identifica el perfil evaluado, \textbf{tarea} describe la acción guiada, \textbf{tiempo prom.} corresponde al tiempo promedio de completitud por ejecución, y \textbf{éxito} representa el porcentaje de ejecuciones completadas correctamente. La tabla permite identificar que las tareas de administrador y cocina se completan en menos de 3 min y con 100\,\% de éxito, mientras que el checkout de cliente en web alcanza 90--95\,\% de éxito, punto a considerar en mejoras de usabilidad.
 
 \begin{table}[htbp]
 \centering
@@ -99,24 +97,25 @@ Se evaluó el tiempo de completitud y la tasa de éxito en tareas representativa
 \textbf{Rol} & \textbf{Tarea} & \textbf{Tiempo prom.} & \textbf{Éxito} \\
 \midrule
 Administrador & Crear producto con imagen y categoría & 2.5 min & 100\,\% \\
-Administrador & Aprobar repartidor pendiente & 45 seg & 100\,\% \\
-Administrador & Consultar pedidos del día & 30 seg & 100\,\% \\
+ & Aprobar repartidor pendiente & 45 seg & 100\,\% \\
+ & Consultar pedidos del día & 30 seg & 100\,\% \\
 \midrule
 Cocina & Visualizar pedidos pendientes & 15 seg & 100\,\% \\
-Cocina & Aceptar y marcar en preparación & 20 seg & 100\,\% \\
-Cocina & Marcar pedido listo para recogida & 18 seg & 100\,\% \\
+ & Aceptar y marcar en preparación & 20 seg & 100\,\% \\
+ & Marcar pedido listo para recogida & 18 seg & 100\,\% \\
 \midrule
 Repartidor & Ver pedidos disponibles & 12 seg & 100\,\% \\
-Repartidor & Aceptar pedido asignado & 25 seg & 100\,\% \\
-Repartidor & Marcar recogido y en camino & 22 seg & 100\,\% \\
-Repartidor & Marcar pedido entregado & 20 seg & 100\,\% \\
+ & Aceptar pedido asignado & 25 seg & 100\,\% \\
+ & Marcar recogido y en camino & 22 seg & 100\,\% \\
+ & Marcar pedido entregado & 20 seg & 100\,\% \\
 \midrule
 Cliente (web) & Buscar producto y agregar a carrito & 1.8 min & 95\,\% \\
-Cliente (web) & Completar checkout (efectivo) & 2.2 min & 90\,\% \\
-Cliente (web) & Consultar historial de pedidos & 35 seg & 100\,\% \\
+ & Completar checkout (efectivo) & 2.2 min & 90\,\% \\
+ & Consultar historial de pedidos & 35 seg & 100\,\% \\
 \bottomrule
 \end{tabular}
 \end{table}
+\noindent \textit{Nota.} \textbf{Tiempo prom.} se expresa en minutos (min) o segundos (seg) según la duración de la tarea. \textbf{Éxito} se calculó como $\frac{\text{ejecuciones completadas}}{\text{ejecuciones totales}} \times 100$; una ejecución se consideró exitosa cuando la tarea se completó de forma correcta (sin abandono del flujo). El detalle de tareas, guías y registros se presenta en el Apéndice J.
 
 \paragraph{Errores y dificultades identificadas}
 
@@ -152,7 +151,7 @@ Usabilidad (SUS) & 70 ($n = 6$; aceptable) & $\geq$ 68 & Sí \\
 \bottomrule
 \end{tabular}
 \end{table}
-\noindent \textit{Nota.} Período de evaluación: 2 semanas en \textit{staging}. Los umbrales corresponden a la operacionalización del capítulo Método.
+\noindent \textit{Nota.} \textbf{Resultado (muestra)} reporta el valor observado e indica el tamaño de muestra ($n$) cuando aplica. \textbf{Umbral} corresponde al criterio de éxito definido en la operacionalización (Tabla \ref{tab:operacionalizacion}). \textbf{Cumpl.} indica si el resultado satisface el umbral. Período de evaluación: 2 semanas en \textit{staging}.
 
 \section{Resultados técnicos del software}
 

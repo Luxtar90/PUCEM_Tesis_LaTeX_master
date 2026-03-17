@@ -1,6 +1,6 @@
   \chapter{Método}
 
-  \section{Diseño de la Investigación}
+  \section{Diseño de la investigación}
 
   \subsection{Enfoque y tipo}
 
@@ -8,7 +8,7 @@
 
   La investigación comprende dos componentes: uno cualitativo y otro cuantitativo. El componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios durante las pruebas de usabilidad. El componente cuantitativo posibilitó la medición objetiva de variables de desempeño en escenarios de prueba controlados. Además, los hallazgos cualitativos orientaron la selección y definición de las variables e indicadores evaluados en la fase cuantitativa. El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación técnica de un artefacto de software para demostrar su viabilidad en un contexto específico. El diseño es no experimental y transversal, ya que no se manipularon variables y los datos se recolectaron en un único momento (o en un período acotado) de prueba, sin seguimiento longitudinal; se observaron y describieron las variables en su contexto de prueba sin intervención deliberada.
 
-  \subsection{Población y Muestra}
+  \subsection{Población y muestra}
 
   \subsubsection{Población}
   La población objetivo estuvo constituida por la totalidad de las PYMES del sector gastronómico formalmente establecidas en la ciudad de Portoviejo, provincia de Manabí, Ecuador. Esta población define el contexto de aplicación esperado del artefacto, aunque en el piloto no se trabajó con un establecimiento real.
@@ -74,7 +74,7 @@
 
   \textbf{Fase 2.} En esta fase y habiendo comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
 
-  \subsubsection{Requerimientos funcionales y no funcionales (Objetivo específico 1)}
+  \subsubsection{Requerimientos funcionales y no funcionales (objetivo específico 1)}
 
   Con base en la entrevista semiestructurada, revisión documental y análisis del dominio, se levantaron los requerimientos que guiaron el diseño y la validación del prototipo. La Tabla \ref{tab:requerimientos-rf-rnf} presenta una síntesis de los requerimientos funcionales (RF) y no funcionales (RNF) utilizados como referencia en las pruebas de integración y validación funcional.
 
@@ -181,7 +181,7 @@
   Para una mejor comprensión metodológica, se detallan siguiendo la estructura en tres etapas principales: planificación, desarrollo y validación/despliegue. Cada etapa se compone de actividades específicas que garantizan la construcción técnica del artefacto y su evaluación frente a los criterios definidos en la Fase 2.
   Este flujo garantizó una transición estructurada desde la conceptualización técnica hasta la evaluación del sistema en un entorno controlado (\textit{staging}).
 
-  \subsection{ETAPA 1: Planificación}
+  \subsection{Etapa 1: Planificación}
 
   \paragraph{Diseño de la arquitectura del sistema}
   \textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). En la Tabla \ref{tab:stack-tecnologico} se resumen las decisiones por capa o componente: tecnología elegida, alternativas evaluadas y criterio principal de selección. La tabla permite justificar de forma compacta la adopción de NestJS en el backend, PostgreSQL en persistencia, React Native + Expo en móvil, Next.js en panel web, JWT en autenticación y Docker en contenedorización, así como VPS (Hetzner) y Vercel para despliegue.
@@ -212,7 +212,7 @@
   \end{longtable}
   \endgroup
 
-  \subsubsection{Arquitectura de la Plataforma}
+  \subsubsection{Arquitectura de la plataforma}
 
   Una vez establecidas las herramientas tecnológicas, se definió una arquitectura principal \textbf{modular en capas}: modular por dominios de negocio y en capas para separar responsabilidades técnicas. Los componentes principales de la plataforma son:
   \begin{itemize}
@@ -305,7 +305,7 @@
 
   Además de las relaciones, se definieron índices en campos de búsqueda frecuente (por ejemplo, estado y fecha en pedidos, correo en usuarios) para optimizar consultas, y restricciones de unicidad en claves naturales donde corresponde (emails de usuarios, nombres de roles). Se cuidó la normalización para evitar duplicidades innecesarias, manteniendo un equilibrio pragmático entre integridad y rendimiento. En entidades con alto volumen de escritura (pedidos y sus items) se contempló el uso de transacciones para asegurar consistencia en operaciones compuestas.
 
-  \paragraph{Mapeo Objeto--Relacional con TypeORM}
+  \paragraph{Mapeo objeto--relacional con TypeORM}
   En la implementación con TypeORM, un ORM (Object-Relational Mapping) para aplicaciones Node.js/TypeScript, cada entidad del dominio se modela como una clase TypeScript anotada con decoradores como \texttt{@Entity}, lo cual permite mapear el modelo de objetos a tablas relacionales y simplificar las operaciones de persistencia. Las relaciones se definen mediante decoradores especializados:
   \begin{itemize}
     \item \texttt{@ManyToOne} y \texttt{@OneToMany} para relaciones uno a muchos (ej: Usuario-Pedidos, Pedido-OrderItems)
@@ -368,9 +368,9 @@
   \label{fig:auth-rbac}
   \end{figure}
 
-  \subsection{ETAPA 2: Desarrollo}
+  \subsection{Etapa 2: Desarrollo}
 
-  \subsubsection{Desarrollo de la Plataforma SaaS}
+  \subsubsection{Desarrollo de la plataforma SaaS}
 
   Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas y consolidando evidencia de avance en la bitácora técnica de validación (Apéndice J). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
 
@@ -378,7 +378,7 @@
 
   Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes, repartidores y personal de cocina, con navegación predecible, validaciones tempranas y comunicación robusta con la API. El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código.
 
-  React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de  vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sen sores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
+  React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sensores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
 
   La aplicación ofrece flujos diferenciados para tres perfiles: Cliente, Repartidor y Cocina, además de pantallas de inicio de sesión y registro. Se incorporó un módulo o vista de \textit{cocina} en la aplicación móvil que permite aceptar o rechazar pedidos y notificar cuando el pedido está listo para que el repartidor recoja, conectado al flujo de solicitud de órdenes. Así, cuando un cliente realiza un pedido, la cocina puede visualizarlo, aceptarlo o rechazarlo, y al marcarlo como listo el repartidor puede ir a recogerlo para la entrega. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros. Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
   El flujo visual ampliado por rol se documenta en el Apéndice F.
@@ -474,7 +474,7 @@
 
   Integración de módulos funcionales: una vez establecida la comunicación básica entre frontend y backend vía API REST, se implementaron las funcionalidades específicas.
 
-  \paragraph{Módulo de Pedidos}
+  \paragraph{Módulo de pedidos}
   El flujo general del proceso de pedido contempla la creación, la transición de estados (pendiente, en camino, entregado) y su asociación con geolocalización. La Figura \ref{fig:secuencia-pedido} ilustra la secuencia completa. A nivel de backend, el flujo de creación de un pedido se resume en los siguientes pasos:
   \begin{enumerate}
     \item El cliente autenticado envía una solicitud \texttt{POST} a \texttt{/api/orders} con productos, cantidades y dirección.
@@ -495,7 +495,7 @@
   \label{fig:secuencia-pedido}
   \end{figure}
 
-  \paragraph{Módulo de Inventario:}
+  \paragraph{Módulo de inventario:}
   Lógica para descontar stock y prevenir ventas de productos agotados. La Figura \ref{fig:modulo-inventario} corresponde a un \textbf{diagrama de bloques}: el panel web administrativo dispara operaciones de actualización (altas, bajas y ajustes de inventario), el backend/API aplica validaciones y reglas (por ejemplo, evitar stock negativo o inconsistencias) y finalmente persiste cambios en la base de datos de productos y stock; el bloque de validación resume la lógica que protege la integridad del inventario ante operaciones concurrentes y pedidos.
 
   \begin{figure}[H]
@@ -505,7 +505,7 @@
   \label{fig:modulo-inventario}
   \end{figure}
 
-  \paragraph{Módulo de Repartidores:}
+  \paragraph{Módulo de repartidores:}
   Proceso de registro, aprobación administrativa y asignación manual de pedidos. La Figura \ref{fig:modulo-repartidores} corresponde a un \textbf{diagrama de bloques}: cada bloque representa un componente (app móvil, backend/API, base de datos y aprobación administrativa) y las flechas resumen las interacciones principales (registro, persistencia, actualización de estado y asignación de pedidos).
 
   \begin{figure}[H]
@@ -523,7 +523,7 @@
 
   Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 
-  \subsection{ETAPA 3: Validación y Despliegue}
+  \subsection{Etapa 3: Validación y despliegue}
 
   \subsubsection{Arquitectura del despliegue}
 
@@ -549,9 +549,9 @@
     \item \textbf{Sincronización condicional:} TypeORM synchronize activo solo en desarrollo; en producción se emplean migraciones SQL versionadas.
   \end{itemize}
 
-  El backend se despliega como aplicación Node.js independiente. Se contempló Docker para contenerización y reproducibilidad en VPS, con imágenes multi-stage para optimizar tamaño y perfiles por entorno (development, production). Para producción se planificó operación en VPS (Hetzner) con proceso administrado por PM2 o similar, proxy inverso Nginx para SSL/TLS y monitoreo de salud del servicio. La base de datos PostgreSQL administrada por Supabase reduce la carga operativa de infraestructura.
+  El backend se desplegó como aplicación Node.js independiente. Se utilizó Docker para contenerización y reproducibilidad en VPS, con imágenes multi-stage para optimizar tamaño y perfiles por entorno (development, production). En el VPS se gestionó la terminación TLS y el enrutamiento de tráfico mediante un proxy inverso (por ejemplo, Nginx). En los componentes donde aplicó, se automatizó la publicación mediante integración continua (por ejemplo, el panel web en Vercel), ejecutando verificaciones mínimas antes de promover cambios. La base de datos PostgreSQL administrada por Supabase redujo la carga operativa de infraestructura.
 
-  Se recomienda un proxy inverso para gestionar certificados TLS y enrutar tráfico, así como automatizar despliegues con pipelines que ejecuten verificación y pruebas mínimas antes de publicar cambios. En resumen, el backend NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementa añadiendo o modificando un módulo sin afectar otros, lo que agiliza el desarrollo colaborativo y reduce errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) hace que el código sea más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, validación y estructura de proyecto cubiertos por diseño.
+  En resumen, el backend en NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementó añadiendo o modificando un módulo sin afectar otros, lo que agilizó el desarrollo colaborativo y redujo errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) facilitó que el código fuera más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, la validación y la estructura de proyecto cubiertos por diseño.
   El diagrama de red integral de interacción entre clientes, API y servicios externos se presenta en el Apéndice I.
 
   \subsubsection{Despliegue en \textit{staging} y validación técnica}

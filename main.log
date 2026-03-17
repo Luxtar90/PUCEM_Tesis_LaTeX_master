@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.23)  16 MAR 2026 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1533,11 +1533,11 @@ Cap\'{\i }tulo 3.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-0.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+8.
  (C:\Users\luigg\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -1590,7 +1590,7 @@ Ap\'{e}ndice H.
 
 ]
 Ap\'{e}ndice I.
-<imagenes/reddiagrama.png, id=847, 3144.74875pt x 2424.05624pt>
+<imagenes/reddiagrama.png, id=848, 3144.74875pt x 2424.05624pt>
 File: imagenes/reddiagrama.png Graphic file (type png)
 <use imagenes/reddiagrama.png>
 Package pdftex.def Info: imagenes/reddiagrama.png  used on input line 167.
@@ -1623,11 +1623,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40649 strings out of 467871
- 765120 string characters out of 5418376
+ 40655 strings out of 467871
+ 765189 string characters out of 5418376
  1682171 words of memory out of 5000000
- 68115 multiletter control sequences out of 15000+600000
- 739909 words of font info for 418 fonts, out of 8000000 for 9000
+ 68117 multiletter control sequences out of 15000+600000
+ 741681 words of font info for 421 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,94p,1757b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -1639,9 +1639,9 @@ pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmr8a.pfb><C:/Users/luigg/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (114 pages, 641966 bytes).
+Output written on main.pdf (114 pages, 642623 bytes).
 PDF statistics:
- 1270 PDF objects out of 1440 (max. 8388607)
+ 1271 PDF objects out of 1440 (max. 8388607)
  286 named destinations out of 1000 (max. 500000)
- 125615 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 127663 words of extra memory for PDF output out of 128383 (max. 10000000)
 

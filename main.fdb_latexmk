@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773716958.1706 0
-  "main.bcf" 1773716957 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
+["biber main"] 1773711521.03712 "main.bcf" "main.bbl" "main" 1773722727.38057 0
+  "main.bcf" 1773722727 135594 f23430c4ffa64c311d13161337253301 "pdflatex"
   "referencias.bib" 1773684001 8726 cdf0b30129667d34acd394473b362989 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773716953.32314 "main.tex" "main.pdf" "main" 1773716958.17135 0
+["pdflatex"] 1773722722.53424 "main.tex" "main.pdf" "main" 1773722727.38133 0
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773716716 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1769144925 24152 12ad24ee1acbce787f58d6e1bcc2cccc ""
   "C:/Users/luigg/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1769713453 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -240,10 +240,10 @@
   "PUCEM.sty" 1773081385 2049 1550bdc4db7e7102a54a168d2456dd1a ""
   "apendices.tex" 1773684482 14248 9f21084bcda0dc787bb49d2c46991b5a ""
   "capitulos/1_introduccion.tex" 1773708434 19249 276691e4e2b1e102d467f702911d17c8 ""
-  "capitulos/2_metodos.tex" 1773716928 65844 d199c0c496605909e66f78f914711c65 ""
-  "capitulos/3_resultados.tex" 1773684001 22756 aa6dbe0917e633a4087860e5cca84dbb ""
-  "capitulos/4_discucion.tex" 1773684482 13624 08f9e185502d5fbc5e7a8eb351509405 ""
-  "capitulos/5_conclusiones.tex" 1773684482 7192 21075b8bdd751891337d05f9962da7e0 ""
+  "capitulos/2_metodos.tex" 1773722146 65801 601120b4f218ffdd5f4f2100b2101932 ""
+  "capitulos/3_resultados.tex" 1773722694 22711 69d55ff72510475f8866e934c3fa024a ""
+  "capitulos/4_discucion.tex" 1773721621 13624 2992d29b61c50e4bbe18f45d1ec35f6e ""
+  "capitulos/5_conclusiones.tex" 1773721644 7186 c6f1d67150cc8093398c3a9e188191b1 ""
   "imagenes/PUCEM_LOGO.png" 1769144368 21494 d0ea9f5057744aec814960a949bcff7c ""
   "imagenes/arquitectura_capas.tikz" 1773710860 1846 63bab9af363abcfbd18a655fcd9028ca ""
   "imagenes/auth_rbac.tikz" 1773714710 2223 9d9e94487f6d46f331a1ce1b3b213bfd ""
@@ -260,13 +260,13 @@
   "imagenes/secuencia_pedido.tikz" 1773081385 2690 c309231611438b82c632c5bf345701d1 ""
   "imagenes/web_arquitectura.tikz" 1773081385 1028 5da9fc45691408c5c9e2dc3ef3d9188a ""
   "imagenes/web_panel_prototipo.tikz" 1773081385 1989 12c9669aa8ffd13d57292260ffed88b1 ""
-  "main.aux" 1773716957 71260 f38c5ddb2f032841bfde9ea38c8eb7d3 "pdflatex"
-  "main.bbl" 1773711522 53503 35dfee42963203f50772a367b012a6a5 "biber main"
-  "main.lof" 1773716957 4076 67a8cea230a2ee6457f2ae76eebfacbf "pdflatex"
-  "main.lot" 1773716957 2233 2421d030bf43bfb124131e75f5a37dc0 "pdflatex"
-  "main.run.xml" 1773716957 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.aux" 1773722727 71259 02adf4b7ae3318c6d15c9cd8768a6e04 "pdflatex"
+  "main.bbl" 1773721633 53503 35dfee42963203f50772a367b012a6a5 "biber main"
+  "main.lof" 1773722727 4076 67a8cea230a2ee6457f2ae76eebfacbf "pdflatex"
+  "main.lot" 1773722727 2233 99a0915167e19d8e2853778687cc5cea "pdflatex"
+  "main.run.xml" 1773722727 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1773716668 10917 7851477d5a00e98101380c9edccf2b48 ""
-  "main.toc" 1773716957 10467 8da68b9b35fe5242e9ff4187c08f25b6 "pdflatex"
+  "main.toc" 1773722727 10467 50cad652db4854b0526823dd7d5dc862 "pdflatex"
   "preliminares/1_portada.tex" 1773684001 3388 bb76a78b8b4f8c6dc8f75a2fbdd42e38 ""
   "preliminares/2_certificaion_tutor.tex" 1773081385 1000 eb7429e97fddf3bb26911f3fd0196620 ""
   "preliminares/3_acta_aprobacion_tribunal.tex" 1773081385 1301 989346b66d0030ba670a360b158ea253 ""
