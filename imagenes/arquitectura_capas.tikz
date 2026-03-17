@@ -1,34 +1,36 @@
 \begin{tikzpicture}[
   font=\small,
-  box/.style={draw, rectangle, align=center, minimum height=1cm, inner sep=6pt, rounded corners=2pt, line width=0.5pt},
-  bigbox/.style={box, minimum width=9.5cm},
-  midbox/.style={box, minimum width=6.8cm},
-  smallbox/.style={box, minimum width=5.8cm},
+  box/.style={draw, rectangle, align=center, minimum height=1.0cm, inner sep=6pt, rounded corners=2pt, line width=0.5pt},
+  wide/.style={box, minimum width=12.2cm},
+  half/.style={box, minimum width=5.8cm},
   line/.style={-{Latex[length=2mm]}, line width=0.5pt},
-  usuarios/.style={bigbox, fill=blue!12, draw=blue!60},
-  acceso/.style={smallbox, fill=cyan!10, draw=cyan!60},
-  presentacion/.style={midbox, fill=orange!12, draw=orange!60},
-  servicios/.style={bigbox, fill=purple!10, draw=purple!60},
-  datos/.style={smallbox, fill=green!12, draw=green!60},
-  inteligencia/.style={smallbox, fill=teal!12, draw=teal!60},
-  integracion/.style={smallbox, fill=red!10, draw=red!60}
+  layerframe/.style={draw=black!35, rounded corners=3pt, inner sep=10pt},
+  layerlabel/.style={font=\bfseries, fill=white, inner sep=2pt},
+  usuarios/.style={wide, fill=blue!12, draw=blue!60},
+  acceso/.style={half, fill=cyan!10, draw=cyan!60},
+  presentacion/.style={half, fill=orange!12, draw=orange!60},
+  negocio/.style={wide, fill=purple!10, draw=purple!60},
+  datos/.style={wide, fill=green!12, draw=green!60},
+  infra/.style={wide, fill=gray!10, draw=black!55}
 ]
-\matrix (m) [column sep=14mm, row sep=10mm] {
-  & \node[usuarios] (usuarios) {Capa de usuarios\\Usuarios web / Cliente - Admin}; & \\
-  & \node[acceso] (internet) {Capa de acceso\\Internet}; & \\
-  \node[presentacion] (web) {Capa de presentación\\Frontend web / Navegador}; &
-  \node[servicios] (api) {Capa de servicios\\API Backend REST}; &
-  \node[presentacion] (app) {Capa de presentación\\App móvil / Android - iOS}; \\
-  \node[datos] (db) {Capa de datos\\Base de datos}; &
-  \node[inteligencia] (chat) {Capa de inteligencia\\Chatbot IA / RAG}; &
-  \node[integracion] (ext) {Capa de integración\\Servicios externos\\Mapas - Pagos - WhatsApp}; \\
-};
+
+\node[usuarios] (usuarios) {\textbf{Usuarios}\\Cliente / Admin};
+\node[acceso, below=9mm of usuarios] (internet) {\textbf{Acceso}\\Internet};
+
+\node[presentacion, below left=10mm and 8mm of internet] (web) {\textbf{Web}\\Panel / Navegador\\(Next.js)};
+\node[presentacion, below right=10mm and 8mm of internet] (app) {\textbf{Móvil}\\Cliente / cocina / reparto\\(React Native)};
+\node[layerframe, fit=(web) (app)] (layer1) {};
+\node[layerlabel, anchor=west] at ([yshift=8pt]layer1.north west) {Capa 1: Presentación};
+
+\node[negocio, below=12mm of layer1] (api) {\textbf{Capa 2: Lógica de negocio}\\Backend API (REST) (NestJS)};
+\node[datos, below=9mm of api] (db) {\textbf{Capa 3: Persistencia}\\Base de datos (PostgreSQL)};
+\node[infra, below=9mm of db] (infra) {\textbf{Capa 4: Infraestructura}\\VPS (API + BD) / Vercel (web) / Docker};
+
 \draw[line] (usuarios) -- (internet);
 \draw[line] (internet) -- (web);
 \draw[line] (internet) -- (app);
 \draw[line] (web) -- (api);
 \draw[line] (app) -- (api);
 \draw[line] (api) -- (db);
-\draw[line] (api) -- (chat);
-\draw[line] (api) -- (ext);
+\draw[line] (db) -- (infra);
 \end{tikzpicture}

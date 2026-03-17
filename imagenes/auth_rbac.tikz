@@ -1,24 +1,25 @@
-\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\scriptsize}, node distance=2.2cm and 0.8cm]
+\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\scriptsize}, node distance=0.6cm and 1.6cm]
 \tikzset{
-  box/.style={draw, rounded corners=2pt, fill=blue!15, minimum width=3.0cm, minimum height=0.8cm, line width=0.6pt},
-  token/.style={draw, rounded corners=2pt, fill=cyan!20, minimum width=2.6cm, minimum height=0.8cm, line width=0.6pt},
-  stepbox/.style={draw, rounded corners=2pt, fill=orange!25, minimum width=3.0cm, minimum height=0.75cm, line width=0.6pt},
-  group/.style={draw, dashed, rounded corners=4pt, inner sep=5pt, line width=0.6pt},
-  flow/.style={-Latex, line width=0.6pt, shorten <=10pt, shorten >=10pt}
+  box/.style={draw, rounded corners=2pt, fill=blue!15, minimum width=2.8cm, minimum height=0.7cm, line width=0.6pt},
+  token/.style={draw, rounded corners=2pt, fill=cyan!20, minimum width=2.4cm, minimum height=0.7cm, line width=0.6pt},
+  stepbox/.style={draw, rounded corners=2pt, fill=orange!25, minimum width=2.8cm, minimum height=0.65cm, line width=0.6pt},
+  group/.style={draw, dashed, rounded corners=4pt, inner sep=3pt, line width=0.6pt},
+  flow/.style={-Latex, line width=0.6pt, shorten <=2pt, shorten >=2pt}
 }
 \node[box] (client) {Cliente App};
-\node[box, right=of client] (login) {POST /auth/login};
-\node[token, right=of login] (jwt) {JWT};
-\node[group, fit=(login) (jwt)] (grpAuth) {};
+\node[box, below=of client] (login) {POST /auth/login};
+\node[token, below=of login] (jwt) {JWT};
+\node[group, fit=(client) (login) (jwt)] (grpAuth) {};
 \node at ([yshift=6pt] grpAuth.north) {Autenticación};
-\node[box, right=1.6cm of jwt] (endpoint) {Endpoint protegido};
-\node[stepbox, below=0.8cm of endpoint] (authguard) {AuthGuard [jwt]};
-\node[stepbox, below=0.7cm of authguard] (rolesguard) {RolesGuard\\(RBAC)};
-\node[stepbox, below=0.7cm of rolesguard] (controller) {Controller};
-\node[stepbox, below=0.7cm of controller] (service) {Service};
-\node[stepbox, below=0.8cm of service] (response) {Respuesta};
-\draw[flow] (client.east) -- (login.west) node[midway, above] {HTTPS};
-\draw[flow] (login.east) -- (jwt.west) node[midway, above] {Bearer};
+
+\node[box, right=2.1cm of login] (endpoint) {Endpoint protegido};
+\node[stepbox, below=of endpoint] (authguard) {AuthGuard [jwt]};
+\node[stepbox, below=of authguard] (rolesguard) {RolesGuard\\(RBAC)};
+\node[stepbox, below=of rolesguard] (controller) {Controller};
+\node[stepbox, below=of controller] (service) {Service};
+\node[stepbox, below=of service] (response) {Respuesta};
+\draw[flow] (client.south) -- (login.north) node[midway, right] {HTTPS};
+\draw[flow] (login.south) -- (jwt.north) node[midway, right] {Bearer};
 \draw[flow] (jwt.east) -- (endpoint.west);
 \draw[flow] (endpoint.south) -- (authguard.north);
 \draw[flow] (authguard.south) -- (rolesguard.north);
@@ -27,8 +28,8 @@
 \draw[flow] (service.south) -- (response.north);
 \node[group, fit=(endpoint) (authguard) (rolesguard) (controller) (service) (response)] (grpAPI) {};
 \node at ([yshift=6pt] grpAPI.north) {Autorización y API};
-\node[draw, circle, fill=gray!15, minimum size=0.75cm, right=0.6cm of rolesguard] (roleAdmin) {Admin};
-\node[draw, circle, fill=gray!15, minimum size=0.75cm, below=0.15cm of roleAdmin] (roleClient) {Cliente};
+\node[draw, circle, fill=gray!15, minimum size=0.65cm, right=0.5cm of rolesguard] (roleAdmin) {Admin};
+\node[draw, circle, fill=gray!15, minimum size=0.65cm, below=0.15cm of roleAdmin] (roleClient) {Cliente};
 \draw[dashed] (rolesguard.east) -- (roleAdmin.west);
 \draw[dashed] (rolesguard.east) -- (roleClient.west);
 \end{tikzpicture}

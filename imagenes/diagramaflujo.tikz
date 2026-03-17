@@ -1,0 +1,62 @@
+\usetikzlibrary{positioning,shapes.geometric,arrows.meta,fit}
+\begin{tikzpicture}[every node/.style={align=center, transform shape}, node distance=0.9cm and 2.0cm]
+\tikzset{
+  laneTitle/.style={font=\bfseries, minimum width=3.3cm},
+  flowStep/.style={draw, rounded corners, fill=blue!10, minimum width=3.3cm, minimum height=1.05cm, text width=3.1cm, font=\small},
+  systemStep/.style={draw, rounded corners, fill=gray!15, minimum width=3.3cm, minimum height=1.05cm, text width=3.1cm, font=\small},
+  side/.style={draw, rounded corners, fill=green!15, minimum width=3.6cm, minimum height=1.05cm, text width=3.4cm, font=\small},
+  laneBox/.style={draw, rounded corners, inner sep=10pt},
+  flow/.style={-Latex, thick, rounded corners=6pt},
+  help/.style={-Latex, thick, dashed, rounded corners=6pt}
+}
+
+\node[laneTitle] (clienteTitle) {Cliente\\(web / móvil)};
+\node[laneTitle, right=of clienteTitle] (sistemaTitle) {Sistema\\(API + BD)};
+\node[laneTitle, right=of sistemaTitle] (cocinaTitle) {Cocina\\(app)};
+\node[laneTitle, right=of cocinaTitle] (repartidorTitle) {Repartidor\\(app)};
+
+\node[flowStep, below=0.7cm of clienteTitle] (cliLogin) {Registro / login};
+\node[flowStep, below=of cliLogin] (cliCatalogo) {Selecciona local\\y arma carrito};
+\node[flowStep, below=of cliCatalogo] (cliCheckout) {Checkout\\(pago, dirección\\y propina opc.)};
+\node[flowStep, below=of cliCheckout] (cliConfirm) {Confirma pedido};
+\node[flowStep, below=of cliConfirm] (cliTracking) {Seguimiento\\del pedido};
+
+\node[systemStep, below=0.7cm of sistemaTitle] (sisValidar) {Valida y registra\\pedido};
+\node[systemStep, below=of sisValidar] (sisCocina) {Envía pedido\\a cocina};
+\node[systemStep, below=of sisCocina] (sisDisponibiliza) {Publica pedido\\para reparto};
+\node[systemStep, below=of sisDisponibiliza] (sisAsigna) {Asigna repartidor\\y actualiza estados};
+\node[systemStep, below=of sisAsigna] (sisCierra) {Cierra pedido\\y notifica};
+
+\node[flowStep] (cookRecibe) at (cocinaTitle|-sisCocina) {Recibe y acepta\\pedido};
+\node[flowStep] (cookListo) at (cocinaTitle|-sisDisponibiliza) {Prepara y marca\\\textit{listo para retirar}};
+
+\node[flowStep] (delivRecibe) at (repartidorTitle|-sisDisponibiliza) {Acepta pedido\\y recoge en local};
+\node[flowStep] (delivEntrega) at (repartidorTitle|-sisAsigna) {Entrega\\al cliente};
+\node[flowStep] (delivCierra) at (repartidorTitle|-sisCierra) {Marca\\\textit{entregado}};
+
+\node[side, right=2.2cm of repartidorTitle] (adminSide) {Panel admin:\\catálogo, pedidos,\\repartidores, KPIs};
+\node[side, below=of adminSide] (botSide) {Chatbot IA (RAG):\\consultas frecuentes};
+
+\node[laneBox, fit=(cliLogin) (cliTracking) (clienteTitle)] (clienteLane) {};
+\node[laneBox, fit=(sisValidar) (sisCierra) (sistemaTitle)] (sistemaLane) {};
+\node[laneBox, fit=(cookRecibe) (cookListo) (cocinaTitle)] (cocinaLane) {};
+\node[laneBox, fit=(delivRecibe) (delivCierra) (repartidorTitle)] (repartidorLane) {};
+
+\draw[flow] (cliConfirm.east) -- (sisValidar.west);
+\draw[flow] (sisValidar.south) -- (sisCocina.north);
+\draw[flow] (sisCocina.east) -- (cookRecibe.west);
+\draw[flow] (cookRecibe.south) -- (cookListo.north);
+\draw[flow] (cookListo.west) -- (sisDisponibiliza.east);
+\draw[flow] (sisDisponibiliza.east) -- (delivRecibe.west);
+\draw[flow] (delivRecibe.west) -- (sisAsigna.east);
+\draw[flow] (delivRecibe.south) -- (delivEntrega.north);
+\draw[flow] (sisAsigna.east) -- (delivEntrega.west);
+\draw[flow] (delivEntrega.south) -- (delivCierra.north);
+\draw[flow] (delivCierra.west) -- (sisCierra.east);
+\draw[flow] (sisCierra.west) -- (cliTracking.east);
+\draw[flow] (sisAsigna.south) -- (sisCierra.north);
+\draw[flow] (sisCocina.south) -- (sisDisponibiliza.north);
+
+\draw[help] (adminSide.west) -- ++(-0.8,0) |- (sisValidar.north);
+\draw[help] (botSide.west) -- ++(-0.8,0) |- (sisAsigna.south);
+\end{tikzpicture}

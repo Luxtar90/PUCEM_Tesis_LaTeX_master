@@ -241,8 +241,25 @@ Para preguntas o reportar problemas:
 
 Agradezco a la comunidad académica de PUCEM y a todos los estudiantes que han utilizado y mejorado esta plantilla a lo largo del tiempo.
 
+## Correcciones aplicadas (Marzo 2026)
+
+Se incorporaron ajustes técnicos, metodológicos y de redacción en la tesis para responder observaciones de evaluación académica:
+
+- **Paginación preliminar**: se eliminó numeración visible en portada y preliminares, y se configuró el índice para iniciar en números romanos desde `i`.
+- **Citas y bibliografía**: se validaron claves bibliográficas y se resolvieron advertencias de citas indefinidas en capítulos principales.
+- **Objetivos y alcance**: se reformularon objetivos específicos con criterios de validación y el alcance en términos de entregables y exclusiones.
+- **Figura de flujo general**: se contextualizó en Introducción con explicación textual y su relación metodológica.
+- **Tabla de operacionalización**: se reforzó su justificación en Método y su trazabilidad con métricas del capítulo de Resultados.
+- **Metodología IBD**: se clarificó la separación de fases y la relación entre diseño, demostración, validación y comunicación.
+- **Arquitectura backend**: se reorganizó como arquitectura **modular en capas**, diferenciando controladores, servicios, persistencia y componentes transversales.
+- **Base de datos**: se dejó explícito el uso de modelo relacional PostgreSQL (Supabase), descartando NoSQL en este piloto por criterios de integridad transaccional.
+- **Seguridad y despliegue**: se reubicaron y detallaron en la etapa de validación/despliegue (CORS, rate limiting, JWT, SSL, variables de entorno).
+- **Resultados y pruebas**: se añadieron tamaños de muestra, periodo de medición, métricas de rendimiento y tabla de validación funcional por casos con porcentajes y `n`.
+- **SUS y pruebas unitarias**: se fortaleció la evidencia con puntajes individuales, trazabilidad por ID de prueba (PU-01, PU-02, etc.) y referencia a apéndices.
+- **Compilación final**: el documento se validó con `latexmk -pdf` sin errores de compilación.
+
 ---
 
-**Última actualización**: Noviembre 2025
+**Última actualización**: Marzo 2026
 
 **Estado**: Mantenida y activa para la carrera de Software de PUCEM

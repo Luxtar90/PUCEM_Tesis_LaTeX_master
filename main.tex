@@ -93,10 +93,10 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{float}
 % Tipografía y cortes de línea mejorados
 \iffastcompile\else
-\usepackage[protrusion=true,expansion=true,tracking=false,spacing=false,kerning=true]{microtype}
-\microtypecontext{protrusion=basictext}
+\usepackage[protrusion=false,expansion=true,tracking=false,spacing=false,kerning=true,nopatch=footnote]{microtype}
 \fi
 
 % Hipervínculos y formato de referencias
@@ -111,9 +111,8 @@
 
 % Formato de captions para tablas y figuras
 \usepackage{caption}
-\captionsetup[table]{labelfont=bf}
-\captionsetup[figure]{labelfont=bf}
-\captionsetup[figure]{labelformat=default,labelsep=period,name=Figura}
+\captionsetup[table]{position=top,labelfont=bf,textfont=it,justification=raggedright,singlelinecheck=false,labelsep=newline}
+\captionsetup[figure]{position=bottom,skip=8pt,labelfont=bf,textfont=it,justification=centering,singlelinecheck=true,labelformat=default,labelsep=period,name=Figura}
 
 % Listas y apéndices
 \usepackage{enumitem}
@@ -226,6 +225,10 @@
 \pagenumbering{roman}
 \setcounter{page}{1}
 \setcounter{tocdepth}{-1}
+\pagestyle{empty}
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
 \input{preliminares/1_portada}
 \input{preliminares/2_certificaion_tutor}
 \input{preliminares/3_acta_aprobacion_tribunal}
@@ -235,8 +238,13 @@
 \input{preliminares/7_agradecimientos}
 \input{preliminares/8_resumen_abstract}
 \clearpage
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+\pagestyle{fancy}
 \hypersetup{pageanchor=true}
 \setcounter{tocdepth}{3}
+\setcounter{page}{1}
 
 % Índices automáticos
 \iffastcompile
@@ -249,6 +257,26 @@
   \endgroup
   \listoffigures
   \listoftables
+  \cleardoublepage
+  \phantomsection
+  \chapter*{Índice de apéndices}
+  \addcontentsline{toc}{chapter}{Índice de apéndices}
+  \begin{tabular}{@{}p{3.4cm}p{10.0cm}r@{}}
+    \textbf{Apéndice} & \textbf{Descripción} & \textbf{Página}\\
+    \midrule
+    \hyperref[ap:A]{Apéndice A} & Diagrama de la base de datos & \pageref{ap:A}\\
+    \hyperref[ap:B]{Apéndice B} & Arquitectura por capas de la plataforma & \pageref{ap:B}\\
+    \hyperref[ap:C]{Apéndice C} & Arquitectura de la aplicación móvil y del panel web & \pageref{ap:C}\\
+    \hyperref[ap:D]{Apéndice D} & Arquitectura modular del backend & \pageref{ap:D}\\
+    \hyperref[ap:E]{Apéndice E} & Flujo de autenticación y autorización (JWT + RBAC) & \pageref{ap:E}\\
+    \hyperref[ap:F]{Apéndice F} & Flujo principal del frontend móvil y del panel web & \pageref{ap:F}\\
+    \hyperref[ap:G]{Apéndice G} & Flujo general del proceso de pedido y módulos operativos & \pageref{ap:G}\\
+    \hyperref[ap:H]{Apéndice H} & Arquitectura del despliegue & \pageref{ap:H}\\
+    \hyperref[ap:I]{Apéndice I} & Diagrama de red del sistema & \pageref{ap:I}\\
+    \hyperref[ap:J]{Apéndice J} & Procedimiento detallado de validación en \textit{staging} & \pageref{ap:J}\\
+    \hyperref[ap:K]{Apéndice K} & Guía de entrevista semiestructurada (diagnóstico) & \pageref{ap:K}\\
+    \hyperref[ap:L]{Apéndice L} & Arquitectura detallada de la plataforma & \pageref{ap:L}\\
+  \end{tabular}
 \fi
 
 % Cambiar a numeración arábiga comenzando en página 1 en Introducción

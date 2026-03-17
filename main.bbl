@@ -97,6 +97,50 @@
       \verb 10.53591/iti.v16i22.1647
       \endverb
     \endentry
+    \entry{Bangor2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{fullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorfullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining what individual SUS scores mean: Adding an adjective rating scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -254,6 +298,59 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
+    \entry{hevner2004}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Sal\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design science in information systems research}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.2307/25148625
+      \endverb
+    \endentry
     \entry{INEC2023}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
@@ -287,6 +384,69 @@
       \endverb
       \verb{url}
       \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
+    \entry{ISO25010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhashraw}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhashraw}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 25010:2011 -- Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{Lewis2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{7}
+      \field{title}{The System Usability Scale: Past, present, and future}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 590}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/10447318.2018.1455307
       \endverb
     \endentry
     \entry{MintelTransformation2022}{online}{}{}
@@ -350,6 +510,59 @@
       \endverb
       \verb{url}
       \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{peffers2007}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+           family={Peffers},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+           family={Tuunanen},
+           familyi={T\bibinitperiod},
+           given={Tuure},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+           family={Rothenberger},
+           familyi={R\bibinitperiod},
+           given={Marcus\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Management Information Systems}
+      \field{number}{3}
+      \field{title}{A design science research methodology for information systems research}
+      \field{volume}{24}
+      \field{year}{2007}
+      \field{pages}{45\bibrangedash 77}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.2753/MIS0742-1222240302
       \endverb
     \endentry
     \entry{UNESCO2019}{online}{}{}
@@ -492,6 +705,50 @@
       \verb 10.53591/iti.v16i22.1647
       \endverb
     \endentry
+    \entry{Bangor2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{fullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorfullhashraw}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining what individual SUS scores mean: Adding an adjective rating scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -649,6 +906,59 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
+    \entry{hevner2004}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Sal\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design science in information systems research}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.2307/25148625
+      \endverb
+    \endentry
     \entry{INEC2023}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a98355f5c0cde3a9866bcfeb075ad4e9}{%
@@ -682,6 +992,69 @@
       \endverb
       \verb{url}
       \verb https://www.ecuadorencifras.gob.ec/
+      \endverb
+    \endentry
+    \entry{ISO25010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhashraw}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhashraw}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 25010:2011 -- Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{Lewis2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{7}
+      \field{title}{The System Usability Scale: Past, present, and future}
+      \field{volume}{34}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 590}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/10447318.2018.1455307
       \endverb
     \endentry
     \entry{MintelTransformation2022}{online}{}{}
@@ -745,6 +1118,59 @@
       \endverb
       \verb{url}
       \verb https://www.movistar.com.ec/
+      \endverb
+    \endentry
+    \entry{peffers2007}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+           family={Peffers},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+           family={Tuunanen},
+           familyi={T\bibinitperiod},
+           given={Tuure},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+           family={Rothenberger},
+           familyi={R\bibinitperiod},
+           given={Marcus\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Management Information Systems}
+      \field{number}{3}
+      \field{title}{A design science research methodology for information systems research}
+      \field{volume}{24}
+      \field{year}{2007}
+      \field{pages}{45\bibrangedash 77}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.2753/MIS0742-1222240302
       \endverb
     \endentry
     \entry{UNESCO2019}{online}{}{}
