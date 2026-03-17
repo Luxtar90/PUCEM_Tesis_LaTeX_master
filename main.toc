@@ -73,7 +73,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Desempeño del sistema en escenarios de prueba}{56}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Resultados técnicos del software}{57}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Pruebas unitarias y de integración}{57}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Métricas de disponibilidad y rendimiento}{57}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Métricas de disponibilidad y rendimiento}{58}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Validación de funcionalidades}{59}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Problemas identificados y soluciones}{60}{subsection.3.4.4}%
 \contentsline {chapter}{\numberline {4}Discusión}{62}{chapter.4}%
