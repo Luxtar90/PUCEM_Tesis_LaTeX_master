@@ -1,0 +1,16 @@
+﻿Total .bib entries: 26
+Citation commands found (unique keys): 32
+Detected \nocite{*}: No
+
+Unused .bib entries (present in referencias.bib but not cited in .tex files):
+DockerInc_containerization
+NestJS_docs
+Nextjs_docs
+PostgreSQL_global
+Supabase_docs
+
+References to appendix labels found via \ref{...} that are missing in apendices.tex:
+None
+
+Citation keys used in .tex but MISSING in referencias.bib:
+None

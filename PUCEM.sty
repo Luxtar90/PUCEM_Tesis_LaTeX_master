@@ -58,4 +58,10 @@
 % Doble espaciado general
 \AtBeginDocument{\doublespacing}
 
+% Redefinir temporalmente \textbf para evitar uso excesivo de negritas
+% Guardamos la definición original en \oldtextbf para poder recuperar
+% negritas puntuales donde sea estrictamente necesario.
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{#1}
+
 \endinput

@@ -34,7 +34,6 @@
 \node[substep] (rep_list)   at (-2.5,-5.8) {Lista pendientes};
 \node[substep] (rep_action) at (-2.5,-7.0) {Aprobar y rechazar};
 \draw[-latex] (repartidores) -- (rep_list);
-\draw[-latex] (repartidores) -- (rep_list);
 \draw[-latex] (rep_list) -- (rep_action);
 \draw[-latex] (pedidos) -- (repartidores);
 \draw[dashed, rounded corners] (-10.5,1.0) rectangle (10.5,-8.0);

@@ -4,20 +4,8 @@
 
 \chapter{Apéndice A}\label{ap:A}
 
-\section*{Diagrama de la base de datos}
-La siguiente figura presenta el modelo entidad--relación completo utilizado en la plataforma, con las entidades principales y sus relaciones.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.9\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
-    \caption{Diagrama entidad--relación de la base de datos de la plataforma SaaS}
-    \label{fig:diagrama_bd}
-\end{figure}
-
-\textit{Nota.} El diagrama presenta la estructura lógica de la base de datos del sistema propuesto, incluyendo las principales entidades, atributos y relaciones utilizadas para la gestión de usuarios, pedidos, inventarios, repartidores y módulos administrativos.
-
-\subsection*{Detalle de relaciones críticas del modelo de datos}
-Para complementar la lectura del diagrama ER, se describen las relaciones de mayor impacto funcional:
+\section*{Detalle de relaciones críticas del modelo de datos}
+Para complementar la descripción del modelo de datos, se detallan las relaciones de mayor impacto funcional:
 \begin{itemize}
     \item \textbf{Usuario--Pedido (1:N):} un usuario puede registrar múltiples pedidos; cada pedido pertenece a un único cliente.
     \item \textbf{Pedido--OrderItem (1:N):} un pedido contiene uno o varios ítems con cantidad y precio unitario histórico.
@@ -28,150 +16,22 @@ Para complementar la lectura del diagrama ER, se describen las relaciones de may
 
 Estas relaciones sustentan la integridad transaccional del sistema, la trazabilidad de estados en el flujo de pedidos y la consistencia de inventario en tiempo real.
 
+
 \chapter{Apéndice B}\label{ap:B}
-
-\section*{Arquitectura por capas de la plataforma}
-La arquitectura general por capas describe la organización de componentes y la separación de responsabilidades del sistema.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.9\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
-    \caption{Arquitectura por capas de la plataforma SaaS}
-    \label{fig:apendice-arquitectura-capas}
-\end{figure}
-
-\chapter{Apéndice C}\label{ap:C}
-
-\section*{Arquitectura de la aplicación móvil}
-El siguiente diagrama muestra la arquitectura de la aplicación móvil, sus capas lógicas y la comunicación con la API.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.7\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
-    \caption{Arquitectura de la aplicación móvil}
-    \label{fig:apendice-movil-arquitectura}
-\end{figure}
-
-\section*{Arquitectura del panel web}
-Se presenta la arquitectura del panel web administrativo con sus principales componentes y flujo de datos.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.7\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
-    \caption{Arquitectura del panel web}
-    \label{fig:apendice-web-arquitectura}
-\end{figure}
-
-\chapter{Apéndice D}\label{ap:D}
-
-\section*{Arquitectura modular del backend}
-El diagrama muestra la organización modular del backend con sus módulos y dependencias principales.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.85\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
-    \caption{Arquitectura modular del backend (NestJS) planificada}
-    \label{fig:apendice-backend-arquitectura}
-\end{figure}
-
-\chapter{Apéndice E}\label{ap:E}
-
-\section*{Flujo de autenticación y autorización (JWT + RBAC)}
-El siguiente diagrama describe el flujo de autenticación con JWT y la validación de permisos por roles.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{0.85\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
-    \caption{Flujo de autenticación y autorización (JWT + RBAC)}
-    \label{fig:apendice-auth-rbac}
-\end{figure}
-
-\chapter{Apéndice F}\label{ap:F}
-
-\section*{Flujo principal del frontend móvil}
-Se presenta el flujo principal de navegación para clientes, cocina y repartidores en la aplicación móvil.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
-    \caption{Flujo principal del frontend móvil para cliente, repartidor y cocina}
-    \label{fig:apendice-frontend-prototipo}
-\end{figure}
-
-\section*{Flujo principal del panel web administrativo}
-El siguiente diagrama resume el flujo operativo del panel web para administración del negocio.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
-    \caption{Flujo principal del panel web administrativo}
-    \label{fig:apendice-web-panel-prototipo}
-\end{figure}
-
-\chapter{Apéndice G}\label{ap:G}
-
-\section*{Flujo general del proceso de pedido}
-La figura muestra el proceso completo desde la creación del pedido hasta la entrega, incluyendo la vista de cocina y repartidores.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
-    \caption{Flujo general del proceso de pedido}
-    \label{fig:apendice-secuencia-pedido}
-\end{figure}
-
-\section*{Diagrama del módulo de inventario}
-Se presenta el flujo principal del módulo de inventario y la interacción con pedidos y stock.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
-    \caption{Diagrama del módulo de inventario}
-    \label{fig:apendice-modulo-inventario}
-\end{figure}
-
-\section*{Diagrama del módulo de repartidores}
-El diagrama describe el proceso de registro, aprobación y asignación de pedidos a repartidores.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
-    \caption{Diagrama del módulo de repartidores}
-    \label{fig:apendice-modulo-repartidores}
-\end{figure}
-
-\chapter{Apéndice H}\label{ap:H}
-
-\section*{Arquitectura del despliegue}
-Se muestra la arquitectura de despliegue en \textit{staging} con los servicios en VPS, panel web en Vercel y app móvil distribuida como APK.
-
-\begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
-    \caption{Arquitectura del despliegue de la plataforma}
-    \label{fig:apendice-despliegue-arquitectura}
-\end{figure}
-
-\chapter{Apéndice I}\label{ap:I}
 
 \section*{Diagrama de red del sistema}
 El diagrama de red ilustra la arquitectura general del sistema y la interacción entre usuarios web y móviles, la API y servicios externos.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[
-        draft=false,
-        width=0.75\textwidth,
-        height=0.6\textheight,
-        keepaspectratio
-    ]{imagenes/reddiagrama.png}
+    \resizebox{0.78\textwidth}{!}{\input{imagenes/reddiagrama.tikz}}
     \caption{Diagrama de red y arquitectura de la plataforma SaaS web y móvil}
     \label{fig:diagrama_red}
 \end{figure}
 
 \textit{Nota.} El diagrama de red muestra la interacción entre el frontend web y móvil, la API backend, la base de datos, el chatbot con inteligencia artificial integrado en la plataforma web y servicios externos como geolocalización; los medios de pago son efectivo y transferencia (sin pasarela de pagos).
 
-\chapter{Apéndice J}\label{ap:J}
+\chapter{Apéndice C}\label{ap:C}
 
 \section*{Procedimiento detallado de validación en \textit{staging}}
 Este apéndice amplía el procedimiento de validación técnica descrito en el capítulo Método, con el detalle de los pasos ejecutados en entorno controlado.
@@ -180,7 +40,7 @@ Este apéndice amplía el procedimiento de validación técnica descrito en el c
 El backend se desplegó en un servidor VPS de Hetzner, utilizando Docker para contenerizar la aplicación y la base de datos PostgreSQL. Se configuraron ajustes de seguridad básicos (helmet, CORS, rate limiting) y variables de entorno mediante ConfigModule. La API se ejecutó en HTTPS y se activaron logs estructurados para monitoreo. El panel web se desplegó en Vercel y la aplicación móvil se distribuyó como APK para dispositivos de prueba.
 
 \subsection*{2. Orientación a usuarios de prueba}
-Se realizó una sesión de orientación breve (aproximadamente 1 hora) con usuarios de la PYME piloto (administrador, personal de cocina y repartidores), explicando flujos principales y tareas de prueba.
+Se realizó una sesión de orientación breve (aproximadamente 1 hora) con participantes del escenario piloto simulado (administrador, personal de cocina y repartidores), explicando flujos principales y tareas de prueba.
 
 \subsection*{3. Diseño de escenarios de prueba}
 Se definieron escenarios predefinidos para cubrir flujos críticos: (1) registro de pedido completo por cliente, (2) confirmación y preparación en cocina, (3) asignación y entrega por repartidor, (4) gestión de productos y categorías por administrador, (5) consulta al chatbot en la plataforma web. Cada escenario utilizó datos simulados.
@@ -233,13 +93,13 @@ Integración & Acceso por roles (admin, cliente, repartidor) & Aprobadas & Prueb
 \end{tabular}
 \end{table}
 
-\chapter{Apéndice K}\label{ap:K}
+\chapter{Apéndice D}\label{ap:D}
 
-\section*{Guía de entrevista semiestructurada (diagnóstico Fase 1)}
+\section*{Síntesis de la guía de entrevista semiestructurada (diagnóstico Fase 1)}
 
-La guía de entrevista utilizada en el diagnóstico con responsables de las PYMES (capítulo Método, Fase 1; capítulo Resultados, estado de digitalización previo) se estructura por bloques temáticos: (1) datos generales del negocio y antigüedad; (2) gestión de pedidos (canales actuales, volumen, tiempos, errores); (3) comunicación con cocina y repartidores; (4) control de inventarios; (5) atención al cliente y herramientas digitales en uso. Las preguntas son abiertas para profundizar en procesos operativos, necesidades y expectativas. El instrumento completo en formato utilizable para replicación se incluye en el repositorio del proyecto o puede solicitarse a los autores.
+La guía de entrevista utilizada en el levantamiento inicial del dominio se estructura por bloques temáticos: (1) datos generales del negocio y antigüedad; (2) gestión de pedidos (canales actuales, volumen, tiempos, errores); (3) comunicación con cocina y repartidores; (4) control de inventarios; (5) atención al cliente y herramientas digitales en uso. Las preguntas son abiertas para profundizar en procesos operativos, necesidades y expectativas. Este apéndice presenta una síntesis del instrumento empleado como apoyo para la definición del escenario de referencia del estudio.
 
-\chapter{Apéndice L}\label{ap:L}
+\chapter{Apéndice E}\label{ap:E}
 
 \section*{Arquitectura detallada de la plataforma}
 Este apéndice integra, en una sola vista textual, la arquitectura de la plataforma y las responsabilidades por capa para facilitar su revisión técnica sin depender únicamente de diagramas.
@@ -248,8 +108,8 @@ Este apéndice integra, en una sola vista textual, la arquitectura de la platafo
 \centering
 \caption{Detalle de arquitectura por capas y componentes}
 \label{tab:apendice-arquitectura-detalle}
-\footnotesize
-\begin{tabular}{|>{\raggedright\arraybackslash}p{2.2cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
+\small
+\begin{tabular}{|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.3cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{4.3cm}|}
 \hline
 \textbf{Capa} & \textbf{Componente} & \textbf{Tecnología} & \textbf{Responsabilidad principal} \\
 \hline

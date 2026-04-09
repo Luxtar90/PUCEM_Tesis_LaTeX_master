@@ -2,18 +2,20 @@
 
   \section{Diseño de la investigación}
 
-  \subsection{Enfoque y tipo}
+  \subsection{Enfoque de investigación}
 
-  La investigación se desarrolló bajo un enfoque de investigación basada en diseño (Design Science Research), con evaluación de la solución mediante pruebas técnicas y pruebas de usabilidad en un entorno controlado (\textit{staging}). Se adoptó un estudio de caso como contexto (PYME piloto), sin medición longitudinal de desempeño operativo real. Este enfoque se eligió para desarrollar y evaluar un artefacto de software (la plataforma SaaS) que resuelve una problemática concreta en un contexto específico.
+  La investigación se desarrolló bajo un enfoque de investigación basada en diseño (Design Science Research), con evaluación de la solución mediante pruebas técnicas y pruebas de usabilidad en un entorno controlado (\textit{staging}). Se adoptó un escenario piloto simulado como contexto de validación, sin medición longitudinal de desempeño operativo real. Este enfoque se eligió para desarrollar y evaluar un artefacto de software (la plataforma SaaS) que resuelve una problemática concreta en un contexto específico.
 
+  \subsection{Tipo de investigación}
   La investigación comprende dos componentes: uno cualitativo y otro cuantitativo. El componente cualitativo permitió profundizar en las percepciones, necesidades y experiencias de los usuarios durante las pruebas de usabilidad. El componente cuantitativo posibilitó la medición objetiva de variables de desempeño en escenarios de prueba controlados. Además, los hallazgos cualitativos orientaron la selección y definición de las variables e indicadores evaluados en la fase cuantitativa. El estudio se clasifica como investigación aplicada de tipo tecnológica, dado que su propósito central es el diseño, construcción y validación técnica de un artefacto de software para demostrar su viabilidad en un contexto específico. El diseño es no experimental y transversal, ya que no se manipularon variables y los datos se recolectaron en un único momento (o en un período acotado) de prueba, sin seguimiento longitudinal; se observaron y describieron las variables en su contexto de prueba sin intervención deliberada.
 
   \subsection{Población y muestra}
+  En esta sección se define la población y la muestra de la investigación de acuerdo a los siguientes puntos:
 
   \subsubsection{Población}
   La población objetivo estuvo constituida por la totalidad de las PYMES del sector gastronómico formalmente establecidas en la ciudad de Portoviejo, provincia de Manabí, Ecuador. Esta población define el contexto de aplicación esperado del artefacto, aunque en el piloto no se trabajó con un establecimiento real.
 
-  \subsubsection{Muestra y criterios de selección}
+  \subsubsection{Muestra }
   Dado que el objetivo de la tesis fue validar la funcionalidad completa del sistema (prototipo de plataforma SaaS) en un entorno controlado, la prueba piloto se realizó mediante una simulación de operación: un miembro del equipo asumió el rol del negocio (local) y otro asumió el rol de cliente que realiza un pedido a domicilio. La finalidad fue garantizar que todos los componentes del sistema funcionaran en conjunto (pedido, cocina, reparto, dashboard, chatbot).
 
   Los criterios considerados para esta simulación fueron:
@@ -26,7 +28,7 @@
 
   La unidad de análisis se limita a este caso piloto simulado; por tanto, los resultados no pretenden generalización estadística sino evidencia de viabilidad del artefacto y de su funcionamiento integral.
 
-  \subsubsection{Operacionalización de variables e indicadores}
+  \subsubsection*{Operacionalización de variables e indicadores}
 
   Para poder evaluar si la plataforma cumple los criterios de viabilidad técnica y usabilidad definidos en los objetivos, se operacionalizaron las variables dependientes en indicadores medibles con instrumentos y umbrales de éxito. Esta operacionalización permite trazar los resultados del capítulo de Resultados con las preguntas de investigación y los objetivos. En la Tabla \ref{tab:operacionalizacion} se definen las variables, su definición operacional, el instrumento de medición utilizado y el umbral que se consideró como éxito en cada caso. Los valores de la tabla se utilizaron tanto para el diseño de las pruebas (Fase 5 de la metodología IBD) como para la interpretación de los resultados obtenidos.
 
@@ -35,9 +37,9 @@
   \setlength{\tabcolsep}{3pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{longtable}{>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{3.8cm}>{\raggedright\arraybackslash}p{3.0cm}}
-  \caption{Operacionalización de variables e indicadores de medición}\label{tab:operacionalizacion} \\
+  \caption[Operacionalización de variables e indicadores]{Operacionalización de variables e indicadores de medición}\label{tab:operacionalizacion} \\
   \toprule
-  \textbf{Variable dependiente} & \textbf{Definición operacional} & \textbf{Instrumento de medición} & \textbf{Umbral de éxito} \\
+  \oldtextbf{Variable dependiente} & \oldtextbf{Definición operacional} & \oldtextbf{Instrumento de medición} & \oldtextbf{Umbral de éxito} \\
   \midrule
   \endfirsthead
   \toprule
@@ -52,75 +54,44 @@
   \bottomrule
   \end{longtable}
   \endgroup
-  Nota: Los umbrales de éxito para las métricas de desempeño se definieron en base a referencias concretas de usabilidad y calidad de software. Para los tiempos de respuesta se consideraron las recomendaciones de Nielsen Norman Group para interfaces interactivas (mantener la percepción de respuesta por debajo de 1~s y tiempos de tarea dentro de un rango aceptable para aplicaciones de consumo), complementadas con los criterios de eficiencia de rendimiento del estándar ISO/IEC 25010 (característica de \textit{performance efficiency}). La tasa de éxito $\geq$ 95\% y la tasa de fallos $\leq$ 5\% se establecieron siguiendo los principios de fiabilidad del mismo estándar ISO/IEC 25010 (característica de \textit{reliability}) y prácticas comunes en pruebas de software de prototipos. El umbral de SUS ($\geq$ 68) se basa en la clasificación estándar de Bangor et al. (2009) para distinguir niveles aceptables de usabilidad.
+  Nota: Los umbrales de éxito para las métricas de desempeño se definieron en base a referencias concretas de usabilidad y calidad de software. Para los tiempos de respuesta se consideraron las recomendaciones de Nielsen Norman Group para interfaces interactivas \parencite{NielsenNorman_interaction}, complementadas con los criterios de eficiencia de rendimiento del estándar ISO/IEC 25010 \parencite{ISO25010_2011}. La tasa de éxito $\geq$ 95\% y la tasa de fallos $\leq$ 5\% se establecieron siguiendo los principios de fiabilidad del mismo estándar ISO/IEC 25010 y prácticas comunes en pruebas de software de prototipos. El umbral de SUS ($\geq$ 68) se basa en la clasificación estándar de Bangor et al. (2009) para distinguir niveles aceptables de usabilidad.
 
   La Tabla \ref{tab:operacionalizacion} define explícitamente los criterios de éxito que luego se emplean en el capítulo de Resultados para verificar el cumplimiento de objetivos.
 
   \subsection{Metodología}
 
-  El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por su capacidad para desarrollar y evaluar artefactos (productos, procesos, métodos o modelos) orientados a resolver problemas del mundo real \parencite{hevner2004,peffers2007}. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de \textcite{hevner2004} y \textcite{peffers2007}.
+  El presente trabajo sigue la metodología Investigación Basada en Diseño (IBD), elegida por su capacidad para desarrollar y evaluar artefactos (productos, procesos, métodos o modelos) orientados a resolver problemas del mundo real \parencite{Hevner2004,Peffers2007}. No existe un único modelo canónico de fases, ya que distintos autores han propuesto esquemas similares con variaciones; sin embargo, todas comparten un núcleo cíclico e iterativo de construcción y evaluación. Se presenta el siguiente esquema integrando los modelos clave de \textcite{Hevner2004} y \textcite{Peffers2007}.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.78\textwidth}{!}{\input{imagenes/ibd_ciclo.tikz}}
-  \caption{Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}
+  \caption[Ciclo iterativo (IBD)]{Ciclo iterativo de la Investigación Basada en Diseño (Fases 1--6). Fuente: elaboración propia con base en Hevner et al., 2004; Peffers et al., 2007.}
   \label{fig:ibd-ciclo}
   \end{figure}
 
   La Figura \ref{fig:ibd-ciclo} comunica la lógica de avance del estudio: diagnóstico del problema (Fases 1 y 2), construcción técnica del artefacto (Fase 3), demostración y prueba en entorno controlado (Fase 4), evaluación formal frente a criterios (Fase 5) y comunicación de resultados (Fase 6). Su propósito es mostrar el alcance metodológico completo y los elementos que se retroalimentan en cada iteración.
 
-  \textbf{Fase 1.} Esta es una fase inicial en la que se definió claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
+  \subsubsection{Fase 1: Diagnóstico del problema} Esta es una fase inicial en la que se definió claramente el problema. Se realizó una revisión de la literatura del tema, contextualizándolo en el ámbito global y local.
 
-  \textbf{Fase 2.} En esta fase y habiendo comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
+  \subsubsection{Fase 2: Definición de objetivos} En esta fase y habiendo comprendido el problema, se establecieron los objetivos que busca conseguir el producto. En esta fase se definieron los requisitos funcionales y no funcionales de la plataforma.
 
-  \subsubsection{Requerimientos funcionales y no funcionales (objetivo específico 1)}
+  \subsubsection{Fase 3: Diseño y desarrollo del artefacto} En esta fase se realizan las actividades de construcción: selección del stack tecnológico, diseño de la arquitectura, desarrollo de cada módulo (backend, frontend web, aplicación móvil, integración con base de datos y con el chatbot). Cada incremento (prototipo, versión o módulo) se entrega como insumo para la siguiente fase.
 
-  Con base en la entrevista semiestructurada, revisión documental y análisis del dominio, se levantaron los requerimientos que guiaron el diseño y la validación del prototipo. La Tabla \ref{tab:requerimientos-rf-rnf} presenta una síntesis de los requerimientos funcionales (RF) y no funcionales (RNF) utilizados como referencia en las pruebas de integración y validación funcional.
-
-  \begingroup
-  \small
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{longtable}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{5.9cm}>{\raggedright\arraybackslash}p{6.0cm}}
-  \caption{Requerimientos funcionales y no funcionales priorizados}\label{tab:requerimientos-rf-rnf} \\
-  \toprule
-  \textbf{Código} & \textbf{Descripción} & \textbf{Criterio de verificación} \\
-  \midrule
-  \endfirsthead
-  \toprule
-  \textbf{Código} & \textbf{Descripción} & \textbf{Criterio de verificación} \\
-  \midrule
-  \endhead
-  RF-ORD-01 & Registrar pedidos con productos, cantidades y dirección de entrega. & El pedido se crea sin errores y queda visible para cocina/administración. \\
-  RF-ORD-02 & Gestionar estados de pedido (pendiente, en preparación, listo, en camino, entregado). & El cambio de estado mantiene trazabilidad y secuencia válida. \\
-  RF-INV-01 & Descontar inventario por pedido confirmado y evitar stock negativo. & Las existencias se actualizan de forma consistente tras cada operación. \\
-  RF-DEL-01 & Asignar y gestionar pedidos para repartidores. & El repartidor visualiza pedidos y puede confirmar hitos de entrega. \\
-  RF-ADM-01 & Administrar catálogo (productos/categorías) desde panel web. & Operaciones CRUD ejecutan con validación y persistencia correctas. \\
-  RF-IA-01 & Responder consultas frecuentes mediante un chatbot integrado en la plataforma web con contexto del negocio. & Respuestas coherentes para consultas de menú, horarios y estado. \\
-  RNF-SEG-01 & Proteger endpoints con autenticación JWT y autorización por roles (RBAC). & Accesos no autorizados son bloqueados y registrados. \\
-  RNF-REN-01 & Mantener tiempos de respuesta aceptables en entorno de prueba. & API dentro de umbrales definidos durante validación técnica. \\
-  RNF-DIS-01 & Garantizar disponibilidad del servicio en \textit{staging}. & Servicio operativo durante el período de pruebas con baja tasa de fallos. \\
-  RNF-USA-01 & Alcanzar usabilidad aceptable medida con SUS. & Puntaje SUS promedio $\geq$ 68 en usuarios de prueba. \\
-  \bottomrule
-  \end{longtable}
-  \endgroup
-
-  \textbf{Fase 3 (Diseño y desarrollo del artefacto).} En esta fase se realizan las actividades de construcción: selección del stack tecnológico, diseño de la arquitectura, desarrollo de cada módulo (backend, frontend web, aplicación móvil, integración con base de datos y con el chatbot). Cada incremento (prototipo, versión o módulo) se entrega como insumo para la siguiente fase.
-
-  \textbf{Fase 4 (Demostración y prueba).} En esta fase se demuestra y prueba cada incremento recibido de la Fase 3: despliegue en entorno piloto o \textit{staging}, ejecución de escenarios de prueba con usuarios o en simulación, y registro de resultados (tiempos, errores, completitud de flujos). Los resultados de la demostración alimentan directamente el rediseño y el desarrollo de la siguiente iteración (retorno a Fase 3), cerrando el ciclo construcción-evaluación hasta alcanzar los criterios de aceptación definidos en la Fase 2.
+  \subsubsection{Fase 4: Demostración y prueba} En esta fase se demuestra y prueba cada incremento recibido de la Fase 3: despliegue en entorno piloto o \textit{staging}, ejecución de escenarios de prueba con usuarios o en simulación, y registro de resultados (tiempos, errores, completitud de flujos). Los resultados de la demostración alimentan directamente el rediseño y el desarrollo de la siguiente iteración (retorno a Fase 3), cerrando el ciclo construcción-evaluación hasta alcanzar los criterios de aceptación definidos en la Fase 2.
 
   La implementación ágil se estructuró en iteraciones cortas (sprints) con objetivos definidos: levantar requisitos mínimos viables, construir prototipos funcionales, realizar pruebas de usabilidad y ajustar funcionalidades a partir de la retroalimentación. Cada sprint concluyó con una revisión donde se consolidaron mejoras y se definieron tareas para el siguiente ciclo.
 
   Para evidenciar la planificación, la Tabla \ref{tab:plan-sprints} resume la organización de sprints utilizada durante el desarrollo del prototipo.
+  En la Tabla \ref{tab:plan-sprints} se aprecia la secuencia de entregables por sprint: desde el levantamiento de requisitos y diseño arquitectónico en Sprint 1, pasando por la implementación del núcleo backend (Sprint 2), la construcción de interfaces (Sprint 3) y la integración y validación técnica/usabilidad en Sprint 4. Esta planificación permitió priorizar funcionalidades críticas para la validación en entorno \textit{staging}.
 
   \begingroup
   \small
   \setlength{\tabcolsep}{4pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{longtable}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{5.4cm}>{\raggedright\arraybackslash}p{3.9cm}}
-  \caption{Planificación de sprints del desarrollo}\label{tab:plan-sprints} \\
+  \caption[Planificación de sprints]{Planificación de sprints del desarrollo}\label{tab:plan-sprints} \\
   \toprule
-  \textbf{Sprint} & \textbf{Duración} & \textbf{Objetivo principal} & \textbf{Entregables clave} \\
+  \oldtextbf{Sprint} & \oldtextbf{Duración} & \oldtextbf{Objetivo principal} & \oldtextbf{Entregables clave} \\
   \midrule
   \endfirsthead
   \toprule
@@ -135,11 +106,27 @@
   \end{longtable}
   \endgroup
 
-  \textbf{Fase 5.} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla \ref{tab:tecnicas-instrumentos} del presente capítulo.
+  \subsubsection{Fase 5: Evaluación} Comparar los resultados de la demostración con los objetivos definidos en la Fase 2. Se utilizaron métricas cuantitativas y cualitativas, las mismas que se detallan en la Tabla \ref{tab:tecnicas-instrumentos} del presente capítulo.
 
-  \textbf{Fase 6.} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
+  \subsubsection{Fase 6: Comunicación de resultados} En esta fase se realiza la comunicación de los resultados, los mismos que se definen en la sección Resultados del presente Trabajo.
 
-  \subsubsection{Técnicas e instrumentos de recolección de datos}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  \subsection{Técnicas de recolección de datos}
 
   Las técnicas e instrumentos utilizados en cada fase del estudio se resumen en la Tabla \ref{tab:tecnicas-instrumentos}. La tabla permite ubicar cada instrumento (entrevista semiestructurada, SUS, ficha de observación, checklist y logs) en el momento de aplicación y el público objetivo, lo que justifica su uso en el diagnóstico (Fase 1), la validación (Fases 4--5) y la comunicación de resultados (Fase 6). Los puntos clave son: la entrevista para el levantamiento de requisitos con dueños de PYMES; el SUS aplicado tras las tareas guiadas a usuarios de prueba; la ficha de observación para tiempos y errores durante las tareas; y la revisión documental para verificar despliegue y analizar logs.
 
@@ -147,20 +134,20 @@
   \small
   \setlength{\tabcolsep}{3pt}
   \renewcommand{\arraystretch}{1.2}
-  \begin{longtable}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.2cm}}
-  \caption{Técnicas e instrumentos de recolección de datos}\label{tab:tecnicas-instrumentos} \\
+  \begin{longtable}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.2cm}}
+  \caption[Técnicas e instrumentos]{Técnicas e instrumentos de recolección de datos}\label{tab:tecnicas-instrumentos} \\
   \toprule
-  \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
+  \oldtextbf{Técnica} & \oldtextbf{Instrumento} & \oldtextbf{Características} & \oldtextbf{Momento de aplicación} & \oldtextbf{Público objetivo} \\
   \midrule
   \endfirsthead
   \toprule
-  \textbf{Técnica} & \textbf{Instrumento} & \textbf{Objetivo} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
+  \textbf{Técnica} & \textbf{Instrumento} & \textbf{Características} & \textbf{Momento de aplicación} & \textbf{Público objetivo} \\
   \midrule
   \endhead
-  Entrevista & Guía de entrevista semiestructurada & Profundizar en procesos operativos, necesidades y expectativas; obtener requisitos funcionales y no funcionales y objetivos (general y específicos) mediante entrevistas con dueños de las PYMES. & Preguntas abiertas por áreas (pedidos, inventario, delivery). Transcrita. & Fase 1: Diagnóstico (línea base). & Dueños de las PYMES. \\
-  Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & Medir la usabilidad percibida (facilidad de uso, satisfacción) de la plataforma en entorno de pruebas. & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Después de completar tareas guiadas en entorno controlado. & Usuarios de prueba de la PYME piloto (administrador, personal de cocina, repartidores). \\
-  Observación estructurada & Ficha de observación de tareas guiadas & Registrar datos cuantitativos sobre desempeño en escenarios de prueba (tiempos, errores, completitud de flujos). & Diseñada para registrar: tiempos (min), conteo de errores en tareas predefinidas, tasa de éxito en flujos críticos. & Durante la ejecución de tareas guiadas en entorno controlado (\textit{staging}). & Usuarios de prueba ejecutando escenarios predefinidos. \\
-  Revisión documental & Checklist de despliegue y logs del sistema & Verificar el correcto despliegue técnico en \textit{staging} y analizar logs de pruebas. & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en \textit{staging} y sus registros de prueba. \\
+  Entrevista & Guía de entrevista semiestructurada & Preguntas abiertas por áreas (pedidos, inventario, delivery). Transcrita. & Fase 1: Diagnóstico (línea base). & Actores del sector gastronómico e informantes del dominio. \\
+  Prueba de usabilidad & Cuestionario SUS (System Usability Scale) & 10 ítems con escala Likert de 5 puntos. Versión estandarizada en español. Confiabilidad ampliamente documentada. & Fase 6: Después de completar tareas guiadas en entorno controlado. & Participantes de prueba del escenario piloto simulado (administrador, personal de cocina, repartidores). \\
+  Observación estructurada & Ficha de observación de tareas guiadas & Diseñada para registrar: tiempos (min), conteo de errores en tareas predefinidas, tasa de éxito en flujos críticos. & Durante la ejecución de tareas guiadas en entorno controlado (\textit{staging}). & Participantes de prueba ejecutando escenarios predefinidos. \\
+  Revisión documental & Checklist de despliegue y logs del sistema & Lista de verificación para servicios en la nube. Análisis de logs y métricas técnicas durante las pruebas. & Durante y después de las pruebas en entorno controlado. & Plataforma SaaS desplegada en \textit{staging} y sus registros de prueba. \\
   \bottomrule
   \end{longtable}
   \endgroup
@@ -182,7 +169,41 @@
 
   \subsection{Etapa 1: Planificación}
 
-  \paragraph{Diseño de la arquitectura del sistema}
+  \subsubsection{Definición de requerimientos}
+
+  Con base en la entrevista semiestructurada, revisión documental y análisis del dominio, se levantaron los requerimientos que guiaron el diseño y la validación del prototipo.
+
+  En la Tabla \ref{tab:requerimientos-rf-rnf} se sintetizan los requerimientos priorizados: destacan aquellos relacionados con el registro y gestión de pedidos (RF-ORD-01, RF-ORD-02), la consistencia de inventario (RF-INV-01) y requisitos de seguridad y rendimiento (RNF-SEG-01, RNF-REN-01). Estas prioridades se definieron por su impacto directo en la operativa del negocio y orientaron las pruebas de integración y aceptación.
+
+  \begingroup
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{longtable}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{5.9cm}>{\raggedright\arraybackslash}p{6.0cm}}
+  \caption[Requerimientos priorizados]{Requerimientos funcionales y no funcionales priorizados}\label{tab:requerimientos-rf-rnf} \\
+  \toprule
+  \oldtextbf{Código} & \oldtextbf{Descripción} & \oldtextbf{Criterio de verificación} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Código} & \textbf{Descripción} & \textbf{Criterio de verificación} \\
+  \midrule
+  \endhead
+  RF-ORD-01 & Registrar pedidos con productos, cantidades y dirección de entrega. & El pedido se crea sin errores y queda visible para cocina/administración. \\
+  RF-ORD-02 & Gestionar estados de pedido (pendiente, en preparación, listo, en camino, entregado). & El cambio de estado mantiene trazabilidad y secuencia válida. \\
+  RF-INV-01 & Descontar inventario por pedido confirmado y evitar stock negativo. & Las existencias se actualizan de forma consistente tras cada operación. \\
+  RF-DEL-01 & Asignar y gestionar pedidos para repartidores. & El repartidor visualiza pedidos y puede confirmar hitos de entrega. \\
+  RF-ADM-01 & Administrar catálogo (productos/categorías) desde panel web. & Operaciones CRUD ejecutan con validación y persistencia correctas. \\
+  RF-IA-01 & Responder consultas frecuentes mediante un chatbot integrado en la plataforma web con contexto del negocio. & Respuestas coherentes para consultas de menú, horarios y estado. \\
+  RNF-SEG-01 & Proteger endpoints con autenticación JWT y autorización por roles (RBAC). & Accesos no autorizados son bloqueados y registrados. \\
+  RNF-REN-01 & Mantener tiempos de respuesta aceptables en entorno de prueba. & API dentro de umbrales definidos durante validación técnica. \\
+  RNF-DIS-01 & Garantizar disponibilidad del servicio en \textit{staging}. & Servicio operativo durante el período de pruebas con baja tasa de fallos. \\
+  RNF-USA-01 & Alcanzar usabilidad aceptable medida con SUS. & Puntaje SUS promedio $\geq$ 68 en usuarios de prueba. \\
+  \bottomrule
+  \end{longtable}
+  \endgroup
+
+  \subsubsection{Diseño de la arquitectura del sistema}
   \textbf{Stack tecnológico.} Esta etapa se dedicó a la definición de los cimientos tecnológicos y estructurales de la plataforma. A partir de los requisitos funcionales y no funcionales levantados, se realizó un análisis comparativo de tecnologías, frameworks y herramientas para cada capa del sistema. La selección final se basó en criterios de productividad del desarrollador, mantenibilidad a largo plazo, rendimiento, soporte comunitario y adecuación al contexto de las PYMES (recursos limitados, necesidad de soluciones ligeras). En la Tabla \ref{tab:stack-tecnologico} se resumen las decisiones por capa o componente: tecnología elegida, alternativas evaluadas y criterio principal de selección. La tabla permite justificar de forma compacta la adopción de NestJS en el backend, PostgreSQL en persistencia, React Native + Expo en móvil, Next.js en panel web, JWT en autenticación y Docker en contenedorización, así como VPS (Hetzner) y Vercel para despliegue.
 
   \begingroup
@@ -190,7 +211,7 @@
   \setlength{\tabcolsep}{5pt}
   \renewcommand{\arraystretch}{1.2}
   \begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{5.0cm}}
-  \caption{Selección tecnológica para la arquitectura de la plataforma SaaS}\label{tab:stack-tecnologico} \\
+  \caption[Selección tecnológica]{Selección tecnológica para la arquitectura de la plataforma SaaS}\label{tab:stack-tecnologico} \\
   \toprule
   \textbf{Capa / Componente} & \textbf{Tecnología seleccionada} & \textbf{Alternativas evaluadas} & \textbf{Criterio de selección principal} \\
   \midrule
@@ -222,12 +243,10 @@
 
   La arquitectura está organizada en cuatro capas principales: presentación (aplicación móvil y web), lógica de negocio (backend), persistencia (base de datos) e infraestructura (despliegue en nube). Cada capa se comunica con las adyacentes mediante interfaces bien definidas, mientras que la separación por módulos permite evolucionar funcionalidades sin afectar dominios no relacionados. La Figura \ref{fig:arquitectura-capas} resume esta organización y la relación entre componentes (usuarios, acceso, presentación, servicios, datos e integraciones).
   Como parte de la Etapa 1, se diseñó también el flujo integral del sistema para modelar de extremo a extremo la interacción cliente-cocina-repartidor-dashboard; dicho flujo se detalla en la Figura \ref{fig:secuencia-pedido} y se implementa en la Etapa 2.
-  Como material complementario, la versión ampliada del diagrama por capas se incluye en el Apéndice B.
-
   \begin{figure}[htbp]
   \centering
   \resizebox{0.68\textwidth}{!}{\input{imagenes/arquitectura_capas.tikz}}
-  \caption{Arquitectura por capas de la plataforma SaaS}
+  \caption[Arquitectura por capas]{Arquitectura por capas de la plataforma SaaS}
   \label{fig:arquitectura-capas}
   \end{figure}
 
@@ -236,36 +255,39 @@
   Dado que el prototipo busca cubrir el flujo operativo completo de una PYME gastronómica, se definieron roles explícitos para representar a los actores del proceso y delimitar responsabilidades. En la aplicación móvil se contemplan tres roles principales: \textbf{Cliente} (realiza pedidos y consulta su estado), \textbf{Cocina} (recibe, acepta/rechaza y marca pedidos como listos) y \textbf{Repartidor} (toma pedidos asignados, recoge y registra la entrega). Adicionalmente, la plataforma incorpora un rol de \textbf{Administrador} (panel web) y un rol \textbf{Superadmin} para configuración y control global. Esta separación por roles guía el diseño de pantallas, navegación y flujos, de modo que cada perfil visualice únicamente las funciones pertinentes, y se refuerza con validaciones del backend para asegurar coherencia y seguridad durante la ejecución de los casos de prueba.
 
   La aplicación móvil es la interfaz principal para tres roles: cliente, repartidor y cocina. Utiliza React Native + Expo para maximizar la reutilización de código entre plataformas.
-  La versión ampliada de esta arquitectura se presenta en el Apéndice C.
+
+  La Figura \ref{fig:movil-arquitectura} ilustra la arquitectura de la aplicación móvil, destacando los roles de cliente, cocina y repartidor, y cómo se estructura la navegación y las pantallas para cada perfil de usuario. Su propósito es mostrar la separación de responsabilidades y la integración con el backend para asegurar una experiencia coherente y segura en el flujo operativo.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.55\textwidth}{!}{\input{imagenes/movil_arquitectura.tikz}}
-  \caption{Arquitectura de la aplicación móvil}
+  \caption[Arquitectura móvil]{Arquitectura de la aplicación móvil}
   \label{fig:movil-arquitectura}
   \end{figure}
 
   \subsubsection{Arquitectura de la aplicación web}
 
   El panel web administrativo permite la gestión de productos, categorías, pedidos y repartidores, además de proporcionar acceso a clientes para realizar compras.
-  La versión ampliada del diagrama del panel web se presenta en el Apéndice C.
+
+  La Figura \ref{fig:web-arquitectura} describe la arquitectura de la aplicación web, enfocada en el panel administrativo y el acceso de clientes, mostrando los componentes principales como el frontend en Next.js, la integración con el backend y las funcionalidades de gestión. Su propósito es ilustrar cómo se organiza la interfaz web para facilitar la administración y las compras en línea de manera eficiente.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.55\textwidth}{!}{\input{imagenes/web_arquitectura.tikz}}
-  \caption{Arquitectura de la aplicación web}
+  \caption[Arquitectura web]{Arquitectura de la aplicación web}
   \label{fig:web-arquitectura}
   \end{figure}
 
   \subsubsection{Arquitectura del backend}
 
   El backend expone una API RESTful que centraliza toda la lógica de negocio, autenticación y manejo de datos.
-  La versión ampliada de la arquitectura modular del backend se incluye en el Apéndice D.
+
+  La Figura \ref{fig:backend-arquitectura} presenta la arquitectura del backend, organizada en módulos como autenticación, pedidos, inventarios y chatbot, utilizando NestJS y PostgreSQL. Su propósito es mostrar la estructura modular y las interacciones entre servicios para garantizar escalabilidad, seguridad y mantenibilidad del sistema.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.80\textwidth}{!}{\input{imagenes/backend_arquitectura.tikz}}
-  \caption{Arquitectura del backend (API REST)}
+  \caption[Arquitectura backend]{Arquitectura del backend (API REST)}
   \label{fig:backend-arquitectura}
   \end{figure}
 
@@ -333,15 +355,17 @@
   Finalmente, se contemplaron estrategias de respaldo automático (backups diarios mediante Supabase), recuperación ante desastres y mecanismos de migración de esquema controlada mediante archivos SQL versionados (ver carpeta migrations/ con ejemplos como create-stock-local-table.sql), abandonando sincronización automática en producción.
   La versión ampliada del diagrama entidad-relación también se incorpora en el Apéndice A.
 
+  La Figura \ref{fig:diagrama-bd} muestra el diagrama Entidad-Relación de la base de datos, incluyendo las entidades principales como usuarios, productos, pedidos e inventarios, y sus relaciones. Su propósito es ilustrar la estructura de datos que soporta el sistema, facilitando la comprensión de cómo se almacenan y relacionan la información operativa.
+
   \begin{figure}[htbp]
   \centering
   \resizebox{0.90\textwidth}{!}{\input{imagenes/diagrama_bd.tikz}}
-  \caption{Diagrama Entidad-Relación (ER) de la base de datos}
+  \caption[Diagrama ER]{Diagrama Entidad-Relación (ER) de la base de datos}
   \label{fig:diagrama-bd}
   \end{figure}
 
-  \subsubsection{Roles, permisos y seguridad (JWT, RBAC)}
-  Como se introdujo previamente en la arquitectura de la aplicación móvil, el prototipo contempla roles operativos diferenciados. En esta subsección se formaliza el esquema de roles y permisos (RBAC) que garantiza que cada usuario solo realice las acciones que le corresponden (Logto, s.f.). RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
+  \subsubsection*{Roles, permisos y seguridad}
+  Como se introdujo previamente en la arquitectura de la aplicación móvil, el prototipo contempla roles operativos diferenciados. En esta subsección se formaliza el esquema de roles y permisos (RBAC) que garantiza que cada usuario solo realice las acciones que le corresponden \parencite{Logto_RBAC}. RBAC gestiona "quién puede hacer qué" agrupando permisos en roles; a cada usuario se le asigna uno o varios roles y cada rol confiere permisos sobre funciones, APIs o datos.
 
   \textbf{Administrador (ADMIN):} Usuario del panel web con privilegios completos. Puede crear y editar productos y categorías, ver todos los pedidos, gestionar repartidores (aprobar/rechazar) y configurar la plataforma.
   
@@ -357,13 +381,14 @@
 
   La autorización por roles se implementa de forma declarativa en endpoints críticos, con mensajes de error consistentes y registro de intentos no autorizados para auditoría. En cuanto a autenticación, se definieron políticas de expiración de tokens equilibradas entre seguridad y usabilidad; por simplicidad, inicialmente no se emplean tokens de actualización (refresh), aunque se prevé su inclusión si el uso lo amerita. Se recomienda almacenar credenciales y tokens de forma segura en cliente (cookies HttpOnly en web, almacenamiento seguro en móvil) y evitar exposición en logs.
 
-  Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \parencite{raguilera_jwt_nestjs}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
-  El detalle gráfico extendido del flujo de autenticación y autorización se presenta en el Apéndice E.
+  Para la autenticación y autorización se utilizó JWT (JSON Web Tokens) como mecanismo stateless. JWT es un estándar abierto (RFC 7519) para transmitir información de forma segura en forma de token JSON firmado y se ha convertido en estándar de facto para proteger endpoints sensibles de APIs \parencite{Aguilera_JWT_NestJS}. La implementación se realizó mediante la integración de Passport.js en NestJS con la estrategia passport-jwt.
+
+  La Figura \ref{fig:auth-rbac} detalla el flujo de autenticación y autorización utilizando JWT y RBAC, mostrando cómo se generan tokens, se verifican roles y se controlan accesos. Su propósito es explicar el mecanismo de seguridad que protege el sistema, asegurando que solo usuarios autorizados accedan a funciones específicas.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.82\textwidth}{!}{\input{imagenes/auth_rbac.tikz}}
-  \caption{Flujo de autenticación y autorización (JWT + RBAC)}
+  \caption[Flujo auth/RBAC]{Flujo de autenticación y autorización (JWT + RBAC)}
   \label{fig:auth-rbac}
   \end{figure}
 
@@ -371,25 +396,26 @@
 
   \subsubsection{Desarrollo de la plataforma SaaS}
 
-  Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas y consolidando evidencia de avance en la bitácora técnica de validación (Apéndice J). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
+  Los Objetivos Específicos 3, 4 y 5 se centraron en la construcción iterativa e integración de todos los componentes del sistema. Se siguió una metodología ágil, organizando el trabajo en sprints de dos semanas y consolidando evidencia de avance en la bitácora técnica de validación (Apéndice C). El desarrollo fue modular y paralelo. Configuración inicial: se establecieron los tres repositorios (backend, móvil, web), se configuraron las herramientas de contenedorización (Docker) y se definió la estructura base de la base de datos en PostgreSQL.
 
   \subsubsection{Desarrollo de la aplicación móvil}
 
   Objetivo del frontend: ofrecer una experiencia clara y eficiente para clientes, repartidores y personal de cocina, con navegación predecible, validaciones tempranas y comunicación robusta con la API. El frontend móvil se implementó con React Native y Expo, lo que permite desarrollar una aplicación nativa multiplataforma a partir de una sola base de código.
 
-  React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero (campusMVP, s.f.). Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sensores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas (campusMVP, s.f.).
+  React Native facilita la reutilización entre iOS y Android sin comprometer el rendimiento; Expo simplifica el ciclo de vida de la aplicación al ofrecer herramientas integradas para compilar, desplegar y probar sin configurar proyectos nativos desde cero \parencite{campusMVP_ReactNative_Expo}. Además, Expo expone funcionalidades nativas desde JavaScript (cámara, notificaciones, sensores) y habilita un flujo ágil con recarga en vivo y publicación mediante enlaces o códigos QR, favoreciendo la colaboración y las pruebas \parencite{campusMVP_ReactNative_Expo}.
 
   La aplicación ofrece flujos diferenciados para tres perfiles: Cliente, Repartidor y Cocina, además de pantallas de inicio de sesión y registro. Se incorporó un módulo o vista de \textit{cocina} en la aplicación móvil que permite aceptar o rechazar pedidos y notificar cuando el pedido está listo para que el repartidor recoja, conectado al flujo de solicitud de órdenes. Así, cuando un cliente realiza un pedido, la cocina puede visualizarlo, aceptarlo o rechazarlo, y al marcarlo como listo el repartidor puede ir a recogerlo para la entrega. La navegación se gestiona con la librería de React Native (p. ej., React Navigation), que permite transicionar entre vistas, mantener historiales y pasar parámetros. Cada rol visualiza únicamente las opciones pertinentes; esta segregación mejora la experiencia y refuerza la seguridad, complementada con validaciones en el backend.
-  El flujo visual ampliado por rol se documenta en el Apéndice F.
+
+  La Figura \ref{fig:frontend-prototipo} muestra el flujo de la interfaz móvil diferenciada por roles, ilustrando las pantallas y transiciones para cliente, repartidor y cocina. Su propósito es demostrar cómo se adapta la experiencia de usuario según el perfil, asegurando funcionalidad y seguridad en el proceso operativo.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.8\textwidth}{!}{\input{imagenes/frontend_prototipo.tikz}}
-  \caption{Flujo de la interfaz móvil por rol (cliente, repartidor, cocina)}
+  \caption[Flujo interfaz móvil]{Flujo de la interfaz móvil por rol (cliente, repartidor, cocina)}
   \label{fig:frontend-prototipo}
   \end{figure}
 
-  La arquitectura del frontend móvil privilegia la simplicidad y la previsibilidad del estado. Se emplea estado local y patrones de elevación de estado donde corresponde, con manejo de formularios controlados y validación básica en cliente (tipos de entrada, obligatoriedad, formatos). La comunicación con la API se realiza mediante solicitudes HTTP que envían y reciben JSON; se contemplan casos de error (credenciales inválidas, falta de conectividad, respuestas 4xx/5xx) con mensajes claros al usuario y estrategias de reintento cuando es pertinente. La interfaz se diseñó con principios de consistencia visual y accesibilidad, cuidando contrastes, tamaños de toque y retroalimentación tras acciones. Para el diseño visual se empleó Tamagui, biblioteca de UI y sistema de estilos compatible con React Native, que provee componentes y temas para construir interfaces coherentes y responsivas (Tamagui, s.f.). En el proyecto se estilizaron botones, tarjetas y formularios con componentes Tamagui, logrando consistencia y mantenibilidad. Su sistema de temas facilita la personalización visual (colores, tipografía) y asegura una apariencia uniforme en la aplicación Android, adaptándose a las necesidades de identidad del negocio.
+  La arquitectura del frontend móvil privilegia la simplicidad y la previsibilidad del estado. Se emplea estado local y patrones de elevación de estado donde corresponde, con manejo de formularios controlados y validación básica en cliente (tipos de entrada, obligatoriedad, formatos). La comunicación con la API se realiza mediante solicitudes HTTP que envían y reciben JSON; se contemplan casos de error (credenciales inválidas, falta de conectividad, respuestas 4xx/5xx) con mensajes claros al usuario y estrategias de reintento cuando es pertinente. La interfaz se diseñó con principios de consistencia visual y accesibilidad, cuidando contrastes, tamaños de toque y retroalimentación tras acciones. Para el diseño visual se empleó Tamagui, biblioteca de UI y sistema de estilos compatible con React Native, que provee componentes y temas para construir interfaces coherentes y responsivas \parencite{Tamagui_docs}. En el proyecto se estilizaron botones, tarjetas y formularios con componentes Tamagui, logrando consistencia y mantenibilidad. Su sistema de temas facilita la personalización visual (colores, tipografía) y asegura una apariencia uniforme en la aplicación Android, adaptándose a las necesidades de identidad del negocio.
 
   \subsubsection{Desarrollo de la aplicación web}
 
@@ -398,7 +424,7 @@
   Se desarrolló un sitio web con React y Next.js cuya función principal es la administración del negocio (panel administrativo). También se implementó la posibilidad de que los clientes inicien sesión desde la web para realizar pedidos desde el navegador, complementando la opción de la aplicación móvil. Se aprovechó el renderizado del lado del servidor (SSR) en vistas específicas de dashboard cuando resultó conveniente.
 
   El estilado se realizó con Tailwind CSS, framework utility-first que permite componer diseños
-  rápidos y consistentes mediante clases utilitarias (Tailwind CSS, s.f.). Su configuración admite alta
+  rápidos y consistentes mediante clases utilitarias \parencite{TailwindCSS_docs}. Su configuración admite alta
   personalización, útil para adaptar paletas o temas por cliente.
 
   En el panel se aplicaron formularios validados con reglas de negocio simples (campos requeridos,
@@ -416,7 +442,6 @@
   Cuando un repartidor se registra desde la app móvil, su cuenta queda "pendiente" hasta la
   revisión administrativa, tras la cual puede ser habilitada o rechazada, garantizando control de
   calidad.
-  El flujo visual ampliado del panel web se documenta en el Apéndice F.
 
   Ambos frontends consumen el mismo backend mediante API REST y JSON. La separación
   de responsabilidades mantiene el frontend enfocado en la experiencia y presentación, mientras la
@@ -428,14 +453,16 @@
   para el control de estados vacíos y errores de red, mejorando la robustez de la interfaz en condiciones
   reales.
 
+  La Figura \ref{fig:web-panel-prototipo} detalla el flujo del panel web administrativo, mostrando las pantallas y procesos para gestión de productos, pedidos y repartidores. Su propósito es explicar la navegación y funcionalidades del panel web para administradores, facilitando la comprensión de la interfaz de gestión.
+
   \begin{figure}[htbp]
   \centering
   \resizebox{0.95\textwidth}{!}{\input{imagenes/web_panel_prototipo.tikz}}
-  \caption{Flujo del panel web administrativo}
+  \caption[Flujo panel web]{Flujo del panel web administrativo}
   \label{fig:web-panel-prototipo}
   \end{figure}
 
-  \subsubsection{Desarrollo del backend (NestJS, capas, módulos)}
+  \subsubsection{Desarrollo del backend }
   Objetivo del backend: exponer servicios estables y seguros, aplicar reglas de negocio y coordinar persistencia con una arquitectura modular mantenible.
 
   \paragraph{Decisión arquitectónica}
@@ -485,32 +512,37 @@
     \item Se retorna \texttt{201 Created} con la información del pedido creado.
   \end{enumerate}
   Este flujo ejemplifica la separación de responsabilidades entre capas y la lógica de negocio encapsulada en el servicio.
-  El diagrama ampliado de este flujo se incluye en el Apéndice G.
 
-  \begin{figure}[H]
+  La Figura \ref{fig:secuencia-pedido} representa el diagrama de secuencia del proceso completo de pedido, desde la creación hasta la entrega, involucrando cliente, backend, cocina y repartidor. Su propósito es ilustrar la interacción temporal entre componentes del sistema para completar un pedido exitosamente.
+
+  \begin{figure}[htbp]
   \centering
   \resizebox{0.75\textwidth}{!}{\input{imagenes/secuencia_pedido.tikz}}
-  \caption{Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}
+  \caption[Diagrama de secuencia (pedido)]{Diagrama de secuencia: flujo completo del proceso de pedido. Fuente: elaboración propia.}
   \label{fig:secuencia-pedido}
   \end{figure}
 
   \paragraph{Módulo de inventario:}
   Lógica para descontar stock y prevenir ventas de productos agotados. La Figura \ref{fig:modulo-inventario} corresponde a un \textbf{diagrama de bloques}: el panel web administrativo dispara operaciones de actualización (altas, bajas y ajustes de inventario), el backend/API aplica validaciones y reglas (por ejemplo, evitar stock negativo o inconsistencias) y finalmente persiste cambios en la base de datos de productos y stock; el bloque de validación resume la lógica que protege la integridad del inventario ante operaciones concurrentes y pedidos.
 
-  \begin{figure}[H]
+  La Figura \ref{fig:modulo-inventario} ilustra el diagrama de bloques del módulo de inventario, mostrando las interacciones entre el panel administrativo, el backend y la base de datos para controlar el stock. Su propósito es explicar cómo se gestiona y valida el inventario para mantener la consistencia operativa.
+
+  \begin{figure}[htbp]
   \centering
   \resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_inventario.tikz}}
-  \caption{Diagrama de bloques del módulo de inventario y control de stock (versión ampliada en el Apéndice G)}
+  \caption[Módulo inventario (bloques)]{Diagrama de bloques del módulo de inventario y control de stock}
   \label{fig:modulo-inventario}
   \end{figure}
 
   \paragraph{Módulo de repartidores:}
   Proceso de registro, aprobación administrativa y asignación manual de pedidos. La Figura \ref{fig:modulo-repartidores} corresponde a un \textbf{diagrama de bloques}: cada bloque representa un componente (app móvil, backend/API, base de datos y aprobación administrativa) y las flechas resumen las interacciones principales (registro, persistencia, actualización de estado y asignación de pedidos).
 
-  \begin{figure}[H]
+  La Figura \ref{fig:modulo-repartidores} muestra el diagrama de bloques del módulo de repartidores, detallando el proceso de registro, aprobación y asignación de pedidos. Su propósito es explicar el flujo de gestión de repartidores desde el registro hasta la entrega.
+
+  \begin{figure}[htbp]
   \centering
   \resizebox{0.85\textwidth}{!}{\input{imagenes/modulo_repartidores.tikz}}
-  \caption{Diagrama de bloques del módulo de repartidores (versión ampliada en el Apéndice G)}
+  \caption[Módulo repartidores (bloques)]{Diagrama de bloques del módulo de repartidores}
   \label{fig:modulo-repartidores}
   \end{figure}
 
@@ -518,7 +550,7 @@
   El chatbot se implementó bajo el paradigma RAG (Retrieval-Augmented Generation): se recuperan fragmentos relevantes de una base de conocimiento y se inyectan en el prompt del modelo de lenguaje para generar respuestas contextualizadas. \textbf{Arquitectura:} servicio independiente (Node.js) que expone un endpoint REST para recibir mensajes desde el frontend web; el flujo consiste en (1) recibir mensaje, (2) embedding de la consulta del usuario, (3) búsqueda por similitud en una base vectorial, (4) construcción del prompt con el contexto recuperado más la consulta, (5) llamada al LLM, (6) envío de la respuesta al frontend para mostrarla al usuario en el chat. \textbf{Modelo de lenguaje:} se utilizó un LLM accesible vía API (modelo tipo GPT/compatible con LangChain) para la generación de respuestas. \textbf{Base vectorial e indexación:} el corpus de la plataforma (menú, horarios, preguntas frecuentes, información de pedidos) se fragmentó en chunks, se generaron embeddings con el mismo modelo de embeddings del LLM y se almacenaron en una base vectorial (p. ej. en memoria o integrada en LangChain) para búsqueda por similitud semántica. La indexación se realizó de forma previa al despliegue y se puede actualizar cuando cambie el catálogo o las políticas. \textbf{Validación:} se validó mediante pruebas con consultas frecuentes (horarios, menú, estado de pedido); se verificó que las respuestas fueran coherentes con el contexto recuperado y que el tiempo de respuesta fuera aceptable para uso conversacional. No se aplicaron métricas formales de evaluación (p. ej. BLEU o satisfacción) en este piloto; la validación fue cualitativa y operativa.
 
   \paragraph{Clasificación de la solución como SaaS y alcance del piloto}
-  La solución se clasifica como SaaS en la medida en que se entrega como \textbf{servicio alojado en la nube}, sin instalación en las instalaciones del cliente: el backend y la base de datos están en un VPS y en Supabase, el panel web en Vercel y la app móvil se distribuye vía enlace/APK con conexión a la misma API. El usuario no gestiona servidores ni actualizaciones del stack; el proveedor (en este caso el equipo del proyecto) centraliza el despliegue y las actualizaciones. \textbf{En este piloto no se implementó arquitectura multi-tenant} (una instancia por cliente); la solución opera como \textbf{prototipo aplicado a una PYME piloto}, con una única instancia de base de datos y backend. Para evolucionar hacia un modelo multiempresa típico de SaaS, sería necesario incorporar multi-tenancy (p. ej. base de datos por cliente o esquema por tenant), aislamiento de datos por organización, configuración independiente por cliente y un esquema de provisión y facturación; ello queda fuera del alcance del presente trabajo y se considera trabajo futuro.
+  La solución se clasifica como SaaS en la medida en que se entrega como \textbf{servicio alojado en la nube}, sin instalación en las instalaciones del cliente: el backend y la base de datos están en un VPS y en Supabase, el panel web en Vercel y la app móvil se distribuye vía enlace/APK con conexión a la misma API. El usuario no gestiona servidores ni actualizaciones del stack; el proveedor (en este caso el equipo del proyecto) centraliza el despliegue y las actualizaciones. \textbf{En este piloto no se implementó arquitectura multi-tenant} (una instancia por cliente); la solución opera como \textbf{prototipo evaluado en un escenario piloto simulado}, con una única instancia de base de datos y backend. Para evolucionar hacia un modelo multiempresa típico de SaaS, sería necesario incorporar multi-tenancy (p. ej. base de datos por cliente o esquema por tenant), aislamiento de datos por organización, configuración independiente por cliente y un esquema de provisión y facturación; ello queda fuera del alcance del presente trabajo y se considera trabajo futuro.
 
   Pruebas técnicas: Se realizaron pruebas unitarias en servicios críticos y pruebas de integración manuales para garantizar la correcta comunicación entre componentes.
 
@@ -526,14 +558,14 @@
 
   \subsubsection{Arquitectura del despliegue}
 
-  Se configuró un VPS en Hetzner con Docker para alojar el backend y la conectividad segura hacia la base de datos PostgreSQL administrada en Supabase. El panel web se desplegó automáticamente en Vercel con integración continua por repositorio. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del local piloto.
+  Se configuró un VPS en Hetzner con Docker para alojar el backend y la conectividad segura hacia la base de datos PostgreSQL administrada en Supabase. El panel web se desplegó automáticamente en Vercel con integración continua por repositorio. La aplicación móvil se compiló y distribuyó como archivo APK para su instalación en dispositivos Android del entorno de prueba.
   La infraestructura operó con separación funcional: capa de presentación (web y app), capa API (NestJS), capa de datos (PostgreSQL) y servicios externos (chatbot RAG, geolocalización), con comunicación por HTTPS y control de acceso basado en JWT.
-  La versión ampliada de la arquitectura de despliegue se incorpora en el Apéndice H.
+  La Figura \ref{fig:despliegue-arquitectura} describe la arquitectura de despliegue, incluyendo VPS, Vercel y APK, con las conexiones y servicios involucrados. Su propósito es mostrar cómo se estructura la infraestructura en la nube para el funcionamiento del sistema SaaS.
 
   \begin{figure}[htbp]
   \centering
   \resizebox{0.9\textwidth}{!}{\input{imagenes/despliegue_arquitectura.tikz}}
-  \caption{Arquitectura de despliegue (VPS, Vercel, APK)}
+  \caption[Arquitectura de despliegue]{Arquitectura de despliegue (VPS, Vercel, APK)}
   \label{fig:despliegue-arquitectura}
   \end{figure}
 
@@ -551,14 +583,14 @@
   El backend se desplegó como aplicación Node.js independiente. Se utilizó Docker para contenerización y reproducibilidad en VPS, con imágenes multi-stage para optimizar tamaño y perfiles por entorno (development, production). En el VPS se gestionó la terminación TLS y el enrutamiento de tráfico mediante un proxy inverso (por ejemplo, Nginx). En los componentes donde aplicó, se automatizó la publicación mediante integración continua (por ejemplo, el panel web en Vercel), ejecutando verificaciones mínimas antes de promover cambios. La base de datos PostgreSQL administrada por Supabase redujo la carga operativa de infraestructura.
 
   En resumen, el backend en NestJS proporcionó una arquitectura modular robusta. Cada nueva funcionalidad se implementó añadiendo o modificando un módulo sin afectar otros, lo que agilizó el desarrollo colaborativo y redujo errores colaterales. La combinación de TypeScript, inyección de dependencias y la estructura en capas (Controlador-Servicio-Repositorio) facilitó que el código fuera más fácil de seguir y depurar. NestJS, con su enfoque de convención sobre configuración, mantuvo aspectos como la seguridad, la validación y la estructura de proyecto cubiertos por diseño.
-  El diagrama de red integral de interacción entre clientes, API y servicios externos se presenta en el Apéndice I.
+  El diagrama de red integral de interacción entre clientes, API y servicios externos se presenta en el Apéndice B.
 
   \subsubsection{Despliegue en \textit{staging} y validación técnica}
-  Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (\textit{staging}) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice J. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:
+  Esta etapa tuvo como propósito evaluar el sistema integral en entorno controlado (\textit{staging}) mediante tareas guiadas y escenarios de prueba predefinidos. El procedimiento completo (despliegue, orientación, escenarios, tareas guiadas, recolección de datos y monitoreo técnico) se documenta en el Apéndice C. Para mantener este capítulo conciso, se resume el proceso en tres acciones clave:
   \begin{itemize}
     \item \textbf{Despliegue controlado:} Backend y base de datos en VPS con Docker; panel web en Vercel; app móvil en APK para pruebas.
     \item \textbf{Ejecución de escenarios:} Usuarios de prueba ejecutaron flujos críticos (pedido, cocina, reparto, administración y chatbot).
     \item \textbf{Registro de métricas:} Se capturaron tiempos, errores, completitud de tareas y logs técnicos para análisis posterior.
   \end{itemize}
-  El detalle de las tareas evaluadas y sus criterios de éxito se presenta en el Apéndice J (Tabla \ref{tab:apendice-tareas-usabilidad}).
+  El detalle de las tareas evaluadas y sus criterios de éxito se presenta en el Apéndice C (Tabla \ref{tab:apendice-tareas-usabilidad}).
 

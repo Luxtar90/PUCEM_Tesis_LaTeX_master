@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\scriptsize}, node distance=0.6cm and 1.6cm]
+\begin{tikzpicture}[every node/.style={align=center, transform shape, font=\footnotesize}, node distance=0.6cm and 1.6cm]
 \tikzset{
   box/.style={draw, rounded corners=2pt, fill=blue!15, minimum width=2.8cm, minimum height=0.7cm, line width=0.6pt},
   token/.style={draw, rounded corners=2pt, fill=cyan!20, minimum width=2.4cm, minimum height=0.7cm, line width=0.6pt},

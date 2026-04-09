@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
-    \entry{raguilera_jwt_nestjs}{online}{}{}
+    \entry{Aguilera_JWT_NestJS}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
            family={Aguilera},
@@ -38,7 +38,8 @@
       \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -46,6 +47,7 @@
       \field{urlday}{8}
       \field{urlmonth}{1}
       \field{urlyear}{2026}
+      \field{year}{n.d.}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
@@ -141,6 +143,35 @@
       \field{pages}{114\bibrangedash 123}
       \range{pages}{10}
     \endentry
+    \entry{campusMVP_ReactNative_Expo}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
+           family={{campusMVP}},
+           familyi={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documentación técnica para la implementación de interfaces móviles en Android}
+      \field{title}{React Native y Expo: Guía para el desarrollo de aplicaciones móviles nativas}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -172,38 +203,35 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{jose_2000}{article}{}{}
+    \entry{ChenNiforatosKortuem2025}{article}{}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+        {{un=0,uniquepart=base,hash=6dbedad2342e7fdc31f6a6905f472c6d}{%
            family={Chen},
            familyi={C\bibinitperiod},
-           given={Qiurui},
+           given={Q.},
            giveni={Q\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+        {{un=0,uniquepart=base,hash=5ac3d1604b1048ae9f73bf2177426696}{%
            family={Niforatos},
            familyi={N\bibinitperiod},
-           given={Evangelos},
+           given={E.},
            giveni={E\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+        {{un=0,uniquepart=base,hash=6f0fdeef38e3b3c8e97da1c67654fe40}{%
            family={Kortuem},
            familyi={K\bibinitperiod},
-           given={Gerd},
+           given={G.},
            giveni={G\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
-      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
-      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{namehash}{4706d28ed0db53536c7517d6196f1179}
+      \strng{fullhash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{fullhashraw}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{bibnamehash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authorbibnamehash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authornamehash}{4706d28ed0db53536c7517d6196f1179}
+      \strng{authorfullhash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authorfullhashraw}{4a3679e09098ecde180b2b268083f8cd}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -211,9 +239,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9798400715822}
       \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
-      \field{series}{MuC '25}
       \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
       \field{pages}{494\bibrangedash 502}
@@ -227,7 +253,6 @@
       \verb{url}
       \verb https://doi.org/10.1145/3743049.3748567
       \endverb
-      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
     \entry{DuranMero2024}{article}{}{}
       \name{author}{1}{}{%
@@ -298,41 +323,41 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
-    \entry{hevner2004}{article}{}{}
+    \entry{Hevner2004}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+        {{un=0,uniquepart=base,hash=ab39e24b6da4916bbd6f97cfcacfa8f2}{%
            family={Hevner},
            familyi={H\bibinitperiod},
-           given={Alan\bibnamedelima R.},
+           given={A.\bibnamedelimi R.},
            giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
+        {{un=0,uniquepart=base,hash=00ee4eaf252fd57d37cc70483574d61c}{%
            family={March},
            familyi={M\bibinitperiod},
-           given={Sal\bibnamedelima T.},
+           given={S.\bibnamedelimi T.},
            giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
+        {{un=0,uniquepart=base,hash=a751353273269dd04e3592da348ed973}{%
            family={Park},
            familyi={P\bibinitperiod},
-           given={Jin},
+           given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+        {{un=0,uniquepart=base,hash=da72835c452bb97c343d0d9be2aaebf7}{%
            family={Ram},
            familyi={R\bibinitperiod},
-           given={Sudha},
+           given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{namehash}{bcf171a8f143c8f648552a22d929e8c9}
+      \strng{fullhash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{fullhashraw}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{bibnamehash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authorbibnamehash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authornamehash}{bcf171a8f143c8f648552a22d929e8c9}
+      \strng{authorfullhash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authorfullhashraw}{6df5488584cb22dd27f4382d274f8bae}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -372,7 +397,6 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
       \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
       \field{urlday}{8}
       \field{urlmonth}{1}
@@ -386,7 +410,7 @@
       \verb https://www.ecuadorencifras.gob.ec/
       \endverb
     \endentry
-    \entry{ISO25010}{report}{}{}
+    \entry{ISO25010_2011}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
            family={{ISO/IEC}},
@@ -416,21 +440,21 @@
     \endentry
     \entry{Lewis2018}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+        {{un=0,uniquepart=base,hash=ffb9f0fdf450734bbcc4dbaf307be52f}{%
            family={Lewis},
            familyi={L\bibinitperiod},
-           given={James\bibnamedelima R.},
+           given={J.\bibnamedelimi R.},
            giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{namehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{fullhash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{fullhashraw}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{bibnamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorbibnamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authornamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorfullhash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorfullhashraw}{ffb9f0fdf450734bbcc4dbaf307be52f}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -449,14 +473,40 @@
       \verb 10.1080/10447318.2018.1455307
       \endverb
     \endentry
-    \entry{MintelTransformation2022}{online}{}{}
+    \entry{Logto_RBAC}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
+           family={{Logto}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Guía de autorización distribuida para sistemas SaaS}
+      \field{title}{Esquema de Roles, Permisos y Seguridad: Introduction to Role-Based Access Control (RBAC)}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Arcotel_2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
            family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
            familyi={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ARCOTEL}%
       }
       \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
       \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
@@ -474,7 +524,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.arcotel.gob.ec/
       \endverb
@@ -504,7 +558,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2024}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.movistar.com.ec/
       \endverb
@@ -512,41 +570,70 @@
       \verb https://www.movistar.com.ec/
       \endverb
     \endentry
-    \entry{peffers2007}{article}{}{}
+    \entry{NielsenNorman_interaction}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a8d7d50a7a2572cad7475ca3f3918fc}{%
+           family={{Nielsen Norman Group}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{fullhash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{fullhashraw}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{bibnamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorbibnamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authornamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorfullhash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorfullhashraw}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Estándares de eficiencia para tiempos de carga}
+      \field{title}{Recomendaciones para interfaces interactivas y percepción de respuesta en sistemas de consumo}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Peffers2007}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+        {{un=0,uniquepart=base,hash=9cd42a467f88705e0d08aa1a06adb4b6}{%
            family={Peffers},
            familyi={P\bibinitperiod},
-           given={Ken},
+           given={K.},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+        {{un=0,uniquepart=base,hash=8bd1209bdcb90d05944f3a11d679bb82}{%
            family={Tuunanen},
            familyi={T\bibinitperiod},
-           given={Tuure},
+           given={T.},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+        {{un=0,uniquepart=base,hash=32ff53b01e80ec1e88f57b868b877e4e}{%
            family={Rothenberger},
            familyi={R\bibinitperiod},
-           given={Marcus\bibnamedelima A.},
+           given={M.\bibnamedelimi A.},
            giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+        {{un=0,uniquepart=base,hash=69636b5f582dddc21efa3a5f503faa71}{%
            family={Chatterjee},
            familyi={C\bibinitperiod},
-           given={Samir},
+           given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{namehash}{f0ad2a46409329854a9735d9f4001b70}
+      \strng{fullhash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{fullhashraw}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{bibnamehash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authorbibnamehash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authornamehash}{f0ad2a46409329854a9735d9f4001b70}
+      \strng{authorfullhash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authorfullhashraw}{82ebbb96edb19e03c39c73ecdef84e42}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -564,6 +651,63 @@
       \verb{doi}
       \verb 10.2753/MIS0742-1222240302
       \endverb
+    \endentry
+    \entry{TailwindCSS_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
+           family={{Tailwind CSS}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Guía de clases utilitarias para diseño responsivo}
+      \field{title}{Utility-first CSS framework for rapid UI development and consistent styling}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Tamagui_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
+           family={{Tamagui}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Universal UI kit and style system for React and React Native}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
     \endentry
     \entry{UNESCO2019}{online}{}{}
       \name{author}{1}{}{%
@@ -587,7 +731,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2019}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.unesco.org/creative-cities/
       \endverb
@@ -617,7 +765,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2025}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.vistazo.com/
       \endverb
@@ -627,7 +779,7 @@
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{raguilera_jwt_nestjs}{online}{}{}
+    \entry{Aguilera_JWT_NestJS}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=57cd7d2b0d9ec6fb33ab0587b6172c46}{%
            family={Aguilera},
@@ -646,7 +798,8 @@
       \strng{authorfullhashraw}{57cd7d2b0d9ec6fb33ab0587b6172c46}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -654,6 +807,7 @@
       \field{urlday}{8}
       \field{urlmonth}{1}
       \field{urlyear}{2026}
+      \field{year}{n.d.}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://dev.to/raguilera82/autenticacion-con-jwt-en-nestjs-147a
@@ -749,6 +903,35 @@
       \field{pages}{114\bibrangedash 123}
       \range{pages}{10}
     \endentry
+    \entry{campusMVP_ReactNative_Expo}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed9bdd3d921e8945bdee24000519a36b}{%
+           family={{campusMVP}},
+           familyi={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{fullhash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{fullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{bibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorbibnamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authornamehash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorfullhash}{ed9bdd3d921e8945bdee24000519a36b}
+      \strng{authorfullhashraw}{ed9bdd3d921e8945bdee24000519a36b}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documentación técnica para la implementación de interfaces móviles en Android}
+      \field{title}{React Native y Expo: Guía para el desarrollo de aplicaciones móviles nativas}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
     \entry{Castells2010}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=81719c25e6cbcfe23d2c4486745ca6ac}{%
@@ -780,38 +963,35 @@
       \field{title}{The rise of the network society}
       \field{year}{2010}
     \endentry
-    \entry{jose_2000}{article}{}{}
+    \entry{ChenNiforatosKortuem2025}{article}{}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=b1e1899e81698db900d085d78c4e31e9}{%
+        {{un=0,uniquepart=base,hash=6dbedad2342e7fdc31f6a6905f472c6d}{%
            family={Chen},
            familyi={C\bibinitperiod},
-           given={Qiurui},
+           given={Q.},
            giveni={Q\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=60cf5a731ab61b7c8bb6b0f2619ba579}{%
+        {{un=0,uniquepart=base,hash=5ac3d1604b1048ae9f73bf2177426696}{%
            family={Niforatos},
            familyi={N\bibinitperiod},
-           given={Evangelos},
+           given={E.},
            giveni={E\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=756ee9dce33a34f0474a446bdf5f3cf7}{%
+        {{un=0,uniquepart=base,hash=6f0fdeef38e3b3c8e97da1c67654fe40}{%
            family={Kortuem},
            familyi={K\bibinitperiod},
-           given={Gerd},
+           given={G.},
            giveni={G\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{45cf8bb4724eecef98f2176ebddeb693}
-      \strng{fullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{fullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{bibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authorbibnamehash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authornamehash}{45cf8bb4724eecef98f2176ebddeb693}
-      \strng{authorfullhash}{2c2b194fbed8d36d1966bc8f6b5a40c6}
-      \strng{authorfullhashraw}{2c2b194fbed8d36d1966bc8f6b5a40c6}
+      \strng{namehash}{4706d28ed0db53536c7517d6196f1179}
+      \strng{fullhash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{fullhashraw}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{bibnamehash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authorbibnamehash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authornamehash}{4706d28ed0db53536c7517d6196f1179}
+      \strng{authorfullhash}{4a3679e09098ecde180b2b268083f8cd}
+      \strng{authorfullhashraw}{4a3679e09098ecde180b2b268083f8cd}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -819,9 +999,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9798400715822}
       \field{journaltitle}{Proceedings of the Mensch Und Computer 2025}
-      \field{series}{MuC '25}
       \field{title}{Behaviorally Aligned Retrieval-Augmented Chatbot for Industrial Design Thesis Support}
       \field{year}{2025}
       \field{pages}{494\bibrangedash 502}
@@ -835,7 +1013,6 @@
       \verb{url}
       \verb https://doi.org/10.1145/3743049.3748567
       \endverb
-      \keyw{Retrieval-Augmented Generation,Chatbot,Industrial Design,Education,Human-Computer Interaction}
     \endentry
     \entry{DuranMero2024}{article}{}{}
       \name{author}{1}{}{%
@@ -906,41 +1083,41 @@
       \verb 10.1234/rle.2021.55.2.45
       \endverb
     \endentry
-    \entry{hevner2004}{article}{}{}
+    \entry{Hevner2004}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+        {{un=0,uniquepart=base,hash=ab39e24b6da4916bbd6f97cfcacfa8f2}{%
            family={Hevner},
            familyi={H\bibinitperiod},
-           given={Alan\bibnamedelima R.},
+           given={A.\bibnamedelimi R.},
            giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=15c057d8ad1afc3fa3f4fb01d68f6952}{%
+        {{un=0,uniquepart=base,hash=00ee4eaf252fd57d37cc70483574d61c}{%
            family={March},
            familyi={M\bibinitperiod},
-           given={Sal\bibnamedelima T.},
+           given={S.\bibnamedelimi T.},
            giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2ef7b2a6a5c94b4238e90c94573d4d3}{%
+        {{un=0,uniquepart=base,hash=a751353273269dd04e3592da348ed973}{%
            family={Park},
            familyi={P\bibinitperiod},
-           given={Jin},
+           given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+        {{un=0,uniquepart=base,hash=da72835c452bb97c343d0d9be2aaebf7}{%
            family={Ram},
            familyi={R\bibinitperiod},
-           given={Sudha},
+           given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{fullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{fullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{bibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorbibnamehash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
-      \strng{authorfullhash}{11ed7cf6e44314cb5f7ccdc562fd994a}
-      \strng{authorfullhashraw}{11ed7cf6e44314cb5f7ccdc562fd994a}
+      \strng{namehash}{bcf171a8f143c8f648552a22d929e8c9}
+      \strng{fullhash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{fullhashraw}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{bibnamehash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authorbibnamehash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authornamehash}{bcf171a8f143c8f648552a22d929e8c9}
+      \strng{authorfullhash}{6df5488584cb22dd27f4382d274f8bae}
+      \strng{authorfullhashraw}{6df5488584cb22dd27f4382d274f8bae}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -980,7 +1157,6 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Las micro, pequeñas y medianas empresas representan más del 90\,\% de las unidades productivas en Ecuador}
       \field{title}{Directorado de Empresas y Establecimientos: estructura del tejido empresarial}
       \field{urlday}{8}
       \field{urlmonth}{1}
@@ -994,7 +1170,7 @@
       \verb https://www.ecuadorencifras.gob.ec/
       \endverb
     \endentry
-    \entry{ISO25010}{report}{}{}
+    \entry{ISO25010_2011}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0828a8408614177181026ea908d5594a}{%
            family={{ISO/IEC}},
@@ -1024,21 +1200,21 @@
     \endentry
     \entry{Lewis2018}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+        {{un=0,uniquepart=base,hash=ffb9f0fdf450734bbcc4dbaf307be52f}{%
            family={Lewis},
            familyi={L\bibinitperiod},
-           given={James\bibnamedelima R.},
+           given={J.\bibnamedelimi R.},
            giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{fullhash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{fullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{bibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorbibnamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authornamehash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorfullhash}{f106a761a58d4041d103c16ce4f11cf1}
-      \strng{authorfullhashraw}{f106a761a58d4041d103c16ce4f11cf1}
+      \strng{namehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{fullhash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{fullhashraw}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{bibnamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorbibnamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authornamehash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorfullhash}{ffb9f0fdf450734bbcc4dbaf307be52f}
+      \strng{authorfullhashraw}{ffb9f0fdf450734bbcc4dbaf307be52f}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -1057,14 +1233,40 @@
       \verb 10.1080/10447318.2018.1455307
       \endverb
     \endentry
-    \entry{MintelTransformation2022}{online}{}{}
+    \entry{Logto_RBAC}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d1cd5b54e8ef81080f69c20f2a59d79}{%
+           family={{Logto}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{fullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{fullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{bibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorbibnamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authornamehash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorfullhash}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \strng{authorfullhashraw}{1d1cd5b54e8ef81080f69c20f2a59d79}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Guía de autorización distribuida para sistemas SaaS}
+      \field{title}{Esquema de Roles, Permisos y Seguridad: Introduction to Role-Based Access Control (RBAC)}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Arcotel_2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=12a224a376f8f20495a3fcb59ad02557}{%
            family={{Ministerio de Telecomunicaciones y de la Sociedad de la Información}},
            familyi={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ARCOTEL}%
       }
       \strng{namehash}{12a224a376f8f20495a3fcb59ad02557}
       \strng{fullhash}{12a224a376f8f20495a3fcb59ad02557}
@@ -1082,7 +1284,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Agenda de Transformación Digital del Ecuador 2022--2025}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.arcotel.gob.ec/
       \endverb
@@ -1112,7 +1318,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Sondeo de Adopción Digital 2023: El 91 \% de las PYMES ecuatorianas planea invertir en digitalización en 2024}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2024}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.movistar.com.ec/
       \endverb
@@ -1120,41 +1330,70 @@
       \verb https://www.movistar.com.ec/
       \endverb
     \endentry
-    \entry{peffers2007}{article}{}{}
+    \entry{NielsenNorman_interaction}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a8d7d50a7a2572cad7475ca3f3918fc}{%
+           family={{Nielsen Norman Group}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{fullhash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{fullhashraw}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{bibnamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorbibnamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authornamehash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorfullhash}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \strng{authorfullhashraw}{2a8d7d50a7a2572cad7475ca3f3918fc}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Estándares de eficiencia para tiempos de carga}
+      \field{title}{Recomendaciones para interfaces interactivas y percepción de respuesta en sistemas de consumo}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Peffers2007}{article}{}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+        {{un=0,uniquepart=base,hash=9cd42a467f88705e0d08aa1a06adb4b6}{%
            family={Peffers},
            familyi={P\bibinitperiod},
-           given={Ken},
+           given={K.},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+        {{un=0,uniquepart=base,hash=8bd1209bdcb90d05944f3a11d679bb82}{%
            family={Tuunanen},
            familyi={T\bibinitperiod},
-           given={Tuure},
+           given={T.},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+        {{un=0,uniquepart=base,hash=32ff53b01e80ec1e88f57b868b877e4e}{%
            family={Rothenberger},
            familyi={R\bibinitperiod},
-           given={Marcus\bibnamedelima A.},
+           given={M.\bibnamedelimi A.},
            giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+        {{un=0,uniquepart=base,hash=69636b5f582dddc21efa3a5f503faa71}{%
            family={Chatterjee},
            familyi={C\bibinitperiod},
-           given={Samir},
+           given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
-      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
-      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{namehash}{f0ad2a46409329854a9735d9f4001b70}
+      \strng{fullhash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{fullhashraw}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{bibnamehash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authorbibnamehash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authornamehash}{f0ad2a46409329854a9735d9f4001b70}
+      \strng{authorfullhash}{82ebbb96edb19e03c39c73ecdef84e42}
+      \strng{authorfullhashraw}{82ebbb96edb19e03c39c73ecdef84e42}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -1172,6 +1411,63 @@
       \verb{doi}
       \verb 10.2753/MIS0742-1222240302
       \endverb
+    \endentry
+    \entry{TailwindCSS_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aaae461b6cfd057ce0433100e5c15ce9}{%
+           family={{Tailwind CSS}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{fullhash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{fullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{bibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorbibnamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authornamehash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorfullhash}{aaae461b6cfd057ce0433100e5c15ce9}
+      \strng{authorfullhashraw}{aaae461b6cfd057ce0433100e5c15ce9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Guía de clases utilitarias para diseño responsivo}
+      \field{title}{Utility-first CSS framework for rapid UI development and consistent styling}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Tamagui_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=40a5cf3ce227d992ef1e610eb50a7217}{%
+           family={{Tamagui}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{fullhash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{fullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{bibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorbibnamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authornamehash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorfullhash}{40a5cf3ce227d992ef1e610eb50a7217}
+      \strng{authorfullhashraw}{40a5cf3ce227d992ef1e610eb50a7217}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Universal UI kit and style system for React and React Native}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{n.d.}
+      \field{urldateera}{ce}
     \endentry
     \entry{UNESCO2019}{online}{}{}
       \name{author}{1}{}{%
@@ -1195,7 +1491,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Portoviejo -- Creative Cities Network (Gastronomy)}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2019}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.unesco.org/creative-cities/
       \endverb
@@ -1225,7 +1525,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Más de 50 \% de las PYMES en Ecuador incrementan sus ventas al adaptar métodos de pago digital}
+      \field{urlday}{8}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
       \field{year}{2025}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.vistazo.com/
       \endverb

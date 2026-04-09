@@ -1,0 +1,20 @@
+% Redes: diagrama estilizado similar al resto de tikz del proyecto
+\begin{tikzpicture}[node distance=10mm and 18mm, every node/.style={draw, rectangle, align=center, font=\small, rounded corners=2pt}]
+  \node (usuarios) {Usuarios Web\\Cliente - Admin};
+  \node (internet) [below=of usuarios] {Internet};
+  \node (web) [below left=of internet, xshift=-6mm] {Frontend Web\\Navegador};
+  \node (app) [below right=of internet, xshift=6mm] {App Móvil\\Android - iOS};
+  \node (api) [below=24mm of internet] {API Backend\\REST};
+  \node (db) [below left=of api] {Base de Datos};
+  \node (chat) [below=of api] {Chatbot IA\\RAG};
+  \node (ext) [below right=of api] {Servicios Externos\\Mapas - Pagos - WhatsApp};
+
+  \draw[->, >=latex] (usuarios) -- (internet);
+  \draw[->, >=latex] (internet) -- (web);
+  \draw[->, >=latex] (internet) -- (app);
+  \draw[->, >=latex] (web) -- (api);
+  \draw[->, >=latex] (app) -- (api);
+  \draw[->, >=latex] (api) -- (db);
+  \draw[->, >=latex] (api) -- (chat);
+  \draw[->, >=latex] (api) -- (ext);
+\end{tikzpicture}
